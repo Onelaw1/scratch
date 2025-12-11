@@ -1,0 +1,45 @@
+{
+  "slide_type": "Data",
+  "slide_number": 73,
+  "title": "2. 내부 환경·역량 분석 - 사업부문 재무실적 분석 (3/3)",
+  "governing_message": "해양보전부문은 대부분의 단위 사업에서 영업손실을 기록하고 있으며, 각 개별사업이 정부위탁 계약에 따라 수익성이 가변적이고 규모가 작아 규모의 경제를 달성하기 어려운 구조의 사업들로 구성되어 있음",
+  "layout": {
+    "grid_type": "2-column",
+    "background_color": "#FFFFFF"
+  },
+  "content_data": {
+    "subtitle": null,
+    "date": null,
+    "client_name": null,
+    "framework_type": null,
+    "elements": null,
+    "sections": [
+      {
+        "title": "해양보전부문 재무실적 분석 (2020년 실적)",
+        "blocks": [
+          {
+            "block_type": "table",
+            "content": "Table data related to financial performance analysis (2020)",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "✓ 해양보전부문은 대부분의 단위 사업에서 영업손실을 기록하고 있으며, '20년 회계손익 기준 전체 합계 89.7억 원의 영업손실, 63.2억 원의 순손실 집계됨\n✓ 해양보전사업은 정부사업의 위탁 및 위탁 관리 위주의 사업으로, 계약에 따라 사업 수익성 변화됨\n✓ 사업 부분별 규모가 크지 않고, 각 사업도 소규모 단위사업으로 구성되는 등 규모의 경제를 달성하기 어려운 구조의 사업들로 구성되어 있음",
+            "position": "top-right",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "footer": "KOEM 해양환경공단"
+}

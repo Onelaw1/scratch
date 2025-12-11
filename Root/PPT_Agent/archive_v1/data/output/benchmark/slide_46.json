@@ -1,0 +1,70 @@
+{
+  "slide_type": "Data",
+  "slide_number": 46,
+  "title": "1. 외부 환경분석 - 코로나로 인한 디지털전환 가속",
+  "governing_message": "코로나19는 고객의 디지털 수용도를 크게 가속시켜 고객 상호작용이 디지털 중심으로 급격하게 전환 시켰으며, 공단에도 해양환경 교육, 해양환경 종합정보, 시민·지역 참여 등 플랫폼의 신속한 구축과 운영이 요구되고 있음",
+  "layout": {
+    "grid_type": "custom",
+    "background_color": "#FFFFFF"
+  },
+  "content_data": {
+    "subtitle": null,
+    "date": null,
+    "client_name": null,
+    "framework_type": null,
+    "elements": null,
+    "sections": [
+      {
+        "title": "코로나 사태로 인한 디지털전환의 가속",
+        "blocks": [
+          {
+            "block_type": "text",
+            "content": "디지털 고객 상호작용 평균 비율(Average share of customer interactions that are digital, %)",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "chart",
+            "content": "Bar chart showing digital adoption rates by region.",
+            "position": "center",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "* 2017년~2019년 평균 수용도 변화 대비 코로나 전후 수용도 가속 수준",
+            "position": "bottom-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          }
+        ]
+      },
+      {
+        "title": "Key Findings",
+        "blocks": [
+          {
+            "block_type": "text",
+            "content": "✓ 코로나 사태로 Un-tact 니즈 증가되면서 거래나 의사소통 등 고객 상호작용의 과반 이상이 디지털로 전환됨\n\n✓ 코로나 전 디지털 상호작용 비율이 30~40% 임을 감안하면, 가파른 수용도 상승을 보이고 있고, 이는 기존 디지털 수용도 변화를 3~4년 앞당기는 수준임\n\n✓ 해양환경 및 해양생태계 보전, 복원, 관리에 대한 산업 종사자 및 국민 참여와 소통 등 공단 고객과 이해관계자 상호작용 디지털전환에 신속한 대응 필요\n\n✓ 해양환경 교육, 해양환경 정보, 시민·지역참여 등 해양환경 통합 플랫폼 구축, 운영 기대",
+            "position": "top-right",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "footer": "KOEM 해양환경공단"
+}

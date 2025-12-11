@@ -1,0 +1,95 @@
+{
+  "slide_type": "Content",
+  "slide_number": 200,
+  "title": "[New 미션, 비전의 의미]",
+  "governing_message": "해양의 보전과 이용을 선도하는 해양환경 국민 플랫폼 기관",
+  "layout": {
+    "grid_type": "1-column",
+    "background_color": "#FFFFFF"
+  },
+  "content_data": {
+    "subtitle": null,
+    "date": null,
+    "client_name": null,
+    "framework_type": null,
+    "elements": null,
+    "sections": [
+      {
+        "title": "업의 영역 재정의",
+        "blocks": [
+          {
+            "block_type": "text",
+            "content": "공단의 업의 영역인 “해양환경”의 범위를 보전과 이용으로 확대",
+            "position": "top-right",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          }
+        ]
+      },
+      {
+        "title": "역할과 기능 재정의",
+        "blocks": [
+          {
+            "block_type": "text",
+            "content": "공단의 기능과 역할을 해양의 “보전과 이용을 선도하는”으로 재정의",
+            "position": "top-right",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          }
+        ]
+      },
+      {
+        "title": "미래 방향성 재정의",
+        "blocks": [
+          {
+            "block_type": "text",
+            "content": "공단의 발전 방향성을 해양환경 전문기관으로서 해양환경 네트워크의 중심이 되는 “해양환경 플랫폼 기관”으로 재정의",
+            "position": "top-right",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          }
+        ]
+      },
+      {
+        "title": "이념과 목표 재정의",
+        "blocks": [
+          {
+            "block_type": "text",
+            "content": "공단의 이념과 목표를 국민의, 국민에 의한 “국민 플랫폼 기관”으로 재정의",
+            "position": "top-right",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          }
+        ]
+      },
+      {
+        "title": null,
+        "blocks": [
+          {
+            "block_type": "text",
+            "content": "해양의 보전, 이용·향유의 기반을 제공하는 해양환경을 책임지는 해양환경 전문기관으로서,\n해양환경의 보전과 이용을 위한 공공과 민간 협력 네트워크의 중심이며,\n국민과 함께하는 해양환경 대표 플랫폼 기관으로 성장하고 발전함",
+            "position": "full-width",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "footer": "KOEM 해양환경공단 199"
+}

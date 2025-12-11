@@ -1,0 +1,304 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Comprehensive Management System Proposal</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.5.0/reset.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.5.0/reveal.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.5.0/theme/white.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+    <style>
+        .reveal .slides section {
+            text-align: left;
+            font-size: 0.55em;
+            /* High density text */
+        }
+
+        .reveal h2 {
+            font-size: 1.2em;
+            text-transform: none;
+            border-bottom: 2px solid #2563eb;
+            padding-bottom: 10px;
+        }
+
+        .mermaid {
+            display: flex;
+            justify-content: center;
+            margin: 10px 0;
+            transform: scale(0.9);
+            /* Fit complex diagram */
+        }
+
+        .two-col {
+            display: grid;
+            grid-template-columns: 1.2fr 0.8fr;
+            gap: 20px;
+        }
+
+        .box {
+            background: #f8fafc;
+            padding: 12px;
+            border-radius: 8px;
+            border: 1px solid #e2e8f0;
+            margin-bottom: 8px;
+        }
+
+        .box h3 {
+            font-size: 1.1em;
+            color: #1e293b;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        ul {
+            margin-left: 15px;
+        }
+
+        li {
+            margin-bottom: 3px;
+            line-height: 1.4;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="reveal">
+        <div class="slides">
+
+            <!-- Slide 1 -->
+            <section>
+                <h2>To-Be System Architecture: Job-Centric Integrated Platform</h2>
+                <div class="two-col">
+                    <div style="flex: 1;">
+                        <div class="mermaid">
+                            graph TB
+                            %% Styles
+                            classDef user fill:#f9f9f9,stroke:#333,stroke-width:2px;
+                            classDef frontend fill:#e0f2fe,stroke:#0284c7,stroke-width:2px;
+                            classDef backend fill:#f0fdf4,stroke:#16a34a,stroke-width:2px;
+                            classDef db fill:#fff7ed,stroke:#ea580c,stroke-width:2px;
+                            classDef infra fill:#f1f5f9,stroke:#64748b,stroke-width:2px;
+
+                            subgraph User_Layer ["User Channels"]
+                            direction TB
+                            Web[("💻 Web Portal")]:::user
+                            Mobile[("📱 Mobile App")]:::user
+                            Admin[("🛡️ Admin Console")]:::user
+                            end
+
+                            subgraph Service_Layer ["Service Layer (Frontend)"]
+                            direction TB
+                            Dashboard["📊 Dashboard"]:::frontend
+
+                            subgraph Job_Modules ["Job Modules"]
+                            direction LR
+                            JobEditor["📝 Job Editor"]:::frontend
+                            MatrixUI["🏗️ Matrix UI"]:::frontend
+                            EvalUI["⚖️ Eval UI"]:::frontend
+                            SurveyUI["⏱️ Survey UI"]:::frontend
+                            end
+                            end
+
+                            subgraph Business_Layer ["Business Logic (Backend)"]
+                            direction TB
+                            Auth["🔐 Auth/Security"]:::backend
+
+                            subgraph Core_Logic ["Core Logic"]
+                            direction LR
+                            JC["Classification"]:::backend
+                            JD["Description"]:::backend
+                            JE["Evaluation"]:::backend
+                            WA["Workload"]:::backend
+                            end
+
+                            subgraph Integration ["Integration"]
+                            direction LR
+                            NCS_Svc["🌐 NCS API"]:::backend
+                            Excel_Svc["📑 Reporting"]:::backend
+                            AI_Svc["🤖 AI Bot"]:::backend
+                            end
+                            end
+
+                            subgraph Data_Layer ["Data Layer"]
+                            direction TB
+                            DB[("🗄️ RDBMS")]:::db
+                            Cache[("⚡ Redis")]:::db
+                            FileStore[("📂 Files")]:::db
+                            end
+
+                            %% Connections
+                            Web --> Dashboard
+                            Mobile --> SurveyUI
+                            Admin --> MatrixUI
+
+                            Dashboard --> Auth
+                            Job_Modules --> Auth
+
+                            Auth --> Core_Logic
+
+                            JobEditor --> JD
+                            MatrixUI --> JC
+                            EvalUI --> JE
+                            SurveyUI --> WA
+
+                            JC <--> DB
+                                JD <--> DB
+                                    JE <--> DB
+                                        WA <--> DB
+
+                                            JD <--> NCS_Svc
+                                                NCS_Svc <--> Cache
+
+                                                    Core_Logic -.-> AI_Svc
+                                                    Core_Logic -.-> Excel_Svc
+                        </div>
+                    </div>
+                    <div style="flex: 1;">
+                        <div class="box">
+                            <h3>1. User Experience (UX) Layer</h3>
+                            <ul>
+                                <li><strong>Glassmorphism UI</strong>: Modern, intuitive interface for high engagement.
+                                </li>
+                                <li><strong>Role-Based Access</strong>: Differentiated views for Employees, Team Leads,
+                                    and HR Managers.</li>
+                                <li><strong>Interactive Dashboards</strong>: Real-time visualization of FTE gaps, Job
+                                    Grades, and Competency Maps.</li>
+                            </ul>
+                        </div>
+                        <div class="box">
+                            <h3>2. Core Business Modules</h3>
+                            <ul>
+                                <li><strong>Job Classification Engine</strong>: Manages the 4-tier hierarchy (Group ->
+                                    Series -> Position -> Task). Supports dynamic re-organization.</li>
+                                <li><strong>Smart Job Description</strong>: Integrates <strong>NCS API</strong> for
+                                    "One-Click" duty import. Features version control.</li>
+                                <li><strong>Hay Method Evaluation</strong>: Digitized scoring logic for Know-How,
+                                    Problem Solving, and Accountability.</li>
+                                <li><strong>Workload Analyzer</strong>: FTE calculation based on frequency/time inputs.
+                                    Gap analysis against industry standards (1,920h/yr).</li>
+                            </ul>
+                        </div>
+                        <div class="box">
+                            <h3>3. Data & Integration</h3>
+                            <ul>
+                                <li><strong>NCS Standardization</strong>: Real-time sync with National Competency
+                                    Standards via Open API.</li>
+                                <li><strong>API-First Design</strong>: RESTful APIs (FastAPI) allow easy integration
+                                    with legacy ERP/HRIS systems.</li>
+                                <li><strong>Scalable Storage</strong>: Optimized schema for complex relationships.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Slide 2 -->
+            <section>
+                <h2>Data Flow & Value Chain: Job Data Lifecycle</h2>
+                <div class="two-col">
+                    <div style="flex: 1;">
+                        <div class="mermaid">
+                            sequenceDiagram
+                            autonumber
+                            participant User as 👤 User
+                            participant UI as 🖥️ UI
+                            participant API as ⚙️ API
+                            participant NCS as 🌐 NCS
+                            participant DB as 🗄️ DB
+                            participant Analytics as 📊 Analytics
+
+                            Note over User, Analytics: Phase 1: Standardization
+
+                            User->>UI: 1. Search Job
+                            UI->>API: GET /ncs/search
+                            API->>NCS: Request Duties
+                            NCS-->>API: Return Units
+                            API-->>UI: Display Duties
+                            User->>UI: 2. Create JD
+                            UI->>API: POST /jd
+                            API->>DB: Save JD
+                            DB-->>API: Confirm
+
+                            Note over User, Analytics: Phase 2: Valuation
+
+                            User->>UI: 3. Evaluate Job
+                            UI->>API: POST /eval
+                            API->>API: Run Hay Algo
+                            API->>DB: Update Grade
+
+                            User->>UI: 4. Input Workload
+                            UI->>API: POST /workload
+                            API->>API: Calc FTE Gap
+                            API->>DB: Save Analysis
+
+                            Note over User, Analytics: Phase 3: Utilization
+
+                            User->>UI: 5. Dashboard
+                            UI->>API: GET /stats
+                            API->>DB: Fetch Data
+                            API->>Analytics: Process
+                            Analytics-->>API: Visuals
+                            API-->>UI: Render Charts
+                        </div>
+                    </div>
+                    <div style="flex: 1;">
+                        <div class="box">
+                            <h3>1. Input Phase: Standardization at Source</h3>
+                            <ul>
+                                <li>Eliminates ambiguity by mapping internal tasks to <strong>NCS Competency
+                                        Units</strong> immediately.</li>
+                                <li>Reduces writing burden by 60% using pre-defined standard duties.</li>
+                            </ul>
+                        </div>
+                        <div class="box">
+                            <h3>2. Process Phase: The "Job-Centric" Nexus</h3>
+                            <ul>
+                                <li>The <strong>Job Description</strong> serves as the "Single Source of Truth".</li>
+                                <li>All downstream activities (Evaluation, Workload) link back to specific Job Codes,
+                                    ensuring consistency.</li>
+                            </ul>
+                        </div>
+                        <div class="box">
+                            <h3>3. Value Phase: Quantitative Objectivity</h3>
+                            <ul>
+                                <li><strong>Evaluation</strong>: Moves from subjective "person-based" grading to
+                                    objective "job-based" scoring (Points-based).</li>
+                                <li><strong>Workload</strong>: Replaces "gut-feeling" staffing with data-backed FTE
+                                    calculations.</li>
+                            </ul>
+                        </div>
+                        <div class="box">
+                            <h3>4. Output Phase: Multi-Dimensional HR Application</h3>
+                            <ul>
+                                <li><strong>Recruitment</strong>: Auto-generate Job Postings from JDs.</li>
+                                <li><strong>CDP (Career Development)</strong>: Visual Career Maps based on Job
+                                    Hierarchy.</li>
+                                <li><strong>Performance</strong>: KPIs linked directly to Job Responsibilities.</li>
+                                <li><strong>Compensation</strong>: Fair pay structures based on Job Evaluation scores.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.5.0/reveal.min.js"></script>
+    <script>
+        Reveal.initialize({
+            controls: true,
+            progress: true,
+            center: true,
+            hash: true,
+            width: 1200,
+            height: 800,
+        });
+        mermaid.initialize({ startOnLoad: true, theme: 'default' });
+    </script>
+</body>
+
+</html>

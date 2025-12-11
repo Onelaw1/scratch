@@ -1,0 +1,160 @@
+{
+  "slide_type": "Content",
+  "slide_number": 84,
+  "title": "3. 이해관계자 분석 - 사업부서 FGI (4/6)",
+  "governing_message": "공단의 조직문화와 소통에 대해, 보수적인 조직문화 개선, 동기부여 저해요인 제거, 현실안주 분위기 타파 등이 필요하며, 부서·직능·세대간 소통과 화합의 부족이 문제로 지적됨",
+  "layout": {
+    "grid_type": "2-column",
+    "background_color": "#FFFFFF"
+  },
+  "content_data": {
+    "subtitle": null,
+    "date": null,
+    "client_name": null,
+    "framework_type": null,
+    "elements": null,
+    "sections": [
+      {
+        "title": "사업부서 FGI 의견 정리 ④ 조직문화, 소통",
+        "blocks": [
+          {
+            "block_type": "text",
+            "content": "직원들이 보수적인 집단분위기를 허물기 위해 노력했으면 함. 학연지연 등의 보수적인 분위기가 팽배한 상황이라 적극적인 업무자세와 동기를 갖기 어려워 개선이 필요함",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "코로나로 인해 전체 모임이 없어지니 점점 개인주의가 팽배해지고, 회사를 위해서 희생하는 건 찾아보기 힘들게 되었음. (새로운) 사업을 하려면 직원들을 설득시키기도 해야 하고, 희생이 있어도 감내하고 사업에 참여하도록 해서 사업을 추진해야 하는데 직원 동기부여가 어려움",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "조직이 발전하려면 허리가 튼튼해야 하고 부서장들이 일을 잘 해줘야 하는데, 차장이상 인력들이 현실에 안주하려는 성향이 큰 문제임. 개인의 역량은 뛰어나다고 생각하지만 조직에 만연한 안주의식으로 인해 발전이 힘든 상황임",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "원활한 업무 수행을 위해 타 부서와 협업이 필요한 경우 많지만, 다른 부서와 커뮤니케이션이 부족하고, 협업이 잘 이루어지지 않는 상황임",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "본부를 기준으로 업무와 조직, 사업이 분리되어 있어 타 본부의 사업에 대해 관여하지 않는 것이 관행으로 자리잡고 있어 각 본부의 의사결정이 그대로 시행되는 경우가 많음",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "일반직은 행정일만 하고 있고 기술직은 선박에서 일하고 있어서 기술직에 대한 불만이 많음. 양쪽을 섞어서 일을 하게 하면 업무적인 부분과 조직문화 이슈가 해소될 수 있을 것",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "최근 입사한 젊은 세대와 오랜 기간 재직한 상위 직급 세대간 소통과 교류가 거의 없고, 서로 이해하고 공감하려는 노력을 찾아보기 힘듦. 젊은 세대에 과거 방식의 희생이나 업무방식을 요구하면 큰일 날 것 같아서 엄두도 내지 못함",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          }
+        ]
+      },
+      {
+        "title": "주요 의견과 이슈사항",
+        "blocks": [
+          {
+            "block_type": "text",
+            "content": "보수적인 조직문화 개선 요구",
+            "position": "top-right",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "동기부여 저해 요인 제거 필요",
+            "position": "top-right",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "현실안주 분위기 타파 필요",
+            "position": "top-right",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "부서간 소통과 협업 부족",
+            "position": "top-right",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "직능간 교환 보직 등\n조직융화 노력 필요",
+            "position": "top-right",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "세대간 소통과 화합 어려움",
+            "position": "top-right",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "footer": "해양환경공단"
+}

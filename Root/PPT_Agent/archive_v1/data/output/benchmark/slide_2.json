@@ -1,0 +1,494 @@
+{
+  "slide_type": "Content",
+  "slide_number": 2,
+  "title": "Table of Contents",
+  "governing_message": "Strategic Alignment through Comprehensive Review",
+  "layout": {
+    "grid_type": "1-column",
+    "background_color": "#19376D"
+  },
+  "content_data": {
+    "subtitle": null,
+    "date": null,
+    "client_name": null,
+    "framework_type": null,
+    "elements": null,
+    "sections": [
+      {
+        "title": "I. 프로젝트 개요",
+        "blocks": [
+          {
+            "block_type": "text",
+            "content": "1. 프로젝트 목적 및 범위",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "2. 주요 과업 및 업무수행 내역",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "3. 프로젝트 진행 일정",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "03",
+            "position": "top-right",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "04",
+            "position": "top-right",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "05",
+            "position": "top-right",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          }
+        ]
+      },
+      {
+        "title": "II. 내·외부 환경 분석",
+        "blocks": [
+          {
+            "block_type": "text",
+            "content": "1. 외부 환경분석",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "2. 내부 환경·역량 분석",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "3. 이해관계자 분석",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "4. 벤치마킹",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "08",
+            "position": "top-right",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "50",
+            "position": "top-right",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "75",
+            "position": "top-right",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "89",
+            "position": "top-right",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          }
+        ]
+      },
+      {
+        "title": "III. 가치체계·전략체계 재정립",
+        "blocks": [
+          {
+            "block_type": "text",
+            "content": "1. 전략수립 방향성",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "2. 가치체계·전략체계 재정립",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "3. 전략목표·전략과제 수립",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "4. 경영목표 수립",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "102",
+            "position": "top-right",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "120",
+            "position": "top-right",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "148",
+            "position": "top-right",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "167",
+            "position": "top-right",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          }
+        ]
+      },
+      {
+        "title": "IV. 조직·인력운영 방안",
+        "blocks": [
+          {
+            "block_type": "text",
+            "content": "1. 조직진단 및 이슈분석",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "2.조직·인력운영 방향성",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "3. 조직 재설계 방안",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "4. 중장기 자원·인력 운영계획",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "203",
+            "position": "top-right",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "218",
+            "position": "top-right",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "238",
+            "position": "top-right",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "261",
+            "position": "top-right",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          }
+        ]
+      },
+      {
+        "title": "V. 미래성장사업 검토·발굴",
+        "blocks": [
+          {
+            "block_type": "text",
+            "content": "1. 미래성장사업 기준 재정비",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "2. 미래성장사업 검토",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "3. 신규 미래성장사업 발굴",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "4. 미래성장사업 추진전략",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "274",
+            "position": "top-right",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "283",
+            "position": "top-right",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "300",
+            "position": "top-right",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "306",
+            "position": "top-right",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          }
+        ]
+      },
+      {
+        "title": "VI. 추진체계 및 실행력 강화",
+        "blocks": [
+          {
+            "block_type": "text",
+            "content": "1. 전략과제 추진 관리",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "2. 중장기 로드맵 수립",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "3. 전략 실행력 강화",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "313",
+            "position": "top-right",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "323",
+            "position": "top-right",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "330",
+            "position": "top-right",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          }
+        ]
+      },
+      {
+        "title": "[첨부] 세부실행과제",
+        "blocks": []
+      }
+    ]
+  },
+  "footer": null
+}

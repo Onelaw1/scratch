@@ -1,0 +1,195 @@
+{
+  "slide_type": "Content",
+  "slide_number": 12,
+  "title": "1. 외부 환경분석 - 제3차 해양수산발전 기본계획",
+  "governing_message": "제3차 해양수산발전 기본계획에서 해양환경 영역은 추진전략 5. 환경 친화적·합리적 해양 이용 전략과제의 3개 세부과제로 구성되어 있으며, 해양환경은 전체 해양수산 추진전략에 내포되어 기반을 제공하고 있음",
+  "layout": {
+    "grid_type": "custom",
+    "background_color": "#FFFFFF"
+  },
+  "content_data": {
+    "subtitle": null,
+    "date": null,
+    "client_name": null,
+    "framework_type": null,
+    "elements": null,
+    "sections": [
+      {
+        "title": "제3차 해양수산발전 기본계획 : 해양환경은 해양수산 전체 추진전략의 기반 제공",
+        "blocks": [
+          {
+            "block_type": "text",
+            "content": "2030 비전",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "전환의 시대, 생명의 바다 풍요로운 미래",
+            "position": "top-right",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "목표 1",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "안전하고 행복한 포용의 바다",
+            "position": "top-right",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "목표 2",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "디지털과 혁신이 이끄는 성장의 바다",
+            "position": "top-right",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "목표 3",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "세대와 세계를 아우르는 상생의 바다",
+            "position": "top-right",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          }
+        ]
+      },
+      {
+        "title": "6대 추진전략",
+        "blocks": [
+          {
+            "block_type": "text",
+            "content": "1. 해양수산의 안전 강화\n① 안심하고 일하며 누리는 해양\n② 믿고 먹는 신선한 수산물\n③ 재난·재해 걱정 없는 안전한 해안",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "2. 머물고 싶은 어촌·연안 조성\n① 함께 잘 사는 어촌\n② 편리하고 매력 넘치는 섬\n③ 지역과 어우러지는 연안·항만 조성",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "3. 해양수산업의 디지털 전환\n① 해운·항만산업의 스마트화\n② 수산업의 미래산업화\n③ 해양수산업의 데이터 경제 활성화",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "4. 해양수산업의 질적 도약\n① 해양수산 新산업 시장 창출\n② 기존 사업의 혁신 성장 촉진\n③ 선순환 구조의 산업생태계 조성",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "5. 환경 친화적·합리적 해양 이용\n① 탈탄소·친환경의 쾌적한 항만 실현\n② 해양공간 활용·관리의 최적화\n③ 해양생태계의 다양성 보존",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "6. 국제협력을 선도하는 해양강국\n① \"K-해양수산\"으로 국제사회 상생 견인\n② 굳건한 해양안보로 해양영토 수호\n③ 해양협력으로 동북아 번영에 기여",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          }
+        ]
+      },
+      {
+        "title": "Key Findings",
+        "blocks": [
+          {
+            "block_type": "text",
+            "content": "■ 해양수산발전계획은\n 디지털, 친환경 등\n 산업의 전환을 전제로\n 안전과 성장을 주요\n 목표로 수립하고 있음\n\n• 6대 추진전략은 해양\n 물류, 수산업, 어촌\n 발전 등 주요 분야의\n 전략으로 구성\n\n• 해양수산 전분야에서\n 해양환경·생태계 보전,\n 복원, 정화 등 해양환경\n 영역 연계과제 포함\n\n■ 해양환경 직접과제는\n 환경 친화적, 합리적\n 해양 이용 전략의 3개\n 세부과제로 구성됨",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "✓ 정부 해양수산발전\n 기본계획은 디지털,\n 친환경, 탈탄소 전환을\n 기본 전제로 하고 있음\n\n✓ 해양환경 및 생태계\n 보전, 복원 관리 등\n 해양환경은 6대 전략 중\n 하나로 제시됨\n\n✓ 환경 친화적·합리적\n 해양 이용은 해양환경\n 이용, 보전, 관리 3개\n 세부과제로 구성\n\n✓ 해양수산 전반 영역의\n 추진전략은 해양환경\n 보전·복원 및 친환경\n 전환을 내포하고 있어,\n 해양환경이 전체\n 추진전략의 기반이 됨",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "footer": "Source: 제3차 해양수산발전 기본계획(2021~2030), 2021.01"
+}

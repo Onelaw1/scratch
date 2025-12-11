@@ -1,0 +1,105 @@
+{
+  "slide_type": "Content",
+  "slide_number": 52,
+  "title": "2. 내부 환경·역량 분석 - 해양환경정책과 공단 연혁 (2/2)",
+  "governing_message": "공단은 제4차 해양환경종합계획의 주관 수행기관으로 해양생태계 건강성 유지·보전, 기후변화 대응, 해양환경정보 시스템 등으로 사업 영역을 확대하였으며, 제5차 해양환경종합계획에 따라 역할과 위상을 새롭게 정립할 시점임",
+  "layout": {
+    "grid_type": "2-column",
+    "background_color": "#FFFFFF"
+  },
+  "content_data": {
+    "subtitle": null,
+    "date": null,
+    "client_name": null,
+    "framework_type": null,
+    "elements": null,
+    "sections": [
+      {
+        "title": "제4차 해양환경 종합계획",
+        "blocks": [
+          {
+            "block_type": "text",
+            "content": "• 육상기인 오염원 국가관리체계 확립 (해양환경 통합관리 체계)\n• 해양기인 오염 대응능력 확충 (예방적 관리, 오염방제 역량 강화)\n• 해양생태계 건강성 유지, 보전 (생태계 기반 관리 정착)\n• 기후친화적 해양환경 관리 강화 (기후변화 및 온실가스 저감 대응)\n• 해양환경정책 인프라 강화 (지역·민간 참여, 국제협력 강화)",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "• 대상 및 공간별 법 분리를 통한 법률·제도를 마련하고, 육상 오염원 등 관리체계 확립\n• 해양환경정책 관리대상 확대 : 오염 → 해양생태계, 생물자원 확대\n• 과학기술 기반 해양환경 관리 인프라 구축 : 해양환경측정망 및 해양수질자동측정소, 해양환경정보통합시스템, 선박 대기오염물질 관리시스템, 해양오염방제통합시스템 등 구축",
+            "position": "bottom-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          }
+        ]
+      },
+      {
+        "title": "제5차 해양환경 종합계획",
+        "blocks": [
+          {
+            "block_type": "text",
+            "content": "•(보전) 해양환경 매체별 관리 강화 : 해양의 가치를 높이기 위한 환경과 생태계에 대한 관리\n•(이용) 해양활동의 활용도 제고 : 쾌적한 해양환경을 국민 누구나 쉽게 접근하고 향유\n•(성장) 녹색산업의 영역으로 확대 : 해양환경 보전과 활용의 산업적 특성을 발굴하고 지원",
+            "position": "top-right",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "• 해양오염 예방·방제 : 1등급 해역 비율 증대, 해양환경 보호구역 확대, 해양쓰레기 감축·수거, 연안해역 평균수질 COD기준 II등급 유지\n• 해양생태계 복원·유지 : 갯벌복원 확대, 해양생물종 강화\n• 해양생활 육성 : 해양생태관광자원 확보 및 관광객 증대\n• 기후변화 대응 및 해양기술 육성 : 해양 탄소중립, 항만 초미세먼지 배출량 감축, 해양 바이오 산업 육성, 해양 친환경 산업 육성",
+            "position": "bottom-right",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          }
+        ]
+      },
+      {
+        "title": "공단 연혁",
+        "blocks": [
+          {
+            "block_type": "text",
+            "content": "●'11. 해양환경조사업무 개시\n■'13. 해양 방사성물질 감시센터 설치\n•'14. 침몰선박 관리사업 추진\n• '16. 국가해양환경교육센터 지정",
+            "position": "bottom-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "'17. 해양수산부문 국가온실가스 통계 산정기관 지정\n'18. 해양환경공단으로 기관명 변경\n●'19. 해양환경조사연구원 건립",
+            "position": "bottom-right",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "'21.\n“KOEM Vision 2030” 수립",
+            "position": "bottom-right",
+            "style": {
+              "is_bold": true,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "footer": "해양환경공단"
+}

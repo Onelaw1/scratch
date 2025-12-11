@@ -1,0 +1,45 @@
+{
+  "slide_type": "Data",
+  "slide_number": 193,
+  "title": "4. 경영목표 수립 - 경영목표 설정 ④ 재무건전성 제고 (2/3)",
+  "governing_message": "예외적인 경우를 제외한 18개 준시장형 공기업의 5년간 평균 영업이익률은 8.3%, 당기순이익률은 4.9%이며, 공단은 동 기간에 영업이익률 평균 -2.0%, 당기순이익률 평균 -0.3%로 손실을 기록함",
+  "layout": {
+    "grid_type": "2-column",
+    "background_color": null
+  },
+  "content_data": {
+    "subtitle": null,
+    "date": null,
+    "client_name": null,
+    "framework_type": null,
+    "elements": null,
+    "sections": [
+      {
+        "title": "공단과 준시장형 공기업의 영업이익률 및 당기순이익률 추이",
+        "blocks": [
+          {
+            "block_type": "chart",
+            "content": "준시장형공기업* 영업이익률 추이('16~'20)",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "chart",
+            "content": "준시장형공기업* 당기순이익률 추이('16~'20)",
+            "position": "top-right",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "footer": "*주택도시보증공사와 대한석탄공사를 제외한 18개 준시장형 공기업의 회계결산이익률 평균\n* Source: 각 기관 결산공시 자료 취합(알리오 공시 기준)"
+}

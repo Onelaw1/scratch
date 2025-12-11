@@ -1,0 +1,65 @@
+{
+  "slide_type": "Data",
+  "slide_number": 99,
+  "title": "4. 벤치마킹 - 미국 해양대기청 예산 추이",
+  "governing_message": "미국 해양대기청은 '18년 예산의 17%가 삭감되었으나 점차 회복하고 있으며, 전체 예산의 70%가 환경위성, 날씨, 해양수산 등 다수 수요자 또는 수혜자가 명확한 사업에 투입되어 수혜자를 늘리는 운영 방향성을 확인해 볼 수 있음",
+  "layout": {
+    "grid_type": "2-column",
+    "background_color": null
+  },
+  "content_data": {
+    "subtitle": null,
+    "date": null,
+    "client_name": null,
+    "framework_type": null,
+    "elements": null,
+    "sections": [
+      {
+        "title": "NOAA 5개년 주요 사업별 예산 추이",
+        "blocks": [
+          {
+            "block_type": "chart",
+            "content": "Line chart of NOAA budget allocation for 5 years",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          }
+        ]
+      },
+      {
+        "title": "NOAA 주요사업 예산 추이 및 운영 방향성",
+        "blocks": [
+          {
+            "block_type": "text",
+            "content": "1 국가환경위성·데이터·정보서비스 (NESDIS)\n2 국가날씨서비스 (NWS)\n3 국가해양수산서비스 (NMFS)\n4 국가해양서비스 (NOS)\n5 해양대기조사 (OAR)\n6 해상항공관리 오피스 (OMAO)\n7 미션 서포트 (MS)",
+            "position": "top-right",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          }
+        ]
+      },
+      {
+        "title": "Key Findings",
+        "blocks": [
+          {
+            "block_type": "text",
+            "content": "✓ 환경위성, 날씨, 해양수산 서비스가 전체 예산의 70%\n수준이며, 해양환경 분야 과제를 주로 다루고 있는\n국가해양서비스는 전체 8% 정도의 예산이 배정됨\n✓ 기상정보, 날씨 등 수요자가 다수인 서비스나 수산업\n종사자 등 직접 수혜자가 명확한 사업들에 주로 예산을\n편성하여 수혜자를 늘리는 방향으로 운영되고 있음",
+            "position": "bottom-right",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "footer": null
+}

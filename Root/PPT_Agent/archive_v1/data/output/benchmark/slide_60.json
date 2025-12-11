@@ -1,0 +1,260 @@
+{
+  "slide_type": "Data",
+  "slide_number": 60,
+  "title": "2. 내부 환경·역량 분석 - 조직구조 관련 현안 이슈 (1/4)",
+  "governing_message": "해양보전본부는 해양정화·해양생태복원에서, 해양이용(개발·활용), 해외지원, 조사·연구로 사업부서가 확대되었는데, 부서간 업무의 공통분모가 크지 않아 공유와 협업 수요가 낮고, 시너지 창출이나 효율화, 소통과 공유를 저해할 수 있음",
+  "layout": {
+    "grid_type": "custom",
+    "background_color": "#FFFFFF"
+  },
+  "content_data": {
+    "subtitle": null,
+    "date": null,
+    "client_name": null,
+    "framework_type": null,
+    "elements": null,
+    "sections": [
+      {
+        "title": "Timeline",
+        "blocks": [
+          {
+            "block_type": "text",
+            "content": "해양보전본부 부서 구성 : 공통분모 크지 않은 다수 사업부서 편성",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 16
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "사업 영역",
+            "position": "top-left",
+            "style": {
+              "is_bold": true,
+              "color_hex": "#FFFFFF",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "~2017",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "2018",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "2019",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "2020",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "2021",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "해양정화",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "해양폐기물\n관리센터\n해양정화팀",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "해양생태\n복원",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "해양보호구역팀",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "해양이용\n(개발·활용)",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "해외지원",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "해양환경\n조사·연구",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "공통분모 크지 않은\n새로운 영역으로의\n사업 및 부서 확장",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "국제협력팀\nCEO 직속에서\n편제 변경",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "골재단지관리팀\n해양사업본부에서\n편제 변경",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "해양환경\n조사연구원\n직속 독립기관에서\n본부소속 편제 변경",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "해양공간계획TF\n신규사업, 부서 신설",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          }
+        ]
+      },
+      {
+        "title": "Key Findings",
+        "blocks": [
+          {
+            "block_type": "text",
+            "content": "✓ 기존 정화·복원 중심\n사업에서 개발·이용,\n해외지원, 조사·연구 등\n업무 공통분모가 크지\n않은 영역으로 사업과\n부서 확장",
+            "position": "top-right",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "✓ 업무의 공통분모가\n부족하여 부서간 정보\n공유나 협업의 필요성\n크지 않음",
+            "position": "top-right",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "✓ 부서간 시너지 창출,\n공유를 통한 업무\n효율화 등 본부 내\n운영효율 창출 어려움",
+            "position": "top-right",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "✓ 부서 내 소통과 공유\n부족에 따른 조직문화\n저해 우려",
+            "position": "bottom-right",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "footer": "59"
+}

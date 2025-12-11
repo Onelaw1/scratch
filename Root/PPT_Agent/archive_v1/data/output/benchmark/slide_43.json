@@ -1,0 +1,70 @@
+{
+  "slide_type": "Data",
+  "slide_number": 43,
+  "title": "1. 외부 환경분석 - 항만 물동량 추이",
+  "governing_message": "항만물동량은 코로나19로 인한 급격한 물동량 감소 및 '12~'19년 연간 평균 2.9%의 저조한 증가율로 경제 저성장의 영향을 확인할 수 있으며, 예선 등 공단의 항만물류 연관 사업의 운영계획에 반영이 필요함",
+  "layout": {
+    "grid_type": "custom",
+    "background_color": "#FFFFFF"
+  },
+  "content_data": {
+    "subtitle": null,
+    "date": null,
+    "client_name": null,
+    "framework_type": null,
+    "elements": null,
+    "sections": [
+      {
+        "title": null,
+        "blocks": [
+          {
+            "block_type": "chart",
+            "content": "전국 무역항 항만물동량 추이 ('06~'20) showing 물동량(억톤) and 증감율(%)",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          }
+        ]
+      },
+      {
+        "title": "Key Findings",
+        "blocks": [
+          {
+            "block_type": "text",
+            "content": "✓ 항만 물동량은 '09년 이후 증가하는 추이를 보였으나, '20년 코로나19로 인한 경기침체 및 무역량 감소에 따라 항만물동량도 8.9% 감소한 것으로 나타남",
+            "position": "top-right",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "✓ 금융위기 이후, 물동량은 지속 증가 추세를 보이나, 그 증가율 '12~'19년 평균 2.9%로 증가율이 높지 않아 경제 저성장의 영향을 확인할 수 있음",
+            "position": "top-right",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "✓ 항만 물동량 변화에 따라 영향을 받을 수 있는 예선 사업 등의 운영계획에서 물동량 증가율 감소에 따른 경쟁의 지속과 성장의 제한 반영 필요함",
+            "position": "top-right",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "footer": "해양환경공단"
+}

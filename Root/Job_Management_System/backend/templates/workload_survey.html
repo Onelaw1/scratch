@@ -1,0 +1,398 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="max-w-7xl mx-auto">
+    <div class="md:flex md:items-center md:justify-between mb-8">
+        <div class="flex-1 min-w-0">
+            <h2 class="text-2xl font-bold leading-7 text-slate-900 sm:text-3xl sm:truncate">업무량조사 (Workload Survey)</h2>
+            <p class="mt-1 text-sm text-slate-500">직원별 업무량을 조사하고 연간 근무시간을 검증합니다.</p>
+        </div>
+        <div class="mt-4 flex md:mt-0 md:ml-4 space-x-2">
+            <button type="button" onclick="openSurveyModal()"
+                class="inline-flex items-center px-4 py-2 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-sky-600 hover:bg-sky-700">
+                새 조사 기간 생성
+            </button>
+        </div>
+    </div>
+
+    <!-- Time Validation Dashboard -->
+    <div class="bg-white shadow rounded-lg mb-6">
+        <div class="px-4 py-5 sm:p-6">
+            <h3 class="text-lg font-medium text-slate-900 mb-4">시간 검증 대시보드</h3>
+            <div class="grid grid-cols-1 gap-5 sm:grid-cols-4">
+                <div class="bg-slate-50 overflow-hidden rounded-lg p-4">
+                    <dt class="text-sm font-medium text-slate-500">표준 연간 근무시간</dt>
+                    <dd class="mt-1 text-2xl font-semibold text-slate-900">1,920h</dd>
+                    <p class="mt-1 text-xs text-slate-500">40시간/주 × 48주</p>
+                </div>
+                <div class="bg-green-50 overflow-hidden rounded-lg p-4">
+                    <dt class="text-sm font-medium text-green-700">정상 범위</dt>
+                    <dd class="mt-1 text-2xl font-semibold text-green-900" id="validCount">0</dd>
+                    <p class="mt-1 text-xs text-green-600">1,536h - 2,304h</p>
+                </div>
+                <div class="bg-amber-50 overflow-hidden rounded-lg p-4">
+                    <dt class="text-sm font-medium text-amber-700">과다 배정</dt>
+                    <dd class="mt-1 text-2xl font-semibold text-amber-900" id="overCount">0</dd>
+                    <p class="mt-1 text-xs text-amber-600">&gt; 2,304h</p>
+                </div>
+                <div class="bg-red-50 overflow-hidden rounded-lg p-4">
+                    <dt class="text-sm font-medium text-red-700">과소 배정</dt>
+                    <dd class="mt-1 text-2xl font-semibold text-red-900" id="underCount">0</dd>
+                    <p class="mt-1 text-xs text-red-600">&lt; 1,536h</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Employee Workload List -->
+    <div class="bg-white shadow overflow-hidden sm:rounded-lg">
+        <div class="px-4 py-5 sm:p-6">
+            <h3 class="text-lg font-medium text-slate-900 mb-4">직원별 업무량</h3>
+            <div class="overflow-x-auto">
+                <table class="min-w-full divide-y divide-slate-200">
+                    <thead class="bg-slate-50">
+                        <tr>
+                            <th class="px-6 py-3 text-left text-xs font-medium text-slate-500 uppercase tracking-wider">
+                                직원명</th>
+                            <th class="px-6 py-3 text-left text-xs font-medium text-slate-500 uppercase tracking-wider">
+                                부서</th>
+                            <th class="px-6 py-3 text-left text-xs font-medium text-slate-500 uppercase tracking-wider">
+                                과업 수</th>
+                            <th class="px-6 py-3 text-left text-xs font-medium text-slate-500 uppercase tracking-wider">
+                                연간 총 시간</th>
+                            <th class="px-6 py-3 text-left text-xs font-medium text-slate-500 uppercase tracking-wider">
+                                상태</th>
+                            <th class="px-6 py-3 text-left text-xs font-medium text-slate-500 uppercase tracking-wider">
+                                작업</th>
+                        </tr>
+                    </thead>
+                    <tbody id="employeeList" class="bg-white divide-y divide-slate-200">
+                        <tr>
+                            <td colspan="6" class="px-6 py-4 text-center text-slate-500">
+                                직원 데이터를 불러오는 중...
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Workload Entry Modal -->
+<div id="workloadModal" class="fixed z-10 inset-0 overflow-y-auto hidden" aria-labelledby="modal-title" role="dialog"
+    aria-modal="true">
+    <div class="flex items-end justify-center min-h-screen pt-4 px-4 pb-20 text-center sm:block sm:p-0">
+        <div class="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity" onclick="closeWorkloadModal()"></div>
+        <span class="hidden sm:inline-block sm:align-middle sm:h-screen">&#8203;</span>
+        <div
+            class="inline-block align-bottom bg-white rounded-lg text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:align-middle sm:max-w-2xl sm:w-full">
+            <div class="bg-white px-4 pt-5 pb-4 sm:p-6 sm:pb-4">
+                <div class="sm:flex sm:items-start">
+                    <div class="mt-3 text-center sm:mt-0 sm:ml-4 sm:text-left w-full">
+                        <h3 class="text-lg leading-6 font-medium text-gray-900" id="modal-title">업무량 입력</h3>
+                        <div class="mt-4">
+                            <div class="mb-4 p-3 bg-slate-50 rounded-md">
+                                <p class="text-sm text-slate-700"><strong>직원:</strong> <span id="employeeName">-</span>
+                                    <span class="mx-2">|</span>
+                                    <strong>현재 총 시간:</strong> <span id="currentTotalHours"
+                                        class="font-bold text-sky-600">0.0</span>h
+                                </p>
+                            </div>
+
+                            <div id="taskEntries" class="max-h-96 overflow-y-auto pr-2">
+                                <!-- Tasks will be inserted here -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-gray-50 px-4 py-3 sm:px-6 sm:flex sm:flex-row-reverse">
+                <button type="button" onclick="submitWorkload()"
+                    class="w-full inline-flex justify-center rounded-md border border-transparent shadow-sm px-4 py-2 bg-sky-600 text-base font-medium text-white hover:bg-sky-700 sm:ml-3 sm:w-auto sm:text-sm">
+                    저장
+                </button>
+                <button type="button" onclick="closeWorkloadModal()"
+                    class="mt-3 w-full inline-flex justify-center rounded-md border border-gray-300 shadow-sm px-4 py-2 bg-white text-base font-medium text-gray-700 hover:bg-gray-50 sm:mt-0 sm:ml-3 sm:w-auto sm:text-sm">
+                    취소
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Survey Period Modal -->
+<div id="surveyModal" class="fixed z-10 inset-0 overflow-y-auto hidden">
+    <div class="flex items-end justify-center min-h-screen pt-4 px-4 pb-20 text-center sm:block sm:p-0">
+        <div class="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity" onclick="closeSurveyModal()"></div>
+        <span class="hidden sm:inline-block sm:align-middle sm:h-screen">&#8203;</span>
+        <div
+            class="inline-block align-bottom bg-white rounded-lg text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:align-middle sm:max-w-lg sm:w-full">
+            <div class="bg-white px-4 pt-5 pb-4 sm:p-6 sm:pb-4">
+                <h3 class="text-lg font-medium text-gray-900 mb-4">새 조사 기간 생성</h3>
+                <form id="surveyForm" class="space-y-4">
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700">조사 기간명</label>
+                        <input type="text" id="survey_name" required
+                            class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-sky-500 focus:border-sky-500 sm:text-sm">
+                    </div>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700">시작일</label>
+                            <input type="date" id="start_date" required
+                                class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-sky-500 focus:border-sky-500 sm:text-sm">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700">종료일</label>
+                            <input type="date" id="end_date" required
+                                class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-sky-500 focus:border-sky-500 sm:text-sm">
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="bg-gray-50 px-4 py-3 sm:px-6 sm:flex sm:flex-row-reverse">
+                <button type="button" onclick="submitSurvey()"
+                    class="w-full inline-flex justify-center rounded-md border border-transparent shadow-sm px-4 py-2 bg-sky-600 text-base font-medium text-white hover:bg-sky-700 sm:ml-3 sm:w-auto sm:text-sm">
+                    생성
+                </button>
+                <button type="button" onclick="closeSurveyModal()"
+                    class="mt-3 w-full inline-flex justify-center rounded-md border border-gray-300 shadow-sm px-4 py-2 bg-white text-base font-medium text-gray-700 hover:bg-gray-50 sm:mt-0 sm:ml-3 sm:w-auto sm:text-sm">
+                    취소
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    let employees = [];
+    let currentEmployee = null;
+
+    async function loadEmployees() {
+        try {
+            const response = await fetch('/job-centric/workload/survey');
+            employees = await response.json();
+            renderEmployeeList();
+            updateValidationDashboard();
+        } catch (e) {
+            console.error('Error loading employees:', e);
+            document.getElementById('employeeList').innerHTML = `<tr><td colspan="6" class="px-6 py-4 text-center text-red-500">데이터 로드 실패</td></tr>`;
+        }
+    }
+
+    function openSurveyModal() {
+        document.getElementById('surveyModal').classList.remove('hidden');
+    }
+
+    function closeSurveyModal() {
+        document.getElementById('surveyModal').classList.add('hidden');
+    }
+
+    function submitSurvey() {
+        const name = document.getElementById('survey_name').value;
+        const startDate = document.getElementById('start_date').value;
+        const endDate = document.getElementById('end_date').value;
+
+        if (!name || !startDate || !endDate) {
+            alert('모든 필드를 입력해주세요.');
+            return;
+        }
+
+        console.log('Creating survey:', { name, startDate, endDate });
+        alert('조사 기간이 생성되었습니다 (Mock).');
+        closeSurveyModal();
+    }
+
+    function openWorkloadModal(employeeId) {
+        currentEmployee = employees.find(e => e.id === employeeId);
+        if (!currentEmployee) return;
+
+        document.getElementById('employeeName').textContent = currentEmployee.name;
+        document.getElementById('currentTotalHours').textContent = currentEmployee.totalHours ? currentEmployee.totalHours.toFixed(1) : '0.0';
+
+        const container = document.getElementById('taskEntries');
+        container.innerHTML = '';
+
+        if (!currentEmployee.tasks || currentEmployee.tasks.length === 0) {
+            container.innerHTML = '<p class="text-gray-500 text-center py-4">할당된 표준 과업이 없습니다.</p>';
+        } else {
+            currentEmployee.tasks.forEach(task => {
+                const entry = document.createElement('div');
+                entry.className = 'mb-4 p-4 border rounded-lg bg-gray-50';
+                entry.innerHTML = `
+                    <div class="grid grid-cols-1 gap-y-6 gap-x-4 sm:grid-cols-6">
+                        <div class="sm:col-span-3">
+                            <label class="block text-sm font-medium text-gray-700">과업명</label>
+                            <input type="text" value="${task.name}" readonly class="mt-1 block w-full bg-gray-100 border-gray-300 rounded-md shadow-sm sm:text-sm">
+                            <input type="hidden" class="task-id" value="${task.id}">
+                        </div>
+                        <div class="sm:col-span-3">
+                            <label class="block text-sm font-medium text-gray-700">빈도</label>
+                            <input type="text" value="${task.frequency}" readonly class="mt-1 block w-full bg-gray-100 border-gray-300 rounded-md shadow-sm sm:text-sm">
+                        </div>
+                        <div class="sm:col-span-3">
+                            <label class="block text-sm font-medium text-gray-700">회당 소요시간 (h)</label>
+                            <input type="number" step="0.1" value="${task.hoursPerOccurrence}" class="task-hours mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-sky-500 focus:border-sky-500 sm:text-sm">
+                        </div>
+                        <div class="sm:col-span-3">
+                            <label class="block text-sm font-medium text-gray-700">연간 총 시간 (h)</label>
+                            <input type="text" value="${task.totalHours}" readonly class="task-total mt-1 block w-full bg-gray-100 border-gray-300 rounded-md shadow-sm sm:text-sm font-bold text-sky-600">
+                        </div>
+                    </div>
+                `;
+
+                const hoursInput = entry.querySelector('.task-hours');
+                const totalInput = entry.querySelector('.task-total');
+                const frequency = task.frequency;
+
+                const calculateTotal = () => {
+                    const hours = parseFloat(hoursInput.value) || 0;
+                    let occurrences = 0;
+
+                    switch (frequency) {
+                        case 'DAILY': occurrences = 240; break; // ~240 working days
+                        case 'WEEKLY': occurrences = 48; break;
+                        case 'MONTHLY': occurrences = 12; break;
+                        case 'YEARLY': occurrences = 1; break;
+                        default: occurrences = 0;
+                    }
+
+                    const total = hours * occurrences;
+                    totalInput.value = total.toFixed(1);
+                    updateTotalHours();
+                };
+
+                hoursInput.addEventListener('input', calculateTotal);
+
+                container.appendChild(entry);
+                // Initial calculation if needed, though values are pre-filled
+            });
+        }
+
+        document.getElementById('workloadModal').classList.remove('hidden');
+    }
+
+    function closeWorkloadModal() {
+        document.getElementById('workloadModal').classList.add('hidden');
+        currentEmployee = null;
+    }
+
+    function updateTotalHours() {
+        const entries = document.querySelectorAll('#taskEntries .task-total');
+        let total = 0;
+        entries.forEach(entry => {
+            total += parseFloat(entry.value) || 0;
+        });
+        document.getElementById('currentTotalHours').textContent = total.toFixed(1);
+    }
+
+    async function submitWorkload() {
+        if (!currentEmployee) return;
+
+        const tasks = [];
+        const entryElements = document.querySelectorAll('#taskEntries > div');
+
+        entryElements.forEach(el => {
+            const id = el.querySelector('.task-id').value;
+            const hours = parseFloat(el.querySelector('.task-hours').value) || 0;
+            const total = parseFloat(el.querySelector('.task-total').value) || 0;
+
+            tasks.push({
+                id: id,
+                hoursPerOccurrence: hours,
+                totalHours: total
+            });
+        });
+
+        const totalHours = parseFloat(document.getElementById('currentTotalHours').textContent) || 0;
+
+        const updatedData = {
+            tasks: tasks,
+            totalHours: totalHours
+        };
+
+        try {
+            const response = await fetch(`/job-centric/workload/survey/${currentEmployee.id}`, {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(updatedData)
+            });
+
+            if (response.ok) {
+                alert('업무량이 저장되었습니다.');
+                closeWorkloadModal();
+                loadEmployees(); // Reload to refresh list
+            } else {
+                alert('저장 실패');
+            }
+        } catch (e) {
+            console.error(e);
+            alert('오류 발생');
+        }
+    }
+
+    function renderEmployeeList() {
+        const tbody = document.getElementById('employeeList');
+        if (employees.length === 0) {
+            tbody.innerHTML = `<tr><td colspan="6" class="px-6 py-4 text-center text-slate-500">데이터가 없습니다.</td></tr>`;
+            return;
+        }
+
+        tbody.innerHTML = employees.map(emp => {
+            const status = getValidationStatus(emp.totalHours);
+            return `
+                <tr>
+                    <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-slate-900">${emp.name}</td>
+                    <td class="px-6 py-4 whitespace-nowrap text-sm text-slate-500">${emp.department}</td>
+                    <td class="px-6 py-4 whitespace-nowrap text-sm text-slate-500">${emp.tasks ? emp.tasks.length : 0}</td>
+                    <td class="px-6 py-4 whitespace-nowrap text-sm text-slate-900 font-medium">${emp.totalHours.toFixed(1)}h</td>
+                    <td class="px-6 py-4 whitespace-nowrap">
+                        <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full ${status.class}">
+                            ${status.label}
+                        </span>
+                    </td>
+                    <td class="px-6 py-4 whitespace-nowrap text-sm font-medium">
+                        <button onclick="openWorkloadModal('${emp.id}')" class="text-sky-600 hover:text-sky-900">입력</button>
+                    </td>
+                </tr>
+            `;
+        }).join('');
+    }
+
+    function getValidationStatus(hours) {
+        const expected = 1920;
+        const tolerance = 0.2;
+        const min = expected * (1 - tolerance);
+        const max = expected * (1 + tolerance);
+
+        if (hours >= min && hours <= max) {
+            return { label: '정상', class: 'bg-green-100 text-green-800' };
+        } else if (hours > max) {
+            return { label: '과다', class: 'bg-amber-100 text-amber-800' };
+        } else {
+            return { label: '과소', class: 'bg-red-100 text-red-800' };
+        }
+    }
+
+    function updateValidationDashboard() {
+        let validCount = 0, overCount = 0, underCount = 0;
+        const expected = 1920;
+        const tolerance = 0.2;
+        const min = expected * (1 - tolerance);
+        const max = expected * (1 + tolerance);
+
+        employees.forEach(emp => {
+            if (emp.totalHours >= min && emp.totalHours <= max) validCount++;
+            else if (emp.totalHours > max) overCount++;
+            else underCount++;
+        });
+
+        document.getElementById('validCount').textContent = validCount;
+        document.getElementById('overCount').textContent = overCount;
+        document.getElementById('underCount').textContent = underCount;
+    }
+
+    // Initialize
+    loadEmployees();
+</script>
+{% endblock %}

@@ -1,0 +1,50 @@
+{
+  "slide_type": "Framework",
+  "slide_number": 38,
+  "title": "1. 외부 환경분석 - 국가 해양방제체계 개편",
+  "governing_message": "국가 해양방제를 총괄하는 해양경찰청은 해양방제체계를 국가-공공-민간 통합방제체계로 개편하면서, 공단에 민간 방제업체와 협력을 통한 상시 민간협력 공동대응 체계를 주도적으로 구축, 운영하는 역할을 부여하고 있음",
+  "layout": {
+    "grid_type": "2-column",
+    "background_color": "#FFFFFF"
+  },
+  "content_data": {
+    "subtitle": null,
+    "date": null,
+    "client_name": null,
+    "framework_type": "Process",
+    "elements": [
+      {
+        "label": "해양경찰청",
+        "description": "방제계획, 방제지시, 지원요청",
+        "position": "step-1"
+      },
+      {
+        "label": "해양환경공단",
+        "description": "",
+        "position": "step-2"
+      },
+      {
+        "label": "방제\n업체",
+        "description": "",
+        "position": "step-3"
+      },
+      {
+        "label": "잠수\n업체",
+        "description": "",
+        "position": "step-4"
+      },
+      {
+        "label": "인양\n업체",
+        "description": "",
+        "position": "step-5"
+      },
+      {
+        "label": "예인\n업체",
+        "description": "",
+        "position": "step-6"
+      }
+    ],
+    "sections": null
+  },
+  "footer": ""
+}

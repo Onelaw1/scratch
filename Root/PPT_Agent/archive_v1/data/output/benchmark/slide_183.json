@@ -1,0 +1,45 @@
+{
+  "slide_type": "Data",
+  "slide_number": 183,
+  "title": "4. 경영목표 수립 - 경영목표 유형 분류",
+  "governing_message": "경영목표 설정 시 '전략 방향성', '집적된 데이터', '데이터의 활용', '정책·경제 환경' 요인을 기준으로 목표설정 유형을 분류하고, 각 지표에 적합한 유형별 목표설정 방식을 적용하여 경영목표를 설정함",
+  "layout": {
+    "grid_type": "custom",
+    "background_color": "#FFFFFF"
+  },
+  "content_data": {
+    "subtitle": null,
+    "date": null,
+    "client_name": null,
+    "framework_type": null,
+    "elements": null,
+    "sections": [
+      {
+        "title": "경영목표 유형 분류",
+        "blocks": [
+          {
+            "block_type": "table",
+            "content": "Table outlining different goal-setting types based on factors like strategic alignment, data availability, and environmental impact predictability.",
+            "position": "center",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "*경영진 의지에 의한 전략형 목표유형은 과거 데이터 분석, 외부 데이터 접근성을 확인, 참고 정보로 활용함",
+            "position": "bottom-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "footer": "KOEM 해양환경공단 182"
+}

@@ -1,0 +1,90 @@
+{
+  "slide_type": "Data",
+  "slide_number": 97,
+  "title": "4. 벤치마킹 - 한국환경공단 수입-지출 예산 구조",
+  "governing_message": "한국환경공단 '20년 예산 1.45조 원 중 정부지원이 99.9%이며, 출연금 1,230억 원(8.5%), 사업수입 9,751억 원(67.3%), 위탁수입 3,146억 원(21.7%)으로 구성되었으며, 전체 지출 중 인건비는 1,799억 원(12.4%) 규모로 책정됨",
+  "layout": {
+    "grid_type": "2-column",
+    "background_color": "#FFFFFF"
+  },
+  "content_data": {
+    "subtitle": null,
+    "date": null,
+    "client_name": null,
+    "framework_type": null,
+    "elements": null,
+    "sections": [
+      {
+        "title": "한국환경공단 수입-지출 예산 (2020년)",
+        "blocks": [
+          {
+            "block_type": "chart",
+            "content": "지출예산 ('20) (단위: 억원)\n기타, 1\n사업비, 12,601\n경상운영비, 78\n인건비, 1,799",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "table",
+            "content": "구분\n인건비\n경상운영비\n사업비\n기타\n지출 합계\n'20 예산\n1,799\n78\n12,602\n1\n14,480\n구성비\n12.4%\n0.5%\n87.0%\n0.0%\n100.0%",
+            "position": "bottom-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "✓ 한국환경공단은 '20년 1.45조 원의 예산 중 사업비에 1.26조 원을 지출할 계획이며, 인건비로 1,799억 원(12.4%)을 지출할 계획을 수립하고 있음\n(참고로, 해양환경공단 '20 결산 인건비는 528억원(41.6%)임)",
+            "position": "bottom-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          }
+        ]
+      },
+      {
+        "title": null,
+        "blocks": [
+          {
+            "block_type": "chart",
+            "content": "수입예산 ('20) (단위: 억원)\n부대수입, 10\n위탁수입, 3,146\n사업수입, 9,751\n보조금, 341\n출연금, 1,230",
+            "position": "top-right",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "table",
+            "content": "구분\n직접지원\n간접지원\n소계\n부대수입\n수입 합계\n'20 예산\n1,230\n342\n9,751\n3,146\n14,469\n10\n14,480\n구성비\n8.5%\n2.4%\n67.3%\n21.7%\n99.9%\n0.1%\n100.0%",
+            "position": "bottom-right",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "✓ 한국환경공단은 전체 수입의 99.9%를 정부 지원으로 조달을 계획하고 있으며, 이 중 직접지원 출연금은 1,230억 원 규모이고, 사업수입과 위탁수입이 각각 9,751억 원, 3,146억 원 규모로 구성되어 있음",
+            "position": "bottom-right",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "footer": "96"
+}

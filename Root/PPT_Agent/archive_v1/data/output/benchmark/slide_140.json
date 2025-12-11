@@ -1,0 +1,145 @@
+{
+  "slide_type": "Framework",
+  "slide_number": 140,
+  "title": "2. 가치체계·전략체계 재정립 -핵심가치 후보案 선정",
+  "governing_message": "핵심가치 리뉴얼 구성 편성에서 전문성, 혁신성, 개방성을 동시에 포괄하고 있는 새로운 핵심가치안 2개와 기존안을 핵심가치 후보로 선정함",
+  "layout": {
+    "grid_type": "custom",
+    "background_color": "#FFFFFF"
+  },
+  "content_data": {
+    "subtitle": null,
+    "date": null,
+    "client_name": null,
+    "framework_type": "List",
+    "elements": [
+      {
+        "label": "핵심가치 리뉴얼 구성",
+        "description": "주요사업과\n미래사업\n가치항목\n(자율선정)",
+        "position": "left"
+      },
+      {
+        "label": "전문성",
+        "description": null,
+        "position": "left"
+      },
+      {
+        "label": "혁신성",
+        "description": null,
+        "position": "left"
+      },
+      {
+        "label": "개방성",
+        "description": null,
+        "position": "left"
+      },
+      {
+        "label": "지정된\n가치항목\n: 안전,\n사회적가치",
+        "description": null,
+        "position": "left"
+      },
+      {
+        "label": "사회적가치",
+        "description": null,
+        "position": "left"
+      },
+      {
+        "label": "안전",
+        "description": null,
+        "position": "left"
+      },
+      {
+        "label": "후보안 “A”",
+        "description": null,
+        "position": "top"
+      },
+      {
+        "label": "전문역량",
+        "description": null,
+        "position": "top"
+      },
+      {
+        "label": "열린혁신",
+        "description": null,
+        "position": "top"
+      },
+      {
+        "label": "협력성장",
+        "description": null,
+        "position": "top"
+      },
+      {
+        "label": "안전우선",
+        "description": null,
+        "position": "top"
+      },
+      {
+        "label": "기존안",
+        "description": null,
+        "position": "center"
+      },
+      {
+        "label": "전문역량",
+        "description": null,
+        "position": "center"
+      },
+      {
+        "label": "혁신선도",
+        "description": null,
+        "position": "center"
+      },
+      {
+        "label": "윤리의식",
+        "description": null,
+        "position": "center"
+      },
+      {
+        "label": "안전우선",
+        "description": null,
+        "position": "center"
+      },
+      {
+        "label": "후보안 “B”",
+        "description": null,
+        "position": "right"
+      },
+      {
+        "label": "프로정신",
+        "description": null,
+        "position": "right"
+      },
+      {
+        "label": "열린혁신",
+        "description": null,
+        "position": "right"
+      },
+      {
+        "label": "안전우선",
+        "description": null,
+        "position": "right"
+      },
+      {
+        "label": "인재중심",
+        "description": null,
+        "position": "right"
+      },
+      {
+        "label": "혁신선도",
+        "description": null,
+        "position": "right"
+      },
+      {
+        "label": "창의도전",
+        "description": null,
+        "position": "right"
+      },
+      {
+        "label": "윤리경영",
+        "description": null,
+        "position": "right"
+      }
+    ],
+    "sections": null
+  },
+  "footer": "139"
+}

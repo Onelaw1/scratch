@@ -1,0 +1,70 @@
+{
+  "slide_type": "Data",
+  "slide_number": 15,
+  "title": "1. 외부 환경분석 - 제5차 해양환경종합계획 10대 핵심과제",
+  "governing_message": "10대 핵심과제 중 해양환경부분은 현재 공단이 주관하고 있으며, 기후변화 관련 과제는 공단에 주관 역할이 부여될\n것으로 예상되며, 해양생태관광, 해양바이오산업 과제는 공단이 지원하는 과제로 분류해 볼 수 있음",
+  "layout": {
+    "grid_type": "custom",
+    "background_color": "#FFFFFF"
+  },
+  "content_data": {
+    "subtitle": null,
+    "date": null,
+    "client_name": null,
+    "framework_type": null,
+    "elements": null,
+    "sections": [
+      {
+        "title": "제5차 해양환경종합계획 10대 핵심과제",
+        "blocks": [
+          {
+            "block_type": "table",
+            "content": "See OCR output for table data - 10 rows with columns: 과제, 과제 주요 내용",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          }
+        ]
+      },
+      {
+        "title": null,
+        "blocks": [
+          {
+            "block_type": "text",
+            "content": "공단 주관 예상 과제\n✓ 현재 주도적 추진 주체가\n없는 핵심과제로, 공단에\n주관 역할이 부여될 것으로\n예상되는 과제",
+            "position": "top-right",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "공단 주관 과제\n✓ 공단이 핵심과제의 수행\n주체로서 주도적으로 추진,\n수행해야 하는 과제\n✓ 공단이 이미 수행하고\n있거나, 수행을 주관하도록\n역할이 부여된 과제",
+            "position": "top-right",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "공단 지원 과제\n✓ 공단이 핵심과제의 추진과\n수행을 지원하는 역할",
+            "position": "top-right",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "footer": "*Source : 제5차 해양환경종합계획(2021~2030), 2021.01, 해양수산부"
+}

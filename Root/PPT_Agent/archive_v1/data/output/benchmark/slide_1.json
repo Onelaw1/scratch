@@ -1,0 +1,19 @@
+{
+  "slide_type": "Cover",
+  "slide_number": 1,
+  "title": "2030 중장기 전략경영계획 수립 용역",
+  "governing_message": null,
+  "layout": {
+    "grid_type": "1-column",
+    "background_color": "string (hex)"
+  },
+  "content_data": {
+    "subtitle": "최종보고서",
+    "date": "2021.06",
+    "client_name": "KOEM 해양환경공단",
+    "framework_type": null,
+    "elements": null,
+    "sections": null
+  },
+  "footer": "This report is solely for the use of client personnel. No part of it may be circulated, quoted, or reproduced for distribution outside the client organization without prior written approval."
+}

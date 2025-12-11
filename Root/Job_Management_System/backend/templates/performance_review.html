@@ -1,0 +1,265 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="space-y-8 animate-fade-in-up">
+    <!-- Header -->
+    <div class="flex justify-between items-center">
+        <div>
+            <h1 class="text-3xl font-extrabold text-slate-900 tracking-tight">인사평가</h1>
+            <p class="text-lg text-slate-500 font-medium">연간 성과 목표 수립 및 평가 관리</p>
+        </div>
+        <button onclick="createReview()"
+            class="bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white px-6 py-2.5 rounded-xl shadow-lg hover:shadow-xl transition-all font-medium transform hover:-translate-y-0.5">
+            새 평가 시작
+        </button>
+    </div>
+
+    <!-- Active Review Card -->
+    <div id="activeReview" class="hidden glass rounded-3xl p-8 border border-white/50">
+        <div class="flex justify-between items-start mb-8">
+            <div>
+                <h2 class="text-2xl font-bold text-slate-900">2024년 정기 인사평가</h2>
+                <span
+                    class="inline-flex items-center px-3 py-1 rounded-full text-xs font-bold bg-yellow-100 text-yellow-800 mt-2 shadow-sm">
+                    작성 중 (DRAFT)
+                </span>
+            </div>
+            <div class="text-right">
+                <p class="text-sm font-semibold text-slate-500 uppercase tracking-wide">종합 점수</p>
+                <div class="flex items-baseline justify-end gap-2">
+                    <p class="text-5xl font-extrabold text-slate-900 tracking-tight" id="totalScore">0.0</p>
+                    <p class="text-xl font-medium text-slate-400" id="gradeLabel">-</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Goals Section (Self-Objective Statement) -->
+        <div class="space-y-6">
+            <div class="flex justify-between items-center border-b border-slate-200/50 pb-4">
+                <div class="flex items-center gap-2">
+                    <div class="p-2 bg-teal-100 rounded-lg text-teal-600">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z">
+                            </path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-800">자기 목표기술서 (성과 목표)</h3>
+                </div>
+                <button onclick="openGoalModal()"
+                    class="text-sm text-blue-600 hover:text-blue-800 font-semibold flex items-center gap-1 transition-colors">
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"></path>
+                    </svg>
+                    목표 추가
+                </button>
+            </div>
+
+            <div id="goalsList" class="space-y-4">
+                <!-- Goals will be populated here -->
+                <div class="text-center py-12 bg-white/30 rounded-2xl border border-dashed border-slate-300">
+                    <p class="text-slate-500 font-medium">등록된 목표가 없습니다.</p>
+                    <p class="text-sm text-slate-400 mt-1">'목표 추가' 버튼을 눌러 작성해주세요.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Actions -->
+        <div class="mt-10 flex justify-end space-x-4 border-t border-slate-200/50 pt-8">
+            <button onclick="calculateScore()"
+                class="px-6 py-2.5 border border-slate-300 rounded-xl text-slate-700 font-medium hover:bg-white/50 transition-all">
+                점수 계산
+            </button>
+            <button onclick="finalizeReview()"
+                class="px-6 py-2.5 bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 text-white rounded-xl shadow-lg hover:shadow-xl transition-all font-medium transform hover:-translate-y-0.5">
+                평가 제출 (최종)
+            </button>
+        </div>
+    </div>
+</div>
+
+<!-- Add Goal Modal -->
+<div id="goalModal"
+    class="hidden fixed inset-0 bg-slate-900/20 backdrop-blur-sm flex items-center justify-center z-50 transition-opacity">
+    <div class="glass rounded-3xl shadow-2xl max-w-lg w-full p-8 transform transition-all scale-100">
+        <h3 class="text-2xl font-bold text-slate-900 mb-6">성과 목표 추가</h3>
+        <form id="goalForm" class="space-y-5">
+            <div>
+                <label class="block text-sm font-semibold text-slate-700 mb-1">목표 유형</label>
+                <select name="category"
+                    class="w-full rounded-xl border-slate-200 bg-white/50 focus:border-blue-500 focus:ring-blue-500 py-2.5">
+                    <option value="MBO">MBO (목표 관리)</option>
+                    <option value="BSC_FINANCIAL">BSC - 재무 관점</option>
+                    <option value="BSC_CUSTOMER">BSC - 고객 관점</option>
+                    <option value="BSC_PROCESS">BSC - 내부 프로세스</option>
+                    <option value="BSC_LEARNING">BSC - 학습 및 성장</option>
+                </select>
+            </div>
+            <div>
+                <label class="block text-sm font-semibold text-slate-700 mb-1">목표 내용</label>
+                <textarea name="goal_text" rows="3"
+                    class="w-full rounded-xl border-slate-200 bg-white/50 focus:border-blue-500 focus:ring-blue-500 py-2.5"
+                    placeholder="달성하고자 하는 목표를 구체적으로 기술하세요..."></textarea>
+            </div>
+            <div class="grid grid-cols-2 gap-5">
+                <div>
+                    <label class="block text-sm font-semibold text-slate-700 mb-1">가중치 (%)</label>
+                    <input type="number" name="weight"
+                        class="w-full rounded-xl border-slate-200 bg-white/50 focus:border-blue-500 focus:ring-blue-500 py-2.5"
+                        placeholder="예: 20">
+                </div>
+                <div>
+                    <label class="block text-sm font-semibold text-slate-700 mb-1">목표치</label>
+                    <input type="text" name="target"
+                        class="w-full rounded-xl border-slate-200 bg-white/50 focus:border-blue-500 focus:ring-blue-500 py-2.5"
+                        placeholder="예: 100% 달성">
+                </div>
+            </div>
+            <div class="flex justify-end space-x-3 mt-8">
+                <button type="button" onclick="closeGoalModal()"
+                    class="px-5 py-2.5 border border-slate-300 rounded-xl text-slate-700 font-medium hover:bg-white/50 transition-all">취소</button>
+                <button type="submit"
+                    class="px-5 py-2.5 bg-blue-600 hover:bg-blue-700 text-white rounded-xl shadow-md font-medium transition-all">추가</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<script>
+    // Mock Data & State
+    let currentReviewId = null;
+    let goals = [];
+
+    async function createReview() {
+        // In a real app, we'd get the user ID from the session
+        // For demo, we'll create a dummy user or use a hardcoded one
+        const userId = "demo-user-id";
+
+        try {
+            const response = await fetch('/api/performance/reviews', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({
+                    user_id: userId,
+                    year: 2024
+                })
+            });
+            const data = await response.json();
+            currentReviewId = data.id;
+            document.getElementById('activeReview').classList.remove('hidden');
+            renderGoals();
+        } catch (error) {
+            console.error('Error creating review:', error);
+            // Fallback for demo without backend running
+            document.getElementById('activeReview').classList.remove('hidden');
+        }
+    }
+
+    function openGoalModal() {
+        document.getElementById('goalModal').classList.remove('hidden');
+    }
+
+    function closeGoalModal() {
+        document.getElementById('goalModal').classList.add('hidden');
+    }
+
+    document.getElementById('goalForm').addEventListener('submit', async (e) => {
+        e.preventDefault();
+        const formData = new FormData(e.target);
+        const goalData = Object.fromEntries(formData.entries());
+
+        // Add to local state for demo
+        goals.push({
+            ...goalData,
+            id: Date.now().toString(),
+            self_score: 0,
+            supervisor_score: 0
+        });
+
+        renderGoals();
+        closeGoalModal();
+        e.target.reset();
+
+        // TODO: Call API to save goal
+    });
+
+    function renderGoals() {
+        const list = document.getElementById('goalsList');
+        if (goals.length === 0) {
+            list.innerHTML = `
+                <div class="text-center py-12 bg-white/30 rounded-2xl border border-dashed border-slate-300">
+                    <p class="text-slate-500 font-medium">등록된 목표가 없습니다.</p>
+                    <p class="text-sm text-slate-400 mt-1">'목표 추가' 버튼을 눌러 작성해주세요.</p>
+                </div>`;
+            return;
+        }
+
+        list.innerHTML = goals.map(goal => `
+            <div class="bg-white/60 backdrop-blur-sm rounded-2xl p-6 border border-white/60 shadow-sm hover:shadow-md transition-all">
+                <div class="flex justify-between items-start">
+                    <div class="space-y-2">
+                        <span class="inline-flex items-center px-2.5 py-0.5 rounded-lg text-xs font-bold bg-blue-100 text-blue-700">
+                            ${goal.category}
+                        </span>
+                        <p class="font-bold text-lg text-slate-900">${goal.goal_text}</p>
+                        <p class="text-sm text-slate-500 font-medium">목표치: ${goal.target} <span class="mx-2 text-slate-300">|</span> 가중치: ${goal.weight}%</p>
+                    </div>
+                    <div class="flex items-center space-x-6 bg-white/50 p-3 rounded-xl border border-white/50">
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-500 mb-1">본인 평가</label>
+                            <input type="number" value="${goal.self_score}" class="w-16 rounded-lg border-slate-200 text-center font-bold text-slate-700 focus:ring-blue-500 focus:border-blue-500">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-500 mb-1">상사 평가</label>
+                            <input type="number" value="${goal.supervisor_score}" class="w-16 rounded-lg border-slate-200 text-center font-bold text-slate-700 focus:ring-blue-500 focus:border-blue-500">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        `).join('');
+    }
+
+    function calculateScore() {
+        // Mock calculation
+        let totalWeightedScore = 0;
+        goals.forEach(g => {
+            // Simple average of self and manager for demo
+            const avg = (parseFloat(g.self_score || 80) + parseFloat(g.supervisor_score || 80)) / 2;
+            totalWeightedScore += avg * (parseFloat(g.weight) / 100);
+        });
+
+        document.getElementById('totalScore').textContent = totalWeightedScore.toFixed(1);
+
+        let grade = 'B';
+        if (totalWeightedScore >= 90) grade = 'S';
+        else if (totalWeightedScore >= 80) grade = 'A';
+        else if (totalWeightedScore >= 70) grade = 'B';
+        else if (totalWeightedScore >= 60) grade = 'C';
+        else grade = 'D';
+
+        document.getElementById('gradeLabel').textContent = `등급: ${grade}`;
+    }
+
+    function finalizeReview() {
+        alert('평가가 제출되었습니다. 등급이 확정되었습니다.');
+    }
+</script>
+
+<style>
+    @keyframes fadeInUp {
+        from {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    .animate-fade-in-up {
+        animation: fadeInUp 0.8s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
+    }
+</style>
+{% endblock %}

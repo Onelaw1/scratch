@@ -1,0 +1,200 @@
+{
+  "slide_type": "Content",
+  "slide_number": 147,
+  "title": "2. 가치체계·전략체계 재정립 - 가치체계 확정案",
+  "governing_message": "공단 가치체계(미션, 비전, 핵심가치, 경영방침) 리뉴얼 확정안을 아래와 같이 선정하여 제시함",
+  "layout": {
+    "grid_type": "1-column",
+    "background_color": "#FFFFFF"
+  },
+  "content_data": {
+    "subtitle": null,
+    "date": null,
+    "client_name": null,
+    "framework_type": null,
+    "elements": null,
+    "sections": [
+      {
+        "title": "가치체계(미션, 비전, 핵심가치, 경영방침) 확정案",
+        "blocks": [
+          {
+            "block_type": "text",
+            "content": "① 생명·생산·생활의 종합 공간인 해양의 훼손 및 오염으로 인한 위해를 예방하고,\n② 국민들이 안심하고 이용할 수 있는 깨끗하고 안전한 해양환경을 조성하여,\n③ 윤택하고 풍요로운 해양의 지속가능한 이용가치를 창조하여 국민 행복과 삶의 질 향상",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          }
+        ]
+      },
+      {
+        "title": "가치체계 확정",
+        "blocks": [
+          {
+            "block_type": "text",
+            "content": "미션",
+            "position": "top-left",
+            "style": {
+              "is_bold": true,
+              "color_hex": "#FFFFFF",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "깨끗하고 안전한 바다로 국민 행복을 증진하고, 해양의 더 나은 미래를 열어간다",
+            "position": "top-right",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "비전",
+            "position": "top-left",
+            "style": {
+              "is_bold": true,
+              "color_hex": "#FFFFFF",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "해양의 보전과 이용을 선도하는 해양환경 국민 플랫폼 기관",
+            "position": "top-right",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "슬로건",
+            "position": "top-left",
+            "style": {
+              "is_bold": true,
+              "color_hex": "#FFFFFF",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "건강한 바다, 풍요로운 미래, 행복한 국민 with KOEM",
+            "position": "top-right",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "핵심가치",
+            "position": "top-left",
+            "style": {
+              "is_bold": true,
+              "color_hex": "#FFFFFF",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "전문역량",
+            "position": "top-right",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "안전우선",
+            "position": "top-right",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "열린혁신",
+            "position": "top-right",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "협력성장",
+            "position": "top-right",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "경영방침",
+            "position": "top-left",
+            "style": {
+              "is_bold": true,
+              "color_hex": "#FFFFFF",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "공정경제",
+            "position": "top-right",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "공익우선",
+            "position": "top-right",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "국민참여",
+            "position": "top-right",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "일하는 보람",
+            "position": "top-right",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "footer": ""
+}

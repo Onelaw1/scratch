@@ -1,0 +1,45 @@
+{
+  "slide_type": "Data",
+  "slide_number": 16,
+  "title": "1. 외부 환경분석 - 제5차 해양환경종합계획 주요 지표 분석",
+  "governing_message": "주요 지표에서 1등급 해역 비율, 보호구역 면적, 갯벌 복원 면적, 해양쓰레기 현존량은 직접관리 지표이며, 탄소중립,\n항만 초미세먼지 배출량, 해수면상승은 공단이 주관할 가능성이 높은 지표이고, 해양생태관광객, 해양생물종,\n해양바이오 기술 수준 등은 공단이 지원하는 지표로 목표 전반과 연관성을 가지고 있음",
+  "layout": {
+    "grid_type": "custom",
+    "background_color": "#FFFFFF"
+  },
+  "content_data": {
+    "subtitle": null,
+    "date": null,
+    "client_name": null,
+    "framework_type": null,
+    "elements": null,
+    "sections": [
+      {
+        "title": "제5차 해양환경종합계획 주요 지표",
+        "blocks": [
+          {
+            "block_type": "table",
+            "content": "The slide contains a table comparing key performance indicators across '현재' (current), '2025년' (2025), and '2030년' (2030). The indicators include: 해양 기후변화 탄소중립 (Marine climate change carbon neutrality), 1등급 해역의 비율 (Ratio of class 1 waters), 보호구역 면적 (Protected area), 갯벌 복원 면적 (갯벌 복원 면적), 해양쓰레기 (해양플라스틱) 현존량 (Amount of marine litter (marine plastic)), 해양생태관광객 (Marine ecotourism visitors), 항만 초미세먼지 배출량 (PM2.5) (Port ultra-fine dust emissions (PM2.5)), 해양생물종 (Marine species), 해양바이오 기술 수준 (Marine bio technology level), 해수면상승 해안침수 정밀예측 (Precise prediction of coastal inundation due to sea level rise). Numerical values are provided for each indicator across the different years.",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "Key Findings\n✓ 주요 지표 중 1등급\n해역 비율, 보호구역\n면적, 갯벌 복원 면적,\n해양쓰레기 현존량은\n공단 직접 관리지표임\n✓ 해양 기후변화 탄소중립,\n항만 초미세먼지\n배출량, 해수면상승은\n기후변화 관련 지표로,\n공단에 관리 책임이\n부여될 가능성이 있는\n지표임\n✓ 해양생태관광객,\n해양생물종,\n해양바이오 기술수준\n지표는 환경보전과\n생태계 건강성 관리\n사업을 통해 공단이\n달성을 간접적으로\n지원하는 사업 지표임",
+            "position": "top-right",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "footer": "*Source : 제5차 해양환경종합계획(2021~2030), 2021.01, 해양수산부"
+}

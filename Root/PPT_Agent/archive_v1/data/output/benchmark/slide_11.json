@@ -1,0 +1,440 @@
+{
+  "slide_type": "Content",
+  "slide_number": 11,
+  "title": "1. 외부 환경분석 - 해양수산부 핵심과제 분석",
+  "governing_message": "해양수산부 2021 핵심과제를 분석해보면, 탄소중립과 해양오염정화 분야의 공단이 직접 수행하거나 주도하여 추진할 과제의 구성과, 기후협약에 따른 탄소중립 실현과 관련된 과제의 높아진 비중을 확인할 수 있음",
+  "layout": {
+    "grid_type": "custom",
+    "background_color": "#FFFFFF"
+  },
+  "content_data": {
+    "subtitle": null,
+    "date": null,
+    "client_name": null,
+    "framework_type": null,
+    "elements": null,
+    "sections": [
+      {
+        "title": "해양수산부 핵심과제 : 탄소중립, 해양플라스틱 제로화 등 현안 공단 주관 추진과제",
+        "blocks": [
+          {
+            "block_type": "text",
+            "content": "해양수산부 2021 핵심과제 추진체계",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 14
+            }
+          }
+        ]
+      },
+      {
+        "title": null,
+        "blocks": [
+          {
+            "block_type": "text",
+            "content": "2021 비전",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 14
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "굳건하고 지속가능한 해양부국실현",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 14
+            }
+          }
+        ]
+      },
+      {
+        "title": null,
+        "blocks": [
+          {
+            "block_type": "text",
+            "content": "경제를 뒷받침하는 해양수산",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 14
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "1",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 14
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "수출물류 지원 및 차질없는 해운재건",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 14
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "1) 수출기업 물류애로 해소\n2) 해운재건 및 연관산업 혁신",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "2",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 14
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "수산·어촌의 활력 회복과\n연안경제권의 균형발전",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 14
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "1) 수산어업 활력·지속가능성 확보\n2) 어촌과 연안의 균형발전",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          }
+        ]
+      },
+      {
+        "title": null,
+        "blocks": [
+          {
+            "block_type": "text",
+            "content": "지속가능한 선도형 해양수산",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 14
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "3",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 14
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "해양수산 탄소중립, 해양플라스틱 제로화",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 14
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "1) 해양수산 탄소중립\n2) 해양플라스틱 쓰레기 제로화\n3) 글로벌 해양환경 협력강화",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          }
+        ]
+      },
+      {
+        "title": null,
+        "blocks": [
+          {
+            "block_type": "text",
+            "content": "해양수산 디지털 전환, 혁신산업 성장 촉진",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 14
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "4",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 14
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "1) 디지털 기반 산업 혁신\n2) 혁신산업 육성 및 지원",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          }
+        ]
+      },
+      {
+        "title": null,
+        "blocks": [
+          {
+            "block_type": "text",
+            "content": "안전하고 따뜻한 해양수산",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 14
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "5",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 14
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "해양수산분야 안전망 강화\n및 포용기반 정착",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 14
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "1) 코로나19 방역·지원\n2) 선박·수산물 안전관리\n3) 선원·어업인 지원",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          }
+        ]
+      },
+      {
+        "title": null,
+        "blocks": [
+          {
+            "block_type": "text",
+            "content": "공단 추진 과제 (지원과제 포함)",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 14
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "해양관광·문화인프라 확충(치유, 생태관광)",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "선박·항만 탈탄소화 (친환경선박 전환)",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "탄소흡수원 개발·확충 (CSS, 블루카본)",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "청정에너지 개발 (해양에너지 상용화)",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "기후변화 관측·예측 역량 강화",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "기후변화 적응력 향상 (해양생태계 관리)",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "발생원 저감 (해양·육상 쓰레기 발생 저감)",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "수거·처리·재활용 강화 (인프라 확대·스마트화)",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "민·관 거버넌스 확립 (국민참여, 범부처협력)",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "P4G 정상회의 (친환경선박, 해양쓰레기 부문)",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "국제기구·ODA (국제기구 참여, ODA 확대)",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "해양안전·빅데이터 (해양 빅데이터 플랫폼)",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "선박안전 (어선사고 예방, 안전문화확산)",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          }
+        ]
+      },
+      {
+        "title": "Key Findings",
+        "blocks": [
+          {
+            "block_type": "text",
+            "content": "✓ 해양환경관리,\n    친환경 사업 확대\n    영역의 사업은\n    공단이 직접\n    수행하거나\n    주도적으로 추진할\n    과제임",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "✓ 국제협약 및 합의에\n    따른 온실가스\n    감축과 탄소중립\n    실현과 연관된\n    과제의 중요도와\n    비중이 높아진 것을\n    확인할 수 있음",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "✓ 디지털전환 가속화\n    추세에 따른 정보화,\n    디지털화 과제가\n    핵심과제 전반에\n    내포되어 있음",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "footer": "KOEM 해양환경공단"
+}

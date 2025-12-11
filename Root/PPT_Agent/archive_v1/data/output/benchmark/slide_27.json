@@ -1,0 +1,169 @@
+{
+  "slide_type": "Content",
+  "slide_number": 27,
+  "title": "1. 외부 환경분석 - 디지털 뉴딜 추진전략 분석 (3/4)",
+  "governing_message": "비대면 산업 육성 추진전략은 공공부문의 원격근무 효율성 제고를 위한 표준 가이드라인 제정 등 비대면 업무환경을 조성하고 원격근무 증가에 효율적으로 대응하기 위한 사전 준비와 검토가 필요한 시점임",
+  "layout": {
+    "grid_type": "custom",
+    "background_color": null
+  },
+  "content_data": {
+    "subtitle": null,
+    "date": null,
+    "client_name": null,
+    "framework_type": null,
+    "elements": null,
+    "sections": [
+      {
+        "title": "디지털 뉴딜 추진전략 ③ 비대면 산업 육성",
+        "blocks": []
+      },
+      {
+        "title": null,
+        "blocks": [
+          {
+            "block_type": "text",
+            "content": "1. D.N.A.\n생태계 강화",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "2. 교육 인프라\n디지털 전환",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "3. 비대면 산업 육성\n~22: 1.1조 원\n~25: 2.1조 원",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "4. SOC\n디지털화",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "1 스마트 의료 및 돌봄 인프라 구축\n~'25: 0.4조원\n• 디지털 기반 스마트 의료 인프라 구축\n• 건강취약계층을 위한 비대면 의료 시범사업\n인프라 확충",
+            "position": "top-right",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "2 (중소기업) 원격근무 확산\n~'25: 0.7조원\n• 비대면 업무 환경 조성을 위한 원격근무\n인프라·컨설팅 등 지원\n- 민간부문 재택·원격근무 가이드라인 제정\n- 공공부문 표준 원격근무 가이드라인 제정\n• 디지털 워크 기술개발 지원",
+            "position": "top-right",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "3 소상공인 온라인 비즈니스 지원\n~'25: 1.0조원\n• 소상공인의 안정적인 온라인시장 진출 지원\n• 경영혁신 기반 구축 및 사업장·제조설비 등의\n스마트화 지원",
+            "position": "top-right",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "공공부문의 원격근무 효율성 제고를 위해 '공공부문 표준\n원격근무 가이드라인' 제정 계획\n\n원격근무 가능 직무 분석, 원격근무 방식·근무시간 인정방식, 성과평가 기준 등",
+            "position": "top-right",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "<디지털 워크의 필요성 증대>",
+            "position": "center",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "image",
+            "content": "Three circles containing the phrases \"새로운 근무환경의 변화\", \"코로나19로 인한 업무혁신\", and \"오피스의 디지털 혁신/업무 방식의 변화\".",
+            "position": "center",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "✓ 코로나19의 사회적 거리두기\n확산에 따라 재택근무와\n유연근무제 도입 등 새로운\n근무환경의 변화",
+            "position": "center",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "✓ 비대면(Untact) 형태의\n업무방식 도입을 위한\n클라우드, 협업 툴, 화상회의\n솔루션 등의 인프라 구축 확대",
+            "position": "center",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "Key Findings",
+            "position": "bottom-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "✓ 공공부문 원격근무 정착 및 효율성 제고를 위한\n원격근무 가이드라인에 따라 시설, 장비 구축 필요\n✓ 비대면·원격근무 증가에 따른 근무형태 변화 등 인력\n운영에 필요한 요인들을 사전 검토하고 준비할 시점",
+            "position": "bottom-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "footer": "*Source: 한국판 뉴딜 종합계획, 관계부처 합동, (2020.07) / 코로나19로 가속화될 디지털 워크 및 기업 대응 방안, 삼정KPMG, (2020)"
+}

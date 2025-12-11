@@ -1,0 +1,35 @@
+{
+  "slide_type": "Content",
+  "slide_number": 75,
+  "title": "3. 이해관계자 분석",
+  "governing_message": null,
+  "layout": {
+    "grid_type": "1-column",
+    "background_color": "white"
+  },
+  "content_data": {
+    "subtitle": null,
+    "date": null,
+    "client_name": null,
+    "framework_type": null,
+    "elements": null,
+    "sections": [
+      {
+        "title": null,
+        "blocks": [
+          {
+            "block_type": "image",
+            "content": "KOEM 해양환경공단",
+            "position": "top-right",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "footer": null
+}

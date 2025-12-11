@@ -1,0 +1,22 @@
+# Web Framework
+fastapi
+uvicorn
+httpx
+jinja2
+python-multipart
+sqlalchemy
+google-generativeai
+python-pptx
+pdf2image
+pymupdf
+pydantic
+python-dotenv
+
+# CLI/UI
+typer
+rich
+
+# Data Analysis
+pandas
+pillow
+numpy

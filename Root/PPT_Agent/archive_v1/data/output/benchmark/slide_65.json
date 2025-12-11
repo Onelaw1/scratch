@@ -1,0 +1,80 @@
+{
+  "slide_type": "Data",
+  "slide_number": 65,
+  "title": "2. 내부 환경·역량 분석 - 정원대비 현원",
+  "governing_message": "공단 일반직 정원은 295명이며, 6월 현재 현원 296명 중 29명이 TF, 휴직 등 정상운용에서 제외되는 비가용 인원으로 전체 부서가 인력이 부족하며(충원율 93.6%), 미래성장팀, 조사연구원의 인력 부족이 큰 것으로 나타남",
+  "layout": {
+    "grid_type": "2-column",
+    "background_color": "#FFFFFF"
+  },
+  "content_data": {
+    "subtitle": null,
+    "date": null,
+    "client_name": null,
+    "framework_type": null,
+    "elements": null,
+    "sections": [
+      {
+        "title": null,
+        "blocks": [
+          {
+            "block_type": "text",
+            "content": "정원 대비 현원 : 휴직, 정원 外 보직 등으로 현원 부족",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "일반직 정원-현원 현황 ('21. 6월 기준)",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "chart",
+            "content": "Bar chart showing headcount by department (정원 vs 현원)",
+            "position": "center",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          }
+        ]
+      },
+      {
+        "title": null,
+        "blocks": [
+          {
+            "block_type": "text",
+            "content": "Key Findings",
+            "position": "top-right",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "✓ 해양공간계획TF, 해양치유TF, 민간역량활용TF 등 정원 외 직무 보직자가 16명, 휴직 등 인원이 13명으로 전체 일반직 현원 296명 중 29명이 가용인원 제외 인력 (일반직 정원 295명, 현원 276명, 충원율 93.6%)\n✓ 특히 이사장직속 미래성장팀, 해양환경조사연구원, 해양사업본부가 정원대비 현원 부족이 큰 것으로 나타남\n✓ 주어진 과업 수행 중심으로 인력이 투입되어 미래성장 등 전략적 인적자원의 투입이 적절히 이루어지지 않고 있음\n✓ 휴직의 증가는 일시적 현상이기 보다는 정부 정책의 변화에 따른 항구적 변화로 보는 것이 적절함 → 장기적 정원산정 반영 필요",
+            "position": "top-right",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "footer": "64"
+}

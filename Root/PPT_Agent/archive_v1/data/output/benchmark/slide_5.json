@@ -1,0 +1,430 @@
+{
+  "slide_type": "Content",
+  "slide_number": 5,
+  "title": "2. 주요 과업 추진 내역",
+  "governing_message": "프로젝트 진행과 관련하여 아래와 같이 주요 과업을 수행함",
+  "layout": {
+    "grid_type": "2-column",
+    "background_color": null
+  },
+  "content_data": {
+    "subtitle": null,
+    "date": null,
+    "client_name": null,
+    "framework_type": null,
+    "elements": null,
+    "sections": [
+      {
+        "title": "프로젝트 주요 과업 추진 경과",
+        "blocks": [
+          {
+            "block_type": "text",
+            "content": "STEP 1",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "03/02",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "과업착수",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "착수보고회 (3/8)",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "STEP 2",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "03/10\n~\n03/31",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "부서 실무인력 인터뷰",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "주요 이해관계자 FGI (해수부, 학계 등)",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "STEP 3",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "03/29\n~\n04/15",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "임원(이사장, 본부장) 인터뷰",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "분야 전문가 인터뷰",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "STEP 4",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "04/28\n~\n05/06",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "임직원 설문 및 의견수렴 (4/28~5/6)",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "- 가치체계, 전략체계 Renewal",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "STEP 5",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "05/03\n~\n05/17",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "조직진단 및 조직개편계획",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "- 부서별 협의, 단기 조직개편안 수립",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "STEP 6",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "05/10\n~\n05/20",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "중간보고(가치체계 수립 설명자료 대체)",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "- 실무부서 피드백 및 설명회 (5/20)",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "STEP 7",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "05/10\n~\n06/05",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "전략과제, 세부실행과제 추진계획 수립",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "미래성장사업 점검, 신규사업 발굴",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "STEP 8",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "06/21",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "최종보고회 (6/10~6/15)",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "최종보고 피드백 (~6/18)",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          }
+        ]
+      },
+      {
+        "title": "핵심 활동 (Key Activities)",
+        "blocks": [
+          {
+            "block_type": "text",
+            "content": "• 프로젝트 추진 목적과 프로젝트를 통해 달성하고자 하는 목표 정의\n• 프로젝트 추진 관련 주요 일정계획 사전 공유 및 협조 요청\n• 프로젝트 목표와 프로젝트 방향성, 주안점에 대한 의견수렴",
+            "position": "top-right",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "• 제5차 해양환경종합계획, 한국판 뉴딜 등 변화에 따른 공단 기능, 위상 변화\n• 사업 부문별 추진계획 및 장기 발전계획(비전) 수렴\n• 해양환경보전에서 공단에 대한 기대와 요구, 발전상에 대한 의견수렴",
+            "position": "top-right",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "• 주요부서, 이해관계자 인터뷰에 기반한 전략체계 방향성 의견수렴\n• 해양환경, 해양방제 및 해양수산 정책분야 전문가(KMI, KIOST) 인터뷰\n• 가치체계, 전략체계 수립 관련 의견 수렴",
+            "position": "top-right",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "• 미션, 비전, 핵심가치 등 공단 가치체계 개편 복수 안에 대한 의견 수렴\n• 경영방침, 전략목표, 전략과제 등 전략체계에 대한 임직원 의견 수렴\n■ 가치체계, 전략체계 선정",
+            "position": "top-right",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "• 조직 현안이슈 및 인력운영 현황 진단\n• 조직개편계획 수립 : 인력운영 효율성 제고, 실행력 강화\n• 중장기 자원배분계획 수립",
+            "position": "top-right",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "• 가치체계 및 전략체계 Renewal 방향성과 도출과정 설명자료 배포\n• 신규 가치체계, 전략체계에 따른 전략과제, 전략목표 수립 보고\n• 조직개편계획 및 New 가치체계·전략체계 직원설명회",
+            "position": "top-right",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "• 전략체계 개편 수립에 따른 세부실행과제, 실행계획 및 성과목표 수립\n• 기존 미래성장사업에 대한 점검 및 신규 사업 발굴\n■ 전략체계 Renewal에 따른 조직구조 개편 및 인력운영계획 수립",
+            "position": "top-right",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "• 전략체계 개편에 따른 실행계획 및 중장기 로드맵 수립 보고\n• 가치체계, 전략체계 설명회 및 롤링 매뉴얼 제작\n• 최종보고서 작성, 제출",
+            "position": "top-right",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "footer": "KOEM 해양환경공단"
+}

@@ -1,0 +1,110 @@
+{
+  "slide_type": "Framework",
+  "slide_number": 21,
+  "title": "1. 외부 환경분석 - 해양환경종합계획 추진과제 분석 (5/6)",
+  "governing_message": "전략과제 5. 녹색 해양산업이 펼쳐지는 바다에는 해양에너지원별 발전 적합지역 검토를 포함한 해양 친환경 에너지\n산업 육성을 위한 기반 조성과 디지털과 정보기술을 접목한 해양환경산업의 육성에서 공단의 역할에 대한 기대를\n찾아볼 수 있음",
+  "layout": {
+    "grid_type": "custom",
+    "background_color": "#FFFFFF"
+  },
+  "content_data": {
+    "subtitle": null,
+    "date": null,
+    "client_name": null,
+    "framework_type": "List",
+    "elements": [
+      {
+        "label": "깨끗한 수질이 유지되는\n청정한 바다",
+        "description": null,
+        "position": "top-left"
+      },
+      {
+        "label": "건강한 생태계가\n살아있는 바다",
+        "description": null,
+        "position": "top-left"
+      },
+      {
+        "label": "쾌적한 해양생활을\n즐기는 바다",
+        "description": null,
+        "position": "top-left"
+      },
+      {
+        "label": "친환경적인 경제활동이\n이루어지는 바다",
+        "description": null,
+        "position": "top-left"
+      },
+      {
+        "label": "녹색 해양산업이\n펼쳐지는 바다",
+        "description": null,
+        "position": "top-left"
+      },
+      {
+        "label": "기후변화에 대응하고\n체계적으로 계획된 바다",
+        "description": null,
+        "position": "top-left"
+      },
+      {
+        "label": "해양바이오산업 기반 고도화",
+        "description": null,
+        "position": "center"
+      },
+      {
+        "label": "친환경 에너지산업으로의\n전환",
+        "description": null,
+        "position": "center"
+      },
+      {
+        "label": "융합형 해양환경보전산업의\n육성",
+        "description": null,
+        "position": "center"
+      },
+      {
+        "label": "해양수산생명자원 확보·관리 기반 고도화\n해양바이오 연구개발 확대 및 상용화 확산\n첨단 해양바이오산업 육성",
+        "description": null,
+        "position": "top-right"
+      },
+      {
+        "label": "해양에너지 발전 실증 강화 및 확대\n해양환경·생태계와 상생하는 해상풍력",
+        "description": null,
+        "position": "top-right"
+      },
+      {
+        "label": "해양환경산업 육성\nICT, 빅데이터 기반 해양환경산업 육성\n해양환경보건산업의 발굴·육성",
+        "description": null,
+        "position": "top-right"
+      },
+      {
+        "label": "해양에너지원별 발전 적합지역\n후보지 검토 (발전효율, 경제성 등)",
+        "description": null,
+        "position": "bottom-right"
+      },
+      {
+        "label": "에너지원별 발전 실증단지 기획,\n운영관리 (해상풍력 포함)",
+        "description": null,
+        "position": "bottom-right"
+      },
+      {
+        "label": "해양환경산업 지원정책 시행",
+        "description": null,
+        "position": "bottom-right"
+      },
+      {
+        "label": "디지털·정보기술 기반\n해양환경산업 육성, 지원",
+        "description": null,
+        "position": "bottom-right"
+      },
+      {
+        "label": "해양환경기술 연구개발 강화",
+        "description": null,
+        "position": "bottom-right"
+      },
+      {
+        "label": "✓ 해양에너지 발전 실증과 친환경\n에너지 산업 육성을 위한 기반\n조성 역할 요구\n✓ 디지털, 정보기술의 해양환경\n산업 적용, 육성 주도 기대",
+        "description": null,
+        "position": "bottom-right"
+      }
+    ],
+    "sections": null
+  },
+  "footer": "*Source : 제5차 해양환경종합계획(2021~2030), 2021.01, 해양수산부"
+}

@@ -1,0 +1,170 @@
+{
+  "slide_type": "Content",
+  "slide_number": 54,
+  "title": "2. 내부 환경·역량 분석 - 공단 業의 본질 변화",
+  "governing_message": "국가 해양환경정책의 변화에 따라 공단 業의 영역과 業의 본질이 오염사고 방제 → 해양오염 정화·관리 → 해양환경, 해양생태계 보전·관리로 확대·전환되어 왔으며, 국가 정책 변화에 따라 해양환경의 보전·이용·성장 종합관리로 확대, 재정의가 필요한 시점임",
+  "layout": {
+    "grid_type": "custom",
+    "background_color": "#FFFFFF"
+  },
+  "content_data": {
+    "subtitle": null,
+    "date": null,
+    "client_name": null,
+    "framework_type": null,
+    "elements": null,
+    "sections": [
+      {
+        "title": "국가\n해양환경\n정책",
+        "blocks": [
+          {
+            "block_type": "text",
+            "content": "해양오염 대응체계 구축\n• (대규모) 유류오염사고, 적조 등 해양오염에 대한 대응체계 수립\n• 유해성 해양오염 방지 및 사후관리 체계 수립",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          }
+        ]
+      },
+      {
+        "title": "공단\n業의 영역",
+        "blocks": [
+          {
+            "block_type": "text",
+            "content": "• 해양오염 방제체계 구축\n• 해양오염 방제 수행 (유류, 적조 등 해양오염 방제)\n■ 해양오염사고 예방",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          }
+        ]
+      },
+      {
+        "title": "공단\n業의 본질",
+        "blocks": [
+          {
+            "block_type": "text",
+            "content": "• 중대 해양사고 및 오염에 대한 방제 수행\n- 방제자원확보, 방제수행\n• 해양오염 사후 대응(방제) 체계 구축",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          }
+        ]
+      },
+      {
+        "title": "해양오염 예방·사전관리",
+        "blocks": [
+          {
+            "block_type": "text",
+            "content": "• 오염물질을 사전 억제하는 '사전·예방적 관리체계”로 정책방향 전환\n• 육상기인 오염원에 대한 관리기준 수립, 시행",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "• 국가 해양오염 방제체계 구축, 강화\n• 전문 방제교육\n• 해양오염 정화사업 (쓰레기, 오염물질 수거사업) 확장",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "• 해양환경 보전을 위한 정화대상 확대\n→ 중대 오염사고 대응에서 상시 오염 대응과 정화로 확대, 전환",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          }
+        ]
+      },
+      {
+        "title": "해양생태계 보전관리",
+        "blocks": [
+          {
+            "block_type": "text",
+            "content": "• 해양생태계 보전·관리 중심\n• 해양생태계 건강성 유지, 생물자원 확대 관리\n• 기술기반 환경관리 추진 : 인프라·시스템 구축, 운영",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "• 해양환경 보전·관리 계획 수립 및 시행 주도\n■ 해양생태환경 조사, 연구 및 복원, 보전으로 영역 확장\n• 해양환경교육 주관",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "• 해양생태계 건강성 유지로 보전·관리 방향 전환\n→ 해양환경 정화, 복원 및 보전을 통한 해양생태계 관리로 확대, 전환",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          }
+        ]
+      },
+      {
+        "title": "해양환경 보전·이용·성장",
+        "blocks": [
+          {
+            "block_type": "text",
+            "content": "■ 해양환경 및 해양생태 복원, 유지 확대·강화\n• 해양환경 이용·향유 증진\n• 기후변화 대응 및 녹색산업 육성 강화",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "• 기후변화 대응, 탄소중립 사업 주관\n• 해양 생태계 복원·유지 및 이용 주관 (및 지원)\n• 해양산업 육성 지원",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "• 해양환경, 해양생태 이용과 산업 육성 관점 추가\n• 기후변화 대응을 포함한 해양환경 보전·이용·성장 종합 관리로 확대, 재정의",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "footer": "KOEM 해양환경공단"
+}

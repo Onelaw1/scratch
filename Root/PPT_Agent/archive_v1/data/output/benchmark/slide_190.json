@@ -1,0 +1,130 @@
+{
+  "slide_type": "Content",
+  "slide_number": 190,
+  "title": "4. 경영목표 수립 - 경영목표 설정 ③ 공단통합 해상방제능력 (2/3)",
+  "governing_message": "민간-공공 해양오염방제 통합관리 체계 구축에 따라 해양방제부문의 경영목표를 공단 통합 해상방제능력으로 수립함",
+  "layout": {
+    "grid_type": "1-column",
+    "background_color": null
+  },
+  "content_data": {
+    "subtitle": null,
+    "date": null,
+    "client_name": null,
+    "framework_type": null,
+    "elements": null,
+    "sections": [
+      {
+        "title": null,
+        "blocks": [
+          {
+            "block_type": "text",
+            "content": "경영목표 설정 ③ 공단통합 해상방제능력 : 유출유회수능력 ‘21년 16,000+kl → ‘30년 20,250+kl",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "해양방제부문 경영목표 : 공단통합 해상방제능력 '21년 16,000+kℓ, '25년\n17,100+kℓ, '30년 20,250+kl ('30년 유출유 해상회수 75% 기준 통합역량 확보)\n⇒ \"해안회수(1/3)의 최소화 → 국제기준(IMO)보다 높은 해상회수목표 수립\n⇒ 유회수기 회수용량 + 유흡착재 제거용량 합산 (일일 8시간, 3일 작업기준)",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "[방제능력 (Capacity) 계산] : 방제능력 = (①+②) X ③",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "① 유회수기 기름 해상회수능력\n∑(유회수기 용량 × 기계적효율계수(0.2)) X 작업일수(3일) X 작업시간(8hrs) X 동원률(0.33)\n*회수기 동원률 0.33 (장비 특성에 따른 동원률)\n⇒ 공단 법정보유 기준 유회수기 방제능력 합계 : 9,381kℓ/hr\n→ 법정 유회수기 기반 유회수능력 : 14,860kℓ (9,381kl/h X 8hrs X 3days X 0.2 X 0.33)",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "② 유흡착재 제거용량\n: 유흡착재 제거용량 = 154kℓ (52 x 10.0 X 0.33 X 0.9)\n⇒ 공단 보유량 52,000kg X 제거효율(10.0)* X 동원률(0.33) X 벙커C유 밀도(0.9: 0.89~1.01 kg/l)\n*유흡착재 1종(매트, 롤, 쿠션 모양) 흡유량 성능시험기준 : 유흡착재 1g당 10.0g 이상",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "③ Soft 방제역량 가중치 : (방제능력 실질 활용역량 가중지표, 최소 0.86 ~ 최대 1.16)\n1) 전문인력교육 : 전문인력 교육에 따른 방제자원 활용능력 개선\n교육목표 100% 달성 1.00 / 10% 이상 초과달성 1.05 / 목표미달 0.95\n2) 방제훈련 실시 횟수 및 참여율 : 훈련에 따른 대응역량 및 방제자원 활용능력 유지, 개선\n실시 횟수 및 참여율 목표 100% 달성 1.00 / 10% 이상 초과달성 1.03 / 목표미달 0.97\n3) 방제선박 규모 : 방제용도 선박 동원 규모(동원가능 선박 수, 선박 톤수)에 따른 방제효율 향상\n공단 동원가능 방제용도 선박 총 보유규모(총 보유 74척, 10,889톤 중 작업선, 조사선, 방제부선 제외 방\n제용도 선박 58척 8,318톤 규모) 기준 : 총톤수 8,300톤의 100% 유지 1.00 / 105%(추가 확보) 목표 초과\n1.03 / 100% 미만 0.97\n4) 통합 해양방제 체계화 : 민간 통합방제 체계 구축을 통한 방제동원체계 개선\n동원협약 체결업체('21년 방제조합 가입업체 포함 40개(전체 73개 중 54.8%) 목표?) 목표 100% 달성\n1.00 / 10% 이상 초과달성 1.02 / 목표미달 0.98\n5) 방제장비 현대화 비율 : 방제장비 현대화로 방제자원 (기계적·성능) 효율 유지 및 개선\n현대화(교체) 목표 100% 달성 1.00 / 10% 이상 초과달성 1.02 / 목표미달 0.98",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          }
+        ]
+      },
+      {
+        "title": null,
+        "blocks": [
+          {
+            "block_type": "text",
+            "content": "목표설정 참고 내용",
+            "position": "top-right",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "1. (해상기름회수) 유효 회수용량 산식 :\n유회수기 용량(kl/hr) X 작업일수(3일) X 일 작업시간(8 hrs)\nX 효율계수(0.2) X 동원률(0.33)",
+            "position": "top-right",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "2. 민간 기름회수 목표\n국가 회수 목표량(3개 권역 합계 22,500kℓ)의 60%: 13,500 kl\n(3개 권역 합계)\n→ 30만톤급 유조선 사고 최대 유출량 45,000kℓ의 1/3\n15,000kℓ 회수 (1/3 휘발, 1/3 해상 회수, 1/3 해안 회수\n기준 해상회수 목표)\n→ 회수 목표량 15,000kℓ의 50%를 각 권역별 목표량으로\n설정 : 사고발생시 인근 권역 동원, 서-남, 동-남 권역 합계\n목표량 15,000kℓ로 해상회수 목표 달성\n→ 각 권역별 3일간 회수 목표량 7,500kl (권역 일일 회수\n목표량 2,500kl)",
+            "position": "top-right",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "※ 참고 : 일본 유회수 목표량 \"동경만 기준 최대유출량\n23,000kl\" 100% 회수 (3일 작업 기준)\n> 방제선 및 유회수기 제거 목표치 : 23,000kl X 80% =\n18,400kl\n> 유처리제, 유흡착포, 유겔화제 제거 목표치 : 23,000kl X\n20% = 4,600kl",
+            "position": "top-right",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "footer": "KOEM 해양환경공단 189"
+}

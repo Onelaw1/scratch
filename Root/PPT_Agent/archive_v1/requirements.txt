@@ -1,0 +1,15 @@
+# Core
+google-generativeai
+python-pptx
+pdf2image
+pymupdf
+pydantic
+python-dotenv
+
+# CLI/UI
+typer
+rich
+
+# Utils
+pillow
+numpy

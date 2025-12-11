@@ -1,0 +1,40 @@
+{
+  "slide_type": "Framework",
+  "slide_number": 77,
+  "title": "3. 이해관계자 분석 - 이해관계자 분류 및 그룹별 관리",
+  "governing_message": "이해관계자는 각 그룹별 특성에 맞는 관리가 필요하며, 학계와 시민단체, 해양레저인구·동호회, 국민은 체계적 협력과\n참여를 통해 관심도와 영향력을 키워 그룹이 바뀔 수 있도록 전환적 관리가 필요함",
+  "layout": {
+    "grid_type": "2x2-grid",
+    "background_color": null
+  },
+  "content_data": {
+    "subtitle": null,
+    "date": null,
+    "client_name": null,
+    "framework_type": "2x2",
+    "elements": [
+      {
+        "label": "I. 만족도 유지",
+        "description": null,
+        "position": "top-left"
+      },
+      {
+        "label": "Ⅱ. 철저한 관리",
+        "description": null,
+        "position": "top-right"
+      },
+      {
+        "label": "Ⅲ. 동향 모니터링",
+        "description": null,
+        "position": "bottom-left"
+      },
+      {
+        "label": "IV. 정보공유, 소통 유지",
+        "description": null,
+        "position": "bottom-right"
+      }
+    ],
+    "sections": null
+  },
+  "footer": null
+}

@@ -1,0 +1,408 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="max-w-7xl mx-auto px-4 py-8">
+    <div class="mb-8">
+        <h2 class="text-2xl font-bold leading-7 text-slate-900 sm:text-3xl">정보화 구조도 (Information Architecture)</h2>
+        <p class="mt-1 text-sm text-slate-500">직무분석 시스템의 전체 구조와 데이터 흐름을 시각화합니다.</p>
+    </div>
+
+    <!-- System Architecture Diagram -->
+    <div class="bg-white shadow rounded-lg p-6 mb-6">
+        <h3 class="text-lg font-medium text-slate-900 mb-4">시스템 아키텍처</h3>
+        <div class="mermaid">
+            graph TB
+            subgraph Frontend["프론트엔드 (Frontend)"]
+            A[분류 페이지]
+            B[직무분류체계]
+            C[업무량조사]
+            D[업무리스트업]
+            E[내 업무흐름도]
+            F[직무 경력 지도]
+            G[대시보드]
+            end
+
+            subgraph Backend["백엔드 API (Backend)"]
+            H[FastAPI Router]
+            I[CRUD Operations]
+            J[Time Validation]
+            K[Workflow Engine]
+            end
+
+            subgraph Database["데이터베이스 (Database)"]
+            L[(Institution<br />기관)]
+            M[(OrganizationalUnit<br />조직단위)]
+            N[(JobGroup/Series/Position<br />직군/직렬/직무)]
+            O[(JobTask/WorkItem<br />과업/업무)]
+            P[(User/WorkloadEntry<br />사용자/업무량)]
+            end
+
+            A --> H
+            B --> H
+            C --> H
+            D --> H
+            E --> H
+            F --> H
+            G --> H
+
+            H --> I
+            H --> J
+            H --> K
+
+            I --> L
+            I --> M
+            I --> N
+            I --> O
+            I --> P
+
+            style A fill:#dbeafe,stroke:#3b82f6,stroke-width:2px
+            style B fill:#dbeafe,stroke:#3b82f6,stroke-width:2px
+            style C fill:#dbeafe,stroke:#3b82f6,stroke-width:2px
+            style D fill:#dbeafe,stroke:#3b82f6,stroke-width:2px
+            style E fill:#dbeafe,stroke:#3b82f6,stroke-width:2px
+            style F fill:#dbeafe,stroke:#3b82f6,stroke-width:2px
+            style G fill:#dbeafe,stroke:#3b82f6,stroke-width:2px
+            style H fill:#fef3c7,stroke:#f59e0b,stroke-width:2px
+            style I fill:#fef3c7,stroke:#f59e0b,stroke-width:2px
+            style J fill:#fef3c7,stroke:#f59e0b,stroke-width:2px
+            style K fill:#fef3c7,stroke:#f59e0b,stroke-width:2px
+            style L fill:#dcfce7,stroke:#10b981,stroke-width:2px
+            style M fill:#dcfce7,stroke:#10b981,stroke-width:2px
+            style N fill:#dcfce7,stroke:#10b981,stroke-width:2px
+            style O fill:#dcfce7,stroke:#10b981,stroke-width:2px
+            style P fill:#dcfce7,stroke:#10b981,stroke-width:2px
+        </div>
+    </div>
+
+    <!-- Data Flow Diagram -->
+    <div class="bg-white shadow rounded-lg p-6 mb-6">
+        <h3 class="text-lg font-medium text-slate-900 mb-4">데이터 흐름도 (Data Flow)</h3>
+        <div class="mermaid">
+            graph LR
+            A[기관 등록] --> B[조직 구조 입력<br />본부/처/실/팀]
+            B --> C[직무 분류<br />직군/직렬/직무]
+            C --> D[과업/업무 정의]
+            D --> E[업무량 조사]
+            E --> F[시간 검증<br />1920h 기준]
+            F --> G[직무 평가]
+            G --> H[벤치마킹<br />통계 분석]
+
+            style A fill:#fecaca,stroke:#ef4444,stroke-width:3px
+            style B fill:#fed7aa,stroke:#f97316,stroke-width:3px
+            style C fill:#fef08a,stroke:#eab308,stroke-width:3px
+            style D fill:#d9f99d,stroke:#84cc16,stroke-width:3px
+            style E fill:#a7f3d0,stroke:#10b981,stroke-width:3px
+            style F fill:#a5f3fc,stroke:#06b6d4,stroke-width:3px
+            style G fill:#bfdbfe,stroke:#3b82f6,stroke-width:3px
+            style H fill:#ddd6fe,stroke:#8b5cf6,stroke-width:3px
+        </div>
+    </div>
+
+    <!-- Job Classification Hierarchy -->
+    <div class="bg-white shadow rounded-lg p-6 mb-6">
+        <h3 class="text-lg font-medium text-slate-900 mb-4">직무분류 계층 구조 (NCS 기반)</h3>
+        <div class="mermaid">
+            graph TD
+            A[직군<br />Job Group<br />예: 경영·회계·사무] --> B1[직렬<br />Job Series<br />예: 인사·조직]
+            A --> B2[직렬<br />Job Series<br />예: 총무·법무]
+            A --> B3[직렬<br />Job Series<br />예: 재무·회계]
+
+            B1 --> C1[직무<br />Job Position<br />예: 인사]
+            B1 --> C2[직무<br />Job Position<br />예: 채용]
+            B1 --> C3[직무<br />Job Position<br />예: HRD]
+
+            C1 --> D1[과업<br />Task<br />예: 채용공고 작성]
+            C1 --> D2[과업<br />Task<br />예: 면접 진행]
+
+            D1 --> E1[업무<br />Work Item<br />예: 요청서 검토]
+            D1 --> E2[업무<br />Work Item<br />예: 공고 게시]
+
+            style A fill:#fee2e2,stroke:#ef4444,stroke-width:3px
+            style B1 fill:#fed7aa,stroke:#f97316,stroke-width:2px
+            style B2 fill:#fed7aa,stroke:#f97316,stroke-width:2px
+            style B3 fill:#fed7aa,stroke:#f97316,stroke-width:2px
+            style C1 fill:#fef08a,stroke:#eab308,stroke-width:2px
+            style C2 fill:#fef08a,stroke:#eab308,stroke-width:2px
+            style C3 fill:#fef08a,stroke:#eab308,stroke-width:2px
+            style D1 fill:#d9f99d,stroke:#84cc16,stroke-width:2px
+            style D2 fill:#d9f99d,stroke:#84cc16,stroke-width:2px
+            style E1 fill:#a7f3d0,stroke:#10b981,stroke-width:2px
+            style E2 fill:#a7f3d0,stroke:#10b981,stroke-width:2px
+        </div>
+    </div>
+
+    <!-- Database Schema Overview -->
+    <div class="bg-white shadow rounded-lg p-6 mb-6">
+        <h3 class="text-lg font-medium text-slate-900 mb-4">데이터베이스 스키마 개요</h3>
+        <div class="mermaid">
+            erDiagram
+            Institution ||--o{ OrganizationalUnit : has
+            Institution ||--o{ JobGroup : has
+            Institution ||--o{ User : employs
+            OrganizationalUnit ||--o{ OrganizationalUnit : "parent-child"
+
+            JobGroup ||--o{ JobSeries : contains
+            JobSeries ||--o{ JobPosition : contains
+            JobPosition ||--o{ JobTaskNew : contains
+            JobTaskNew ||--o{ WorkItem : contains
+
+            User ||--o{ WorkloadEntry : creates
+            JobTaskNew ||--o{ WorkloadEntry : "tracked-in"
+
+            Institution {
+            string id PK
+            string name
+            string code UK
+            int total_headcount
+            }
+
+            JobGroup {
+            string id PK
+            string code UK
+            string name
+            }
+
+            JobSeries {
+            string id PK
+            string code UK
+            string name
+            }
+
+            JobPosition {
+            string id PK
+            string code UK
+            string name
+            }
+
+            JobTaskNew {
+            string id PK
+            string code UK
+            string name
+            }
+
+            WorkItem {
+            string id PK
+            string code UK
+            string name
+            float workload_amount
+            }
+        </div>
+    </div>
+
+    <!-- Detailed Core Tables -->
+    <div class="bg-white shadow rounded-lg p-6 mb-6">
+        <h3 class="text-lg font-medium text-slate-900 mb-4">핵심 테이블 상세</h3>
+        <div class="mermaid">
+            erDiagram
+            Institution {
+            string id PK "UUID"
+            string name "기관명"
+            string code UK "기관코드"
+            string category_type "기관유형"
+            int total_employees "총직원수"
+            int annual_revenue "연매출"
+            datetime created_at "생성일시"
+            }
+
+            User {
+            string id PK "UUID"
+            string institution_id FK "기관ID"
+            string name "이름"
+            string email UK "이메일"
+            string position "직위"
+            int grade "직급1-9"
+            int years_of_service "연차"
+            datetime created_at "생성일시"
+            }
+
+            OrganizationalUnit {
+            string id PK "UUID"
+            string institution_id FK "기관ID"
+            string parent_id FK "상위조직ID"
+            string name "조직명"
+            string unit_type "조직유형"
+            int headcount "인원수"
+            datetime created_at "생성일시"
+            }
+
+            Institution ||--o{ User : employs
+            Institution ||--o{ OrganizationalUnit : has
+            OrganizationalUnit ||--o{ OrganizationalUnit : "parent-child"
+        </div>
+    </div>
+
+    <!-- Job Classification Tables -->
+    <div class="bg-white shadow rounded-lg p-6 mb-6">
+        <h3 class="text-lg font-medium text-slate-900 mb-4">직무 분류 테이블 상세</h3>
+        <div class="mermaid">
+            erDiagram
+            JobGroup {
+            string id PK "UUID"
+            string code UK "직군코드JG##"
+            string name "직군명"
+            text description "설명"
+            }
+
+            JobSeries {
+            string id PK "UUID"
+            string job_group_id FK "직군ID"
+            string code UK "직렬코드JS####"
+            string name "직렬명"
+            }
+
+            JobPosition {
+            string id PK "UUID"
+            string job_series_id FK "직렬ID"
+            string code UK "직무코드JP######"
+            string name "직무명"
+            int required_headcount "필요인원"
+            }
+
+            JobTaskNew {
+            string id PK "UUID"
+            string job_position_id FK "직무ID"
+            string code UK "과업코드JT########"
+            string name "과업명"
+            int difficulty "난이도1-5"
+            int importance "중요도1-5"
+            }
+
+            WorkItem {
+            string id PK "UUID"
+            string job_task_id FK "과업ID"
+            string code UK "업무코드WI##########"
+            string name "업무명"
+            string frequency "빈도"
+            float workload_amount "업무량시간"
+            }
+
+            JobGroup ||--o{ JobSeries : contains
+            JobSeries ||--o{ JobPosition : contains
+            JobPosition ||--o{ JobTaskNew : contains
+            JobTaskNew ||--o{ WorkItem : contains
+        </div>
+    </div>
+
+    <!-- Workload Survey Tables -->
+    <div class="bg-white shadow rounded-lg p-6 mb-6">
+        <h3 class="text-lg font-medium text-slate-900 mb-4">업무량 조사 테이블</h3>
+        <div class="mermaid">
+            erDiagram
+            SurveyPeriod {
+            string id PK "UUID"
+            string institution_id FK "기관ID"
+            string name "조사기간명"
+            date start_date "시작일"
+            date end_date "종료일"
+            string status "상태"
+            }
+
+            WorkloadEntry {
+            string id PK "UUID"
+            string survey_period_id FK "조사기간ID"
+            string user_id FK "사용자ID"
+            string job_task_id FK "과업ID"
+            float hours_spent "소요시간"
+            int occurrences "발생횟수"
+            float total_annual_hours "총연간시간"
+            }
+
+            SurveyPeriod ||--o{ WorkloadEntry : contains
+            User ||--o{ WorkloadEntry : submits
+            JobTaskNew ||--o{ WorkloadEntry : "tracked-in"
+        </div>
+    </div>
+
+    <!-- Performance Indexes -->
+    <div class="bg-white shadow rounded-lg p-6">
+        <h3 class="text-lg font-medium text-slate-900 mb-4">인덱스 & 성능 최적화</h3>
+        <div class="overflow-x-auto">
+            <table class="min-w-full divide-y divide-slate-200">
+                <thead class="bg-slate-50">
+                    <tr>
+                        <th class="px-6 py-3 text-left text-xs font-medium text-slate-500 uppercase">테이블</th>
+                        <th class="px-6 py-3 text-left text-xs font-medium text-slate-500 uppercase">인덱스명</th>
+                        <th class="px-6 py-3 text-left text-xs font-medium text-slate-500 uppercase">컬럼</th>
+                        <th class="px-6 py-3 text-left text-xs font-medium text-slate-500 uppercase">타입</th>
+                        <th class="px-6 py-3 text-left text-xs font-medium text-slate-500 uppercase">목적</th>
+                    </tr>
+                </thead>
+                <tbody class="bg-white divide-y divide-slate-200">
+                    <tr>
+                        <td class="px-6 py-4 text-sm text-slate-900">Institution</td>
+                        <td class="px-6 py-4 text-sm text-slate-600">idx_institution_code</td>
+                        <td class="px-6 py-4 text-sm text-slate-600">code</td>
+                        <td class="px-6 py-4 text-sm"><span
+                                class="px-2 py-1 bg-blue-100 text-blue-800 rounded text-xs">UNIQUE</span></td>
+                        <td class="px-6 py-4 text-sm text-slate-600">기관코드 중복 방지</td>
+                    </tr>
+                    <tr>
+                        <td class="px-6 py-4 text-sm text-slate-900">User</td>
+                        <td class="px-6 py-4 text-sm text-slate-600">idx_user_email</td>
+                        <td class="px-6 py-4 text-sm text-slate-600">email</td>
+                        <td class="px-6 py-4 text-sm"><span
+                                class="px-2 py-1 bg-blue-100 text-blue-800 rounded text-xs">UNIQUE</span></td>
+                        <td class="px-6 py-4 text-sm text-slate-600">이메일 중복 방지</td>
+                    </tr>
+                    <tr>
+                        <td class="px-6 py-4 text-sm text-slate-900">User</td>
+                        <td class="px-6 py-4 text-sm text-slate-600">idx_user_institution</td>
+                        <td class="px-6 py-4 text-sm text-slate-600">institution_id</td>
+                        <td class="px-6 py-4 text-sm"><span
+                                class="px-2 py-1 bg-green-100 text-green-800 rounded text-xs">INDEX</span></td>
+                        <td class="px-6 py-4 text-sm text-slate-600">기관별 사용자 조회</td>
+                    </tr>
+                    <tr>
+                        <td class="px-6 py-4 text-sm text-slate-900">JobGroup</td>
+                        <td class="px-6 py-4 text-sm text-slate-600">idx_jobgroup_code</td>
+                        <td class="px-6 py-4 text-sm text-slate-600">code, institution_id</td>
+                        <td class="px-6 py-4 text-sm"><span
+                                class="px-2 py-1 bg-blue-100 text-blue-800 rounded text-xs">UNIQUE</span></td>
+                        <td class="px-6 py-4 text-sm text-slate-600">기관내 직군코드 유일성</td>
+                    </tr>
+                    <tr>
+                        <td class="px-6 py-4 text-sm text-slate-900">WorkItem</td>
+                        <td class="px-6 py-4 text-sm text-slate-600">idx_workitem_task</td>
+                        <td class="px-6 py-4 text-sm text-slate-600">job_task_id</td>
+                        <td class="px-6 py-4 text-sm"><span
+                                class="px-2 py-1 bg-green-100 text-green-800 rounded text-xs">INDEX</span></td>
+                        <td class="px-6 py-4 text-sm text-slate-600">과업별 업무 조회</td>
+                    </tr>
+                    <tr>
+                        <td class="px-6 py-4 text-sm text-slate-900">WorkloadEntry</td>
+                        <td class="px-6 py-4 text-sm text-slate-600">idx_workload_user_period</td>
+                        <td class="px-6 py-4 text-sm text-slate-600">user_id, survey_period_id</td>
+                        <td class="px-6 py-4 text-sm"><span
+                                class="px-2 py-1 bg-green-100 text-green-800 rounded text-xs">INDEX</span></td>
+                        <td class="px-6 py-4 text-sm text-slate-600">사용자별 조사기간 조회</td>
+                    </tr>
+                    <tr>
+                        <td class="px-6 py-4 text-sm text-slate-900">OrganizationalUnit</td>
+                        <td class="px-6 py-4 text-sm text-slate-600">idx_org_parent</td>
+                        <td class="px-6 py-4 text-sm text-slate-600">parent_id</td>
+                        <td class="px-6 py-4 text-sm"><span
+                                class="px-2 py-1 bg-green-100 text-green-800 rounded text-xs">INDEX</span></td>
+                        <td class="px-6 py-4 text-sm text-slate-600">계층 구조 조회</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+<script>
+    mermaid.initialize({
+        startOnLoad: true,
+        theme: 'default',
+        flowchart: {
+            useMaxWidth: true,
+            htmlLabels: true,
+            curve: 'basis'
+        },
+        er: {
+            useMaxWidth: true
+        }
+    });
+</script>
+{% endblock %}

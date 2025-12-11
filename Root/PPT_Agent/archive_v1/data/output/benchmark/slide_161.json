@@ -1,0 +1,235 @@
+{
+  "slide_type": "Content",
+  "slide_number": 161,
+  "title": "3. 전략목표·전략과제 수립 - 경영관리 전략목표 도출 (2/2)",
+  "governing_message": "전략방향성과 SWOT 분석을 통해 도출된 전략과제에 기반하여 사회적가치 실현 선도 영역의 전략목표를 ‘건강한 일터에서 건강한 가치 창출'로 아래와 같이 도출하고 해당 전략과제를 선정함",
+  "layout": {
+    "grid_type": "custom",
+    "background_color": null
+  },
+  "content_data": {
+    "subtitle": null,
+    "date": null,
+    "client_name": null,
+    "framework_type": null,
+    "elements": null,
+    "sections": [
+      {
+        "title": "전략 방향성",
+        "blocks": [
+          {
+            "block_type": "text",
+            "content": "1. 해양 방제 기본역량 강화",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "2. 공적기능과 공공성 강화",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "3. 해양생태 통합관리체계 확장",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "4. 해양폐기물 정화·관리체계 강화",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "5. 해양환경변화 예측역량 강화",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "6. 해양환경 정책기능 강화",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "7. 미래성장사업 규모의 경제 실현",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "8. 해양환경 국민 플랫폼으로 성장",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "9. 해양 신산업 육성 기반조성",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "10. 해양 기후변화·탄소중립 주도",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          }
+        ]
+      },
+      {
+        "title": "SWOT 분석 도출 전략과제",
+        "blocks": [
+          {
+            "block_type": "text",
+            "content": "지역 해양환경 개선사업 발굴·추진 확대",
+            "position": "center",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "해안·어촌 활성화 뉴딜 사업 발굴, 추진",
+            "position": "center",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "해양환경 국민참여 통합 플랫폼 구축·육성",
+            "position": "center",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "윤리경영 시스템 고도화",
+            "position": "center",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "해양재난 예방 및 대응체계 고도화",
+            "position": "center",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "공단 관리사업 안전관리 확대 적용",
+            "position": "center",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          }
+        ]
+      },
+      {
+        "title": "사회적가치 전략목표",
+        "blocks": [
+          {
+            "block_type": "text",
+            "content": "사람중심 안전·혁신 경영",
+            "position": "center",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "상생협력 공정경제 생태계 조성",
+            "position": "center",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "건강하고 안전한 근로환경 제공",
+            "position": "center",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "투명한 경영으로 공정한 기회 보장",
+            "position": "center",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "footer": ""
+}

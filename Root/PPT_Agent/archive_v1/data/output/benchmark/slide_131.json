@@ -1,0 +1,35 @@
+{
+  "slide_type": "Framework",
+  "slide_number": 131,
+  "title": "2. 가치체계·전략체계 재정립 - 비전 후보 도출 (3/5)",
+  "governing_message": "전략 방향성으로부터 비전 구성요소별 키워드를 추출하여 비전 후보 “국민과 함께 지속가능한 바다를 만들어가는 해양환경 대표기관”을 아래와 같이 도출함",
+  "layout": {
+    "grid_type": "custom",
+    "background_color": "white"
+  },
+  "content_data": {
+    "subtitle": null,
+    "date": null,
+    "client_name": null,
+    "framework_type": "Process",
+    "elements": [
+      {
+        "label": "전략 방향성",
+        "description": "1. 해양 방제 기본역량 강화\n2. 공적기능과 공공성 강화\n3. 해양생태 통합관리체계 확장\n4. 해양폐기물 정화·관리체계 강화\n5. 해양환경변화 예측역량 강화\n6. 해양환경 정책기능 강화\n7. 미래성장사업 규모의 경제 실현\n8. 해양환경 국민 플랫폼으로 성장\n9. 해양 신산업 육성 기반조성\n10. 해양 기후변화·탄소중립 주도",
+        "position": "step-1"
+      },
+      {
+        "label": "비전 구성요소별 키워드",
+        "description": "미래 방향성\n해양 지속가능성 개선,\n해양환경 전문성\n\n도전적 목표\n대표, 전문, No. 1, 국제적 위상\n\n명확한 미래상\n해양환경 대표기관\n\n가슴 뛰는 영감\n국민과 함께, 만들어가는",
+        "position": "step-2"
+      },
+      {
+        "label": "비전 후보(案)",
+        "description": "국민과 함께\n지속가능한 바다를 만들어가는\n해양환경 대표기관",
+        "position": "step-3"
+      }
+    ],
+    "sections": null
+  },
+  "footer": "130"
+}

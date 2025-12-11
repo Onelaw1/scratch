@@ -1,0 +1,305 @@
+{
+  "slide_type": "Content",
+  "slide_number": 26,
+  "title": "1. 외부 환경분석 - 디지털 뉴딜 추진전략 분석 (2/4)",
+  "governing_message": "초중고 해양환경 교육과 어업인 및 전문가, 법정의무교육 제공 기관으로서 공단은 해양환경 교육 콘텐츠의 제작, 이러닝 및 가상훈련(VR·AR) 콘텐츠의 개발 및 제공 역할이 필요함",
+  "layout": {
+    "grid_type": "custom",
+    "background_color": "#FFFFFF"
+  },
+  "content_data": {
+    "subtitle": null,
+    "date": null,
+    "client_name": null,
+    "framework_type": null,
+    "elements": null,
+    "sections": [
+      {
+        "title": "디지털 뉴딜 추진전략 ② 교육 인프라 디지털 전환",
+        "blocks": [
+          {
+            "block_type": "text",
+            "content": "<온라인교육 통합플랫폼>",
+            "position": "top-right",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "D.N.A. 생태계 강화",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "교육 인프라 디지털 전환\n~22: 0.6조 원\n~25: 0.8조 원",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "비대면 산업 육성",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "SOC 디지털화",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "1 모든 초중고에 디지털 기반 교육 인프라 조성\n~'25: 0.3조원\n\n• 스마트 기기를 활용한 디지털 기반 스마트학교 구현\n\n■ 개인 맞춤형 학습서비스 제공 및 원격수업 확대 기반 마련\n- 온라인 교육 플랫폼 구축\n- 원격수업 인프라 확대",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "2 전국 대학·직업훈련기관 온라인 교육 강화\n~'25: 0.5조원\n\n• 대학 공동활용 온라인학습관리시스템(LMS) 구축 및 원격교육지원센터 설치\n\n• 한국형 온라인 공개강좌(K-MOOC) 우수 콘텐츠 확대\n\n■ 맞춤형 학습이 가능한 온라인 직업훈련으로 전환",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "공급자",
+            "position": "top-right",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "국가 및\n시도교육청",
+            "position": "top-right",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "민간\n교육·출판",
+            "position": "top-right",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "교사",
+            "position": "top-right",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "디지털콘텐츠\n아카이브",
+            "position": "top-right",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "온라인 교육\n통합플랫폼",
+            "position": "top-right",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "수요자",
+            "position": "top-right",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "학교",
+            "position": "top-right",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "학부모",
+            "position": "top-right",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "학생",
+            "position": "top-right",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "콘텐츠\n수집",
+            "position": "top-right",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "콘텐츠\n기록보존",
+            "position": "top-right",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "콘텐츠\n품질관리",
+            "position": "top-right",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "콘텐츠\n유통",
+            "position": "top-right",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "콘텐츠",
+            "position": "top-right",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "LMS",
+            "position": "top-right",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "학습소통",
+            "position": "top-right",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "학습평가",
+            "position": "top-right",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "콘텐츠 공급",
+            "position": "top-right",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "• 양질의 온라인 직업능력개발 서비스 제공을 위해 공공 스마트 직업훈련 플랫폼(STEP) 고도화 및 콘텐츠 확대\n- 콘텐츠 부족 분야 중심으로 이러닝·가상훈련(VR·AR) 콘텐츠를 개발·탑재",
+            "position": "bottom-right",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "✓ 초중고 대상 해양환경교육 콘텐츠 공급자로서 교육 콘텐츠 제작, 공급 확대 필요\n✓ 어업인, 전문가 및 법정 의무교육 제공자로서 이러닝, 가상훈련(VR·AR) 콘텐츠 개발 및 제공 역할 기대",
+            "position": "bottom-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "footer": "Ⅱ. 내·외부 환경분석"
+}

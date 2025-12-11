@@ -1,0 +1,120 @@
+{
+  "slide_type": "Framework",
+  "slide_number": 153,
+  "title": "3. 전략목표·전략과제 수립 - W-T전략",
+  "governing_message": "약점과 위협요인을 결합하여 위험을 회피하거나 최소화하기 위한 W-T 개선과 혁신 전략 과제를 다음과 같이 도출함",
+  "layout": {
+    "grid_type": "custom",
+    "background_color": "#FFFFFF"
+  },
+  "content_data": {
+    "subtitle": null,
+    "date": null,
+    "client_name": null,
+    "framework_type": "2x2",
+    "elements": [
+      {
+        "label": "수익성\n악화와 높은\n인건비\n비중으로\n인한 재정\n위기",
+        "description": null,
+        "position": "top-right"
+      },
+      {
+        "label": "단위사업의\n낮은 연속성",
+        "description": null,
+        "position": "top-right"
+      },
+      {
+        "label": "단기성과\n중심\n사업관리 및\n의사결정\n성향",
+        "description": null,
+        "position": "top-right"
+      },
+      {
+        "label": "해양환경\n정책\n연구·입안\n역량 부족",
+        "description": null,
+        "position": "top-right"
+      },
+      {
+        "label": "미래성장사업\n투자를 위한\n재원 부족",
+        "description": null,
+        "position": "top-right"
+      },
+      {
+        "label": "부서간\n정보공유 및\n의사소통\n부족",
+        "description": null,
+        "position": "top-right"
+      },
+      {
+        "label": "기관에 대한\n낮은 외부\n인지도",
+        "description": null,
+        "position": "top-right"
+      },
+      {
+        "label": "정부의 친환경선박 전환 정책 추진",
+        "description": null,
+        "position": "bottom-left"
+      },
+      {
+        "label": "저성장·고실업의 뉴노멀 기조 지속",
+        "description": null,
+        "position": "bottom-left"
+      },
+      {
+        "label": "코로나19, 경제성장률 하락에 따른\n항만물동량 감소",
+        "description": null,
+        "position": "bottom-left"
+      },
+      {
+        "label": "코로나19로 인한 비대면, 디지털\n소비패턴 변화",
+        "description": null,
+        "position": "bottom-left"
+      },
+      {
+        "label": "자율주행선박, AI, IoT, 5G 등 신기술\n개발 및 상용화",
+        "description": null,
+        "position": "bottom-left"
+      },
+      {
+        "label": "공적기능 강화 및 민간경쟁 지양\n요구 증대",
+        "description": null,
+        "position": "bottom-left"
+      },
+      {
+        "label": "중대재해처벌법 등안전관리 책임 강화",
+        "description": null,
+        "position": "bottom-left"
+      },
+      {
+        "label": "구조적 손실 사업의 축소\n및 조정",
+        "description": null,
+        "position": "center"
+      },
+      {
+        "label": "공단 재정구조 전환 검토,\n추진",
+        "description": null,
+        "position": "center"
+      },
+      {
+        "label": "사업·투자 선택 기준과 절차\n재정립",
+        "description": null,
+        "position": "center"
+      },
+      {
+        "label": "예선 등 자체수익사업\n공공성 강화",
+        "description": null,
+        "position": "center"
+      },
+      {
+        "label": "윤리경영 시스템 고도화",
+        "description": null,
+        "position": "center"
+      },
+      {
+        "label": "데이터 기반 의사결정 체계\n강화",
+        "description": null,
+        "position": "center"
+      }
+    ],
+    "sections": null
+  },
+  "footer": "Ⅲ. 가치체계·전략체계 재정립"
+}

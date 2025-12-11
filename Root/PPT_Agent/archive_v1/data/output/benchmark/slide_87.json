@@ -1,0 +1,110 @@
+{
+  "slide_type": "Content",
+  "slide_number": 87,
+  "title": "3. 이해관계자 분석 - 분야 전문가 의견수렴 (1/2)",
+  "governing_message": "해양환경 및 해양정책부문 전문가 인터뷰에서 공단의 미래 방향성과 개선사항에 대해 아래와 같이 의견을 수렴함",
+  "layout": {
+    "grid_type": "2-column",
+    "background_color": null
+  },
+  "content_data": {
+    "subtitle": null,
+    "date": null,
+    "client_name": null,
+    "framework_type": null,
+    "elements": null,
+    "sections": [
+      {
+        "title": "미래 방향성과 위상",
+        "blocks": [
+          {
+            "block_type": "text",
+            "content": "해양정책 전문가 의견수렴 (F.G.I.)\n\n• 공단의 기본은 정책의 수행하는 집행기관으로, 기능과 역할에 집중 필요\n  - 오염이 심화된 부분의 회복과 복원, 오염의 예방이 우선순위가 되어야 하며,\n    해양오염의 이슈와 현황을 확인하고 이를 해결하는 것에 총력을 다해야 함\n• 국내외 기관과 협력, 공조를 통해 해양환경 관련 네트워크의 중심이 되어야 함\n  - 해양환경공단의 업무영역 지속 확장, 관련 기관·단체와의 협력이 중요해짐\n  - 해양환경을 종합하는 (정책집행) 기관이 되는 것이 좋을 것으로 판단\n  - 정책수립은 해양수산부가 해야 할 기능이며, 공단은 집행기능 집중 필요\n• 기후변화 대응과 탄소중립은 중요한 주제이나 주관하는 기관 아직 없음\n  - 기후변화, 탄소중립은 단일 항목으로도 공단이 조직을 갖추고 적극적으로\n    시행하면 이후에 공단이 더 큰 위상을 가지는 데 도움이 될 것",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "해양환경 전문 정책집행기관 역할 집중",
+            "position": "top-right",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "국내외 기관과 협력, 공조를 통한\n해양환경 네트워크의 중심역할 필요",
+            "position": "top-right",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "기후변화대응·탄소중립 적극적 대응을\n통한 공단 주도 필요",
+            "position": "top-right",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          }
+        ]
+      },
+      {
+        "title": "미래를 위한 개선사항",
+        "blocks": [
+          {
+            "block_type": "text",
+            "content": "• 해양환경은 국내 정책, 주변국 이슈, 국제사회 등 종합적인 관점의 대응 필요\n  - 해양환경 관련 글로벌 포럼 등 국제적 리더십 프로그램 필요 (공동진행 제안)\n• 공단은 현재 공기업으로 분류되어 이익을 취해야 하는데, 장기적으로 공공성을\n  올릴지에 대한 선택 필요 (공기업보다 위탁집행형 준정부기관 적정 의견)\n• 해양\"환경\"영역을 포괄적 의미에서 확장하는 것은 괜찮지만, 기능, 범위, 역량\n  확대에는 우선순위가 필요 : 문제 있고 꼭 해야 하는 중요한 것에 우선순위\n• 경영목표는 현실성이 있게 수립되어야 하고 하위 목표가 잘 연결되어야 함\n• 공단 임직원 해양수산부에 너무 끌려 다니는 것 같음 (방어막 필요)",
+            "position": "bottom-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "해양환경 국제협력 및 리더십 확보",
+            "position": "bottom-right",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "공공성 강화를 우선순위로 기능과 범위,\n역량의 확대 필요",
+            "position": "bottom-right",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "경영목표 현실성, 체계성 보완 필요",
+            "position": "bottom-right",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "footer": "Ⅱ. 내·외부 환경분석"
+}

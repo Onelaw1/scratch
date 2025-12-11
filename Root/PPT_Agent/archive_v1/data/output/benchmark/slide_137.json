@@ -1,0 +1,100 @@
+{
+  "slide_type": "Data",
+  "slide_number": 137,
+  "title": "2. 가치체계·전략체계 재정립 - 기존 비전 슬로건 전환 : 임직원 설문조사",
+  "governing_message": "슬로건 임직원 선호도 설문 결과, 기존 비전인 “건강한 바다, 풍요로운 미래, 행복한 국민 with KOEM”을 슬로건으로 사용하는 것에 대하여 대다수(90%)의 찬성으로 슬로건으로 채택함",
+  "layout": {
+    "grid_type": "2-column",
+    "background_color": null
+  },
+  "content_data": {
+    "subtitle": null,
+    "date": null,
+    "client_name": null,
+    "framework_type": null,
+    "elements": null,
+    "sections": [
+      {
+        "title": "기존 비전 슬로건 활용 선호도 설문 : 기존 비전의 슬로건 채택",
+        "blocks": [
+          {
+            "block_type": "text",
+            "content": "기존 비전인 “건강한 바다, 풍요로운 미래, 행복한 국민 with KOEM\"은 공단의 가치를 잘 담고 있어, 새로운 가치체계에서 슬로건(Slogan)으로 사용하여 기존 디자인과 도안을 활용하는 것에 대해 어떻게 생각하는지 선택해 주십시오",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "image",
+            "content": "건강한 바다\n풍요로운 미래\n행복한 국민\nwith KOEM",
+            "position": "center",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "찬성 슬로건으로 활용하는 것이 적절하고 좋겠다",
+            "position": "bottom-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "반대 슬로건으로 활용하는 것은 부적절하다",
+            "position": "bottom-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          }
+        ]
+      },
+      {
+        "title": null,
+        "blocks": [
+          {
+            "block_type": "chart",
+            "content": "320\n(단위: 명)\n응답자 대다수(320명, 90%)가\n\"건강한 바다, 풍요로운 미래, 행복한 국민\nwith KOEM\"을 슬로건으로 사용하는\n것이 적절하다는 의견\n찬성\n35\n반대",
+            "position": "top-right",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "설문 결과\n및\n슬로건 적용",
+            "position": "bottom-right",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "✓ 응답자 대다수(90%)가 \"건강한 바다, 풍요로운 미래, 행복한 국민 with KOEM\"을 슬로건으로 사용하는\n것에 찬성하는 것으로 조사됨\n→ 공단 2030 新 가치체계 \"슬로건\"으로 채택함",
+            "position": "bottom-right",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "footer": "KOEM 해양환경공단"
+}

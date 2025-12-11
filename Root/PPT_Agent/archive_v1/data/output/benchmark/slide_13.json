@@ -1,0 +1,375 @@
+{
+  "slide_type": "Content",
+  "slide_number": 13,
+  "title": "1. 외부 환경분석 - 해양환경종합계획 정책 주안점 변화",
+  "governing_message": "1차 해양오염방지 5개년 계획으로부터 5차 해양환경종합계획까지의 정책 변화를 비교해보면, 오염 예방과 방제 중심에서 해양환경과 해양생태계 건강성의 유지·보전, 이용하고 즐기는 해양환경으로 개념 전환을 확인할 수 있음",
+  "layout": {
+    "grid_type": "custom",
+    "background_color": "#FFFFFF"
+  },
+  "content_data": {
+    "subtitle": null,
+    "date": null,
+    "client_name": null,
+    "framework_type": null,
+    "elements": null,
+    "sections": [
+      {
+        "title": "제 1~5차 해양환경종합계획 비교",
+        "blocks": [
+          {
+            "block_type": "text",
+            "content": "1996~2000",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "2001~2005",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "2006~2010",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "2011~2020",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "2021~2030",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "제1차 해양오염방지\n5개년 계획",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "제2차 해양환경보전\n종합계획",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "제3차 해양환경보전\n종합계획",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "제4차 해양환경\n종합계획",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "제5차 해양환경 종합계획",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "인간과 해양생태계가\n공존하는 21세기\n해양친수공간 조성",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "쾌적하고 생명력 넘치는\n해양환경 달성",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "생태계 중심, 경제와 상생,\n참여와 협력",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "건강하고 생산적인 바다",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "사람과 자연이 건강하게\n공존하는 바다",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "비전",
+            "position": "top-left",
+            "style": {
+              "is_bold": true,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "목표",
+            "position": "top-left",
+            "style": {
+              "is_bold": true,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "정책\n전략",
+            "position": "top-left",
+            "style": {
+              "is_bold": true,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "육상기인 오염물질의 근원적\n차단, 무적조 해역조성\n• 해양오염사고 예방 및\n방제체제 확충\n• 해양환경보전을 위한\n지원체제 확립",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "• 적조방지 종합대책\n• 해양오염사고 방제기능 강화\n해양생태계 보전\n• 어민피해보상 등 지원제도\n개선\n• 해양환경보전을 위한\n국제협력",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "깨끗한 해양수질 달성\n• 건강한 해양생태계 조성\n풍요로운 해양자원 보전",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "육상기인 오염원의 해양유입\n방지\n해양기인 오염원의 관리\n해양수질 개선 및 생태계\n보전\n국제협력 강화 및\n지구환경보전",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "해양생태계 건강성 증진\n• 해양수질 및 해저퇴적물\n환경의 개선\n• 정책시행 기반확립",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "해양생태계 보전 및 관리\n육상기인 오염원의 체계적 관리\n해양환경 개선 및 오염원의\n예방적 관리\n해양환경관리정책 인프라 강화\n및 국제협력",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "생태적으로 건강한\n해양환경 조성",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "• (보전) 해양의 가치를 높이는 환경\n생태관리\n• (이용) 쾌적한 해양환경의 조성과\n이용도 증진\n• (성장) 친환경적 해양 경제활동의\n정착과 지속가능한 성장",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "• 육상기인 오염원\n국가관리체계 확립\n해양기인 오염대응능력 확충\n• 해양생태계 건강성 유지·보전\n• 기후친화적 해양환경 관리\n강화\n해양환경정책 인프라 강화",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "• 깨끗한 수질이 유지되는 청정한\n바다\n• 건강한 생태계가 살아있는 바다\n• 쾌적한 해양생활을 즐기는 바다\n·친환경적인 경제활동이\n이루어지는 바다\n• 녹색 해양산업이 펼쳐지는 바다\n• 기후변화에 대응하고 체계적으로\n계획된 바다",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "해양환경관리기반 강화",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "정책\n주안점",
+            "position": "top-left",
+            "style": {
+              "is_bold": true,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "✓ 해양오염사고, 적조 등\n오염 예방과 대응 중점\n✓ 오염에 따른 피해 보상과\n지원 등 관리기준 마련",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "✓ 육상·해상 오염원 관리를\n통한 해양수질 개선 중점\n✓ 대형 오염사고 대응 및\n해양오염 방제능력 확충",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "✓ 연안지역 중심 오염원\n관리 체계화 중점\n✓ 해양 생태계 보전·관리\n확대 및 강화\n√ 유류오염 방제능력 강화",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "√ 오염원 유입 관리 강화\n✓ 조사, 보전, 복원 등\n생태계 건강성 유지·보전\n√ 해양환경 국제협력 강화",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "√ 해양환경 보전, 이용, 성장의\n관점에서 목표 수립\n✓ 국민이 이용하고 즐기는 해양\n환경·생태 관리로 개념 확대\n✓ 디지털기술 적용, 스마트 관리",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "footer": "*Source : 제5차 해양환경종합계획(2021~2030), 2021.01, 해양수산부"
+}

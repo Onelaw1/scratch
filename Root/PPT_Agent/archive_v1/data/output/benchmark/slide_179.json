@@ -1,0 +1,35 @@
+{
+  "slide_type": "Data",
+  "slide_number": 179,
+  "title": "4. 경영목표 수립 - 경영목표 후보군 평가 (1/2)",
+  "governing_message": "경영목표 후보군 평가를 아래와 같이 실시하여 해양보전부문의 1등급 해역비율, 갯벌복원 면적, 해양방제부문의 공단 통합 해상방제능력, 미래성장사업부문의 미래성장사업 매출 비율을 경영목표로 선정함",
+  "layout": {
+    "grid_type": "custom",
+    "background_color": "white"
+  },
+  "content_data": {
+    "subtitle": null,
+    "date": null,
+    "client_name": null,
+    "framework_type": null,
+    "elements": null,
+    "sections": [
+      {
+        "title": "경영목표 후보군 평가 : SMART 평가기준 적용",
+        "blocks": [
+          {
+            "block_type": "table",
+            "content": "The slide shows a table-like structure with multiple rows divided into four sections:\n1. <해양보전부문 지표>\n   - 1등급 해역 비율\n   - 해양생태계 보전지수\n   - 연안·해양 보호구역 면적\n   - 갯벌복원 면적\n   - 특별관리해역 수질 2등급 이상 비율\n2. <해양사업부문 지표>\n   - 항만예선 공익 투입률\n   - 예선사업 수익성\n   - 예선사업 매출실적 달성도\n   - 항만예선 구조·구난 건수\n   - 자산(예선) 및 노동 생산성\n3. <해양방제부문 지표>\n   - 공단 통합 해상방제능력\n   - 해양오염사고방제 참여율\n   - 해양오염사고 예방률\n   - 해양오염사고 방제 점유율\n   - 해양오염 예측 정확도\n4. <미래성장사업 지표>\n   - 미래성장사업 매출 비율\n   - 미래성장사업 매출액\n   - 해양환경 국민 플랫폼 참여자 수\n   - 해양 정책입안 수\n   - 해양환경 국제협력 네트워크 수\nEach row has a SMART assessment (S, M, A, R, T) indicated by filled or partially filled circles.",
+            "position": "full-width",
+            "style": {
+              "is_bold": false,
+              "color_hex": "black",
+              "font_size": 10
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "footer": "Ⅲ. 가치체계·전략체계 재정립"
+}

@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>직무평가 (Job Evaluation)</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap"
+        rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#2563EB',
+                        secondary: '#475569',
+                        success: '#10B981',
+                        warning: '#F59E0B',
+                    },
+                    fontFamily: {
+                        sans: ['Noto Sans KR', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Custom Range Slider */
+        input[type=range] {
+            -webkit-appearance: none;
+            width: 100%;
+            background: transparent;
+        }
+
+        input[type=range]::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            height: 24px;
+            width: 24px;
+            border-radius: 50%;
+            background: #2563EB;
+            cursor: pointer;
+            margin-top: -10px;
+            box-shadow: 0 2px 6px rgba(37, 99, 235, 0.4);
+        }
+
+        input[type=range]::-webkit-slider-runnable-track {
+            width: 100%;
+            height: 4px;
+            cursor: pointer;
+            background: #E2E8F0;
+            border-radius: 2px;
+        }
+
+        .marker {
+            position: absolute;
+            top: -25px;
+            transform: translateX(-50%);
+            font-size: 0.75rem;
+            color: #64748B;
+            font-weight: 600;
+        }
+
+        .marker::after {
+            content: '▼';
+            display: block;
+            text-align: center;
+            color: #CBD5E1;
+            font-size: 0.6rem;
+        }
+    </style>
+</head>
+
+<body class="bg-slate-50 text-slate-800 antialiased min-h-screen flex flex-col">
+
+    <!-- Header -->
+    <header
+        class="bg-white border-b border-slate-200 px-8 py-4 flex justify-between items-center sticky top-0 z-10 shadow-sm">
+        <div class="flex items-center gap-4">
+            <div class="bg-primary text-white font-bold rounded-lg w-10 h-10 flex items-center justify-center">06</div>
+            <div>
+                <h1 class="text-xl font-bold text-slate-900">직무평가 (Job Evaluation)</h1>
+                <p class="text-xs text-slate-500">평가 대상: <span class="font-bold text-primary">예산 기획 담당 (G3)</span></p>
+            </div>
+        </div>
+        <div class="flex gap-3">
+            <button class="px-4 py-2 text-sm font-bold text-slate-500 hover:bg-slate-100 rounded">임시저장</button>
+            <button
+                class="px-4 py-2 text-sm font-bold text-white bg-primary hover:bg-blue-700 rounded shadow-lg transition-transform active:scale-95">평가
+                제출</button>
+        </div>
+    </header>
+
+    <main class="flex-1 max-w-5xl mx-auto w-full p-8 grid grid-cols-3 gap-8">
+
+        <!-- Left: Evaluation Form -->
+        <div class="col-span-2 space-y-8">
+
+            <!-- Factor 1: Expertise -->
+            <div
+                class="bg-white p-6 rounded-xl shadow-sm border border-slate-200 group hover:border-primary transition-colors">
+                <div class="flex justify-between mb-6">
+                    <div>
+                        <h3 class="text-lg font-bold text-slate-900">1. 전문성 (Expertise)</h3>
+                        <p class="text-sm text-slate-500">해당 직무 수행에 필요한 지식과 경험의 수준</p>
+                    </div>
+                    <div class="text-2xl font-bold text-primary" id="score-1">50</div>
+                </div>
+
+                <div class="relative pt-6 pb-2">
+                    <!-- Benchmark Marker (Avg) -->
+                    <div class="marker" style="left: 60%">Avg (60)</div>
+
+                    <input type="range" min="0" max="100" value="50" class="w-full"
+                        oninput="updateScore(1, this.value)">
+                    <div class="flex justify-between text-xs text-slate-400 mt-2 font-medium">
+                        <span>기초 (0)</span>
+                        <span>실무 (50)</span>
+                        <span>전문 (100)</span>
+                    </div>
+                </div>
+
+                <div class="mt-4 bg-slate-50 p-3 rounded text-sm text-slate-600">
+                    <span class="font-bold text-primary">Guide:</span>
+                    <span id="guide-1">일반적인 실무 지식이 요구되는 수준입니다.</span>
+                </div>
+            </div>
+
+            <!-- Factor 2: Responsibility -->
+            <div
+                class="bg-white p-6 rounded-xl shadow-sm border border-slate-200 group hover:border-primary transition-colors">
+                <div class="flex justify-between mb-6">
+                    <div>
+                        <h3 class="text-lg font-bold text-slate-900">2. 책임성 (Responsibility)</h3>
+                        <p class="text-sm text-slate-500">의사결정의 영향력 및 실패 시 리스크 크기</p>
+                    </div>
+                    <div class="text-2xl font-bold text-primary" id="score-2">50</div>
+                </div>
+
+                <div class="relative pt-6 pb-2">
+                    <div class="marker" style="left: 40%">Avg (40)</div>
+                    <input type="range" min="0" max="100" value="50" class="w-full"
+                        oninput="updateScore(2, this.value)">
+                    <div class="flex justify-between text-xs text-slate-400 mt-2 font-medium">
+                        <span>보조 (0)</span>
+                        <span>담당 (50)</span>
+                        <span>총괄 (100)</span>
+                    </div>
+                </div>
+
+                <div class="mt-4 bg-slate-50 p-3 rounded text-sm text-slate-600">
+                    <span class="font-bold text-primary">Guide:</span>
+                    <span id="guide-2">본인 업무에 대해 제한적 책임을 집니다.</span>
+                </div>
+            </div>
+
+            <!-- Factor 3: Complexity -->
+            <div
+                class="bg-white p-6 rounded-xl shadow-sm border border-slate-200 group hover:border-primary transition-colors">
+                <div class="flex justify-between mb-6">
+                    <div>
+                        <h3 class="text-lg font-bold text-slate-900">3. 난이도 (Complexity)</h3>
+                        <p class="text-sm text-slate-500">문제 해결의 복잡성 및 창의성 요구 수준</p>
+                    </div>
+                    <div class="text-2xl font-bold text-primary" id="score-3">50</div>
+                </div>
+
+                <div class="relative pt-6 pb-2">
+                    <div class="marker" style="left: 70%">Avg (70)</div>
+                    <input type="range" min="0" max="100" value="50" class="w-full"
+                        oninput="updateScore(3, this.value)">
+                    <div class="flex justify-between text-xs text-slate-400 mt-2 font-medium">
+                        <span>단순 (0)</span>
+                        <span>복합 (50)</span>
+                        <span>창의 (100)</span>
+                    </div>
+                </div>
+
+                <div class="mt-4 bg-slate-50 p-3 rounded text-sm text-slate-600">
+                    <span class="font-bold text-primary">Guide:</span>
+                    <span id="guide-3">정해진 절차에 따라 문제를 해결합니다.</span>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Right: Summary & AI Insight -->
+        <div class="col-span-1 space-y-6">
+
+            <!-- Total Score Card -->
+            <div class="bg-slate-900 text-white p-6 rounded-xl shadow-lg">
+                <div class="text-slate-400 text-sm font-bold uppercase mb-2">Total Score</div>
+                <div class="flex items-baseline gap-2">
+                    <span class="text-5xl font-bold tracking-tight" id="total-score">150</span>
+                    <span class="text-slate-400">/ 300</span>
+                </div>
+                <div class="mt-4 pt-4 border-t border-slate-700">
+                    <div class="flex justify-between text-sm mb-1">
+                        <span class="text-slate-300">Estimated Grade</span>
+                        <span class="font-bold text-yellow-400" id="est-grade">G3</span>
+                    </div>
+                    <div class="w-full bg-slate-700 h-2 rounded-full overflow-hidden">
+                        <div class="bg-yellow-400 h-full transition-all duration-500" style="width: 50%" id="grade-bar">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- AI Insight -->
+            <div class="bg-blue-50 border border-blue-100 p-6 rounded-xl">
+                <div class="flex items-center gap-2 mb-3">
+                    <svg class="w-5 h-5 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                    </svg>
+                    <h4 class="font-bold text-blue-900">AI Insight</h4>
+                </div>
+                <p class="text-sm text-blue-800 leading-relaxed" id="ai-insight">
+                    현재 점수는 <strong>산업 평균 대비 10% 낮습니다.</strong><br>
+                    '책임성' 항목이 다소 보수적으로 평가된 것으로 보입니다. 해당 직무가 예산 '기획' 업무를 포함한다면 60점 이상이 적절할 수 있습니다.
+                </p>
+            </div>
+
+            <!-- Validation Status -->
+            <div class="bg-white border border-slate-200 p-6 rounded-xl">
+                <h4 class="font-bold text-slate-900 mb-4">Validation Check</h4>
+                <ul class="space-y-3 text-sm">
+                    <li class="flex items-center gap-2 text-green-600">
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7">
+                            </path>
+                        </svg>
+                        필수 항목 입력 완료
+                    </li>
+                    <li class="flex items-center gap-2 text-green-600">
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7">
+                            </path>
+                        </svg>
+                        이상치(Outlier) 없음
+                    </li>
+                    <li class="flex items-center gap-2 text-slate-400">
+                        <div class="w-4 h-4 border-2 border-slate-300 rounded-full"></div>
+                        최종 제출 대기
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </main>
+
+    <script>
+        function updateScore(id, value) {
+            // Update Number Display
+            document.getElementById(`score-${id}`).innerText = value;
+
+            // Update Guide Text (Mock Logic)
+            const guides = {
+                1: ["기초적인 업무 지식 필요", "일반적인 실무 지식 필요", "고도의 전문 지식 필요"],
+                2: ["단순 보조 업무 수행", "본인 업무에 대한 책임", "조직 전체에 영향을 미치는 책임"],
+                3: ["단순 반복 업무", "정해진 절차에 따른 해결", "새로운 해결책 창출 필요"]
+            };
+            const level = value < 33 ? 0 : value < 66 ? 1 : 2;
+            document.getElementById(`guide-${id}`).innerText = guides[id][level];
+
+            // Calculate Total
+            const s1 = parseInt(document.getElementById('score-1').innerText);
+            const s2 = parseInt(document.getElementById('score-2').innerText);
+            const s3 = parseInt(document.getElementById('score-3').innerText);
+            const total = s1 + s2 + s3;
+
+            document.getElementById('total-score').innerText = total;
+
+            // Update Grade Bar
+            const percentage = (total / 300) * 100;
+            document.getElementById('grade-bar').style.width = `${percentage}%`;
+
+            // Update Estimated Grade
+            let grade = 'G5';
+            if (total > 240) grade = 'G1';
+            else if (total > 180) grade = 'G2';
+            else if (total > 120) grade = 'G3';
+            else if (total > 60) grade = 'G4';
+            document.getElementById('est-grade').innerText = grade;
+
+            // Update AI Insight (Mock)
+            const insight = document.getElementById('ai-insight');
+            if (total > 200) {
+                insight.innerHTML = "현재 점수는 <strong>상위 20%</strong>에 해당합니다.<br>책임성과 난이도가 높게 평가되었습니다. 과대 평가 가능성을 한 번 더 확인해보세요.";
+            } else if (total < 100) {
+                insight.innerHTML = "현재 점수는 <strong>하위 20%</strong>에 해당합니다.<br>단순 반복 업무로 분류될 가능성이 높습니다. 직무 재설계가 필요할 수 있습니다.";
+            } else {
+                insight.innerHTML = "현재 점수는 <strong>산업 평균 범위</strong> 내에 있습니다.<br>적절한 평가로 보입니다.";
+            }
+        }
+    </script>
+</body>
+
+</html>

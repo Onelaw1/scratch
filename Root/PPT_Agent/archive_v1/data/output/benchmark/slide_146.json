@@ -1,0 +1,110 @@
+{
+  "slide_type": "Content",
+  "slide_number": 146,
+  "title": "2. 가치체계·전략체계 재정립 - 임직원 설문조사 개요 및 결과",
+  "governing_message": "공단의 新가치체계 선정을 위해 가치체계 후보案에 대한 임직원 선호도 설문조사 결과, 총 372명(참여율 52.8%)이 참여하여 아래와 같이 가치체계 선호도 조사에 따라 新가치체계를 선정함",
+  "layout": {
+    "grid_type": "2-column",
+    "background_color": null
+  },
+  "content_data": {
+    "subtitle": null,
+    "date": null,
+    "client_name": null,
+    "framework_type": null,
+    "elements": null,
+    "sections": [
+      {
+        "title": "설문조사 목적 및 수행방법",
+        "blocks": [
+          {
+            "block_type": "text",
+            "content": "• 공단 임직원의 공단의 미션, 비전, 핵심가치 등 新가치체계 후보에 대한 선호도와 의견을 반영함\n• 가치체계 재정립 과정에서 임직원의 의견을 반영하여 새로운 가치체계에 대한 수용도를 제고함",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "• 2021.04.28 ~ 2021.05.06\n- 9일 동안 진행",
+            "position": "center",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "• KOEM 임직원 대상\n- 설문대상 임직원 704명 중 372명 설문 참여\n- 참여율 52.8%",
+            "position": "center",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "• 온라인 설문 (모바일 포함)\n: 온라인 설문 URL를 통해 각 문항에 대하여 설문 참여자의 선호도 답변 선택\n- 미션, 비전, 핵심가치에 대해 선호案 선택\n- 기존 비전의 슬로건 활용에 대한 의견 수렴\n- 각 항목에 대한 추가 의견 서술",
+            "position": "bottom-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          }
+        ]
+      },
+      {
+        "title": "설문결과 선정된 新 가치체계",
+        "blocks": [
+          {
+            "block_type": "text",
+            "content": "깨끗하고 안전한 바다로 국민 행복을 증진하고,\n해양의 더 나은 미래를 열어간다",
+            "position": "top-right",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "해양의 보전과 이용을 선도하는\n해양환경 국민 플랫폼 기관",
+            "position": "center",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "전문역량, 안전우선, 열린혁신, 협력성장",
+            "position": "center",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "건강한 바다, 풍요로운 미래, 행복한 국민\nwith KOEM",
+            "position": "bottom-right",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "footer": null
+}

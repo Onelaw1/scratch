@@ -1,0 +1,70 @@
+{
+  "slide_type": "Content",
+  "slide_number": 66,
+  "title": "2. 내부 환경·역량 분석 - 인사제도 및 운영 진단 (1/4)",
+  "governing_message": "인사제도 및 운영에 대해 현안을 중심으로 진단해보면, 심각한 승진 적체로 인해 승진 뿐만 아니라 배치, 평가, 보상 등 다양한 영역에서 문제가 나타나고 있으며, 동기부여에도 심각한 영향을 주고 있어 적절한 대안 마련이 필요함",
+  "layout": {
+    "grid_type": "2-column",
+    "background_color": "#FFFFFF"
+  },
+  "content_data": {
+    "subtitle": null,
+    "date": null,
+    "client_name": null,
+    "framework_type": null,
+    "elements": null,
+    "sections": [
+      {
+        "title": null,
+        "blocks": [
+          {
+            "block_type": "text",
+            "content": "인사운영 진단 : 현안 이슈 중심 진단",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "table",
+            "content": "구분\n직무 체계\n채용\n직급·승진\n목표·성과관리\n(성과)평가\n보상\n배치·경력관리\n교육훈련\n\n현안이슈 중심 진단\n• 부서별 직무 기준으로 운영되는 것이 원칙이나, 개인에 직무(업무)가 따라가기도 함\n• 해양보전본부의 직무는 지속 증가하는 반면, 방제본부, 해양사업은 유지, 감소됨\n• 해양환경 전문인력 확보, 양성을 위한 채용 가산점 등 제도개선 필요 의견 (현재는 지나치게 비전공자가 주로 채용되고 있음)\n• 승진 적체현상 심각한 수준 (특히 차장→팀장, 대리→과장 승진 적체)\n• 차장 이후는 직위에 공백 또는 증가가 발생해야 승진이 가능한 구조로 운영됨\n• 목표에 대한 최종 달성관리 중심으로 달성 과정의 피드백과 관리 부족함\n• 부서 목표와 성과관리가 공단 경영평가 위주로 운영되는 성향이 강함\n• 성과 평가의 공정성에 대한 신뢰도 높지 않고, 평가에 대한 불만 큼\n• 본부별 개인평가 개별 운영으로, 공단 전체 관점 평가기준 조정 및 결과 조율 필요\n• 성과급의 차등이 줄어 동기부여나 성과관리의 기제로 작용되지 않고 있음\n• 직무급을 시행하고 있으나, 보직에 대한 직무급이고 연장근로수당을 재원으로 함\n• 순환보직 실시에 따른 전문성 저하 (연구직, 전문영역 실무직 등)\n• 직원 역량강화를 위한 경력개발계획(CDP) 부족하고, 적절히 운영되지 않고 있음\n• 각 개별 팀에서 OJT(직무 내 교육) 위주로 교육훈련 실시\n• 전문성 강화를 위한 전문교육과 경력개발을 위한 교육과정 부족",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          }
+        ]
+      },
+      {
+        "title": null,
+        "blocks": [
+          {
+            "block_type": "text",
+            "content": "Key Findings",
+            "position": "top-right",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "✓ 직원의 인사제도와 운영의 투명성, 공정성, 예측가능성에 대한 평가와 기대 높지 않음\n✓ 승진로 인사평가에 대한 불신과 불만, 본부별 평가에 따른 부서간 상호 견제 등 다양한 문제 발생되고 있음\n✓ 해양 및 해양환경 분야 전문성 강화에 대한 대내외 요구가 크지만, 순환보직, CDP 부족 등 전문성 강화 방안은 적절히 시행되지 않고 있음\n✓ 전략의 실행력 강화를 위해 실행과제의 수행방식 등 동기부여를 위한 방안 필요\n✓ 전문성 강화를 위한 인재개발 및 경력개발계획 관련 제도 보완과 시행 필요",
+            "position": "top-right",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "footer": null
+}

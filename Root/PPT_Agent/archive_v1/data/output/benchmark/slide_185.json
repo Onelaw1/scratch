@@ -1,0 +1,80 @@
+{
+  "slide_type": "Data",
+  "slide_number": 185,
+  "title": "4. 경영목표 수립 - 경영목표 설정 ① 1등급 해역 비율 (2/3)",
+  "governing_message": "1등급 해역 비율의 해역별 수질등급기준을 WQI를 사용하고, 제5차 해양환경종합계획에서 '19년 현황을 기준으로, '25년 및 '30년의 목표를 각각 65%, 73%로 수립하고 있음",
+  "layout": {
+    "grid_type": "custom",
+    "background_color": "white"
+  },
+  "content_data": {
+    "subtitle": null,
+    "date": null,
+    "client_name": null,
+    "framework_type": null,
+    "elements": null,
+    "sections": [
+      {
+        "title": "경영목표 설정 ① 1등급 해역 비율 : 해역별 수질등급 기준 및 제5차 해양환경종합계획 목표",
+        "blocks": [
+          {
+            "block_type": "text",
+            "content": "해역별 수질등급기준 (해양수산부 고지 제2018-10호)\n• 해역별 수질등급기준 : 해역을 해류, 조석, 탁도, 수심 등을 기준으로 다섯 가지의 생태구로 구분하고 부영양화의 원인항목에 해당하는 평가항목으로 계산된 수질등급기준\n\n• 수질평가지수(WQI, Water Quality Index)\n= 10×[저층산소포화도(DO)] + 6×[(식물플랑크톤 농도(Chl-a) +\n투명도(SD))/2] + 4×[(용존무기질소 농도(DIN) +용존무기인\n농도(DIP))/2]\n\n• 수질평가지수에 따른 해역등급 분류",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "table",
+            "content": "등급 | 수질평가 지수값 (WQI)\n---\nI (매우 좋음) | 23 이하\n---\nII (좋음) | 24 - 33\n---\nIII (보통) | 34 - 46\n---\nIV (나쁨) | 47 - 59\n---\nV (매우 나쁨) | 60 이상",
+            "position": "bottom-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          }
+        ]
+      },
+      {
+        "title": "제5차 해양환경종합계획 해역 수질관리 목표",
+        "blocks": [
+          {
+            "block_type": "table",
+            "content": "지표 | 기준(단위) | 2019년 | 2025년 | 2030년\n---\n1등급 해역의 비율 | 26개 해역기준 (%) | 14/26 (54%) | 17/26 (65%) | 19/26 (73%)",
+            "position": "top-right",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "→ '19년 14개(54%)에서 '25년 17개(65%), '30년 19개(65%)로 점증 목표설정",
+            "position": "center",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "table",
+            "content": "등급 | 해역 | 개수 | 비중\n---\nI 등급 | 가로림만, 항평만, 영산강하구, 득량만, 여자만, 가막만, 섬진강하구, 진주만, 진해만, 태화강하구, 서해중부연안, 서남해역연안, 대한해협연안, 제주연안 | 14 | 54%\n---\nII 등급 | 한강하구, 천수만, 금강하구, 도암만, 낙동강하구, 영일만, 영덕오십천하구, 왕피천하구, 영양남대천하구, 동해연안 | 10 | 38%\n---\nIII 등급 | 삼척오십천하구, 강릉남대천하구 | 2 | 8%\n---\nIV 등급 | - | 0 | 0%\n---\nV 등급 | - | 0 | 0%",
+            "position": "bottom-right",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "footer": ""
+}

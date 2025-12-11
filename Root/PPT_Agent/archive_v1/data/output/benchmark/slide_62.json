@@ -1,0 +1,280 @@
+{
+  "slide_type": "Content",
+  "slide_number": 62,
+  "title": "2. 내부 환경·역량 분석 - 조직구조 관련 현안 이슈 (3/4)",
+  "governing_message": "신규사업 추진 조직인 미래성장팀에서 인큐베이션과 시범사업 시행까지 담당하는 구조로 운영되는 구조는 추진력을 약화시킬 우려가 있고, 부서별 채널 운영으로 분산된 대국민 소통은 통합채널 대비 방향성, 효율성이 떨어질 수 있음",
+  "layout": {
+    "grid_type": "2-column",
+    "background_color": "white"
+  },
+  "content_data": {
+    "subtitle": null,
+    "date": null,
+    "client_name": null,
+    "framework_type": null,
+    "elements": null,
+    "sections": [
+      {
+        "title": "신규(미래성장) 사업 추진 조직·과정",
+        "blocks": [
+          {
+            "block_type": "text",
+            "content": "신규사업 추진 과정",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "black",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "사업 후보 발굴",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "black",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "사업 타당성 검토",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "black",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "사업 인큐베이션",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "black",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "시범사업 추진·시행",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "black",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "사업확대 검토·기획",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "black",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "신규사업 추진·시행",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "black",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "미래성장팀",
+            "position": "center",
+            "style": {
+              "is_bold": false,
+              "color_hex": "black",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "사업부서",
+            "position": "center",
+            "style": {
+              "is_bold": false,
+              "color_hex": "black",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "현재는 미래성장팀이 사업 인큐베이션 및 시범사업 추진까지를 담당하고 있음",
+            "position": "center",
+            "style": {
+              "is_bold": false,
+              "color_hex": "black",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "Key Findings",
+            "position": "bottom-left",
+            "style": {
+              "is_bold": true,
+              "color_hex": "white",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "✓ 신규사업 추진에서 미래성장팀이 시범사업 추진까지 담당하고 있음\n✓ 미래성장팀에 신규(성장)사업을 전적으로 의존하게 되며, 사업부서 신규사업의 추진 시 NIH(Not Invented Here) 현상으로 사업 추진력이 약화될 수 있음",
+            "position": "bottom-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "black",
+              "font_size": 12
+            }
+          }
+        ]
+      },
+      {
+        "title": "부서별 개별 채널 운영으로 분산된 대국민 소통",
+        "blocks": [
+          {
+            "block_type": "text",
+            "content": "홍보팀",
+            "position": "top-right",
+            "style": {
+              "is_bold": false,
+              "color_hex": "black",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "공단PR 대외 홍보활동",
+            "position": "top-right",
+            "style": {
+              "is_bold": false,
+              "color_hex": "black",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "사회가치·혁신팀",
+            "position": "top-right",
+            "style": {
+              "is_bold": false,
+              "color_hex": "black",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "시민단체 ·시민참여단 소통관리",
+            "position": "top-right",
+            "style": {
+              "is_bold": false,
+              "color_hex": "black",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "국가해양환경교육센터",
+            "position": "top-right",
+            "style": {
+              "is_bold": false,
+              "color_hex": "black",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "해양오염예방팀",
+            "position": "top-right",
+            "style": {
+              "is_bold": false,
+              "color_hex": "black",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "해양오염사고예방 국민홍보",
+            "position": "top-right",
+            "style": {
+              "is_bold": false,
+              "color_hex": "black",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "해양폐기물관리센터",
+            "position": "top-right",
+            "style": {
+              "is_bold": false,
+              "color_hex": "black",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "해양쓰레기저감 국민홍보",
+            "position": "top-right",
+            "style": {
+              "is_bold": false,
+              "color_hex": "black",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "대국민 해양환경교육",
+            "position": "top-right",
+            "style": {
+              "is_bold": false,
+              "color_hex": "black",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "통합 국민소통 채널 (국민참여 플랫폼)",
+            "position": "center",
+            "style": {
+              "is_bold": false,
+              "color_hex": "black",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "Key Findings",
+            "position": "bottom-right",
+            "style": {
+              "is_bold": true,
+              "color_hex": "white",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "✓ 홍보팀, 사회가치·혁신팀, 국가해양환경교육센터, 해양폐기물관리센터, 해양오염예방팀에서 각각 대국민 소통채널 개별 운영 중임\n✓ 소통의 일관된 방향성 부재, 소통과 참여의 확대를 위한 네트워크 규모 달성 어려움 등 문제 보유",
+            "position": "bottom-right",
+            "style": {
+              "is_bold": false,
+              "color_hex": "black",
+              "font_size": 12
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "footer": "61"
+}

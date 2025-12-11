@@ -1,0 +1,135 @@
+{
+  "slide_type": "Framework",
+  "slide_number": 151,
+  "title": "3. 전략목표·전략과제 수립 - S-T전략",
+  "governing_message": "강점과 위협요인을 결합하여 선택과 집중을 통해 강점의 활용을 극대화하고 위험을 회피하는 S-T 선택과 집중 및 위험회피 전략과제를 다음과 같이 도출함",
+  "layout": {
+    "grid_type": "custom",
+    "background_color": "#FFFFFF"
+  },
+  "content_data": {
+    "subtitle": null,
+    "date": null,
+    "client_name": null,
+    "framework_type": "2x2",
+    "elements": [
+      {
+        "label": "강점요인\n(Strengths)",
+        "description": null,
+        "position": "top-left"
+      },
+      {
+        "label": "위협요인\n(Threats)",
+        "description": null,
+        "position": "bottom-left"
+      },
+      {
+        "label": "방제·정화에서\n보전·이용으로\n사업영역과\n조직 확대",
+        "description": null,
+        "position": "top-right"
+      },
+      {
+        "label": "해양환경\n영역의\n정부사업\n수행\n주관기관\n위상",
+        "description": null,
+        "position": "top-right"
+      },
+      {
+        "label": "해양환경분야\n전문인력\n보유",
+        "description": null,
+        "position": "top-right"
+      },
+      {
+        "label": "방제자산\n(선박·장비)과\n기술력 자체\n보유",
+        "description": null,
+        "position": "top-right"
+      },
+      {
+        "label": "해양수산·\n해양정책\n네트워크와\n지역 인프라\n보유",
+        "description": null,
+        "position": "top-right"
+      },
+      {
+        "label": "해양환경\n측정·조사·\n연구기능\n내부 보유",
+        "description": null,
+        "position": "top-right"
+      },
+      {
+        "label": "해양환경\n정보제공 및\n교육기능\n보유",
+        "description": null,
+        "position": "top-right"
+      },
+      {
+        "label": "정부의 친환경선박 전환 정책 추진",
+        "description": null,
+        "position": "bottom-left"
+      },
+      {
+        "label": "저성장·고실업의 뉴노멀 기조 지속",
+        "description": null,
+        "position": "bottom-left"
+      },
+      {
+        "label": "코로나19, 경제성장률 하락에 따른\n항만물동량 감소",
+        "description": null,
+        "position": "bottom-left"
+      },
+      {
+        "label": "코로나19로 인한 비대면, 디지털\n소비패턴 변화",
+        "description": null,
+        "position": "bottom-left"
+      },
+      {
+        "label": "자율주행선박, AI, IoT, 5G 등 신기술\n개발 및 상용화",
+        "description": null,
+        "position": "bottom-left"
+      },
+      {
+        "label": "공적기능 강화 및 민간경쟁 지양\n요구 증대",
+        "description": null,
+        "position": "bottom-left"
+      },
+      {
+        "label": "중대재해처벌법 등안전관리 책임 강화",
+        "description": null,
+        "position": "bottom-left"
+      },
+      {
+        "label": "방제·정화 신기술 개발 및\n상용화 선도",
+        "description": null,
+        "position": "top-right"
+      },
+      {
+        "label": "해양사업 장기 발전계획\n수립·시행",
+        "description": null,
+        "position": "top-right"
+      },
+      {
+        "label": "공단 관리사업 안전관리\n확대 적용",
+        "description": null,
+        "position": "top-right"
+      },
+      {
+        "label": "지역 해양환경 개선사업\n발굴·추진 확대",
+        "description": null,
+        "position": "top-right"
+      },
+      {
+        "label": "해양환경 국민참여 통합\n플랫폼 구축·육성",
+        "description": null,
+        "position": "top-right"
+      },
+      {
+        "label": "해양재난 예방 및 대응체계\n고도화",
+        "description": null,
+        "position": "top-right"
+      },
+      {
+        "label": "해양환경 비대면교육 확대\n주도",
+        "description": null,
+        "position": "top-right"
+      }
+    ],
+    "sections": null
+  },
+  "footer": "150"
+}

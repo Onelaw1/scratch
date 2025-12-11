@@ -1,0 +1,140 @@
+{
+  "slide_type": "Content",
+  "slide_number": 55,
+  "title": "2. 내부 환경·역량 분석 - 가치체계·전략체계 변화",
+  "governing_message": "공단은 정부정책과 환경변화를 반영하여 매년 가치체계·전략체계를 재정립 해 왔으며, 정부 정책기조와 영역확장을 반영해 전략목표와 경영목표를 구체화하고 확대하는 방향으로 전략체계를 개편해왔음",
+  "layout": {
+    "grid_type": "1-column",
+    "background_color": "#FFFFFF"
+  },
+  "content_data": {
+    "subtitle": null,
+    "date": null,
+    "client_name": null,
+    "framework_type": null,
+    "elements": null,
+    "sections": [
+      {
+        "title": "해양환경공단 가치체계·전략체계 변화",
+        "blocks": [
+          {
+            "block_type": "table",
+            "content": "Data table showing changes in value and strategic systems across years.",
+            "position": "full-width",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          }
+        ]
+      },
+      {
+        "title": "2018년 사업계획",
+        "blocks": [
+          {
+            "block_type": "text",
+            "content": "미션, 비전: 푸른 해양의 미래가치를 창조하는 국민기업\n핵심가치: 전문성, 주인의식, 창의적 열정, 청렴성\n경영방침: 배려, 소통, 화합, 도약\n전략목표:\n\t•\t지속가능 가치창출\n\t•\t공적가치 강화\n\t•\t열린 혁신가치 구현\n경영목표:\n\t•\t성장일자리 1,100명\n\t•\t미래 성장매출액 1,600억원\n\t•\t해양오염사고 예방율 40% 이하\n\t•\t해양오염사고 방제율 50% 이상\n\t•\t고객만족도 우수\n\t•\tKOBEX AAA\n\t•\t비정규직 Zero",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          }
+        ]
+      },
+      {
+        "title": "2019년 사업계획",
+        "blocks": [
+          {
+            "block_type": "text",
+            "content": "깨끗하고 안전한 해양환경을 조성하여 국민의 삶의 질 향상\n전문성, 주인의식, 창의적 열정, 청렴성\n소통과 화합, 협력과 상생, 열정과 도전, 공정과 신뢰\n전략목표:\n\t•\t건강한 해양가치 보전\n\t•\t안전한 해양가치 구현\n\t•\t미래 신성장동력 확보\n\t•\t사회적 가치 실현\n경영목표:\n\t•\t해양보호구역 39개소 지정·관리\n\t•\t특별관리해역수질 2등급 이상 100%\n\t•\t해양오염사고 예방률 65% 이상\n\t•\t침몰선박 위해도 조사 100%\n\t•\t미래성장 매출액 1,100억 원\n\t•\t양질의 일자리창출 연간 3,000명\n\t•\t고객만족도 S등급\n\t•\t청렴도 평가 1등급",
+            "position": "top-right",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          }
+        ]
+      },
+      {
+        "title": "2020년 사업계획",
+        "blocks": [
+          {
+            "block_type": "text",
+            "content": "건강한 바다, 풍요로운 미래, 행복한 국민 with KOEM\n전문역량, 안전우선, 혁신선도, 윤리의식\n소통과 화합, 협력과 상생, 열정과 도전, 공정과 신뢰\n전략목표:\n\t•\t건강한 해양환경 조성을 통한 생태복지 실현\n\t•\t국민안심 재난·안전대응 체계 공고화\n\t•\t포용적 지속성장 기반 확보\n\t•\t국민공감 혁신체계 구축\n경영목표:\n\t•\t해양보호구역 40개소 지정·관리\n\t•\t특별관리해역수질 2등급 이상 100%\n\t•\t해양오염사고 예방률 65% 이상\n\t•\t침몰선박 위해도 조사 100%\n\t•\t미래성장 매출액 1,300억 원\n\t•\t차입금의존도 ZERO\n\t•\t양질의 일자리창출 연간 3,100명\n\t•\t고객만족도 S등급\n\t•\t청렴도 평가 1등급",
+            "position": "bottom-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          }
+        ]
+      },
+      {
+        "title": "2021년 사업계획",
+        "blocks": [
+          {
+            "block_type": "text",
+            "content": "전문역량, 안전우선, 혁신선도, 윤리의식\n소통과 화합, 협력과 상생, 열정과 도전, 공정과 신뢰\n전략목표:\n\t•\t건강한 해양환경 조성을 통한 생태복지 실현\n\t•\t국민안심 재난·안전대응 체계 공고화\n\t•\t함께 성장하는 지속가능 경영\n\t•\t경영혁신을 통한 사회적 가치 실현\n경영목표:\n\t•\t해양생태계 보전지수 90 달성\n\t•\t해양오염사고 방제율 50% 이상\n\t•\t미래성장 매출액 1,400억 원\n\t•\t양질의 일자리창출 연간 3,200명",
+            "position": "bottom-right",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          }
+        ]
+      },
+      {
+        "title": "중점사항",
+        "blocks": [
+          {
+            "block_type": "text",
+            "content": "✓ 성장·혁신에 중점을 둔 전략, 경영목표 설정\n✓ 방제사업 중심 목표수립",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "✓ 일자리창출, 사회적가치 등 정부정책과 국정과제 반영\n✓ 해양환경보전부문 목표 확대",
+            "position": "top-right",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "✓ 전략목표 구체화로 정부 정책 (사회적가치, 안전) 반영 강화\n✓ 경영목표 점진적 상향 조정",
+            "position": "bottom-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "✓ 지속가능경영, 혁신, 사회적가치 실현 등 정부 정책기조 반영\n✓ 경영목표에 종합지표 사용",
+            "position": "bottom-right",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "footer": "KOEM 해양환경공단 54"
+}

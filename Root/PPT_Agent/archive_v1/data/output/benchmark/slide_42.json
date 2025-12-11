@@ -1,0 +1,75 @@
+{
+  "slide_type": "Data",
+  "slide_number": 42,
+  "title": "1. 외부 환경분석 - 경기동향 : 저성장·고실업 지속",
+  "governing_message": "우리 경제는 저성장과 고실업이 지속되는 뉴노멀이 고착되고 있으며, 특히 코로나로 GDP 성장률 급감, 실업률 급증 등 저성장, 고실업이 강화되어 정부의 일자리 창출 등 적극적 경제 개입의 확대, 지속이 전망됨",
+  "layout": {
+    "grid_type": "custom",
+    "background_color": null
+  },
+  "content_data": {
+    "subtitle": null,
+    "date": null,
+    "client_name": null,
+    "framework_type": null,
+    "elements": null,
+    "sections": [
+      {
+        "title": "뉴-노멀(New Normal) : 저성장·고실업 지속",
+        "blocks": [
+          {
+            "block_type": "chart",
+            "content": "실질 GDP : 성장률 감소 추이",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "chart",
+            "content": "실업자 수 : 실업률 및 실업자 수 증가",
+            "position": "top-right",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "chart",
+            "content": "경제성장률 전망 : 저성장 지속",
+            "position": "bottom-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "Key Findings",
+            "position": "bottom-right",
+            "style": {
+              "is_bold": true,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "✓ 세계경제에 소비 및 투자 부진으로 저성장, 고실업이 지속되는 뉴노멀이 지속되고 있으며, 우리나라도 저성장, 고실업이 지속되고 있음\n✓ 저성장 국면 전환을 위해 정부는 일자리창출 등 다양한 지원 정책을 통한 경제 개입이 확대되고 있음\n✓ 정부의 일자리 창출 등 적극적 개입정책 지속될 전망",
+            "position": "bottom-right",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "footer": "KOEM 해양환경공단"
+}

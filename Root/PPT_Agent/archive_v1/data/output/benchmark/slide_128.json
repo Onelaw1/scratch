@@ -1,0 +1,105 @@
+{
+  "slide_type": "Data",
+  "slide_number": 128,
+  "title": "2. 가치체계·전략체계 재정립 - 미션 선정 : 임직원 설문조사",
+  "governing_message": "Ⅲ. 가치체계·전략체계 재정립\n미션 임직원 선호도 설문 결과 “깨끗하고 안전한 바다로 국민 행복을 증진하고, 해양의 더 나은 미래를 열어간다\"가\n과반의 선택을 받아, 미션으로 최종 선정함",
+  "layout": {
+    "grid_type": "custom",
+    "background_color": "white"
+  },
+  "content_data": {
+    "subtitle": null,
+    "date": null,
+    "client_name": null,
+    "framework_type": null,
+    "elements": null,
+    "sections": [
+      {
+        "title": "미션 선호도 설문 : “깨끗하고 안전한 바다로 국민 행복을 증진하고, 해양의 더 나은 미래를 열어간다”",
+        "blocks": [
+          {
+            "block_type": "text",
+            "content": "깨끗하고 안전한 바다로 국민 행복을 증진하고,\n해양의 더 나은 미래를 열어간다\n\n해양생태계를 복원하고 해양을 정화하며, 오염의 위해로부터\n국민과 해양을 지키는 해양환경 보전·방제 전문기관으로,\n국민이 해양을 이용하고 향유하는 행복을 통해 삶의 질을\n높이고, 미래 세대를 위해 해양환경을 개선하고 보전하는 국가\n해양환경 대표기관으로서 확장된 책임과 소명을 명시하고 있는\n미션",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "black",
+              "font_size": 12
+            }
+          }
+        ]
+      },
+      {
+        "title": null,
+        "blocks": [
+          {
+            "block_type": "chart",
+            "content": "Bar chart showing 207, 61, and 89 values for 1안, 2안, and 3안 (기존) respectively.",
+            "position": "top-right",
+            "style": {
+              "is_bold": false,
+              "color_hex": "black",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "응답자의 과반 이상 (207명, 58%)이 설문 1안\n“깨끗하고 안전한 바다로 국민 행복을 증진하고,\n해양의 더 나은 미래를 열어간다”를 선택",
+            "position": "top-right",
+            "style": {
+              "is_bold": false,
+              "color_hex": "black",
+              "font_size": 12
+            }
+          }
+        ]
+      },
+      {
+        "title": null,
+        "blocks": [
+          {
+            "block_type": "text",
+            "content": "깨끗하고 안전한 해양의 보전과 이용으로\n해양의 가치를 높인다\n\n해양 방제·정화·보전에 '이용'을 추가하여 공단 업의 영역을\n확대 정의하고, 해양환경의 방제·정화·보전을 통해 궁극적으로\n해양의 가치를 제고하는 것을 창출 가치로 제시하고 있는 미션",
+            "position": "bottom-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "black",
+              "font_size": 12
+            }
+          }
+        ]
+      },
+      {
+        "title": null,
+        "blocks": [
+          {
+            "block_type": "text",
+            "content": "깨끗하고 안전한 해양환경을 조성하여\n국민 삶의 질 향상\n\n기존 미션으로, 설립목적의 주요 항목을 발췌하여 해양환경 정화,\n보전과 방제를 통해 국민 삶의 질을 개선하는 공단의 목적을\n준용하고 있는 미션",
+            "position": "bottom-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "black",
+              "font_size": 12
+            }
+          }
+        ]
+      },
+      {
+        "title": "설문 결과\n및\n미션 선정",
+        "blocks": [
+          {
+            "block_type": "text",
+            "content": "✓ “깨끗하고 안전한 바다로 국민 행복을 증진하고,\n해양의 더 나은 미래를 열어간다”가 응답자\n과반(58%)의 선택으로 선호도가 가장 높은 것으로\n조사됨\n→ 공단 2030 新 가치체계 “미션”으로 선정",
+            "position": "bottom-right",
+            "style": {
+              "is_bold": false,
+              "color_hex": "black",
+              "font_size": 12
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "footer": ""
+}

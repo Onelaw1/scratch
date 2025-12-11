@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="text-center py-20">
+    <h1 class="text-4xl font-extrabold text-slate-900 sm:text-5xl sm:tracking-tight lg:text-6xl">
+        공공기관 <span class="text-sky-600">직무분석 & 벤치마킹</span> 플랫폼
+    </h1>
+    <p class="mt-5 max-w-xl mx-auto text-xl text-slate-500">
+        정부 지침을 준수하는 표준화된 직무조사와<br>
+        빅데이터 기반의 적정인력 산정 서비스를 경험해보세요.
+    </p>
+    <div class="mt-10 flex justify-center gap-4">
+        <a href="/web/jobs"
+            class="px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-sky-600 hover:bg-sky-700 md:py-4 md:text-lg md:px-10 shadow-lg">
+            직무조사 시작하기
+        </a>
+        <a href="/web/dashboard"
+            class="px-8 py-3 border border-transparent text-base font-medium rounded-md text-sky-700 bg-sky-100 hover:bg-sky-200 md:py-4 md:text-lg md:px-10">
+            대시보드 보기
+        </a>
+    </div>
+</div>
+
+<div class="mt-20 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
+    <div class="bg-white overflow-hidden shadow rounded-lg p-6">
+        <h3 class="text-lg font-medium text-slate-900">직무 분석 (Job Analysis)</h3>
+        <p class="mt-2 text-sm text-slate-500">NCS 기반의 표준 직무 분류와 과업 정의를 통해 체계적인 직무 기술서를 관리합니다.</p>
+    </div>
+    <div class="bg-white overflow-hidden shadow rounded-lg p-6">
+        <h3 class="text-lg font-medium text-slate-900">적정인력 산정 (Workload)</h3>
+        <p class="mt-2 text-sm text-slate-500">맨먼스(MM) 조사와 관리자 검증을 통해 객관적인 업무량을 산출합니다.</p>
+    </div>
+    <div class="bg-white overflow-hidden shadow rounded-lg p-6">
+        <h3 class="text-lg font-medium text-slate-900">통계 벤치마킹 (Benchmarking)</h3>
+        <p class="mt-2 text-sm text-slate-500">유사 기관(SOC, 서비스 등)과의 비교를 통해 우리 기관의 인력 효율성을 진단합니다.</p>
+    </div>
+</div>
+{% endblock %}

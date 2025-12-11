@@ -1,0 +1,35 @@
+{
+  "slide_type": "Data",
+  "slide_number": 180,
+  "title": "4. 경영목표 수립 - 경영목표 후보군 평가 (2/2)",
+  "governing_message": "경영목표 선정을 위한 후보군 평가를 평가 기준에 의해 실시하여 아래와 같이 경영관리부문 재무건전성 제고, 사회적가치 실현 부문 중대재해 “Zero”를 경영목표로 선정함",
+  "layout": {
+    "grid_type": "1-column",
+    "background_color": "#FFFFFF"
+  },
+  "content_data": {
+    "subtitle": null,
+    "date": null,
+    "client_name": null,
+    "framework_type": null,
+    "elements": null,
+    "sections": [
+      {
+        "title": "경영목표 후보군 평가 : SMART 평가기준 적용",
+        "blocks": [
+          {
+            "block_type": "table",
+            "content": "S M A R T <경영관리부문 지표> 재무건전성 제고 [SMART ratings] 인재개발 프로그램 참여 직원 수 [SMART ratings] 인사운영 만족도 [SMART ratings] 신용평가등급 AAA [SMART ratings] 차입금의존도 Zero [SMART ratings] <해양환경자원화(신사업) 지표> S M A R T 해양환경 자원화사업 실적 [SMART ratings] 해양환경 신산업 지원 규모 [SMART ratings] 해양치유산업 규모 [SMART ratings] 해양생태관광 관광객 수 [SMART ratings] 해양에너지 발전량 [SMART ratings] <사회적가치 실현 지표> 양질의 일자리 창출 [SMART ratings] 사회적가치 창출 화폐 환산 [SMART ratings] 중대재해 \"Zero\" [SMART ratings] KOBEX 지수 [SMART ratings] 청렴도 평가등급 [SMART ratings] <기후변화대응(신사업) 지표> 연간 블루카본 생산량 [SMART ratings] 해양 기후변화 예측률 [SMART ratings] 해양기인 탄소중립 (Net-Zero) 달성도 [SMART ratings] 해상풍력 유력후보지 개수 [SMART ratings] 항만 초미세먼지 배출량 감축 [SMART ratings]",
+            "position": "center",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 10
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "footer": "Ⅲ. 가치체계·전략체계 재정립"
+}

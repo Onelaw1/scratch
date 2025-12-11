@@ -1,0 +1,190 @@
+{
+    "slide_type": "Content",
+    "slide_number": 3,
+    "title": "2030 Strategic Transformation Roadmap",
+    "governing_message": "Achieving market leadership requires a synchronized transformation across three pillars, supported by a robust digital foundation and executed through a phased rollout.",
+    "layout": {
+        "grid_type": "strategy_house",
+        "background_color": "white"
+    },
+    "content_data": {},
+    "sections": [
+        {
+            "title": "Strategic Vision (Roof)",
+            "layout_type": "roof",
+            "blocks": [
+                {
+                    "block_type": "text",
+                    "content": "To become the #1 Provider of Sustainable Energy Solutions in APAC by 2030",
+                    "style": {
+                        "font_size": 18,
+                        "is_bold": true,
+                        "color_hex": "white",
+                        "background_hex": "#003366",
+                        "padding": "15px",
+                        "text_align": "center"
+                    }
+                }
+            ]
+        },
+        {
+            "title": "Strategic Pillars",
+            "layout_type": "columns_3",
+            "blocks": [
+                {
+                    "block_type": "container",
+                    "title": "Pillar 1: Operational Excellence",
+                    "style": {
+                        "background_hex": "#f0f4f8",
+                        "border": "1px solid #d1d9e6"
+                    },
+                    "blocks": [
+                        {
+                            "block_type": "text",
+                            "content": "• Reduce OpEx by 15% through automation.",
+                            "style": {
+                                "font_size": 11
+                            }
+                        },
+                        {
+                            "block_type": "text",
+                            "content": "• Optimize supply chain logistics.",
+                            "style": {
+                                "font_size": 11
+                            }
+                        },
+                        {
+                            "block_type": "kpi_card",
+                            "content": "Target: $50M Savings",
+                            "style": {
+                                "color_hex": "#007bff",
+                                "is_bold": true
+                            }
+                        }
+                    ]
+                },
+                {
+                    "block_type": "container",
+                    "title": "Pillar 2: Customer Experience",
+                    "style": {
+                        "background_hex": "#f0f4f8",
+                        "border": "1px solid #d1d9e6"
+                    },
+                    "blocks": [
+                        {
+                            "block_type": "text",
+                            "content": "• Launch omnichannel platform.",
+                            "style": {
+                                "font_size": 11
+                            }
+                        },
+                        {
+                            "block_type": "text",
+                            "content": "• Implement AI-driven support.",
+                            "style": {
+                                "font_size": 11
+                            }
+                        },
+                        {
+                            "block_type": "kpi_card",
+                            "content": "NPS Score: >70",
+                            "style": {
+                                "color_hex": "#28a745",
+                                "is_bold": true
+                            }
+                        }
+                    ]
+                },
+                {
+                    "block_type": "container",
+                    "title": "Pillar 3: Innovation & Growth",
+                    "style": {
+                        "background_hex": "#f0f4f8",
+                        "border": "1px solid #d1d9e6"
+                    },
+                    "blocks": [
+                        {
+                            "block_type": "text",
+                            "content": "• Enter 2 new markets (Vietnam, Thailand).",
+                            "style": {
+                                "font_size": 11
+                            }
+                        },
+                        {
+                            "block_type": "text",
+                            "content": "• R&D investment in green tech.",
+                            "style": {
+                                "font_size": 11
+                            }
+                        },
+                        {
+                            "block_type": "kpi_card",
+                            "content": "Revenue: +20% YoY",
+                            "style": {
+                                "color_hex": "#dc3545",
+                                "is_bold": true
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "Foundation",
+            "layout_type": "full_width",
+            "blocks": [
+                {
+                    "block_type": "text",
+                    "content": "Enabler: Digital Core & Talent Transformation",
+                    "style": {
+                        "background_hex": "#e9ecef",
+                        "padding": "10px",
+                        "font_weight": "bold",
+                        "text_align": "center",
+                        "font_size": 14,
+                        "color_hex": "#495057"
+                    }
+                }
+            ]
+        },
+        {
+            "title": "Execution Roadmap",
+            "layout_type": "process_flow",
+            "blocks": [
+                {
+                    "block_type": "chevron",
+                    "content": "Phase 1: Mobilize (Q1-Q2)",
+                    "style": {
+                        "background_hex": "#004085",
+                        "color_hex": "white"
+                    }
+                },
+                {
+                    "block_type": "chevron",
+                    "content": "Phase 2: Pilot (Q3-Q4)",
+                    "style": {
+                        "background_hex": "#0056b3",
+                        "color_hex": "white"
+                    }
+                },
+                {
+                    "block_type": "chevron",
+                    "content": "Phase 3: Scale (Year 2)",
+                    "style": {
+                        "background_hex": "#007bff",
+                        "color_hex": "white"
+                    }
+                },
+                {
+                    "block_type": "chevron",
+                    "content": "Phase 4: Sustain (Year 3+)",
+                    "style": {
+                        "background_hex": "#3395ff",
+                        "color_hex": "white"
+                    }
+                }
+            ]
+        }
+    ],
+    "footer": "Confidential - 2030 Strategy Document - Draft v4.2"
+}

@@ -1,0 +1,75 @@
+{
+  "slide_type": "Framework",
+  "slide_number": 119,
+  "title": "1. 전략수립 방향성 - 국민참여 확대",
+  "governing_message": "공단의 해양환경정보, 해양환경교육 제공 기능을 국민소통과 참여를 위한 해양환경 통합 플랫폼으로 통합 재구축하여 국민참여를 확대하고 관심국민을 늘리고 해양환경 활동가를 양성하는 플랫폼으로 성장, 발전시킴",
+  "layout": {
+    "grid_type": "1-column",
+    "background_color": "#FFFFFF"
+  },
+  "content_data": {
+    "subtitle": null,
+    "date": null,
+    "client_name": null,
+    "framework_type": "Process",
+    "elements": [
+      {
+        "label": "1,000만 국민 (Interested)",
+        "description": null,
+        "position": "step-1"
+      },
+      {
+        "label": "100만 관심국민 (Concerned)",
+        "description": null,
+        "position": "step-2"
+      },
+      {
+        "label": "10만 활동가 (Acting)",
+        "description": null,
+        "position": "step-3"
+      },
+      {
+        "label": "1만 eco-워리어 (Leading)",
+        "description": null,
+        "position": "step-4"
+      },
+      {
+        "label": "해양환경·생태 종합정보",
+        "description": null,
+        "position": "center"
+      },
+      {
+        "label": "해양환경 교육",
+        "description": null,
+        "position": "bottom-left"
+      },
+      {
+        "label": "해양환경 통합플랫폼",
+        "description": null,
+        "position": "center"
+      },
+      {
+        "label": "해양환경 정책·홍보",
+        "description": null,
+        "position": "bottom-right"
+      },
+      {
+        "label": "해양치유·해양레저",
+        "description": null,
+        "position": "bottom-center"
+      },
+      {
+        "label": "해양수산부",
+        "description": null,
+        "position": "bottom-left"
+      },
+      {
+        "label": "지방자치단체",
+        "description": null,
+        "position": "bottom-right"
+      }
+    ],
+    "sections": null
+  },
+  "footer": "118"
+}

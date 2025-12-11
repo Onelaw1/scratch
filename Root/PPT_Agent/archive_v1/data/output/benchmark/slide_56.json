@@ -1,0 +1,250 @@
+{
+  "slide_type": "Content",
+  "slide_number": 56,
+  "title": "2. 내부 환경·역량 분석 - 공단 가치체계 분석",
+  "governing_message": "미션-비전-공유가치를 포함한 가치체계는 설립목적을 기반으로 일관성, 연계성을 확보하고 있으나, 근원적 존재이유, 나아갈 방향성 등 내부와 외부에 공유되어야 할 가치와 위상, 역할에 대한 명확성은 개선이 필요함",
+  "layout": {
+    "grid_type": "2-column",
+    "background_color": "#FFFFFF"
+  },
+  "content_data": {
+    "subtitle": null,
+    "date": null,
+    "client_name": null,
+    "framework_type": null,
+    "elements": null,
+    "sections": [
+      {
+        "title": "KOEM 가치체계",
+        "blocks": [
+          {
+            "block_type": "text",
+            "content": "설립목적",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "① 생명·생산·생활의 종합 공간인 해양의 훼손 및 오염으로 인한 위해를 예방하고,\n② 국민들이 안심하고 이용할 수 있는 깨끗하고 안전한 해양환경을 조성하여,\n③ 윤택하고 풍요로운 해양의 지속가능한 이용가치를 창조하여 국민 행복과 삶의 질 향상",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "미션",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "깨끗하고 안전한 해양환경을 조성하여 국민의 삶의 질 향상",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "비전",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "건강한 바다, 풍요로운 미래, 행복한 국민 with KOEM",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "공유가치",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "핵심가치  전문역량  안전우선  혁신선도 윤리의식",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "경영방침",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "소통과 화합 협력과 상생 열정과 도전 공정과 신뢰",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "경영목표",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "깨끗한 바다  건강한 해양환경 조성을 통한 생태 복지실현",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "전략목표",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "안전한 바다  국민 안심 재난·안전대응 체계 공고화\n풍요로운 바다  함께 성장하는 지속가능 경영\n공감의 바다  경영혁신을 통한 사회적 가치 실현",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          }
+        ]
+      },
+      {
+        "title": "진단분석",
+        "blocks": [
+          {
+            "block_type": "text",
+            "content": "미션",
+            "position": "top-right",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "✓ 설립목적에 명시된 창출 가치와 역할의\n   규정은 어느 정도 잘 되어 있음\n✓ 공단의 근원적 존재 이유, 'Why?'의 변화에\n   대한 검토와 반영 필요",
+            "position": "top-right",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "비전",
+            "position": "top-right",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "✓ 추구하는 가치에 “with KOEM”을 붙여\n   국민과 함께하는 이미지 부각은 긍정적\n✓ 나아가야 할 방향성, 가슴 뛰는 미래상,\n   위상과 역할의 명확성은 개선 필요",
+            "position": "top-right",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "공유\n가치",
+            "position": "top-right",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "✓ 핵심가치는 안전, 윤리 등 경영평가 반영\n   항목과 전문성, 혁신 등 우선 가치로 구성\n✓ 경영방침은 경영진의 이념·철학을 반영하고,\n   비전의 변화에 맞춰 개편 필요",
+            "position": "top-right",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "체계성",
+            "position": "top-right",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "✓ 설립목적-미션-비전은 해양환경, 국민행복의\n   키워드로 일관성과 연계성 확보\n✓ 경영목표, 전략목표는 미션, 비전의 포괄성\n   대비 경영평가에 적합하게 구성되어 있는\n   양상으로, 비전과 함께 재수립 필요",
+            "position": "top-right",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "footer": "55"
+}

@@ -1,0 +1,155 @@
+{
+  "slide_type": "Content",
+  "slide_number": 29,
+  "title": "1. 외부 환경분석 - 그린 뉴딜 추진전략 분석 (1/3)",
+  "governing_message": "그린뉴딜 도시·공간·생활 인프라 녹색전환은 녹색복원사업, 해양환경정비 등 공단의 직접수행 사업이 추진과제로 포함되어 있으며, 갯벌복원, 해양쓰레기 정화 등 핵심사업을 중심으로 규모를 키우고 확장할 수 있을 것으로 기대됨",
+  "layout": {
+    "grid_type": "custom",
+    "background_color": null
+  },
+  "content_data": {
+    "subtitle": null,
+    "date": null,
+    "client_name": null,
+    "framework_type": null,
+    "elements": null,
+    "sections": [
+      {
+        "title": "그린 뉴딜 추진전략 ① 도시·공간·생활 인프라 녹색 전환",
+        "blocks": [
+          {
+            "block_type": "text",
+            "content": "1 국민생활과 밀접한 공공시설 제로에너지화\n~'25: 6.2조원\n• 공공부문 건물에 제로에너지화 추진\n• 친환경·디지털 교육 환경 조성을 위해 교실 속 그린+스마트 융합 추진",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "녹색 복원 사업\n• 해양생태계 기능 및 버려진 염전·양식장 등의 경제적 가치 회복을 위해 갯벌 4.5m²복원\n• 갯벌이 훼손된 지역에 해수소통 및 물길회복을 통하여 갯벌을 복원하고 해양생태계 기능 개선과 지역경제 활성화 기대",
+            "position": "top-right",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "2 국토·해양·도시의 녹색 생태계 회복\n~25: 2.5조원\n■ 환경·ICT 기술 기반 맞춤형 환경개선 지원\n• 도심 내 녹지 조성\n• 식생·토양의 자연성 보전 및 야생 동·식물 서식지 보존\n■ 해양의 자연적 기능 회복 및 해양 생물의 서식지 보존",
+            "position": "bottom-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "해양환경 정비\n• 해양플라스틱 쓰레기 저감을 위해 침적 쓰레기 수거 (연간 6,000톤) 및 친환경 부표 100% 전환 ('25년까지 5,500만개)\n연안 침적쓰레기\n수량 조사, 분석 측정, 분석 기술\n해양폐기물 조사, 미세플라스틱\n정화 국제협력 연구, 인식개선",
+            "position": "top-right",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "3 깨끗하고 안전한 물 관리 체계 구축\n~'25: 3.4조원\n• 상하수도 全과정 통합관리를 위한 ICT·AI기반 관리체계 마련\n• 상수도 안전 관리를 위한 시설 고도화\n• 깨끗한 물의 공급을 위한 감시·측정시스템 구축\n• AI 기반 기후변화 대응체계 구축",
+            "position": "bottom-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "✓ 그린뉴딜 도시·공간·생활 인프라 녹색전환 과제에는 공단의 수행사업인 녹색복원, 해양쓰레기 정화 사업이 포함되어 있음\n✓ 갯벌복원, 해양쓰레기 정화 등 핵심사업을 연안 종합 복원 등 규모를 키워 확장할 수 있을 것으로 기대됨",
+            "position": "bottom-right",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "도시·공간·생활\n인프라 녹색전환\n~'22: 6.1조 원\n~25: 12.1조 원",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "녹색산업\n혁신생태계 조성",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "저탄소 분산형\n에너지 확산",
+            "position": "bottom-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "녹색복원사업-\n생태 관광 연계",
+            "position": "top-right",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "해양보호구역\n확대 지정",
+            "position": "top-right",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "해양생물다양성\n회복, 관리",
+            "position": "top-right",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "해조류 활용\n블루카본 연구",
+            "position": "top-right",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "footer": "KOEM 해양환경공단"
+}

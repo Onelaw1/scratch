@@ -1,0 +1,370 @@
+{
+  "slide_type": "Content",
+  "slide_number": 33,
+  "title": "1. 외부 환경분석 - 2050 탄소중립 주요과제 분석",
+  "governing_message": "2050 탄소중립 과제를 확인해보면, 각 과제 항목별로 해양환경분야 탄소중립 사업을 발굴·연계할 수 있으며, 해양 탄소중립을 위한 산업기반을 조성하고 성장을 지원하는 해양 탄소중립 사업을 주도할 수 있는 기회를 확인할 수 있음",
+  "layout": {
+    "grid_type": "3-column",
+    "background_color": "#FFFFFF"
+  },
+  "content_data": {
+    "subtitle": null,
+    "date": null,
+    "client_name": null,
+    "framework_type": null,
+    "elements": null,
+    "sections": [
+      {
+        "title": "정책 방향",
+        "blocks": [
+          {
+            "block_type": "text",
+            "content": "적응",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "경제구조의\n저탄소화",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "기회\n新유망\n저탄소산업\n생태계 조성",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "공정\n탄소중립\n사회로의\n공정전환",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "기반\n탄소중립\n인프라 강화",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          }
+        ]
+      },
+      {
+        "title": "10대 과제",
+        "blocks": [
+          {
+            "block_type": "text",
+            "content": "에너지 전환 가속화",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "고탄소 산업구조 혁신",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "미래 모빌리티로 전환",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "도시·국토 저탄소화",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "新유망 산업 육성",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "혁신 생태계 저변 구축",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "순환경제 활성화",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "취약 산업·계층 보호",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "지역중심의 탄소중립 실현",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "탄소중립 사회에 대한\n국민인식 제고",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "재정제도 개선, 녹색금융 활성화,\n기술개발 확충, 국제협력",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "탄소가격 시그널 강화 및\n효과적인 탄소감축 이행 지원",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          }
+        ]
+      },
+      {
+        "title": "2050 탄소중립 : 해양환경분야 사업 발굴 및 추진 필요",
+        "blocks": [
+          {
+            "block_type": "text",
+            "content": "해양환경분야 탄소중립 사업 (예시적)",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "해양·친환경 에너지 사업 기반조성, 육성 지원",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "해양항만 탄소배출 관리, 해양항만 저탄소 전환 지원",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "친환경선박 기술 개발·보급, 기준수립, 친환경선박 전환 선도",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "갯벌·습지 복원 확대, 저탄소 수산양식업 연구지원·기반확대",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "해양 바이오 산업 연구개발 지원, 해양 탄소저장 지원·실증",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "해양환경 그린 스타트업 지원, 저탄소 Open Innovation 사업",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "국민참여 해양환경 플랫폼: 해양오염원 정보 제공, 인식개선",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "친환경·저탄소 전환에 따른 피해 산업·지역·노동자 지원",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "지역주도 해양 탄소중립 사업, 지역 해양 탄소중립 조사·점검",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "산업 종사자 해양 탄소중립 교육·홍보, 대국민 해양 탄소중립 홍보",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "정부 기금 중 해양 탄소중립 기금 확보, 해양환경분야 탄소중립 신기술·신사업 투자, 해양환경 기후분야 국제협력 강화",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "해양 탄소배출, 탄소흡수 경제적 가치 연구, 지역·기관 (해양)\n탄소배출권 거래 시스템 구축·운영",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          }
+        ]
+      },
+      {
+        "title": "Key Findings",
+        "blocks": [
+          {
+            "block_type": "text",
+            "content": "✓ 국가 탄소중립 정책 추진에\n따라 해수부는 해양수산 및\n해양환경 분야 탄소중립\n실현을 위한 계획을 수립하고\n사업을 추진해야 하며, 아직\n주관기관이 정해지지 않았음",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "✓ 해양에너지, 블루카본 등\n해양환경분야 탄소중립\n사업은 아직 본격적 사업화가\n추진되지 않은 단계로 산업\n기반 조성과 지원을 통한\n육성이 필요한 분야임",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "✓ 해양(환경)산업에 녹색산업\n기반을 조성하고 성장을\n지원하는 해양 탄소중립\n사업을 주도할 수 있는 기회\n→ 주도적 사업추진을 위한\n준비와 도전 필요",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "footer": "*Source: 「2050 탄소중립」 추진전략, 2020.12.07, 정부 관계부처합동"
+}

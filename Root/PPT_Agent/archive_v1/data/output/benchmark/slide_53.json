@@ -1,0 +1,243 @@
+{
+  "slide_type": "Content",
+  "slide_number": 53,
+  "title": "2. 내부 환경·역량 분석 - 공단 설립목적 및 사업영역",
+  "governing_message": "공단은 해양환경의 보전, 관리, 개선과 해양오염 방제 및 정화의 효율적 수행을 목적으로 설립되었으며, 해양환경 보전에 대한 국가·사회적 요구의 확대에 따라 사업과 운영구조에 대한 점검과 개편이 필요한 시점임",
+  "layout": {
+    "grid_type": "custom",
+    "background_color": null
+  },
+  "content_data": {
+    "subtitle": null,
+    "date": null,
+    "client_name": null,
+    "framework_type": null,
+    "elements": null,
+    "sections": [
+      {
+        "title": "공단 설립목적 및 사업영역 분석 (정관 기준)",
+        "blocks": [
+          {
+            "block_type": "text",
+            "content": "해양환경 보전·관리·개선을 위한 사업, 해양오염 방제사업, 해양환경·해양오염 관련 기술개발 및 교육훈련을 위한 사업 등을 효율적으로 수행함을 목적으로 함",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          }
+        ]
+      },
+      {
+        "title": "설립 목적",
+        "blocks": []
+      },
+      {
+        "title": "사업 영역",
+        "blocks": []
+      },
+      {
+        "title": null,
+        "blocks": [
+          {
+            "block_type": "text",
+            "content": "해양환경\n개선",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "해양오염\n방제",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "해양환경\n보전·관리",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "조사 및\n연구개발",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "해양사업\n(수익사업)",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "예선,\n기중기,\n골재 등",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          }
+        ]
+      },
+      {
+        "title": null,
+        "blocks": [
+          {
+            "block_type": "text",
+            "content": "• 오염물질의 수거·처리를 위한 사업\n• 오염물질 저장시설의 설치·운영 및 수탁관리\n• 오염물질의 배출방지를 위한 선박의 인양·예인\n• 해양환경 관련 시험·조사·연구·설계·개발 및 공사감리",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "• 해양오염방제 업무 및 방제선 또는 방제장비의 배치·설치\n• 해양오염방제에 필요한 자재·약제의 비치 및 보관시설의 설치 등\n• 선박해양오염비상계획서 및 해양시설오염비상계획서의 작성 대행\n• 해양오염방제 관련 국제협력\n• 해양오염방제에 대한 교육·훈련 및 홍보\n• 침몰선박(침몰우려 선박, 침수선박 포함)의 관리",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "• 해양환경 관련 시험·조사·연구·개발\n• 해양오염방제 관련 연구·개발 및 기술용역사업\n• 해양환경 관련 국제협력 및 기술용역사업\n• 해양수산 부문의 기후변화대응을 위한 기술개발 업무\n• 폐기물의 성분·농도·무게·부피의 측정에 관한 업무\n• 해양오염영향조사 및 해역이용영향평가 대행\n• 해양환경측정기기 또는 자재·약제에 대한 성능 시험",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "• 입·출항 선박의 이·접안 지원을 위한 예선사업\n• 침몰·조난선박의 인양·구조 및 선박건조, 항만·해상교량 건설 등 전용예선사업",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          }
+        ]
+      },
+      {
+        "title": "'20 예산",
+        "blocks": [
+          {
+            "block_type": "text",
+            "content": "411.9\n(억원)",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "521.4*\n(억원)",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "231.7\n(억원)",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "379.3\n(억원)",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          }
+        ]
+      },
+      {
+        "title": "Key Findings",
+        "blocks": [
+          {
+            "block_type": "text",
+            "content": "✓ 공단은 해양환경의 보전, 관리, 개선과 해양오염 방제 및 정화를 위한 사업의 효율적 수행을 목적으로 함",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "✓ 공단의 사업은 크게 해양환경 보전·관리 사업과 방제 자원(선박 등)의 상시 활용 해양사업으로 구성됨",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "✓ 해양환경보전·관리 사업과 공단 운영에 필요한 재원을 선박 등 자산의 운용을 통해 충당하는 구조로 운영됨",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "✓ 해양환경에 대한 국가 정책 변화, 사회적 요구 확대에 따라 사업영역의 점검과 개편이 필요함",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "footer": ""
+}

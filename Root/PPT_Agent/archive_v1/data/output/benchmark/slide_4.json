@@ -1,0 +1,170 @@
+{
+  "slide_type": "Content",
+  "slide_number": 4,
+  "title": "1. 프로젝트 목적 및 범위",
+  "governing_message": "환경과 정책의 급격한 변화에 대응하여 해양환경공단(이하 '공단'이라 한다)의 지속가능 성장을 위한 중장기 전략경영 계획 및 이에 따른 자원배분 계획을 수립하는 것을 본 프로젝트의 목적으로 함",
+  "layout": {
+    "grid_type": "custom",
+    "background_color": "#ffffff"
+  },
+  "content_data": {
+    "subtitle": null,
+    "date": null,
+    "client_name": null,
+    "framework_type": null,
+    "elements": null,
+    "sections": [
+      {
+        "title": "프로젝트 목적",
+        "blocks": [
+          {
+            "block_type": "text",
+            "content": "1\n환경과 정책의 급격한 변화에 대응하기 위한 중장기 전략경영계획의 수립, 조직 재설계 및 자원 배분",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "2\n'사회적가치'의 가치체계와 경영목표 등 전략체계와 융합을 통한 공단 고유의 신규 전략 Frame 구축",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "3\n다각적 경영환경 분석과 내부 보유역량의 객관적 평가에 기반한 중장기 로드맵 및 자원 배분 계획 수립",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          }
+        ]
+      },
+      {
+        "title": "프로젝트 범위",
+        "blocks": [
+          {
+            "block_type": "text",
+            "content": "외부 경영환경 및\n내부 역량분석",
+            "position": "top-left",
+            "style": {
+              "is_bold": true,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "외부환경 분석\n• 정부 신규 정책방향 및 경제,\n사회, 기술 등 거시환경 분석\n• 국내외 해양환경분야 변화\n트렌드 등 산업생태계 분석\n내부역량 분석\n경영전략 및 핵심역량 등 내부\n경영환경 분석\n·경영인프라(재무, 조직,\n인력운영, 조직문화 등) 분석\n이해관계자 및 경쟁자 분석\n• 이해관계자별(고객, 국민, 정부,\n유관기관, 내부직원 등) 정의,\n요구사항 및 이슈 분석,\n대응전략 도출\n• 경쟁자 분석, 국내외 선진기관\n벤치마킹 및 시사점 도출",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 10
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "전략부문 분석 및 제안",
+            "position": "top-left",
+            "style": {
+              "is_bold": true,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "현 전략체계 분석 및 진단\n• 현 가치체계(미션, 비전, 핵심가치,\n경영방침) 적정성 검증\n• 중장기 경영목표, 전략목표,\n전략과제, 실행과제 재설정\n중장기(5개년) 경영목표 재수립\n전략체계 개선 결과 등을 반영,\n중장기 경영목표 분석\n• 전략과제 재정립 및 과제별\n성과지표(KPI) 도출\n전략과제별 성과지표,\n경영평가지표, 부서평가지표\n간 연계체계 마련\n전략실행 모니터링 체계\n및 전략실행 체계 구축\n장애요인 극복방안,\n사업·기능조정, 성과관리\n연계방안 등",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 10
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "조직재설계 및 중장기\n자원배분 계획 도출",
+            "position": "top-left",
+            "style": {
+              "is_bold": true,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "조직진단 및 조직재설계\n• 현행 조직체계 진단을 통한\n조직체계 개선이슈 도출\n• 중장기 전략경영계획과 연계한\n조직재설계 방안 수립\n중장기 추정재무제표 도출\n미래전략방향 및 사업변화를\n고려한 시나리오별(낙관, 중립,\n비관) 추정재무제표 도출\n기능별 조정방안 도출\n핵심업무 우선순위 도출\n(인터뷰 등) 및 기능별\n조정방안 도출\n중장기 인력운영계획 수립\n사업별 인력변동 요인 파악 및\n중장기 인력 운영계획 수립",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 10
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "미래사업 발굴\n및 추진체계 수립",
+            "position": "top-left",
+            "style": {
+              "is_bold": true,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "미래성장사업 발굴\n및 추진전략 수립\n• 기존 미래성장사업 문제점 및\n타당성 검토\n• 실행력 강화를 위한 중장기\n자원 배분 방안\n·정책과 산업 트렌드 분석을\n통한 신규 사업모델 제시 및\n투자계획 설계\n• 기존 추진 사업과 신규 검토\n사업을 통합한 추진 우선순위\n및 중장기 추진 로드맵 도출",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 10
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "기타사항",
+            "position": "top-left",
+            "style": {
+              "is_bold": true,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "현안 및 미래과제\n설정 추진체계 확립\n• 경영전략 기반 기관의\n현안과제, 미래과제 발굴·점검\n프로세스 구축\n• 추진체계 확립 및 해결\n프로세스 정립",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 10
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "전략체계 내재화·실행력\n강화 방안 마련\n전략 및 가치체계 공유·확산 및\n실행력 강화를 위한 CEO역할\n강화 방안\n• 과업결과 품질 제고를 위한\n전문가 자문 실시\n설명회 자료 및\n롤링 매뉴얼 제작\n·본사 및 소속기관 설명회 자료\n제작 및 설명회 지원\n• 중장기 전략 수립 및 롤링\n매뉴얼 작성\n·기재부 경영평가에 대비하여\n전략체계 대응논리 교육\n(정부정책, 공단여건 등\n사업환경 변화에 따라\n상호협의 후 일부 세부과제\n추가, 변경 가능)",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 10
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "footer": null
+}

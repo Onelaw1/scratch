@@ -1,0 +1,484 @@
+{% extends "base.html" %}
+
+{% block content %}
+<style>
+    .timeline-bar {
+        position: absolute;
+        height: 30px;
+        border-radius: 4px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 11px;
+        font-weight: 500;
+        cursor: move;
+        user-select: none;
+        transition: background-color 0.2s;
+    }
+
+    .timeline-bar:hover {
+        opacity: 0.9;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    }
+
+    .timeline-bar.dragging {
+        opacity: 0.5;
+    }
+
+    .timeline-cell {
+        position: relative;
+        height: 40px;
+        border-right: 1px solid #e2e8f0;
+    }
+
+    .timeline-cell:hover {
+        background-color: #f1f5f9;
+    }
+
+    .job-item {
+        cursor: grab;
+        transition: background-color 0.2s;
+    }
+
+    .job-item:hover {
+        background-color: #e0f2fe;
+    }
+
+    .job-item.dragging {
+        opacity: 0.5;
+        cursor: grabbing;
+    }
+
+    .drop-zone {
+        min-height: 40px;
+        border: 2px dashed transparent;
+    }
+
+    .drop-zone.drag-over {
+        border-color: #0ea5e9;
+        background-color: #e0f2fe;
+    }
+</style>
+
+<div class="max-w-full mx-auto px-4">
+    <div class="md:flex md:items-center md:justify-between mb-8">
+        <div class="flex-1 min-w-0">
+            <h2 class="text-2xl font-bold leading-7 text-slate-900 sm:text-3xl">직무 경력 지도 (Career Map)</h2>
+            <p class="mt-1 text-sm text-slate-500">직무를 드래그하여 타임라인에 배치하고 경력을 시각화하세요.</p>
+        </div>
+        <div class="mt-4 flex md:mt-0 md:ml-4 space-x-2">
+            <button type="button" onclick="addJobToList()"
+                class="inline-flex items-center px-4 py-2 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-sky-600 hover:bg-sky-700">
+                직무 추가
+            </button>
+            <button type="button" onclick="saveCareerMap()"
+                class="inline-flex items-center px-4 py-2 border border-slate-300 rounded-md shadow-sm text-sm font-medium text-slate-700 bg-white hover:bg-slate-50">
+                저장
+            </button>
+        </div>
+    </div>
+
+    <div class="grid grid-cols-12 gap-6">
+        <!-- Left: Job List -->
+        <div class="col-span-3">
+            <div class="bg-white shadow rounded-lg">
+                <div class="px-4 py-3 border-b border-slate-200">
+                    <h3 class="text-sm font-medium text-slate-900">직무 목록</h3>
+                    <p class="text-xs text-slate-500 mt-1">드래그하여 타임라인에 추가</p>
+                </div>
+                <div id="jobList" class="p-4 space-y-2">
+                    <!-- Job items will be added here -->
+                    <div class="job-item bg-blue-100 border border-blue-300 rounded px-3 py-2 text-sm" draggable="true"
+                        data-job="채용담당">
+                        <div class="font-medium text-blue-900">채용담당</div>
+                        <div class="text-xs text-blue-700">인사관리 > 채용</div>
+                    </div>
+                    <div class="job-item bg-green-100 border border-green-300 rounded px-3 py-2 text-sm"
+                        draggable="true" data-job="교육훈련담당">
+                        <div class="font-medium text-green-900">교육훈련담당</div>
+                        <div class="text-xs text-green-700">인사관리 > 교육</div>
+                    </div>
+                    <div class="job-item bg-purple-100 border border-purple-300 rounded px-3 py-2 text-sm"
+                        draggable="true" data-job="급여담당">
+                        <div class="font-medium text-purple-900">급여담당</div>
+                        <div class="text-xs text-purple-700">인사관리 > 보상</div>
+                    </div>
+                    <div class="job-item bg-amber-100 border border-amber-300 rounded px-3 py-2 text-sm"
+                        draggable="true" data-job="노무관리담당">
+                        <div class="font-medium text-amber-900">노무관리담당</div>
+                        <div class="text-xs text-amber-700">인사관리 > 노무</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Right: Timeline -->
+        <div class="col-span-9">
+            <div class="bg-white shadow rounded-lg overflow-hidden">
+                <div class="w-32 px-2 py-2 text-xs border-r border-slate-300 flex-shrink-0 bg-slate-50">
+                </div>
+                <div class="flex-1 relative timeline-cell-container" style="height: 40px;">
+                    <!-- Timeline bars will be added here via JS -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="px-4 py-3 bg-slate-50 border-t border-slate-200">
+        <button onclick="addTimelineRow()" class="text-sm text-sky-600 hover:text-sky-700 font-medium">
+            + 행 추가
+        </button>
+    </div>
+</div>
+</div>
+</div>
+
+<!-- Career Summary -->
+<div class="mt-6 bg-white shadow rounded-lg p-6">
+    <h3 class="text-lg font-medium text-slate-900 mb-4">경력 요약</h3>
+    <div id="careerSummary" class="grid grid-cols-4 gap-4">
+        <div class="text-center">
+            <div class="text-2xl font-bold text-slate-900" id="totalYears">0</div>
+            <div class="text-sm text-slate-500">총 경력 (년)</div>
+        </div>
+        <div class="text-center">
+            <div class="text-2xl font-bold text-slate-900" id="jobCount">0</div>
+            <div class="text-sm text-slate-500">경험 직무 수</div>
+        </div>
+        <div class="text-center">
+            <div class="text-2xl font-bold text-slate-900" id="currentJob">-</div>
+            <div class="text-sm text-slate-500">현재 직무</div>
+        </div>
+        <div class="text-center">
+            <div class="text-2xl font-bold text-slate-900" id="longestJob">-</div>
+            <div class="text-sm text-slate-500">최장 근무 직무</div>
+        </div>
+    </div>
+</div>
+</div>
+
+<!-- Add Job Modal -->
+<div id="addJobModal" class="fixed z-10 inset-0 overflow-y-auto hidden">
+    <div class="flex items-end justify-center min-h-screen pt-4 px-4 pb-20 text-center sm:block sm:p-0">
+        <div class="fixed inset-0 bg-gray-500 bg-opacity-75" onclick="closeAddJobModal()"></div>
+        <span class="hidden sm:inline-block sm:align-middle sm:h-screen">&#8203;</span>
+        <div
+            class="inline-block align-bottom bg-white rounded-lg text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:align-middle sm:max-w-lg sm:w-full">
+            <div class="bg-white px-4 pt-5 pb-4 sm:p-6">
+                <h3 class="text-lg font-medium text-gray-900 mb-4">직무 추가</h3>
+                <form id="addJobForm" class="space-y-4">
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700">직무명</label>
+                        <input type="text" id="newJobName" required
+                            class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-sky-500 focus:border-sky-500 sm:text-sm">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700">직무 분류</label>
+                        <input type="text" id="newJobCategory" placeholder="예: 인사관리 > 채용"
+                            class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-sky-500 focus:border-sky-500 sm:text-sm">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700">색상</label>
+                        <select id="newJobColor"
+                            class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-sky-500 focus:border-sky-500 sm:text-sm">
+                            <option value="blue">파랑</option>
+                            <option value="green">초록</option>
+                            <option value="purple">보라</option>
+                            <option value="amber">주황</option>
+                            <option value="red">빨강</option>
+                            <option value="pink">분홍</option>
+                        </select>
+                    </div>
+                </form>
+            </div>
+            <div class="bg-gray-50 px-4 py-3 sm:px-6 sm:flex sm:flex-row-reverse">
+                <button type="button" onclick="submitNewJob()"
+                    class="w-full inline-flex justify-center rounded-md border border-transparent shadow-sm px-4 py-2 bg-sky-600 text-base font-medium text-white hover:bg-sky-700 sm:ml-3 sm:w-auto sm:text-sm">
+                    추가
+                </button>
+                <button type="button" onclick="closeAddJobModal()"
+                    class="mt-3 w-full inline-flex justify-center rounded-md border border-gray-300 shadow-sm px-4 py-2 bg-white text-base font-medium text-gray-700 hover:bg-gray-50 sm:mt-0 sm:ml-3 sm:w-auto sm:text-sm">
+                    취소
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    let careerData = [];
+    let draggedJob = null;
+    let draggedBar = null;
+    let resizing = false;
+
+    const colors = {
+        blue: { bg: 'bg-blue-400', border: 'border-blue-500', text: 'text-white' },
+        green: { bg: 'bg-green-400', border: 'border-green-500', text: 'text-white' },
+        purple: { bg: 'bg-purple-400', border: 'border-purple-500', text: 'text-white' },
+        amber: { bg: 'bg-amber-400', border: 'border-amber-500', text: 'text-white' },
+        red: { bg: 'bg-red-400', border: 'border-red-500', text: 'text-white' },
+        pink: { bg: 'bg-pink-400', border: 'border-pink-500', text: 'text-white' }
+    };
+
+    // Initialize drag and drop for job items
+    function initJobDragDrop() {
+        const jobItems = document.querySelectorAll('.job-item');
+        jobItems.forEach(item => {
+            item.addEventListener('dragstart', handleJobDragStart);
+            item.addEventListener('dragend', handleJobDragEnd);
+        });
+    }
+
+    function handleJobDragStart(e) {
+        draggedJob = {
+            name: e.target.dataset.job || e.target.querySelector('.font-medium').textContent,
+            color: getJobColor(e.target)
+        };
+        e.target.classList.add('dragging');
+        e.dataTransfer.effectAllowed = 'copy';
+    }
+
+    function handleJobDragEnd(e) {
+        e.target.classList.remove('dragging');
+    }
+
+    function getJobColor(element) {
+        const classList = element.classList;
+        if (classList.contains('bg-blue-100')) return 'blue';
+        if (classList.contains('bg-green-100')) return 'green';
+        if (classList.contains('bg-purple-100')) return 'purple';
+        if (classList.contains('bg-amber-100')) return 'amber';
+        return 'blue';
+    }
+
+    // Initialize drop zones
+    function initDropZones() {
+        const dropZones = document.querySelectorAll('.drop-zone');
+        dropZones.forEach(zone => {
+            zone.addEventListener('dragover', handleDragOver);
+            zone.addEventListener('dragleave', handleDragLeave);
+            zone.addEventListener('drop', handleDrop);
+        });
+    }
+
+    function handleDragOver(e) {
+        e.preventDefault();
+        e.currentTarget.classList.add('drag-over');
+    }
+
+    function handleDragLeave(e) {
+        e.currentTarget.classList.remove('drag-over');
+    }
+
+    function handleDrop(e) {
+        e.preventDefault();
+        e.currentTarget.classList.remove('drag-over');
+
+        if (draggedJob) {
+            const rowIndex = parseInt(e.currentTarget.dataset.row);
+            addCareerPeriod(rowIndex, draggedJob.name, draggedJob.color, 1, 3);
+            draggedJob = null;
+        }
+    }
+
+    function addCareerPeriod(rowIndex, jobName, color, startYear, endYear) {
+        const row = document.querySelectorAll('.drop-zone')[rowIndex];
+        if (!row) return;
+
+        const container = row.querySelector('.timeline-cell-container');
+        const bar = document.createElement('div');
+        bar.className = `timeline-bar ${colors[color].bg} ${colors[color].border} ${colors[color].text} border-2`;
+        bar.style.left = `${(startYear - 1) * (100 / 30)}%`;
+        bar.style.width = `${(endYear - startYear + 1) * (100 / 30)}%`;
+        bar.textContent = `${jobName} (${startYear}-${endYear}년)`;
+        bar.draggable = true;
+        bar.dataset.job = jobName;
+        bar.dataset.start = startYear;
+        bar.dataset.end = endYear;
+        bar.dataset.color = color;
+
+        bar.addEventListener('dragstart', handleBarDragStart);
+        bar.addEventListener('dragend', handleBarDragEnd);
+        bar.addEventListener('mousedown', handleBarMouseDown);
+
+        container.appendChild(bar);
+
+        // Update row label
+        const label = row.querySelector('.w-32');
+        if (!label.textContent.trim()) {
+            label.textContent = jobName;
+            label.classList.add('font-medium', 'text-slate-900');
+        }
+
+        updateCareerSummary();
+    }
+
+    function handleBarDragStart(e) {
+        draggedBar = e.target;
+        e.target.classList.add('dragging');
+    }
+
+    function handleBarDragEnd(e) {
+        e.target.classList.remove('dragging');
+        draggedBar = null;
+    }
+
+    function handleBarMouseDown(e) {
+        // Enable horizontal resizing
+        const bar = e.target;
+        const startX = e.clientX;
+        const startLeft = parseFloat(bar.style.left);
+        const startWidth = parseFloat(bar.style.width);
+
+        function handleMouseMove(e) {
+            const deltaX = e.clientX - startX;
+            const deltaPercent = (deltaX / bar.parentElement.offsetWidth) * 100;
+
+            // Resize or move based on where clicked
+            const clickPosition = (e.clientX - bar.getBoundingClientRect().left) / bar.offsetWidth;
+
+            if (clickPosition < 0.1) {
+                // Resize left edge
+                bar.style.left = `${startLeft + deltaPercent}%`;
+                bar.style.width = `${startWidth - deltaPercent}%`;
+            } else if (clickPosition > 0.9) {
+                // Resize right edge
+                bar.style.width = `${startWidth + deltaPercent}%`;
+            } else {
+                // Move entire bar
+                bar.style.left = `${startLeft + deltaPercent}%`;
+            }
+
+            updateBarText(bar);
+        }
+
+        function handleMouseUp() {
+            document.removeEventListener('mousemove', handleMouseMove);
+            document.removeEventListener('mouseup', handleMouseUp);
+            updateCareerSummary();
+        }
+
+        document.addEventListener('mousemove', handleMouseMove);
+        document.addEventListener('mouseup', handleMouseUp);
+    }
+
+    function updateBarText(bar) {
+        const left = parseFloat(bar.style.left);
+        const width = parseFloat(bar.style.width);
+        const startYear = Math.round((left / (100 / 30)) + 1);
+        const endYear = Math.round(((left + width) / (100 / 30)));
+
+        bar.dataset.start = startYear;
+        bar.dataset.end = endYear;
+        bar.textContent = `${bar.dataset.job} (${startYear}-${endYear}년)`;
+    }
+
+    function addTimelineRow() {
+        const container = document.getElementById('timelineRows');
+        const rowIndex = container.children.length;
+        const newRow = document.createElement('div');
+        newRow.className = 'flex border-b border-slate-200 drop-zone';
+        newRow.dataset.row = rowIndex;
+        newRow.innerHTML = `
+            <div class="w-32 px-2 py-2 text-xs border-r border-slate-300 flex-shrink-0 bg-slate-50"></div>
+            <div class="flex-1 relative timeline-cell-container" style="height: 40px;"></div>
+        `;
+        container.appendChild(newRow);
+        initDropZones();
+    }
+
+    function updateCareerSummary() {
+        const bars = document.querySelectorAll('.timeline-bar');
+        const jobs = new Set();
+        let maxYear = 0;
+        let longestDuration = 0;
+        let longestJobName = '-';
+        let latestJob = '-';
+        let latestEndYear = 0;
+
+        bars.forEach(bar => {
+            const jobName = bar.dataset.job;
+            const start = parseInt(bar.dataset.start);
+            const end = parseInt(bar.dataset.end);
+            const duration = end - start + 1;
+
+            jobs.add(jobName);
+            maxYear = Math.max(maxYear, end);
+
+            if (duration > longestDuration) {
+                longestDuration = duration;
+                longestJobName = jobName;
+            }
+
+            if (end > latestEndYear) {
+                latestEndYear = end;
+                latestJob = jobName;
+            }
+        });
+
+        document.getElementById('totalYears').textContent = maxYear;
+        document.getElementById('jobCount').textContent = jobs.size;
+        document.getElementById('currentJob').textContent = latestJob;
+        document.getElementById('longestJob').textContent = longestJobName;
+    }
+
+    function addJobToList() {
+        document.getElementById('addJobModal').classList.remove('hidden');
+    }
+
+    function closeAddJobModal() {
+        document.getElementById('addJobModal').classList.add('hidden');
+        document.getElementById('addJobForm').reset();
+    }
+
+    function submitNewJob() {
+        const name = document.getElementById('newJobName').value;
+        const category = document.getElementById('newJobCategory').value;
+        const color = document.getElementById('newJobColor').value;
+
+        if (!name) {
+            alert('직무명을 입력해주세요.');
+            return;
+        }
+
+        const jobList = document.getElementById('jobList');
+        const newJob = document.createElement('div');
+        newJob.className = `job-item bg-${color}-100 border border-${color}-300 rounded px-3 py-2 text-sm`;
+        newJob.draggable = true;
+        newJob.dataset.job = name;
+        newJob.innerHTML = `
+            <div class="font-medium text-${color}-900">${name}</div>
+            <div class="text-xs text-${color}-700">${category || '미분류'}</div>
+        `;
+        jobList.appendChild(newJob);
+
+        initJobDragDrop();
+        closeAddJobModal();
+    }
+
+    function saveCareerMap() {
+        const bars = document.querySelectorAll('.timeline-bar');
+        const data = Array.from(bars).map(bar => ({
+            job: bar.dataset.job,
+            start: parseInt(bar.dataset.start),
+            end: parseInt(bar.dataset.end),
+            color: bar.dataset.color
+        }));
+
+        console.log('Career Map Data:', data);
+        alert(`경력 지도가 저장되었습니다!\n\n총 ${data.length}개의 경력 기간이 기록되었습니다.`);
+    }
+
+    // Initialize
+    for (let i = 0; i < 5; i++) {
+        addTimelineRow();
+    }
+    initJobDragDrop();
+    initDropZones();
+
+    // Add sample data
+    addCareerPeriod(0, '채용담당', 'blue', 1, 5);
+    addCareerPeriod(1, '교육훈련담당', 'green', 6, 10);
+    addCareerPeriod(2, '급여담당', 'purple', 11, 15);
+</script>
+{% endblock %}

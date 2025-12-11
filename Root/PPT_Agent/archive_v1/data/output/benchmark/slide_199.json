@@ -1,0 +1,135 @@
+{
+  "slide_type": "Content",
+  "slide_number": 199,
+  "title": "[New 미션, 비전의 의미]",
+  "governing_message": "깨끗하고 안전한 바다로 국민 행복을 증진하고, 해양의 더 나은 미래를 열어간다",
+  "layout": {
+    "grid_type": "1-column",
+    "background_color": "#FFFFFF"
+  },
+  "content_data": {
+    "subtitle": null,
+    "date": null,
+    "client_name": null,
+    "framework_type": null,
+    "elements": null,
+    "sections": [
+      {
+        "title": null,
+        "blocks": [
+          {
+            "block_type": "text",
+            "content": "존재의 이유 1.",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "“해양생태계를 복원하고 해양을 정화하는” 해양환경 보전과",
+            "position": "top-right",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          }
+        ]
+      },
+      {
+        "title": null,
+        "blocks": [
+          {
+            "block_type": "text",
+            "content": "존재의 이유 2.",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "“오염의 위해로부터 국민과 해양을 지키고 예방하는” 해양방제로",
+            "position": "top-right",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          }
+        ]
+      },
+      {
+        "title": null,
+        "blocks": [
+          {
+            "block_type": "text",
+            "content": "근원적 가치",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "“국민이 해양을 이용하고 향유하며 행복을 키우는” 가치를 창출하며",
+            "position": "top-right",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          }
+        ]
+      },
+      {
+        "title": null,
+        "blocks": [
+          {
+            "block_type": "text",
+            "content": "확장된 궁극적 가치",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "“미래를 위해 해양환경을 개선·보전하는” 국가 해양환경 대표기관",
+            "position": "top-right",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          }
+        ]
+      },
+      {
+        "title": null,
+        "blocks": [
+          {
+            "block_type": "text",
+            "content": "해양생태계를 복원하고 해양을 정화하며, 오염의 위해로부터 국민과 해양을 지키는 해양환경 보전·방제 전문기관으로, 국민이 해양을 이용하고 향유하는 행복으로 삶의 질을 높이며, 미래 세대를 위해 해양환경을 개선하고 보전하는 국가 해양환경 책임 기관의 소명을 가짐",
+            "position": "bottom-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "footer": ""
+}

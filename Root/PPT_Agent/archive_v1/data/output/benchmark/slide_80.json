@@ -1,0 +1,120 @@
+{
+  "slide_type": "Content",
+  "slide_number": 80,
+  "title": "3. 이해관계자 분석 - 외부 이해관계자 의견수렴 (2/2)",
+  "governing_message": "이해관계자 인터뷰에서 공단 인력과 조직의 전문성, 부서·영역간 및 외부와 소통과 협력, 예선사업 타당성 등을 주요\n현안이슈로 지적하면서 학계·전문가 교류·협력 프로그램 운영, 국민 참여·소통 플랫폼 구축·운영 등이 대안으로 제시됨",
+  "layout": {
+    "grid_type": "2-column",
+    "background_color": "#FFFFFF"
+  },
+  "content_data": {
+    "subtitle": null,
+    "date": null,
+    "client_name": null,
+    "framework_type": null,
+    "elements": null,
+    "sections": [
+      {
+        "title": "현안이슈",
+        "blocks": [
+          {
+            "block_type": "text",
+            "content": "•공단 인력과 조직의 전문성\n  - 해양환경은 분야 전문성과 (정책 선도를 위한) 종합적 기획역량이 필요한데,\n    순환보직, 단기성과주의 등으로 공단 조직과 인력의 전문성 약화됨\n• 부서간, 외부기관 및 시민단체, 국민과 소통과 협력\n  - 공단 내부 부서간, 영역간 및 외부 기관과 소통과 공유 잘 안됨 (공단만의 문제\n    아니고 해양수산부가 같이 가지고 있는 문제로 함께 풀어야할 과제)\n• 예선사업의 당위성 검토 및 장기 사업전략 필요\n  - 민간과 경쟁 영역의 사업지속 당위성, 외부요인 변경에 따른 사업성의 검토 필요\n• 공단이 조사·측정·수집한 데이터의 이용과 활용\n  - 공단이 조사, 관리하는 데이터의 공개·공유 극히 제한적임",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          }
+        ]
+      },
+      {
+        "title": "개선대안",
+        "blocks": [
+          {
+            "block_type": "text",
+            "content": "• 전문성 강화 대안\n  - 학계, 전문가와의 소통과 협력 강화, 외부 전문인력의 활용 및 교류 확대\n  - 순환보직 등 인사제도와 CDP 등 개선 필요 (전문교육과정, 인력교류 등 추진)\n• 해양환경 영역의 시민단체, 지자체 및 국민과 소통의 도전적 확대\n  - 민간 환경단체와 협력관계 구성, 민간 네트워크 구축\n  - 대국민 홍보를 통한 해양환경 활동가 양성과 활동 지원\n• 디지털 뉴딜과 연계하여 대국민 정보 서비스를 포함한 국민참여 플랫폼 구축\n  - 환경보전단체, 해양레저 등 해양환경 관심도 높은 인구부터 참여 유도 후 확산\n  - 공단의 해양환경 데이터의 해양환경 보전활동 인지·참여 확대 활용",
+            "position": "bottom-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          }
+        ]
+      },
+      {
+        "title": null,
+        "blocks": [
+          {
+            "block_type": "text",
+            "content": "공단 인력, 조직의 전문성 부족",
+            "position": "top-right",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "부서·영역간 및 외부기관과\n소통과 공유 문제",
+            "position": "center",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "예선사업에 대한 장기 전략 필요",
+            "position": "bottom-right",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          }
+        ]
+      },
+      {
+        "title": null,
+        "blocks": [
+          {
+            "block_type": "text",
+            "content": "내부 인사제도와 CDP 개선과 동시\n외부 학계, 전문가와 협력체계 구축",
+            "position": "top-right",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "해양환경 민간협력 네트워크 구축·운영",
+            "position": "center",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "국민참여 (디지털) 플랫폼 구축·운영",
+            "position": "bottom-right",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "footer": ""
+}

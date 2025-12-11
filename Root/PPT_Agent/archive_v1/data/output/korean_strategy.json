@@ -1,0 +1,211 @@
+{
+    "slide_type": "Content",
+    "slide_number": 4,
+    "title": "2030 중장기 전략 경영 계획 (Strategy 2030)",
+    "governing_message": "지속가능한 성장을 위해 3대 핵심 전략 방향을 설정하고, 디지털 혁신 기반의 실행 체계를 구축하여 글로벌 Top-Tier 도약을 달성함.",
+    "layout": {
+        "grid_type": "strategy_house",
+        "background_color": "white"
+    },
+    "content_data": {},
+    "sections": [
+        {
+            "title": "비전 (Vision)",
+            "layout_type": "roof",
+            "blocks": [
+                {
+                    "block_type": "text",
+                    "content": "Global No.1 Eco-Friendly Energy Solution Provider",
+                    "style": {
+                        "font_size": 20,
+                        "is_bold": true,
+                        "color_hex": "white",
+                        "background_hex": "#003366",
+                        "padding": "15px",
+                        "text_align": "center"
+                    }
+                }
+            ]
+        },
+        {
+            "title": "전략 방향 (Strategic Pillars)",
+            "layout_type": "columns_3",
+            "blocks": [
+                {
+                    "block_type": "container",
+                    "title": "전략 1: 운영 효율화 (Operational Excellence)",
+                    "style": {
+                        "background_hex": "#f8f9fa",
+                        "border": "1px solid #dee2e6"
+                    },
+                    "blocks": [
+                        {
+                            "block_type": "text",
+                            "content": "- 공정 자동화율 85% 달성 및 스마트 팩토리 고도화",
+                            "style": {
+                                "font_size": 10
+                            }
+                        },
+                        {
+                            "block_type": "text",
+                            "content": "- 글로벌 공급망 최적화를 통한 물류비 20% 절감",
+                            "style": {
+                                "font_size": 10
+                            }
+                        },
+                        {
+                            "block_type": "text",
+                            "content": "- 데이터 기반 의사결정 체계 도입 (ERP/MES 연동)",
+                            "style": {
+                                "font_size": 10
+                            }
+                        },
+                        {
+                            "block_type": "kpi_card",
+                            "content": "비용 절감: 500억원",
+                            "style": {
+                                "color_hex": "#0056b3",
+                                "is_bold": true
+                            }
+                        }
+                    ]
+                },
+                {
+                    "block_type": "container",
+                    "title": "전략 2: 고객 경험 혁신 (CX Innovation)",
+                    "style": {
+                        "background_hex": "#f8f9fa",
+                        "border": "1px solid #dee2e6"
+                    },
+                    "blocks": [
+                        {
+                            "block_type": "text",
+                            "content": "- 옴니채널 플랫폼 구축 및 고객 접점 통합 관리",
+                            "style": {
+                                "font_size": 10
+                            }
+                        },
+                        {
+                            "block_type": "text",
+                            "content": "- AI 챗봇 및 맞춤형 추천 서비스 도입",
+                            "style": {
+                                "font_size": 10
+                            }
+                        },
+                        {
+                            "block_type": "text",
+                            "content": "- VOC 분석 시스템을 통한 실시간 품질 개선",
+                            "style": {
+                                "font_size": 10
+                            }
+                        },
+                        {
+                            "block_type": "kpi_card",
+                            "content": "NPS 목표: 80점",
+                            "style": {
+                                "color_hex": "#28a745",
+                                "is_bold": true
+                            }
+                        }
+                    ]
+                },
+                {
+                    "block_type": "container",
+                    "title": "전략 3: 신성장 동력 확보 (Future Growth)",
+                    "style": {
+                        "background_hex": "#f8f9fa",
+                        "border": "1px solid #dee2e6"
+                    },
+                    "blocks": [
+                        {
+                            "block_type": "text",
+                            "content": "- 동남아/북미 시장 진출 (거점 법인 설립)",
+                            "style": {
+                                "font_size": 10
+                            }
+                        },
+                        {
+                            "block_type": "text",
+                            "content": "- 친환경 소재 R&D 투자 확대 (매출액 5%)",
+                            "style": {
+                                "font_size": 10
+                            }
+                        },
+                        {
+                            "block_type": "text",
+                            "content": "- 유망 스타트업 M&A 및 기술 제휴 추진",
+                            "style": {
+                                "font_size": 10
+                            }
+                        },
+                        {
+                            "block_type": "kpi_card",
+                            "content": "신사업 매출: 30%",
+                            "style": {
+                                "color_hex": "#dc3545",
+                                "is_bold": true
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "기반 (Foundation)",
+            "layout_type": "full_width",
+            "blocks": [
+                {
+                    "block_type": "text",
+                    "content": "핵심 기반: 디지털 트랜스포메이션 (DX) 가속화 및 창의적 조직문화 구축",
+                    "style": {
+                        "background_hex": "#e9ecef",
+                        "padding": "10px",
+                        "font_weight": "bold",
+                        "text_align": "center",
+                        "font_size": 12,
+                        "color_hex": "#495057"
+                    }
+                }
+            ]
+        },
+        {
+            "title": "실행 로드맵 (Roadmap)",
+            "layout_type": "process_flow",
+            "blocks": [
+                {
+                    "block_type": "chevron",
+                    "content": "1단계: 기반 구축 (2025)",
+                    "style": {
+                        "background_hex": "#003366",
+                        "color_hex": "white"
+                    }
+                },
+                {
+                    "block_type": "chevron",
+                    "content": "2단계: 성과 가시화 (2026-2027)",
+                    "style": {
+                        "background_hex": "#004a94",
+                        "color_hex": "white"
+                    }
+                },
+                {
+                    "block_type": "chevron",
+                    "content": "3단계: 글로벌 확산 (2028-2029)",
+                    "style": {
+                        "background_hex": "#0061c2",
+                        "color_hex": "white"
+                    }
+                },
+                {
+                    "block_type": "chevron",
+                    "content": "4단계: 비전 달성 (2030)",
+                    "style": {
+                        "background_hex": "#3395ff",
+                        "color_hex": "white"
+                    }
+                }
+            ]
+        }
+    ],
+    "footer": "Confidential - Internal Strategy Document"
+}

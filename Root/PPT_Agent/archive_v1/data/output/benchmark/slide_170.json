@@ -1,0 +1,35 @@
+{
+  "slide_type": "Data",
+  "slide_number": 170,
+  "title": "4. 경영목표 수립 - 경영목표 평가기준 수립 : SMART",
+  "governing_message": "경영목표 선정을 위한 평가는 SMART(구체성, 측정가능성, 달성가능성, 논리적연관성, 기한제한성)를 기준으로 활용하며, 객관화를 위해 항목별로 평가기준을 수립하여 적용함",
+  "layout": {
+    "grid_type": "custom",
+    "background_color": "#FFFFFF"
+  },
+  "content_data": {
+    "subtitle": null,
+    "date": null,
+    "client_name": null,
+    "framework_type": null,
+    "elements": null,
+    "sections": [
+      {
+        "title": "경영목표 평가기준 수립 : SMART",
+        "blocks": [
+          {
+            "block_type": "table",
+            "content": "Table outlining SMART criteria and corresponding evaluation standards.",
+            "position": "full-width",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "footer": "해양환경공단 169"
+}

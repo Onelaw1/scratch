@@ -1,0 +1,35 @@
+{
+  "slide_type": "Framework",
+  "slide_number": 104,
+  "title": "1. 전략수립 방향성 - 가치체계의 구조와 개념 적용",
+  "governing_message": "아래와 같은 공공기관 가치체계 수립 모델의 트렌드 변화를 반영하여 미션으로부터 비전으로 도달해가는 과정 변수로 경영목표를 설정하여 가치체계와 전략체계의 연계성을 강화하여 전략체계를 수립함",
+  "layout": {
+    "grid_type": "3-column",
+    "background_color": "white"
+  },
+  "content_data": {
+    "subtitle": null,
+    "date": null,
+    "client_name": null,
+    "framework_type": "List",
+    "elements": [
+      {
+        "label": "2000년대 중반 이전 모델",
+        "description": "Vision:\n• 목표 시점까지 조직이 지향하고 구현해야 될 미래상(가변성)\n\nMission:\n• Vision 달성을 위해 조직에게 요구되는 역할(가변성)\n\nValue:\n• Vision 달성을 위해 조직 구성원이 가져야 할 규범\n\nManagement Goal:\n• Vision 달성을 위한 전사 목표\n\n✓ Vision을 가치체계의 최상의 개념으로 위치시킨 후 Mission과 Value를 동등한 위치에서 적용",
+        "position": "step-1"
+      },
+      {
+        "label": "2000년대 중반 이후 모델",
+        "description": "Mission:\n• 조직이 존재하는 근본적인 이유 (불변성)\n\nVision:\n• 목표 시점까지 조직이 지향하고 구현해야 될 미래상(가변성)\n\nManagement Goal:\n• Vision 달성 여부를 정의하는 전사 목표\n\nValue:\n• Mission 및 Vision 달성을 위해 조직 구성원이 가져야 할 규범 (불변성+가변성)\n\n✓ Mission을 조직이 존재하는 근본적인 이유로 정의하고 최상위 개념으로 적용하여, Vision은 Mission을 이루어내기 위한 특정 시점까지 지향하고 구현해야 할 요소로 정의",
+        "position": "step-2"
+      },
+      {
+        "label": "현재 공공기관 적용 모델",
+        "description": "• 목표 시점까지 조직이 지향하고 구현해야 될 미래상\n\nVision\n\nValue\n\nManagement Goal\n• Vision 달성 여부를 측정하는 기준\n\nMission\n• 조직이 존재하는 근본적인 이유이며 불변성이 원칙이나, Vision 달성을 위해 법령 개정 등으로 인한 가변성 내포\n\n✓ Mission을 조직이 존재하는 근본적인 이유로 정의하고, 존재이유에서 역할 및 사업 영역의 확장을 반영한 조직의 미래상인 Vision과의 Gap Closing 과정에서, 단계별 Vision 달성 여부를 측정하는 기준으로 경영목표를 설정",
+        "position": "step-3"
+      }
+    ],
+    "sections": null
+  },
+  "footer": "KOEM 해양환경공단 103"
+}

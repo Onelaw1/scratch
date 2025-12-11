@@ -1,0 +1,85 @@
+{
+  "slide_type": "Data",
+  "slide_number": 192,
+  "title": "4. 경영목표 수립 - 경영목표 설정 ④ 재무건전성 제고 (1/3)",
+  "governing_message": "재무건전성 제고 목표는 공단 사업의 손익구조 개선을 통한 (매출액)영업이익률의 개선 목표를 준시장형 공기업 18개 (전체 20개 공기업 중 예외적 2개 기업 제외) 평균 영업이익률과 당기순이익률에 준거하여 아래와 같이 설정함",
+  "layout": {
+    "grid_type": "custom",
+    "background_color": "#FFFFFF"
+  },
+  "content_data": {
+    "subtitle": null,
+    "date": null,
+    "client_name": null,
+    "framework_type": null,
+    "elements": null,
+    "sections": [
+      {
+        "title": "목표 설정 방식",
+        "blocks": [
+          {
+            "block_type": "text",
+            "content": "✓ 준시장형 공기업의 '16년~'20년 5개년간 평균 영업이익률(8.3%), 당기순이익률(4.9%) 기준을 참고하여, 영업이익률 '25년 3%, '30년 5%를 목표로 수립함\n- 당기순이익률은 공단 수입 및 재무구조를 감안하여 영업이익률 + 2%로 추산함\n✓ '21~22년은 손실이 발생하는 사업의 효율성 개선과 사업별 계약과 비용 점검을 통해 이익으로 전환하고, '23~25년은 사업성을 확보한 신사업 추진을 통해 이익을 성장시키고, '26~30년 신사업이 안정화되고 기존 사업의 이익구조 개선이 정착되며 안정적인 성장기조로 '30년 5% 영업이익 목표를 달성할 수 있도록 목표를 설정함",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          }
+        ]
+      },
+      {
+        "title": "지표",
+        "blocks": [
+          {
+            "block_type": "table",
+            "content": "See table in image",
+            "position": "top-right",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          }
+        ]
+      },
+      {
+        "title": null,
+        "blocks": [
+          {
+            "block_type": "text",
+            "content": "손실 → 이익 전환\n(사업 효율성 개선,\n사업별 계약 및\n비용 재점검)",
+            "position": "bottom-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "영업이익 성장\n(연평균 1%):\n사업성, 연속성\n보유한 신사업\n추진을 통한\n이익구조 개선",
+            "position": "center",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "안정성장기 (연평균 0.4%)\n미래성장 신사업 안정화 및\n기존사업 이익구조 개선 정착",
+            "position": "bottom-right",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "footer": "191"
+}

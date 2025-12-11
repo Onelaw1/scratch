@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>공공기관 직무중심 인사관리 통합 시스템</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap"
+        rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#1d4ed8', // Gov Blue
+                        secondary: '#334155', // Slate 700
+                        bg_light: '#f8fafc',
+                    },
+                    fontFamily: {
+                        sans: ['Noto Sans KR', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        .nav-item.active {
+            background-color: #eff6ff;
+            border-left: 4px solid #1d4ed8;
+            color: #1d4ed8;
+            font-weight: 700;
+        }
+
+        .nav-item {
+            border-left: 4px solid transparent;
+            transition: all 0.2s;
+        }
+
+        .module-card {
+            transition: transform 0.2s;
+        }
+
+        .module-card:hover {
+            transform: translateY(-2px);
+        }
+
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #cbd5e1;
+            border-radius: 4px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: #94a3b8;
+        }
+    </style>
+</head>
+
+<body class="bg-bg_light text-slate-800 antialiased overflow-hidden h-screen flex">
+
+    <!-- Left Sidebar: Navigation (Nara Market Style) -->
+    <aside class="w-80 bg-white border-r border-slate-200 flex flex-col shadow-xl z-20 h-full">
+        <div class="p-6 border-b border-slate-100 bg-slate-900 text-white">
+            <div class="text-xs text-blue-400 font-bold mb-1">정부 가이드라인 준수</div>
+            <h1 class="text-xl font-bold leading-tight">
+                공공기관<br>직무중심 인사관리<br>통합 솔루션
+            </h1>
+        </div>
+
+        <nav class="flex-1 overflow-y-auto py-4">
+            <div class="px-6 text-xs font-bold text-slate-400 mb-2 mt-2">1. 직무 분석 (Analysis)</div>
+            <a href="#m1" class="nav-item block px-6 py-3 text-sm hover:bg-slate-50">01. 직무조사 (Survey)</a>
+            <a href="#m2" class="nav-item block px-6 py-3 text-sm hover:bg-slate-50">02. 직무분류 (Classification)</a>
+            <a href="#m3" class="nav-item block px-6 py-3 text-sm hover:bg-slate-50">03. 업무량조사 (Workload)</a>
+
+            <div class="px-6 text-xs font-bold text-slate-400 mb-2 mt-6">2. 조직 설계 (Design)</div>
+            <a href="#m4" class="nav-item block px-6 py-3 text-sm hover:bg-slate-50">04. 직무재설계 (Redesign)</a>
+            <a href="#m5" class="nav-item block px-6 py-3 text-sm hover:bg-slate-50">05. 정원산정 (Headcount)</a>
+
+            <div class="px-6 text-xs font-bold text-slate-400 mb-2 mt-6">3. 직무 평가 (Evaluation)</div>
+            <a href="#m6" class="nav-item block px-6 py-3 text-sm hover:bg-slate-50">06. 직무평가 (Job Eval)</a>
+            <a href="#m7" class="nav-item block px-6 py-3 text-sm hover:bg-slate-50">07. 직무기술서 (JD)</a>
+
+            <div class="px-6 text-xs font-bold text-slate-400 mb-2 mt-6">4. 인사 관리 (Management)</div>
+            <a href="#m8" class="nav-item block px-6 py-3 text-sm hover:bg-slate-50">08. 인사평가 (Performance)</a>
+            <a href="#m9" class="nav-item block px-6 py-3 text-sm hover:bg-slate-50">09. 직무관리카드 (Job Card)</a>
+            <a href="#m10" class="nav-item block px-6 py-3 text-sm hover:bg-slate-50">10. 인사기록카드 (Record)</a>
+            <a href="#m11" class="nav-item block px-6 py-3 text-sm hover:bg-slate-50">11. 승진서열명부 (Promotion)</a>
+
+            <div class="px-6 text-xs font-bold text-slate-400 mb-2 mt-6">5. 인재 육성 (Development)</div>
+            <a href="#m12" class="nav-item block px-6 py-3 text-sm hover:bg-slate-50 mb-12">12. 교육관리 설계 (Training)</a>
+        </nav>
+
+        <div class="p-4 bg-slate-50 border-t border-slate-200 text-center">
+            <button
+                class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 rounded shadow transition-colors">
+                시스템 도입 문의
+            </button>
+        </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="flex-1 overflow-y-auto h-full relative scroll-smooth bg-slate-50" id="main-content">
+
+        <!-- Header Image -->
+        <div class="h-64 bg-gradient-to-r from-slate-900 to-blue-900 flex items-center justify-center text-center px-4">
+            <div>
+                <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">공공기관 직무급제 도입의 지름길</h2>
+                <p class="text-blue-200 text-lg">정부 가이드라인 완벽 대응 | AI 기반 자동화 | 2주 내 구축 완료</p>
+            </div>
+        </div>
+
+        <div class="max-w-5xl mx-auto py-12 px-8 space-y-24 pb-32">
+
+            <!-- Module 1 -->
+            <section id="m1" class="scroll-mt-8">
+                <div class="flex items-center gap-4 mb-6">
+                    <span class="bg-blue-100 text-blue-700 font-bold px-3 py-1 rounded text-sm">Step 01</span>
+                    <h3 class="text-3xl font-bold text-slate-900">직무조사 (Job Survey)</h3>
+                </div>
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div class="bg-white p-6 rounded-lg shadow-sm border border-slate-200">
+                        <h4 class="font-bold text-lg mb-3 text-blue-800">특장점 (Features)</h4>
+                        <ul class="list-disc list-inside space-y-2 text-slate-600 text-sm">
+                            <li><strong>AI 자동 추천:</strong> 부서명만 입력하면 표준 직무/과업 자동 생성</li>
+                            <li><strong>Smart Grid UI:</strong> 엑셀처럼 편리한 대량 데이터 입력</li>
+                            <li><strong>모바일 지원:</strong> 현장직도 스마트폰으로 간편 참여</li>
+                        </ul>
+                    </div>
+                    <div class="bg-slate-100 p-6 rounded-lg border border-slate-200">
+                        <h4 class="font-bold text-lg mb-3 text-slate-800">기대효과 (Effects)</h4>
+                        <ul class="list-disc list-inside space-y-2 text-slate-600 text-sm">
+                            <li>조사 기간 <strong>50% 단축</strong> (2주 → 1주)</li>
+                            <li>데이터 정합성 <strong>99.9% 확보</strong></li>
+                            <li>직원 참여율 및 수용성 제고</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Module 2 -->
+            <section id="m2" class="scroll-mt-8">
+                <div class="flex items-center gap-4 mb-6">
+                    <span class="bg-blue-100 text-blue-700 font-bold px-3 py-1 rounded text-sm">Step 02</span>
+                    <h3 class="text-3xl font-bold text-slate-900">직무분류 (Job Classification)</h3>
+                </div>
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div class="bg-white p-6 rounded-lg shadow-sm border border-slate-200">
+                        <h4 class="font-bold text-lg mb-3 text-blue-800">특장점 (Features)</h4>
+                        <ul class="list-disc list-inside space-y-2 text-slate-600 text-sm">
+                            <li><strong>NCS 기반 매핑:</strong> 국가직무능력표준 자동 연계</li>
+                            <li><strong>유사 직무 클러스터링:</strong> AI가 유사 직무 자동 그룹화</li>
+                            <li><strong>직무 체계도 자동 생성:</strong> 대-중-소분류 시각화</li>
+                        </ul>
+                    </div>
+                    <div class="bg-slate-100 p-6 rounded-lg border border-slate-200">
+                        <h4 class="font-bold text-lg mb-3 text-slate-800">기대효과 (Effects)</h4>
+                        <ul class="list-disc list-inside space-y-2 text-slate-600 text-sm">
+                            <li>직무급 도입을 위한 <strong>표준 체계 확립</strong></li>
+                            <li>동일 가치 노동 판단 기준 마련</li>
+                            <li>순환보직 및 경력개발 경로 가시화</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Module 3 -->
+            <section id="m3" class="scroll-mt-8">
+                <div class="flex items-center gap-4 mb-6">
+                    <span class="bg-blue-100 text-blue-700 font-bold px-3 py-1 rounded text-sm">Step 03</span>
+                    <h3 class="text-3xl font-bold text-slate-900">업무량조사 (Workload Analysis)</h3>
+                </div>
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div class="bg-white p-6 rounded-lg shadow-sm border border-slate-200">
+                        <h4 class="font-bold text-lg mb-3 text-blue-800">특장점 (Features)</h4>
+                        <ul class="list-disc list-inside space-y-2 text-slate-600 text-sm">
+                            <li><strong>빈도/시간 기반 산정:</strong> 연/월/주/일 단위 정밀 측정</li>
+                            <li><strong>표준시간 라이브러리:</strong> 타 기관 벤치마킹 데이터 제공</li>
+                            <li><strong>이상치(Outlier) 탐지:</strong> 과다/과소 입력 자동 필터링</li>
+                        </ul>
+                    </div>
+                    <div class="bg-slate-100 p-6 rounded-lg border border-slate-200">
+                        <h4 class="font-bold text-lg mb-3 text-slate-800">기대효과 (Effects)</h4>
+                        <ul class="list-disc list-inside space-y-2 text-slate-600 text-sm">
+                            <li>객관적 데이터 기반의 <strong>업무 쏠림 현상 해소</strong></li>
+                            <li>특정 부서/직무의 업무 과부하 입증</li>
+                            <li>초과근무 수당 적정성 검증</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Module 4 -->
+            <section id="m4" class="scroll-mt-8">
+                <div class="flex items-center gap-4 mb-6">
+                    <span class="bg-blue-100 text-blue-700 font-bold px-3 py-1 rounded text-sm">Step 04</span>
+                    <h3 class="text-3xl font-bold text-slate-900">직무재설계 (Job Redesign)</h3>
+                </div>
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div class="bg-white p-6 rounded-lg shadow-sm border border-slate-200">
+                        <h4 class="font-bold text-lg mb-3 text-blue-800">특장점 (Features)</h4>
+                        <ul class="list-disc list-inside space-y-2 text-slate-600 text-sm">
+                            <li><strong>AI 영향도 분석:</strong> 대체/보완 가능 업무 식별 (3-Lens)</li>
+                            <li><strong>ECRS 분석:</strong> 제거/결합/재배열/단순화 시뮬레이션</li>
+                            <li><strong>R&R 매트릭스:</strong> 부서 간 업무 중복/누락 시각화</li>
+                        </ul>
+                    </div>
+                    <div class="bg-slate-100 p-6 rounded-lg border border-slate-200">
+                        <h4 class="font-bold text-lg mb-3 text-slate-800">기대효과 (Effects)</h4>
+                        <ul class="list-disc list-inside space-y-2 text-slate-600 text-sm">
+                            <li>불필요한 <strong>저부가가치 업무 30% 절감</strong></li>
+                            <li>AI 도입을 통한 업무 효율화 로드맵 수립</li>
+                            <li>조직 미션에 부합하는 핵심 업무 집중</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Module 5 -->
+            <section id="m5" class="scroll-mt-8">
+                <div class="flex items-center gap-4 mb-6">
+                    <span class="bg-blue-100 text-blue-700 font-bold px-3 py-1 rounded text-sm">Step 05</span>
+                    <h3 class="text-3xl font-bold text-slate-900">정원산정 (Headcount Calculation)</h3>
+                </div>
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div class="bg-white p-6 rounded-lg shadow-sm border border-slate-200">
+                        <h4 class="font-bold text-lg mb-3 text-blue-800">특장점 (Features)</h4>
+                        <ul class="list-disc list-inside space-y-2 text-slate-600 text-sm">
+                            <li><strong>적정 FTE 산출:</strong> 업무량 기반 과학적 필요 인원 계산</li>
+                            <li><strong>여유율/가동률 반영:</strong> 휴가, 교육 등 비가동 시간 고려</li>
+                            <li><strong>시나리오 시뮬레이션:</strong> 사업 확장에 따른 증원 예측</li>
+                        </ul>
+                    </div>
+                    <div class="bg-slate-100 p-6 rounded-lg border border-slate-200">
+                        <h4 class="font-bold text-lg mb-3 text-slate-800">기대효과 (Effects)</h4>
+                        <ul class="list-disc list-inside space-y-2 text-slate-600 text-sm">
+                            <li>기재부/주무부처 대응 <strong>논리적 근거 확보</strong></li>
+                            <li>주먹구구식 인력 배치가 아닌 데이터 기반 배치</li>
+                            <li>인력 증원 요청 시 설득력 강화</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Module 6 -->
+            <section id="m6" class="scroll-mt-8">
+                <div class="flex items-center gap-4 mb-6">
+                    <span class="bg-blue-100 text-blue-700 font-bold px-3 py-1 rounded text-sm">Step 06</span>
+                    <h3 class="text-3xl font-bold text-slate-900">직무평가 (Job Evaluation)</h3>
+                </div>
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div class="bg-white p-6 rounded-lg shadow-sm border border-slate-200">
+                        <h4 class="font-bold text-lg mb-3 text-blue-800">특장점 (Features)</h4>
+                        <ul class="list-disc list-inside space-y-2 text-slate-600 text-sm">
+                            <li><strong>점수법(Point Method) 적용:</strong> 전문성, 책임성, 난이도 등 평가</li>
+                            <li><strong>평가자 편향 보정:</strong> 통계적 기법으로 관대화/가혹화 조정</li>
+                            <li><strong>직무 등급(Grade) 산출:</strong> 직무급 설계를 위한 등급화</li>
+                        </ul>
+                    </div>
+                    <div class="bg-slate-100 p-6 rounded-lg border border-slate-200">
+                        <h4 class="font-bold text-lg mb-3 text-slate-800">기대효과 (Effects)</h4>
+                        <ul class="list-disc list-inside space-y-2 text-slate-600 text-sm">
+                            <li><strong>직무급제 도입의 핵심 기반</strong> 마련</li>
+                            <li>직무 가치에 비례한 공정한 보상 체계 수립</li>
+                            <li>노사 합의를 위한 객관적 평가 결과 도출</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Module 7 -->
+            <section id="m7" class="scroll-mt-8">
+                <div class="flex items-center gap-4 mb-6">
+                    <span class="bg-blue-100 text-blue-700 font-bold px-3 py-1 rounded text-sm">Step 07</span>
+                    <h3 class="text-3xl font-bold text-slate-900">직무기술서 작성 (Job Description)</h3>
+                </div>
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div class="bg-white p-6 rounded-lg shadow-sm border border-slate-200">
+                        <h4 class="font-bold text-lg mb-3 text-blue-800">특장점 (Features)</h4>
+                        <ul class="list-disc list-inside space-y-2 text-slate-600 text-sm">
+                            <li><strong>원클릭 자동 생성:</strong> 분석된 데이터를 조합하여 JD 자동 완성</li>
+                            <li><strong>채용 공고 연동:</strong> 블라인드 채용을 위한 직무 설명자료 생성</li>
+                            <li><strong>성과지표(KPI) 매핑:</strong> 직무별 핵심 성과지표 추천</li>
+                        </ul>
+                    </div>
+                    <div class="bg-slate-100 p-6 rounded-lg border border-slate-200">
+                        <h4 class="font-bold text-lg mb-3 text-slate-800">기대효과 (Effects)</h4>
+                        <ul class="list-disc list-inside space-y-2 text-slate-600 text-sm">
+                            <li>채용 시 <strong>직무 적합 인재 선발</strong> 용이</li>
+                            <li>직원 스스로 본인의 R&R 명확히 인지</li>
+                            <li>성과 평가의 기준점 제시</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Module 8 -->
+            <section id="m8" class="scroll-mt-8">
+                <div class="flex items-center gap-4 mb-6">
+                    <span class="bg-blue-100 text-blue-700 font-bold px-3 py-1 rounded text-sm">Step 08</span>
+                    <h3 class="text-3xl font-bold text-slate-900">인사평가 (Performance Evaluation)</h3>
+                </div>
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div class="bg-white p-6 rounded-lg shadow-sm border border-slate-200">
+                        <h4 class="font-bold text-lg mb-3 text-blue-800">특장점 (Features)</h4>
+                        <ul class="list-disc list-inside space-y-2 text-slate-600 text-sm">
+                            <li><strong>MBO/BSC 지원:</strong> 목표 관리 및 균형 성과표 연동</li>
+                            <li><strong>절대/상대 평가 병행:</strong> 기관 특성에 맞는 평가 방식 설정</li>
+                            <li><strong>다면 평가:</strong> 상사, 동료, 부하직원 360도 평가</li>
+                        </ul>
+                    </div>
+                    <div class="bg-slate-100 p-6 rounded-lg border border-slate-200">
+                        <h4 class="font-bold text-lg mb-3 text-slate-800">기대효과 (Effects)</h4>
+                        <ul class="list-disc list-inside space-y-2 text-slate-600 text-sm">
+                            <li>평가의 <strong>공정성 및 수용성 확보</strong></li>
+                            <li>성과 중심의 조직 문화 정착</li>
+                            <li>피드백을 통한 개인의 역량 성장 유도</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Module 9 -->
+            <section id="m9" class="scroll-mt-8">
+                <div class="flex items-center gap-4 mb-6">
+                    <span class="bg-blue-100 text-blue-700 font-bold px-3 py-1 rounded text-sm">Step 09</span>
+                    <h3 class="text-3xl font-bold text-slate-900">직무관리카드 (Job Management Card)</h3>
+                </div>
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div class="bg-white p-6 rounded-lg shadow-sm border border-slate-200">
+                        <h4 class="font-bold text-lg mb-3 text-blue-800">특장점 (Features)</h4>
+                        <ul class="list-disc list-inside space-y-2 text-slate-600 text-sm">
+                            <li><strong>직무 이력 통합 뷰:</strong> 해당 직무의 변천사 및 수행자 이력</li>
+                            <li><strong>필요 역량 시각화:</strong> 레이더 차트로 필요 역량 수준 표시</li>
+                            <li><strong>적임자 추천:</strong> 사내 인재 중 적합도 높은 직원 추천</li>
+                        </ul>
+                    </div>
+                    <div class="bg-slate-100 p-6 rounded-lg border border-slate-200">
+                        <h4 class="font-bold text-lg mb-3 text-slate-800">기대효과 (Effects)</h4>
+                        <ul class="list-disc list-inside space-y-2 text-slate-600 text-sm">
+                            <li>인사 이동 시 <strong>최적의 배치(Right People Right Place)</strong></li>
+                            <li>직무 전문성 연속성 유지</li>
+                            <li>전략적 보직 관리 가능</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Module 10 -->
+            <section id="m10" class="scroll-mt-8">
+                <div class="flex items-center gap-4 mb-6">
+                    <span class="bg-blue-100 text-blue-700 font-bold px-3 py-1 rounded text-sm">Step 10</span>
+                    <h3 class="text-3xl font-bold text-slate-900">인사기록카드 (Personnel Record)</h3>
+                </div>
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div class="bg-white p-6 rounded-lg shadow-sm border border-slate-200">
+                        <h4 class="font-bold text-lg mb-3 text-blue-800">특장점 (Features)</h4>
+                        <ul class="list-disc list-inside space-y-2 text-slate-600 text-sm">
+                            <li><strong>전자 인사기록부:</strong> 발령, 포상, 징계, 교육 등 통합 관리</li>
+                            <li><strong>증명서 자동 발급:</strong> 재직/경력 증명서 셀프 출력</li>
+                            <li><strong>마이 페이지:</strong> 직원 스스로 본인 정보 열람 및 수정 요청</li>
+                        </ul>
+                    </div>
+                    <div class="bg-slate-100 p-6 rounded-lg border border-slate-200">
+                        <h4 class="font-bold text-lg mb-3 text-slate-800">기대효과 (Effects)</h4>
+                        <ul class="list-disc list-inside space-y-2 text-slate-600 text-sm">
+                            <li>인사 행정 업무의 <strong>페이퍼리스(Paperless) 실현</strong></li>
+                            <li>개인정보 보호 및 보안 강화</li>
+                            <li>직원 편의성 및 인사 서비스 만족도 향상</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Module 11 -->
+            <section id="m11" class="scroll-mt-8">
+                <div class="flex items-center gap-4 mb-6">
+                    <span class="bg-blue-100 text-blue-700 font-bold px-3 py-1 rounded text-sm">Step 11</span>
+                    <h3 class="text-3xl font-bold text-slate-900">승진서열명부 (Promotion List)</h3>
+                </div>
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div class="bg-white p-6 rounded-lg shadow-sm border border-slate-200">
+                        <h4 class="font-bold text-lg mb-3 text-blue-800">특장점 (Features)</h4>
+                        <ul class="list-disc list-inside space-y-2 text-slate-600 text-sm">
+                            <li><strong>자동 평정 계산:</strong> 근무평정 + 경력평정 + 가점 자동 합산</li>
+                            <li><strong>시뮬레이션:</strong> 평정 점수 변동에 따른 서열 변화 예측</li>
+                            <li><strong>이의 신청 관리:</strong> 투명한 평정 결과 공개 및 이의 처리</li>
+                        </ul>
+                    </div>
+                    <div class="bg-slate-100 p-6 rounded-lg border border-slate-200">
+                        <h4 class="font-bold text-lg mb-3 text-slate-800">기대효과 (Effects)</h4>
+                        <ul class="list-disc list-inside space-y-2 text-slate-600 text-sm">
+                            <li>승진 인사의 <strong>투명성 및 신뢰도 제고</strong></li>
+                            <li>인사 담당자의 단순 계산 업무 제거 및 오류 방지</li>
+                            <li>예측 가능한 인사 시스템 구축</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Module 12 -->
+            <section id="m12" class="scroll-mt-8">
+                <div class="flex items-center gap-4 mb-6">
+                    <span class="bg-blue-100 text-blue-700 font-bold px-3 py-1 rounded text-sm">Step 12</span>
+                    <h3 class="text-3xl font-bold text-slate-900">교육관리 설계 (Training Design)</h3>
+                </div>
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div class="bg-white p-6 rounded-lg shadow-sm border border-slate-200">
+                        <h4 class="font-bold text-lg mb-3 text-blue-800">특장점 (Features)</h4>
+                        <ul class="list-disc list-inside space-y-2 text-slate-600 text-sm">
+                            <li><strong>CDP 기반 교육 추천:</strong> 경력개발경로에 따른 필수 교육 매칭</li>
+                            <li><strong>학습 이력 관리:</strong> 사내외 교육 이수 현황 통합 관리</li>
+                            <li><strong>법정 의무 교육:</strong> 성희롱 예방 등 필수 교육 자동 알림</li>
+                        </ul>
+                    </div>
+                    <div class="bg-slate-100 p-6 rounded-lg border border-slate-200">
+                        <h4 class="font-bold text-lg mb-3 text-slate-800">기대효과 (Effects)</h4>
+                        <ul class="list-disc list-inside space-y-2 text-slate-600 text-sm">
+                            <li>조직 역량과 개인 역량의 <strong>동반 성장</strong></li>
+                            <li>체계적인 인재 육성 시스템 구축</li>
+                            <li>교육 예산의 효율적 집행</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <script>
+        // ScrollSpy Logic
+        const mainContent = document.getElementById('main-content');
+        const navItems = document.querySelectorAll('.nav-item');
+        const sections = document.querySelectorAll('section');
+
+        mainContent.addEventListener('scroll', () => {
+            let current = '';
+
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                // Check if section is in middle of viewport
+                if (mainContent.scrollTop >= (sectionTop - 300)) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navItems.forEach(item => {
+                item.classList.remove('active');
+                if (item.getAttribute('href').includes(current)) {
+                    item.classList.add('active');
+                }
+            });
+        });
+
+        // Initial check
+        mainContent.dispatchEvent(new Event('scroll'));
+    </script>
+</body>
+
+</html>

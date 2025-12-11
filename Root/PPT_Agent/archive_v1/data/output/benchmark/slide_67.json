@@ -1,0 +1,215 @@
+{
+  "slide_type": "Content",
+  "slide_number": 67,
+  "title": "2. 내부 환경·역량 분석 - 인사제도 및 운영 진단 (2/4)",
+  "governing_message": "직무체계, 채용, 직급·승진 체계를 진단해보면, 통합 순환보직의 적용, 일률적 일반직 채용기준과 블라인드 채용으로 인한 해양분야 전문인력 채용의 어려움, 보직수 부족으로 인한 승진 적체 등의 문제가 나타남",
+  "layout": {
+    "grid_type": "custom",
+    "background_color": "#FFFFFF"
+  },
+  "content_data": {
+    "subtitle": null,
+    "date": null,
+    "client_name": null,
+    "framework_type": null,
+    "elements": null,
+    "sections": [
+      {
+        "title": "인사운영 진단",
+        "blocks": [
+          {
+            "block_type": "text",
+            "content": "직원 인사운영 진단 : 직무체계, 채용, 직급·승진 체계",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          }
+        ]
+      },
+      {
+        "title": "직무 체계",
+        "blocks": [
+          {
+            "block_type": "text",
+            "content": "• 부서 직무분류가 아닌 구성원 개인의 역량·경력에 따른 직무 부여로 직무체계 혼란 발생",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          }
+        ]
+      },
+      {
+        "title": "채용",
+        "blocks": [
+          {
+            "block_type": "text",
+            "content": "• 해양사업, 해양방제, 해양보전 사업별 직무 특성이 상이하나 보직·직무관리 동일 기준 적용(통합 순환보직)\n- 직접 수행·관리하는 사업 vs 위탁, 사업관리형 사업",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          }
+        ]
+      },
+      {
+        "title": "직급·승진",
+        "blocks": [
+          {
+            "block_type": "text",
+            "content": "• 일률적 일반직 채용기준, 블라인드 채용 등으로 해양분야 전문인력 채용의 어려움\n·인력채용의 절차와 기준이 복잡하고 까다로워져 인력채용 업무가 늘고 어려워 짐\n• 비정규직 정규직 전환에 따른 인력운영 유동성 저하",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          }
+        ]
+      },
+      {
+        "title": "목표·성과관리",
+        "blocks": [
+          {
+            "block_type": "text",
+            "content": "• 연공서열과 순번제로 성과평가와 승진이 이루어지고 있어 동기부여와 근로의욕 저하 현상 나타남\n• 보직직급으로 전환되는 차장→팀장 승진 적체 심함\n• 팀장 이상 보직 수 44개 대비 1~3급 현원은 은 79명 ('20년 말 기준)",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          }
+        ]
+      },
+      {
+        "title": "구분",
+        "blocks": [
+          {
+            "block_type": "text",
+            "content": "채용 시 자격기준\n• 각 직급별 공무원 급수 재직경력자\n• 각 직급별 대학 교수(부교수, 조교수, 전임강사 등) 경험자\n• 박사, 석사 취득 및 경력자\n• 해당분야 기사 자격증 소지자",
+            "position": "top-right",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          }
+        ]
+      },
+      {
+        "title": "일반직",
+        "blocks": [
+          {
+            "block_type": "text",
+            "content": "• 4급 이상의 해기사 면허증 소지자\n• 해당 분야의 자격증, 면허증 소지자\n• 위와 동등한 자격 또는 능력이 있다고 인정되는 자",
+            "position": "top-right",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          }
+        ]
+      },
+      {
+        "title": "기술직",
+        "blocks": [
+          {
+            "block_type": "text",
+            "content": "팀장 이상 보직 수와 현원 비교 : 직급승진 적체",
+            "position": "bottom-right",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          }
+        ]
+      },
+      {
+        "title": "직위",
+        "blocks": [
+          {
+            "block_type": "table",
+            "content": "본부장\n실장\n센터장\n팀장\n지사장\n합계",
+            "position": "bottom-right",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          }
+        ]
+      },
+      {
+        "title": "보직 수",
+        "blocks": [
+          {
+            "block_type": "table",
+            "content": "2\n1\n2\n27\n12\n44",
+            "position": "bottom-right",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          }
+        ]
+      },
+      {
+        "title": "직급",
+        "blocks": [
+          {
+            "block_type": "table",
+            "content": "44개 보직에 보직가능 인원 79명 (1~3급)",
+            "position": "bottom-right",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          }
+        ]
+      },
+      {
+        "title": "현원",
+        "blocks": [
+          {
+            "block_type": "table",
+            "content": "1급\n2급\n3급\n4급\n5급\n6-7급\n합계",
+            "position": "bottom-right",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          }
+        ]
+      },
+      {
+        "title": null,
+        "blocks": [
+          {
+            "block_type": "table",
+            "content": "16\n23\n39\n63\n101\n39\n282",
+            "position": "bottom-right",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "footer": ""
+}

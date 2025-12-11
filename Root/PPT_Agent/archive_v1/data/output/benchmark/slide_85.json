@@ -1,0 +1,170 @@
+{
+  "slide_type": "Content",
+  "slide_number": 85,
+  "title": "3. 이해관계자 분석 - 사업부서 FGI (5/6)",
+  "governing_message": "사업부서 인터뷰에서 조직 전반의 재정적 위기상황에 대한 인식을 확인할 수 있었으며, 재정구조 전환, 장기적 관점 대안 검토, 의사결정 시점 사업성 검토 필요 등 현안 인식과 대안에 대한 의견을 확인함",
+  "layout": {
+    "grid_type": "2-column",
+    "background_color": "#FFFFFF"
+  },
+  "content_data": {
+    "subtitle": null,
+    "date": null,
+    "client_name": null,
+    "framework_type": null,
+    "elements": null,
+    "sections": [
+      {
+        "title": "사업부서 FGI 의견 정리 ⑤ 재정위기 및 수익구조",
+        "blocks": [
+          {
+            "block_type": "text",
+            "content": "친환경정책, 한국판 뉴딜, 디지털화 정책 관련해서 사업을 추진하고 있지만 그에 따른 재정, 예산, 인력이 지원되지 않아 수익사업에서 예산을 빼서 공단을 운영하고 있는 상황임",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "분담금도 줄어들 수 있다는 위기의식이 필요함. 중장기적으로 저장시설과 선박이 6:4로 돈을 받고 있는데, 점점 화석연료 사용이 줄어 물동량이 줄고 유류 분담금도 인상해야 하지만 코로나 때문에 기재부 승인이 힘들어 어려운 상황임",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "공단은 해양환경을 사업영역으로 하고 있어 수익을 내기 어려운데 준시장형 공기업 분류를 유지하고 있는 것이 적절한지 모르겠음. 준정부기관으로 전환하는 것이 맞을 수 있음",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "공공기관으로 혁신적인 방향 전환은 힘들어 중장기적으로 출자를 통한 점진적 일부 사업 재편, 방제분담금 인상 등 인건비를 포함해 증가한 고정비를 충당을 위한 재정 확보 방안이 필요함",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "예선사업의 수익성 악화(적자운영), 인건비 증가에 따른 고정비 증가 등 재무적 현안 이슈가 있음. 공단 전체에서 자체사업은 예선사업 뿐인데, 선박 건조 등에 보조금을 받아 내면서 돌파구를 찾고 있지만 구조조정 이외 실질적 수익개선 방법이 없는 상황임",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "예선은 방제역량 보유 명분으로 유지하고 있지만 민간과 경쟁으로 수익이 점점 나빠지고 있는 상황임. 3년 전에는 점유율 11%에 330억 매출이었지만 현재는 9%에 250억으로 감소",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "사업을 기획하고 추진을 승인하는 시점에는 손익에 대해 신경 쓰지 말고, 초기 투자비용만 고려해서 추진하도록 독려하고 경영진이 의사결정해서 추진했는데, 정작 사업을 수행할 때는 이익이 없고 손실이 난다고 지적 받고 있음",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "해양환경 사업의 특성, 사업을 위탁 수행하는 공공기관으로서 역할을 고려할 때 사업에서 수익을 창출하라는 요구는 맞지 않는 것 같음. 그런데도 모든 사업을 동일한 이익, 손실 기준으로 평가하고 관리하고 있는 것은 적절하지 않음",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          }
+        ]
+      },
+      {
+        "title": "주요 의견과 이슈사항",
+        "blocks": [
+          {
+            "block_type": "text",
+            "content": "사업수행 위한 재원 확보 필요",
+            "position": "top-right",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "재정구조 전환 검토 필요성 (공기업에서 준정부기관으로)",
+            "position": "top-right",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "인건비 등 증가한 고정비 충당을 위한 재정확보 필요",
+            "position": "top-right",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "장기적 관점에서 구조조정 등 전환적 대안 검토 필요",
+            "position": "top-right",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "예선사업 중장기 계획 점검",
+            "position": "top-right",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "의사결정 시점 사업성 검토 필요",
+            "position": "top-right",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "footer": "KOEM 해양환경공단"
+}

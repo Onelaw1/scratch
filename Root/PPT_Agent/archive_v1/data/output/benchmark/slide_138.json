@@ -1,0 +1,80 @@
+{
+  "slide_type": "Framework",
+  "slide_number": 138,
+  "title": "2. 가치체계·전략체계 재정립 - 핵심가치 리뉴얼 구성",
+  "governing_message": "핵심가치의 구성 기준과 리뉴얼 구성 계획",
+  "layout": {
+    "grid_type": "2-column",
+    "background_color": "#FFFFFF"
+  },
+  "content_data": {
+    "subtitle": null,
+    "date": null,
+    "client_name": null,
+    "framework_type": "Process",
+    "elements": [
+      {
+        "label": "해양환경 주요사업 및\n미래성장사업 추진\n관련 가치항목\n: 전문성, 혁신",
+        "description": null,
+        "position": "step-1"
+      },
+      {
+        "label": "전문역량",
+        "description": "해양환경 정책기능 강화\n→ 해양환경 분야 전문성 강화\n→ 임직원 전문역량 강화",
+        "position": "top-right"
+      },
+      {
+        "label": "혁신선도",
+        "description": "해양환경의 영역과 범위 확장\n→ 해양치유, 해양관광·레저, 해양\n바이오 등 해양환경산업 육성 등",
+        "position": "top-right"
+      },
+      {
+        "label": "공공기관 경영평가\n기준에 따라 지정된\n가치항목\n: 안전, 사회적가치",
+        "description": null,
+        "position": "step-1"
+      },
+      {
+        "label": "안전우선",
+        "description": "중대재해처벌법 등 안전기준 강화\n→ 공단 관리 사업장의 안전관리\n→ 주요사업으로서 해양안전관리",
+        "position": "top-right"
+      },
+      {
+        "label": "윤리의식",
+        "description": "내부, 대외(기관·단체) 협력 강화\n→ 관련기관·단체 및 민간 네트워크\n→ 협력과 공조를 통한 성장 추구",
+        "position": "top-right"
+      },
+      {
+        "label": "주요사업과\n미래사업\n가치항목\n(자율선정)",
+        "description": null,
+        "position": "center"
+      },
+      {
+        "label": "지정 가치항목\n: 안전,\n사회적가치",
+        "description": null,
+        "position": "center"
+      },
+      {
+        "label": "혁신성",
+        "description": "해양환경의 영역과 범위 확장\n→ 해양치유, 해양관광·레저, 해양\n바이오 등 해양환경산업 육성 등",
+        "position": "top-right"
+      },
+      {
+        "label": "개방성",
+        "description": "해양환경 국민 플랫폼 기관\n→ 국민과 소통, 국민 참여\n→ 유관기관 협력 네트워크 구축",
+        "position": "top-right"
+      },
+      {
+        "label": "안전",
+        "description": "중대재해처벌법 등 안전기준 강화\n→ 공단 관리 사업장의 안전관리\n→ 주요사업으로서 해양안전관리",
+        "position": "top-right"
+      },
+      {
+        "label": "공공성",
+        "description": "내부, 대외(기관·단체) 협력 강화\n→ 관련기관·단체 및 민간 네트워크\n→ 협력과 공조를 통한 성장 추구",
+        "position": "top-right"
+      }
+    ],
+    "sections": null
+  },
+  "footer": "137"
+}

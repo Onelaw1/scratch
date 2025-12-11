@@ -1,0 +1,80 @@
+{
+  "slide_type": "Data",
+  "slide_number": 37,
+  "title": "1. 외부 환경분석 - 연료 황 함유량 규제와 방제 방식",
+  "governing_message": "IMO 선박 황산화물 배출 규제 강화에 따라 '20년부터 0.5% m/m 미만 저유황유 사용이 규정화 되었음. 저유황유는 유동점이 평균 20℃로 유출시 빠르게 고형화되어 현재의 액체상태 오일회수 방제 방식은 효율성이 낮음",
+  "layout": {
+    "grid_type": "2-column",
+    "background_color": "#FFFFFF"
+  },
+  "content_data": {
+    "subtitle": null,
+    "date": null,
+    "client_name": null,
+    "framework_type": null,
+    "elements": null,
+    "sections": [
+      {
+        "title": "IMO 선박 황산화물 배출 제한에 따른 연료유 황 함유량 규제 기준",
+        "blocks": [
+          {
+            "block_type": "chart",
+            "content": "Bar chart showing the limit values for sulfur content of fuel oils over time (2005-2025) with different levels for 'Global Area' and 'Emission Control Area (ECA, 배출제한구역)'. ECA requires 선박 연료유 0.5% m/m 황 함유량 기준 적용 from 2020 onwards.",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "• 국제해사기구(IMO) 황산화물 배출 한계 강화에 따라 규정적용 선박은\n①저유황유(0.50% m/m 미만) 사용 ②탈황장치(배기가스 세정장치) 부착, ③대체연료 사용 중 대안이 있는데, 경제성 등 이유로 저유황유 사용이 가장 현실적인 대안이 되고 있음\n• 저유황유는 유동점(연료가 응고되는 온도)이 평균 20℃로 기존에 주로 사용되는 벙커C유(유동점 평균 13℃)보다 높은 특성을 가짐",
+            "position": "bottom-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          }
+        ]
+      },
+      {
+        "title": "오일유출 시 방제 방법의 변화 필요",
+        "blocks": [
+          {
+            "block_type": "image",
+            "content": "Image depicting current oil spill response methods: focusing on liquid oil recovery.  Shows a process flow of '오일팬스 설치 (유출확산 방제)' -> '유증기 등 휘발 제거 (화재·폭발 위험제거)' -> '액상 오일 회수·제거 (유회수기, 유흡착재)'",
+            "position": "top-right",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "• 기존 벙커C유 위주의 액체상태 오일 회수 중심의 방제 방식은 유동점이 평균 20℃로 높아 유출시 빠르게 고형화가 진행되는 저유황유에 대한 방제 방법으로 효율성이 낮아 적절하지 않음",
+            "position": "center",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "✓ IMO 선박 황산화물 배출 규제 강화에 따라 현실적 대안인 저유황유 사용이 적용되어 '20년부터 0.5% m/m 미만 황 함유량의 저유황 연료유 사용이 규정화됨\n✓ 저유황유는 유동점이 평균 20℃로 유출시 빠르게 고형화가 진행되어 기존 액체상태 오일 회수 중심의 방제 방식은 효율성이 낮아 대안이 필요함",
+            "position": "bottom-right",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "footer": ""
+}

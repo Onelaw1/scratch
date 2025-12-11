@@ -1,0 +1,210 @@
+{
+  "slide_type": "Content",
+  "slide_number": 45,
+  "title": "1. 외부 환경분석 - 공단 사업영역 관련 신기술",
+  "governing_message": "예선, 오염방제, 보전 및 쓰레기수거 등 공단 사업에 자율운항선박, 항공/수산 드론 및 5G, AI, IoT가 접목된 원격 측정·조사와 정보의 실시간 분석·공유 등 새로운 기술이 개발·적용되고 있으며, 기술의 지속적인 발전이 예상됨",
+  "layout": {
+    "grid_type": "custom",
+    "background_color": "#FFFFFF"
+  },
+  "content_data": {
+    "subtitle": null,
+    "date": null,
+    "client_name": null,
+    "framework_type": null,
+    "elements": null,
+    "sections": [
+      {
+        "title": null,
+        "blocks": [
+          {
+            "block_type": "text",
+            "content": "공단 영위 사업 미래기술 : 자율주행선박, AI, 드론, 수퍼 컴퓨터 등",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          }
+        ]
+      },
+      {
+        "title": null,
+        "blocks": [
+          {
+            "block_type": "text",
+            "content": "예선",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "image",
+            "content": "Image of a ship",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "• 자율운항 예인선 운영\n• 고정밀 위치정보서비스 기반 선박 항행기술 (IoT)",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          }
+        ]
+      },
+      {
+        "title": null,
+        "blocks": [
+          {
+            "block_type": "text",
+            "content": "오염방제",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "image",
+            "content": "Image of oil spill cleanup",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "• 무인 및 원격 방제 (수상 드론)\n• 슈퍼컴퓨터, AI 통한 오염예측 및 방제 대응전략",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          }
+        ]
+      },
+      {
+        "title": null,
+        "blocks": [
+          {
+            "block_type": "text",
+            "content": "쓰레기수거, 청항",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "image",
+            "content": "Image of a garbage collecting drone",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "• 자율주행 청항선 운영\n• 5G, AI, IoT 기술 기반 시민과학 (Citizen science) 집단지성 플랫폼",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          }
+        ]
+      },
+      {
+        "title": null,
+        "blocks": [
+          {
+            "block_type": "text",
+            "content": "해양환경 보전",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "image",
+            "content": "Image of a marine environment drone",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "• 해양 환경·생태 정보수집 드론\n• 해양환경 측정 자동화(IoT), 해양 정보측정 로봇, 빅데이터",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          }
+        ]
+      },
+      {
+        "title": null,
+        "blocks": [
+          {
+            "block_type": "text",
+            "content": "Key Findings",
+            "position": "top-left",
+            "style": {
+              "is_bold": true,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "✓ 예선, 오염방제, 해양쓰레기 수거 및 해양환경 조사·측정 및 분석에서 자율운항선박, 드론, 5G, AI, IoT 등 신기술이 꾸준히 개발·적용되고 있음\n✓ 해양환경 슈퍼컴퓨터 등 오염방제, 해양정화 및 환경·생태 정보의 수집·분석 역량이 급변(크게 증가)할 것으로 예상",
+            "position": "bottom-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "✓ 예선사업은 점차적으로 자동화가 진행되어, 장기적으로는 일몰사업으로 점진적 축소, 철수가 필요할 수 있음\n✓ 오염방제, 쓰레기수거 및 정화 사업은 사업수행에 신기술 적용이 가능하며, 신기술에 대한 모니터링과 R&D 투자 등 사전적 대응이 필요함",
+            "position": "bottom-right",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "footer": "44"
+}

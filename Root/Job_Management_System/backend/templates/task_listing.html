@@ -1,0 +1,320 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="max-w-7xl mx-auto">
+    <div class="md:flex md:items-center md:justify-between mb-8">
+        <div class="flex-1 min-w-0">
+            <h2 class="text-2xl font-bold leading-7 text-slate-900 sm:text-3xl sm:truncate">업무리스트업 (Task Listing)</h2>
+            <p class="mt-1 text-sm text-slate-500">칸반 보드로 업무를 관리하고 프로세스를 시각화합니다.</p>
+        </div>
+        <div class="mt-4 flex md:mt-0 md:ml-4 space-x-2">
+            <button type="button" onclick="openTaskModal()"
+                class="inline-flex items-center px-4 py-2 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-sky-600 hover:bg-sky-700">
+                새 과업 추가
+            </button>
+            <button type="button" onclick="viewProcessMap()"
+                class="inline-flex items-center px-4 py-2 border border-slate-300 rounded-md shadow-sm text-sm font-medium text-slate-700 bg-white hover:bg-slate-50">
+                프로세스 맵 보기
+            </button>
+        </div>
+    </div>
+
+    <!-- Kanban Board -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+        <!-- To Do Column -->
+        <div class="bg-slate-100 rounded-lg p-4">
+            <div class="flex items-center justify-between mb-4">
+                <h3 class="text-sm font-semibold text-slate-700 uppercase">계획 중 (To Do)</h3>
+                <span class="px-2 py-1 text-xs font-medium bg-slate-200 text-slate-700 rounded-full"
+                    id="todoCount">0</span>
+            </div>
+            <div id="todoColumn" class="space-y-3 min-h-[400px]">
+                <!-- Tasks will be added here -->
+            </div>
+        </div>
+
+        <!-- In Progress Column -->
+        <div class="bg-blue-100 rounded-lg p-4">
+            <div class="flex items-center justify-between mb-4">
+                <h3 class="text-sm font-semibold text-blue-700 uppercase">진행 중 (In Progress)</h3>
+                <span class="px-2 py-1 text-xs font-medium bg-blue-200 text-blue-700 rounded-full"
+                    id="inProgressCount">0</span>
+            </div>
+            <div id="inProgressColumn" class="space-y-3 min-h-[400px]">
+                <!-- Tasks will be added here -->
+            </div>
+        </div>
+
+        <!-- Done Column -->
+        <div class="bg-green-100 rounded-lg p-4">
+            <div class="flex items-center justify-between mb-4">
+                <h3 class="text-sm font-semibold text-green-700 uppercase">완료 (Done)</h3>
+                <span class="px-2 py-1 text-xs font-medium bg-green-200 text-green-700 rounded-full"
+                    id="doneCount">0</span>
+            </div>
+            <div id="doneColumn" class="space-y-3 min-h-[400px]">
+                <!-- Tasks will be added here -->
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Task Modal -->
+<div id="taskModal" class="fixed z-10 inset-0 overflow-y-auto hidden">
+    <div class="flex items-end justify-center min-h-screen pt-4 px-4 pb-20 text-center sm:block sm:p-0">
+        <div class="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity" onclick="closeTaskModal()"></div>
+        <span class="hidden sm:inline-block sm:align-middle sm:h-screen">&#8203;</span>
+        <div
+            class="inline-block align-bottom bg-white rounded-lg text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:align-middle sm:max-w-lg sm:w-full">
+            <div class="bg-white px-4 pt-5 pb-4 sm:p-6 sm:pb-4">
+                <h3 class="text-lg font-medium text-gray-900 mb-4">과업 추가</h3>
+                <form id="taskForm" class="space-y-4">
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700">과업명</label>
+                        <input type="text" id="task_name" required
+                            class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-sky-500 focus:border-sky-500 sm:text-sm">
+                    </div>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700">빈도</label>
+                            <select id="task_frequency"
+                                class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-sky-500 focus:border-sky-500 sm:text-sm">
+                                <option value="DAILY">매일</option>
+                                <option value="WEEKLY">매주</option>
+                                <option value="MONTHLY">매월</option>
+                                <option value="YEARLY">매년</option>
+                                <option value="SEASONAL">계절성</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700">예상 시간 (h)</label>
+                            <input type="number" id="task_hours" min="0.1" step="0.1" value="1"
+                                class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-sky-500 focus:border-sky-500 sm:text-sm">
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700">난이도 (1-5)</label>
+                            <input type="number" id="task_difficulty" min="1" max="5" value="3"
+                                class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-sky-500 focus:border-sky-500 sm:text-sm">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700">중요도 (1-5)</label>
+                            <input type="number" id="task_importance" min="1" max="5" value="3"
+                                class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-sky-500 focus:border-sky-500 sm:text-sm">
+                        </div>
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700">담당자</label>
+                        <input type="text" id="task_assignee"
+                            class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-sky-500 focus:border-sky-500 sm:text-sm">
+                    </div>
+                </form>
+            </div>
+            <div class="bg-gray-50 px-4 py-3 sm:px-6 sm:flex sm:flex-row-reverse">
+                <button type="button" onclick="submitTask()"
+                    class="w-full inline-flex justify-center rounded-md border border-transparent shadow-sm px-4 py-2 bg-sky-600 text-base font-medium text-white hover:bg-sky-700 sm:ml-3 sm:w-auto sm:text-sm">
+                    추가
+                </button>
+                <button type="button" onclick="closeTaskModal()"
+                    class="mt-3 w-full inline-flex justify-center rounded-md border border-gray-300 shadow-sm px-4 py-2 bg-white text-base font-medium text-gray-700 hover:bg-gray-50 sm:mt-0 sm:ml-3 sm:w-auto sm:text-sm">
+                    취소
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    let tasks = [
+        { id: 'task_1', name: '요구사항 분석', status: 'todo', frequency: 'WEEKLY', hours: 4, difficulty: 4, importance: 5, assignee: '김철수' },
+        { id: 'task_2', name: '데이터베이스 설계', status: 'inProgress', frequency: 'MONTHLY', hours: 8, difficulty: 5, importance: 5, assignee: '이영희' },
+        { id: 'task_3', name: '코드 리뷰', status: 'done', frequency: 'DAILY', hours: 1, difficulty: 3, importance: 4, assignee: '박민수' }
+    ];
+
+    function openTaskModal() {
+        document.getElementById('taskModal').classList.remove('hidden');
+    }
+
+    function closeTaskModal() {
+        document.getElementById('taskModal').classList.add('hidden');
+        document.getElementById('taskForm').reset();
+    }
+
+    function submitTask() {
+        const name = document.getElementById('task_name').value;
+        const frequency = document.getElementById('task_frequency').value;
+        const hours = parseFloat(document.getElementById('task_hours').value);
+        const difficulty = parseInt(document.getElementById('task_difficulty').value);
+        const importance = parseInt(document.getElementById('task_importance').value);
+        const assignee = document.getElementById('task_assignee').value;
+
+        if (!name) {
+            alert('과업명을 입력해주세요.');
+            return;
+        }
+
+        const newTask = {
+            id: 'task_' + Date.now(),
+            name,
+            status: 'todo',
+            frequency,
+            hours,
+            difficulty,
+            importance,
+            assignee
+        };
+
+        tasks.push(newTask);
+        console.log('Adding task:', newTask);
+        alert('과업이 추가되었습니다 (Mock).');
+        closeTaskModal();
+        renderKanban();
+    }
+
+    function renderKanban() {
+        const todoCol = document.getElementById('todoColumn');
+        const inProgressCol = document.getElementById('inProgressColumn');
+        const doneCol = document.getElementById('doneColumn');
+
+        todoCol.innerHTML = '';
+        inProgressCol.innerHTML = '';
+        doneCol.innerHTML = '';
+
+        let todoCount = 0, inProgressCount = 0, doneCount = 0;
+
+        tasks.forEach(task => {
+            const card = createTaskCard(task);
+
+            if (task.status === 'todo') {
+                todoCol.appendChild(card);
+                todoCount++;
+            } else if (task.status === 'inProgress') {
+                inProgressCol.appendChild(card);
+                inProgressCount++;
+            } else if (task.status === 'done') {
+                doneCol.appendChild(card);
+                doneCount++;
+            }
+        });
+
+        document.getElementById('todoCount').textContent = todoCount;
+        document.getElementById('inProgressCount').textContent = inProgressCount;
+        document.getElementById('doneCount').textContent = doneCount;
+
+        // Enable drag and drop
+        enableDragAndDrop();
+    }
+
+    function createTaskCard(task) {
+        const card = document.createElement('div');
+        card.className = 'bg-white rounded-lg shadow-sm p-4 cursor-move hover:shadow-md transition-shadow border border-slate-200';
+        card.draggable = true;
+        card.dataset.taskId = task.id;
+
+        const difficultyColor = task.difficulty >= 4 ? 'bg-red-100 text-red-800' : task.difficulty >= 3 ? 'bg-amber-100 text-amber-800' : 'bg-green-100 text-green-800';
+        const importanceStars = '★'.repeat(task.importance) + '☆'.repeat(5 - task.importance);
+
+        card.innerHTML = `
+            <div class="flex items-start justify-between mb-2">
+                <h4 class="text-sm font-medium text-slate-900">${task.name}</h4>
+                <button onclick="deleteTask('${task.id}')" class="text-slate-400 hover:text-red-600">
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                    </svg>
+                </button>
+            </div>
+            <div class="space-y-1 text-xs text-slate-600">
+                <div class="flex items-center justify-between">
+                    <span class="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-sky-100 text-sky-800">
+                        ${getFrequencyLabel(task.frequency)}
+                    </span>
+                    <span>${task.hours}h</span>
+                </div>
+                <div class="flex items-center justify-between">
+                    <span class="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium ${difficultyColor}">
+                        난이도 ${task.difficulty}
+                    </span>
+                    <span class="text-amber-500">${importanceStars}</span>
+                </div>
+                ${task.assignee ? `<div class="text-slate-500 mt-2">👤 ${task.assignee}</div>` : ''}
+            </div>
+        `;
+
+        return card;
+    }
+
+    function getFrequencyLabel(freq) {
+        const labels = {
+            'DAILY': '매일',
+            'WEEKLY': '매주',
+            'MONTHLY': '매월',
+            'YEARLY': '매년',
+            'SEASONAL': '계절성'
+        };
+        return labels[freq] || freq;
+    }
+
+    function deleteTask(taskId) {
+        if (confirm('이 과업을 삭제하시겠습니까?')) {
+            tasks = tasks.filter(t => t.id !== taskId);
+            renderKanban();
+        }
+    }
+
+    function enableDragAndDrop() {
+        const cards = document.querySelectorAll('[draggable="true"]');
+        const columns = document.querySelectorAll('[id$="Column"]');
+
+        cards.forEach(card => {
+            card.addEventListener('dragstart', (e) => {
+                e.dataTransfer.effectAllowed = 'move';
+                e.dataTransfer.setData('text/html', card.innerHTML);
+                e.dataTransfer.setData('taskId', card.dataset.taskId);
+                card.classList.add('opacity-50');
+            });
+
+            card.addEventListener('dragend', (e) => {
+                card.classList.remove('opacity-50');
+            });
+        });
+
+        columns.forEach(column => {
+            column.addEventListener('dragover', (e) => {
+                e.preventDefault();
+                e.dataTransfer.dropEffect = 'move';
+                column.classList.add('bg-opacity-50');
+            });
+
+            column.addEventListener('dragleave', (e) => {
+                column.classList.remove('bg-opacity-50');
+            });
+
+            column.addEventListener('drop', (e) => {
+                e.preventDefault();
+                column.classList.remove('bg-opacity-50');
+
+                const taskId = e.dataTransfer.getData('taskId');
+                const task = tasks.find(t => t.id === taskId);
+
+                if (task) {
+                    // Determine new status based on column
+                    if (column.id === 'todoColumn') task.status = 'todo';
+                    else if (column.id === 'inProgressColumn') task.status = 'inProgress';
+                    else if (column.id === 'doneColumn') task.status = 'done';
+
+                    console.log('Moved task:', task);
+                    renderKanban();
+                }
+            });
+        });
+    }
+
+    function viewProcessMap() {
+        alert('프로세스 맵 보기 기능 (구현 예정 - Mermaid.js 사용)');
+    }
+
+    // Initialize
+    renderKanban();
+</script>
+{% endblock %}

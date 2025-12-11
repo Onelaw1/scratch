@@ -1,0 +1,140 @@
+{
+  "slide_type": "Content",
+  "slide_number": 39,
+  "title": "1. 외부 환경분석 - 중대재해처벌법 입법 및 시행예고",
+  "governing_message": "중대재해 처벌 등에 대한 법률(중대재해처벌법)은 경영책임자가 직접 사업장 뿐만 아이라 실질적으로 지배·운영·관리하는 임대·용역·도급 사업장과 종사자에 대한 유해·위험방지의무를 정의하고 있어, 공단 및 공단 관리 사업장과 사업자, 종사자에 대한 포괄적인 안전관리 강화가 필요하게 됨",
+  "layout": {
+    "grid_type": "2-column",
+    "background_color": "#FFFFFF"
+  },
+  "content_data": {
+    "subtitle": null,
+    "date": null,
+    "client_name": null,
+    "framework_type": null,
+    "elements": null,
+    "sections": [
+      {
+        "title": "중대재해처벌법 주요 내용",
+        "blocks": [
+          {
+            "block_type": "text",
+            "content": "경영책임자 등의 유해·위험방지의무 명시\n\n• 개인사업주 및 법인이나 기관의 경영책임자 등에게 실질적으로 지배·운영·관리하는 사업 또는 사업장에서 종사자에 대한 유해·위험방지의무를 명시\n• 임대·용역·도급 등을 행한 경우에도 동일한 의무를 부담",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "이용자에 대한 유해·위험방지의무 명시\n\n• 경영책임자 등에게 사업장에서 생산·제조·판매·유통 중인 원료나 제조물 및 지배·운영·관리하는 공중이용시설 또는 공중교통수단의 설계, 설치, 관리상의 결함으로 인한 이용자 또는 그 밖의 사람에 대한 안전조치의무를 명시",
+            "position": "bottom-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "중대재해 발생에 대한 형사책임 강화\n\n• 종사자가 사망하는 중대산업재해 발생 시 경영책임자 등에게 1년 이상의 징역 또는 10억원 이하의 벌금(병과 가능)\n• 이용자가 사망하는 중대시민재해 발생 시 경영책임자 등에게 1년 이상의 징역 또는 10억원 이하의 벌금(병과 가능)\n• 기업에 대해서는 양벌규정에 따라, 종사자나 이용자가 사망하는 중대재해 발생 시 50억원 이하의 벌금",
+            "position": "center",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "공단 직접 사업장 뿐만 아니라 공단이 관리하는 도급사업장에 대한 포괄적인 중대재해 예방 의무 및 발생 시 책임 부여",
+            "position": "full-width",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          }
+        ]
+      },
+      {
+        "title": "중대재해처벌법 관련 이슈사항",
+        "blocks": [
+          {
+            "block_type": "text",
+            "content": "경영책임자\n등의 범위",
+            "position": "top-right",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "• \"①사업을 대표하고 사업을 총괄하는 권한과 책임이 있는\n사람 또는 ②이에 준해 안전보건에 관한 업무를 담당하는\n사람\"이라고 규정\n\n• 대표이사가 아니더라도 안전보건 관한 업무를 담당하는 자가\n경영책임자로서 유해·위험방지의무를 이행하고 중대재해 발생\n시 그에 대한 책임을 부담하게 하는 것이 가능할 것",
+            "position": "top-right",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "유해·위험\n방지\n조치의\n이행\n가능성",
+            "position": "top-right",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "• \"안전보건관리체계의 구축 및 그 이행\", \"의무이행에 필요한\n관리상의 조치\"로 유해·위험방지조치를 규정함\n\n• 종사자가 작업과 관계 없는 돌발적 행동으로 인해 사고가\n발생했다는 등 아주 특별한 사정이 없다면 경영책임자 등이\n유해·위험방지의무를 완벽히 이행했고, 미흡한 점이 없다고\n판단되기는 쉽지 않을 것",
+            "position": "top-right",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "유해·위험\n방지조치가\n필요한\n범위 확대",
+            "position": "bottom-right",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "• 도급, 위탁 등을 행할 때 그 시설, 장비, 장소 등에 대해\n실질적으로 지배·운영·관리하는 책임이 있는 경우 경영책임자\n등은 유해·위험방지 의무를 부담\n\n• 도급인이 지배·운영·관리하는 시설, 장비 등이 도급인의 사업장\n아닌 곳에 존재할 수도 있는바, 중대재해처벌법상 도급·위탁 관계\n하에서의 유해·위험방지 의무는 산안법상 도급사업주의\n안전보건조치 의무보다 범위가 넓어졌다고 볼 수 있음",
+            "position": "bottom-right",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "공기업으로서 공단은 확장된 해석에 기반한 방어적 대응이 필요\n→ 공단과 공단 관리 사업장, 도급사업자에 대한 안전관리 책임",
+            "position": "full-width",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "footer": "Source: 중대재해 처벌 등에 관한 법률, '중대재해처벌법 주요 내용 및 이슈'(정대원 변호사), 2021.02.01, 월간노동법률"
+}

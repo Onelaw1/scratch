@@ -1,0 +1,70 @@
+{
+  "slide_type": "Data",
+  "slide_number": 63,
+  "title": "2. 내부 환경·역량 분석 - 조직구조 관련 현안 이슈 (4/4)",
+  "governing_message": "해양사업본부 예선, 기중기선 사업 축소로 조직이 통합·축소 되었고 이후로 신규 수익사업 추진이 불투명해 의사결정 및 전환이 필요하고, 지사·사업소는 예선, 방제, 오염정화 기능에 한정되어 있어, 전국 조직으로서 활용이 제한적임",
+  "layout": {
+    "grid_type": "2-column",
+    "background_color": "#FFFFFF"
+  },
+  "content_data": {
+    "subtitle": null,
+    "date": null,
+    "client_name": null,
+    "framework_type": null,
+    "elements": null,
+    "sections": [
+      {
+        "title": "해양사업본부 사업 축소에 따른 조직 축소",
+        "blocks": [
+          {
+            "block_type": "table",
+            "content": "사업구분 | 2017 | 2020\n| 선박 | 사업수익 | 선박 | 사업수익\n항만예선 | 27척 | 327.3억 원 | 27척 | 268.1억 원\n전용예선 | 4척 |  | 2척 |\n기중기선 | 1척 | 47.1억 원 | - | 14.5억 원\n사업조직 | 항만예선팀 8개 지사(항) | | 예선운영팀 8개 지사(항)\n| 전용예선팀 (특수선운영팀) | | 기중기 운영사업 축소(설악호) → 특수선운영팀 통폐합 |",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 10
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "사업 축소에 따른 사업조직 축소\n✓ 해양사업본부는 예선사업, 특수선(기중기선) 사업의 축소에 따라 조직과 인력이 축소되었음\n✓ 예선사업의 사업성 악화에 따른 운영계획 수립, 다목적 방제선 운영전략 재수립 등 중장기 운영전략에 따라 본부 조직의 개편 및 전환 필요",
+            "position": "bottom-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          }
+        ]
+      },
+      {
+        "title": "지사의 본사사업 지원 영역",
+        "blocks": [
+          {
+            "block_type": "table",
+            "content": "공단 사업영역 | 지사·사업소 업무 영역\n오염정화 | 사업소 - 청항·폐유관리\n생태복원 | ■ 지역 네트워킹 필요하나 단위사업 연속성 등의 문제로 지사·사업소에 기능을 두지 못하고 있음\n해양보전 | → 지사·사업소의 역할 한정으로, 보유한 전국 조직의 활용도 제한적임\n해양이용 |\n해양보전 |\n오염예방 | 지사\n해양방제 | 방제대응 | - 예방적 방제, 방제대응\n예선운영 | - 항만예선, 특수선 운영\n해양사업 | 준설·기중기",
+            "position": "top-right",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 10
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "✓ 현재 지사와 사업소는 방제, 예선운영, 폐기물 시설 운영관리에 한정된 기능으로 운영되고 있음\n✓ 전국 조직 보유에도 불구하고 해양보전 사업의 연속성 등의 문제로 전국 조직망의 활용은 제한적일 수 밖에 없는 상태로, 전국 조직망 활용을 위한 대안 마련 필요",
+            "position": "bottom-right",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "footer": "KOEM 해양환경공단"
+}

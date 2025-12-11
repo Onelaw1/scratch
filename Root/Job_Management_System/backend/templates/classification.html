@@ -1,0 +1,263 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="max-w-7xl mx-auto">
+    <div class="md:flex md:items-center md:justify-between mb-8">
+        <div class="flex-1 min-w-0">
+            <h2 class="text-2xl font-bold leading-7 text-slate-900 sm:text-3xl sm:truncate">분류 (Classification)</h2>
+            <p class="mt-1 text-sm text-slate-500">조직 구조를 정의하고 직무를 분류합니다.</p>
+        </div>
+        <div class="mt-4 flex md:mt-0 md:ml-4 space-x-2">
+            <button type="button" onclick="openUnitModal()"
+                class="inline-flex items-center px-4 py-2 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-sky-600 hover:bg-sky-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-sky-500">
+                조직 단위 추가
+            </button>
+            <button type="button" onclick="exportOrgChart()"
+                class="inline-flex items-center px-4 py-2 border border-slate-300 rounded-md shadow-sm text-sm font-medium text-slate-700 bg-white hover:bg-slate-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-sky-500">
+                조직도 내보내기
+            </button>
+        </div>
+    </div>
+
+    <!-- Organizational Structure Tree -->
+    <div class="bg-white shadow overflow-hidden sm:rounded-lg mb-6">
+        <div class="px-4 py-5 sm:p-6">
+            <h3 class="text-lg font-medium text-slate-900 mb-4">조직 구조 (본부 → 처 → 실 → 팀)</h3>
+            <div id="orgTree" class="space-y-2">
+                <!-- Tree will be populated by JavaScript -->
+                <div class="text-center text-slate-500 py-8">
+                    조직 단위를 추가하여 시작하세요.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Institution Summary -->
+    <div class="grid grid-cols-1 gap-5 sm:grid-cols-3">
+        <div class="bg-white overflow-hidden shadow rounded-lg">
+            <div class="px-4 py-5 sm:p-6">
+                <dt class="text-sm font-medium text-slate-500 truncate">연간 매출</dt>
+                <dd class="mt-1 text-3xl font-semibold text-slate-900" id="totalRevenue">-</dd>
+            </div>
+        </div>
+        <div class="bg-white overflow-hidden shadow rounded-lg">
+            <div class="px-4 py-5 sm:p-6">
+                <dt class="text-sm font-medium text-slate-500 truncate">총 인원</dt>
+                <dd class="mt-1 text-3xl font-semibold text-slate-900" id="totalHeadcount">-</dd>
+            </div>
+        </div>
+        <div class="bg-white overflow-hidden shadow rounded-lg">
+            <div class="px-4 py-5 sm:p-6">
+                <dt class="text-sm font-medium text-slate-500 truncate">조직 단위 수</dt>
+                <dd class="mt-1 text-3xl font-semibold text-slate-900" id="totalUnits">-</dd>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Add Unit Modal -->
+<div id="unitModal" class="fixed z-10 inset-0 overflow-y-auto hidden" aria-labelledby="modal-title" role="dialog"
+    aria-modal="true">
+    <div class="flex items-end justify-center min-h-screen pt-4 px-4 pb-20 text-center sm:block sm:p-0">
+        <div class="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity" aria-hidden="true"
+            onclick="closeUnitModal()"></div>
+        <span class="hidden sm:inline-block sm:align-middle sm:h-screen" aria-hidden="true">&#8203;</span>
+        <div
+            class="inline-block align-bottom bg-white rounded-lg text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:align-middle sm:max-w-lg sm:w-full">
+            <div class="bg-white px-4 pt-5 pb-4 sm:p-6 sm:pb-4">
+                <div class="sm:flex sm:items-start">
+                    <div class="mt-3 text-center sm:mt-0 sm:ml-4 sm:text-left w-full">
+                        <h3 class="text-lg leading-6 font-medium text-gray-900" id="modal-title">조직 단위 추가</h3>
+                        <div class="mt-2">
+                            <form id="unitForm" class="space-y-4">
+                                <div>
+                                    <label for="unit_type" class="block text-sm font-medium text-gray-700">단위 유형</label>
+                                    <select id="unit_type" name="unit_type" required
+                                        class="mt-1 block w-full pl-3 pr-10 py-2 text-base border-gray-300 focus:outline-none focus:ring-sky-500 focus:border-sky-500 sm:text-sm rounded-md">
+                                        <option value="DIVISION">본부</option>
+                                        <option value="BUREAU">처</option>
+                                        <option value="OFFICE">실</option>
+                                        <option value="TEAM">팀</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <label for="unit_name" class="block text-sm font-medium text-gray-700">단위명</label>
+                                    <input type="text" name="unit_name" id="unit_name" required
+                                        class="mt-1 focus:ring-sky-500 focus:border-sky-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
+                                </div>
+                                <div>
+                                    <label for="unit_code" class="block text-sm font-medium text-gray-700">코드</label>
+                                    <input type="text" name="unit_code" id="unit_code"
+                                        class="mt-1 focus:ring-sky-500 focus:border-sky-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
+                                </div>
+                                <div>
+                                    <label for="revenue" class="block text-sm font-medium text-gray-700">매출 (원)</label>
+                                    <input type="number" name="revenue" id="revenue" min="0"
+                                        class="mt-1 focus:ring-sky-500 focus:border-sky-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
+                                </div>
+                                <div>
+                                    <label for="headcount" class="block text-sm font-medium text-gray-700">인원
+                                        (명)</label>
+                                    <input type="number" name="headcount" id="headcount" min="0"
+                                        class="mt-1 focus:ring-sky-500 focus:border-sky-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
+                                </div>
+                                <div>
+                                    <label for="parent_unit" class="block text-sm font-medium text-gray-700">상위
+                                        단위</label>
+                                    <select id="parent_unit" name="parent_unit"
+                                        class="mt-1 block w-full pl-3 pr-10 py-2 text-base border-gray-300 focus:outline-none focus:ring-sky-500 focus:border-sky-500 sm:text-sm rounded-md">
+                                        <option value="">없음 (최상위)</option>
+                                        <!-- Populated dynamically -->
+                                    </select>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-gray-50 px-4 py-3 sm:px-6 sm:flex sm:flex-row-reverse">
+                <button type="button" onclick="submitUnit()"
+                    class="w-full inline-flex justify-center rounded-md border border-transparent shadow-sm px-4 py-2 bg-sky-600 text-base font-medium text-white hover:bg-sky-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-sky-500 sm:ml-3 sm:w-auto sm:text-sm">
+                    저장
+                </button>
+                <button type="button" onclick="closeUnitModal()"
+                    class="mt-3 w-full inline-flex justify-center rounded-md border border-gray-300 shadow-sm px-4 py-2 bg-white text-base font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-sky-500 sm:mt-0 sm:ml-3 sm:w-auto sm:text-sm">
+                    취소
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    const INSTITUTION_ID = "inst_1"; // Mock institution ID
+    let orgUnits = [];
+
+    function openUnitModal() {
+        document.getElementById('unitModal').classList.remove('hidden');
+        loadParentUnits();
+    }
+
+    function closeUnitModal() {
+        document.getElementById('unitModal').classList.add('hidden');
+        document.getElementById('unitForm').reset();
+    }
+
+    function loadParentUnits() {
+        // Populate parent unit dropdown
+        const select = document.getElementById('parent_unit');
+        select.innerHTML = '<option value="">없음 (최상위)</option>';
+        orgUnits.forEach(unit => {
+            const option = document.createElement('option');
+            option.value = unit.id;
+            option.textContent = `${getUnitTypeLabel(unit.unit_type)} - ${unit.name}`;
+            select.appendChild(option);
+        });
+    }
+
+    function getUnitTypeLabel(type) {
+        const labels = {
+            'DIVISION': '본부',
+            'BUREAU': '처',
+            'OFFICE': '실',
+            'TEAM': '팀'
+        };
+        return labels[type] || type;
+    }
+
+    async function submitUnit() {
+        const form = document.getElementById('unitForm');
+        const formData = new FormData(form);
+
+        if (!formData.get('unit_name')) {
+            alert('단위명을 입력해주세요.');
+            return;
+        }
+
+        const unitData = {
+            institution_id: INSTITUTION_ID,
+            unit_type: formData.get('unit_type'),
+            name: formData.get('unit_name'),
+            code: formData.get('unit_code') || null,
+            revenue: parseInt(formData.get('revenue')) || 0,
+            headcount: parseInt(formData.get('headcount')) || 0,
+            parent_id: formData.get('parent_unit') || null
+        };
+
+        try {
+            // Mock save - in real app, this would be a fetch call to API
+            console.log('Saving unit:', unitData);
+            orgUnits.push({ ...unitData, id: 'unit_' + Date.now() });
+            alert('조직 단위가 성공적으로 저장되었습니다 (Mock).');
+            closeUnitModal();
+            renderOrgTree();
+            updateSummary();
+        } catch (error) {
+            console.error('Error:', error);
+            alert('저장 중 오류가 발생했습니다.');
+        }
+    }
+
+    function renderOrgTree() {
+        const treeContainer = document.getElementById('orgTree');
+        if (orgUnits.length === 0) {
+            treeContainer.innerHTML = '<div class="text-center text-slate-500 py-8">조직 단위를 추가하여 시작하세요.</div>';
+            return;
+        }
+
+        // Build tree structure
+        const rootUnits = orgUnits.filter(u => !u.parent_id);
+        let html = '';
+        rootUnits.forEach(unit => {
+            html += renderUnitNode(unit, 0);
+        });
+        treeContainer.innerHTML = html;
+    }
+
+    function renderUnitNode(unit, level) {
+        const indent = level * 24;
+        const children = orgUnits.filter(u => u.parent_id === unit.id);
+
+        let html = `
+            <div class="border-l-2 border-sky-200 pl-4" style="margin-left: ${indent}px;">
+                <div class="flex items-center justify-between py-2 px-3 bg-slate-50 rounded-md hover:bg-slate-100">
+                    <div>
+                        <span class="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-sky-100 text-sky-800">
+                            ${getUnitTypeLabel(unit.unit_type)}
+                        </span>
+                        <span class="ml-2 text-sm font-medium text-slate-900">${unit.name}</span>
+                        ${unit.code ? `<span class="ml-2 text-xs text-slate-500">(${unit.code})</span>` : ''}
+                    </div>
+                    <div class="text-xs text-slate-500">
+                        ${unit.revenue > 0 ? `매출: ${unit.revenue.toLocaleString()}원` : ''}
+                        ${unit.headcount > 0 ? ` | 인원: ${unit.headcount}명` : ''}
+                    </div>
+                </div>
+            </div>
+        `;
+
+        children.forEach(child => {
+            html += renderUnitNode(child, level + 1);
+        });
+
+        return html;
+    }
+
+    function updateSummary() {
+        const totalRevenue = orgUnits.reduce((sum, u) => sum + (u.revenue || 0), 0);
+        const totalHeadcount = orgUnits.reduce((sum, u) => sum + (u.headcount || 0), 0);
+
+        document.getElementById('totalRevenue').textContent = totalRevenue.toLocaleString() + '원';
+        document.getElementById('totalHeadcount').textContent = totalHeadcount.toLocaleString() + '명';
+        document.getElementById('totalUnits').textContent = orgUnits.length;
+    }
+
+    function exportOrgChart() {
+        alert('조직도 내보내기 기능 (구현 예정)');
+    }
+
+    // Initialize
+    renderOrgTree();
+    updateSummary();
+</script>
+{% endblock %}

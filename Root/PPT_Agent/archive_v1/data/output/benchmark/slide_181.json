@@ -1,0 +1,50 @@
+{
+  "slide_type": "Content",
+  "slide_number": 181,
+  "title": "4. 경영목표 수립 - 경영목표 선정",
+  "governing_message": "경영목표 후보군 중 현재 운영 중인 사업과 경영관리에 입각해 6개 경영목표를 SMART 기준으로 평가하여 선정함",
+  "layout": {
+    "grid_type": "custom",
+    "background_color": null
+  },
+  "content_data": {
+    "subtitle": null,
+    "date": null,
+    "client_name": null,
+    "framework_type": null,
+    "elements": null,
+    "sections": [
+      {
+        "title": "경영목표 후보군 중 6대 경영목표 선정",
+        "blocks": [
+          {
+            "block_type": "table",
+            "content": "See below",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          }
+        ]
+      },
+      {
+        "title": "N/A",
+        "blocks": [
+          {
+            "block_type": "text",
+            "content": "> 1등급 해역 비율\n> 갯벌복원 면적(누적)\n> 공단 통합 해상방제능력\n> 미래성장사업 매출 비율\n> 중대재해 \"Zero\" 달성\n> 재무건전성(영업이익률)",
+            "position": "bottom-right",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "footer": "N/A"
+}

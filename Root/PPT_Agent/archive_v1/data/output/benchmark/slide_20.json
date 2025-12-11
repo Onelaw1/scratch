@@ -1,0 +1,245 @@
+{
+  "slide_type": "Content",
+  "slide_number": 20,
+  "title": "1. 외부 환경분석 - 해양환경종합계획 추진과제 분석 (4/6)",
+  "governing_message": "전략과제 4. 친환경적인 경제활동이 이루어지는 바다에서는 국가 해양오염방제체계의 전환 및 재정비, 해양환경 관리 영역의 대기, 온실가스로 확대 및 기후변화 대응의 체계적 추진에서 공단의 주도적 역할 수행에 대한 기대를 확인할 수 있음",
+  "layout": {
+    "grid_type": "custom",
+    "background_color": null
+  },
+  "content_data": {
+    "subtitle": null,
+    "date": null,
+    "client_name": null,
+    "framework_type": null,
+    "elements": null,
+    "sections": [
+      {
+        "title": "전략과제 4. 친환경적인 경제활동이 이루어지는 바다",
+        "blocks": [
+          {
+            "block_type": "text",
+            "content": "추진 전략",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "추진 과제",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "세부 실행 과제",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "공단의 역할 기대",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "깨끗한 수질이 유지되는\n청정한 바다",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "건강한 생태계가\n살아있는 바다",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "쾌적한 해양생활을\n즐기는 바다",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "해양오염사고 대비체계\n재정비",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "• 국가·공공·민간 통합 해양오염방제체계 구축\n• 해상 위험유해물질(HNS) 사고에 대한 국가\n  대응체계 강화\n• 신규 해양오염원에 의한 유출사고 대비체계 구축\n• 선박·해양시설 해양오염 예방관리 강화\n• 실시간 해양오염 감시체계 구축\n• 해양오염물질 분석능력 제고 및 방제기술 연구",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "민간 통합방제체계 구축 주관",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "국가 해양오염사고 예방 및\n대응체계 재정비",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "해양 탄소(온실가스) 저감 사업\n발굴, 추진, 관리",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "4차산업혁명 신기술 해양오염\n조사·측정·분석·관리 적용",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "친환경적인 경제활동이\n이루어지는 바다",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "녹색 해양산업이\n펼쳐지는 바다",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "기후변화에 대응하고\n체계적으로 계획된 바다",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "온실가스·대기오염물질 관리\n강화",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "• 온실가스·대기오염물질 저배출 친환경 선박\n  전환 촉진\n• 항만 기인 대기환경 관리 강화\n• 해양 온실가스 저감 수단 다양화",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "해양환경-대기 통합 데이터\n시스템 기획, 구축, 운영",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "해양·항만 대기환경 분석-예측\n플랫폼 구축",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "• 해양-연안-항만 대기환경 조사체계 구축\n• 유무선 네트워크 기반 배출-오염 측정체계\n  구축\n• 디지털트윈 기반 항만 대기오염물질\n  분석·예측 플랫폼 구축",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "✓ 국가 해양오염방제체계 재정비\n   및 협력적 방제체계 구축 요구\n✓ 기후변화 협약 및 온실가스에\n   대한 체계적 대응 및 실행 강화",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "footer": "*Source : 제5차 해양환경종합계획(2021~2030), 2021.01, 해양수산부"
+}

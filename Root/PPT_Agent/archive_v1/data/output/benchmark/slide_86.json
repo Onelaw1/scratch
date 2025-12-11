@@ -1,0 +1,160 @@
+{
+  "slide_type": "Content",
+  "slide_number": 86,
+  "title": "3. 이해관계자 분석 - 사업부서 FGI (6/6)",
+  "governing_message": "부서별 이슈사항으로 내부 및 외부연계 R&D 강화, 친환경선박, 방제 선도적 기술개발, 민·관·공 협력체계 구축, 해양환경 정보 이용 이슈사항, 해양환경 교육 플랫폼 및 콘텐츠 개발 등의 현안 이슈가 나타남",
+  "layout": {
+    "grid_type": "2-column",
+    "background_color": "#FFFFFF"
+  },
+  "content_data": {
+    "subtitle": null,
+    "date": null,
+    "client_name": null,
+    "framework_type": null,
+    "elements": null,
+    "sections": [
+      {
+        "title": "사업부서 FGI 의견 정리 & 부서별 이슈사항 및 기타 의견",
+        "blocks": [
+          {
+            "block_type": "text",
+            "content": "창업연구센터는 사회적가치를 위해 설치하여 운영하고 있으며, 해양오염 방제 장비 개발에 주력하고 있음. 이러한 인프라를 기반으로 전문성을 가지고 R&D 영역을 방제분야 뿐만 아니라 환경보전까지 확장하면 좋을 것으로 판단됨",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "정부정책 시행에 따라 모든 공공기관 발주 선박은 친환경선박 건조가 의무화 되었기 때문에 친환경선박 부문에서 기술개발과 지원 등 사업 확장이 가능함. 공공기관들의 선박 건조를 통합하여 발주하는 시스템의 구축을 검토 중임",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "해상의 방제작업은 육상보다 비용이 3배가 들고 기후에 영향을 많이 받는 작업임. 새로운 기술이나 친환경 방제기법을 개발은 지속적으로 수행해야 함. 합리적 방제는 과학화, 자동화, 친환경기법 등이 필요하고 국가 전해역을 관리할 수 있는 통합관리체계 구축이 필요함",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "방제사고는 초반 작업이 가장 중요하기 때문에 해경이 방제 세력을 유지하면서 공단은 민간 업체를 관리·감독하는 방향으로 정책이 전환되고 있어 해경·공단·민간의 협력이 필요함",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "해양환경정보를 공개하고 내부, 외부에 공유하는 것에는 이해관계가 얽혀 있어 고려가 필요함. 예를 들어 방사능측정, 해양오염도 등 정보는 지자체, 어민에게 민감한 사안일 수 있음",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "디지털 뉴딜 사업으로 해양환경교육 온라인 플랫폼을 구축하고 운영하는 사업 추진 중(예산 7.5억원 승인됨). 코로나 사태 등으로 비대면 교육에 대한 수요가 증가되었고, 교육을 위한 디지털 콘텐츠 및 VR/AR 기술 등을 활용한 교육과정과 콘텐츠 개발이 필요함",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "해양환경종합계획에 보면 학교·시민 대상 환경보전교육이 확대되었고, 직무교육 부분은 전문교육/리더십교육이 있음. 전문교육은 여러 국내법들 트렌드에 따라서 교육 운영이 확장되어야 함",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          }
+        ]
+      },
+      {
+        "title": "주요 의견과 이슈사항",
+        "blocks": [
+          {
+            "block_type": "text",
+            "content": "공단 자체 및 외부연계\nR&D 강화 필요",
+            "position": "top-right",
+            "style": {
+              "is_bold": true,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "공단 선도적 R&D 영역\n(방제, 친환경선박 등)",
+            "position": "top-right",
+            "style": {
+              "is_bold": true,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "해양환경 민·관·공 협력체계",
+            "position": "top-right",
+            "style": {
+              "is_bold": true,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "해양환경정보 공개·이용 관련\n이슈 및 제약사항",
+            "position": "top-right",
+            "style": {
+              "is_bold": true,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "해양환경교육 콘텐츠 개발",
+            "position": "top-right",
+            "style": {
+              "is_bold": true,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "비대면 교육 인프라 구축, 확대",
+            "position": "top-right",
+            "style": {
+              "is_bold": true,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "footer": "85"
+}

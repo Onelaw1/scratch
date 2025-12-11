@@ -1,0 +1,265 @@
+{
+  "slide_type": "Content",
+  "slide_number": 23,
+  "title": "1. 외부 환경분석 - 한국판 뉴딜 정책 개요",
+  "governing_message": "정부는 경제구조 개선으로 선도형 경제기반 구축하고 코로나19로 인한 위기를 극복하여 경제활력을 되찾기 위해 '한국판 뉴딜 종합계획'을 추진하고 있으며, 2025년까지 114.1조 원을 투자하여 190.1만 개의 일자리 창출을 기대하고 있음",
+  "layout": {
+    "grid_type": "custom",
+    "background_color": "#FFFFFF"
+  },
+  "content_data": {
+    "subtitle": null,
+    "date": null,
+    "client_name": null,
+    "framework_type": null,
+    "elements": null,
+    "sections": [
+      {
+        "title": "한국판 뉴딜 정책 개요",
+        "blocks": [
+          {
+            "block_type": "text",
+            "content": "비전",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "선도국가로 도약하는 대한민국으로 전환\n추격형 경제에서 선도형 경제로, 탄소의존 경제에서 저탄소 경제로, 불평등 사회에서 포용 사회로 도약",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "2+1\n정책\n방향",
+            "position": "top-left",
+            "style": {
+              "is_bold": true,
+              "color_hex": "#000000",
+              "font_size": 16
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "디지털 뉴딜",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "경제전반의 디지털 혁신 및 역동성 촉진·확산",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "그린 뉴딜",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "경제전반의 친환경·저탄소 전환 가속화",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "안전망 강화",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "사람중심 포용국가 기반",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "사람투자 강화\n일자리 창출",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "사람투자 강화\n일자리 창출",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "재정 투자",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "新시장·수요 창출 마중물",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "제도 개선",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "민간의 혁신과 부자의 촉매제",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "산업·기술\n융복합·혁신",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "chart",
+            "content": "Stacked Bar Chart of 투자계획",
+            "position": "top-right",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "chart",
+            "content": "Stacked Bar Chart of 일자리창출",
+            "position": "top-right",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "추진\n과제",
+            "position": "bottom-left",
+            "style": {
+              "is_bold": true,
+              "color_hex": "#000000",
+              "font_size": 16
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "디지털 뉴딜\n① 데이터 댐\n② 지능형 정부\n③ 스마트 의료 인프라",
+            "position": "bottom-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "디지털·그린 융복합\n④ 그린 스마트 스쿨\n⑤ 디지털 트윈\n⑥ 국민안전 SOC 디지털화\n⑦ 스마트 그린산단",
+            "position": "bottom-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "그린 뉴딜\n⑧ 그린 리모델링\n⑨ 그린에너지\n⑩ 친환경 미래 모빌리티",
+            "position": "bottom-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "Key\nFindings",
+            "position": "bottom-left",
+            "style": {
+              "is_bold": true,
+              "color_hex": "#000000",
+              "font_size": 16
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "✓ 한국판 뉴딜 정책은 2025년까지 114.1조 원 규모의\n대규모 투자 계획을 포함하여, 정부의 일반적 점증주의\n예산제도에 변화를 줄 수 있는 기회를 제공하고 있음",
+            "position": "bottom-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "footer": "Copyrights 2021 All Rights Reserved & Confidential"
+}

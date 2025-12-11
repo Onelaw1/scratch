@@ -1,0 +1,724 @@
+{% extends "base.html" %}
+
+{% block content %}
+<style>
+    /* Custom Scrollbar for the table container */
+    .custom-scrollbar::-webkit-scrollbar {
+        width: 8px;
+        height: 8px;
+    }
+
+    .custom-scrollbar::-webkit-scrollbar-track {
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 4px;
+    }
+
+    .custom-scrollbar::-webkit-scrollbar-thumb {
+        background: rgba(156, 163, 175, 0.5);
+        border-radius: 4px;
+    }
+
+    .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+        background: rgba(107, 114, 128, 0.8);
+    }
+
+    /* Table Styles */
+    .matrix-table {
+        border-collapse: separate;
+        border-spacing: 0;
+        width: 100%;
+    }
+
+    .matrix-table th,
+    .matrix-table td {
+        border-right: 1px solid rgba(203, 213, 225, 0.4);
+        border-bottom: 1px solid rgba(203, 213, 225, 0.4);
+        padding: 0.75rem;
+        transition: background-color 0.2s;
+    }
+
+    .matrix-table th {
+        background: rgba(248, 250, 252, 0.8);
+        backdrop-filter: blur(8px);
+        position: sticky;
+        top: 0;
+        z-index: 10;
+        font-weight: 600;
+        color: #475569;
+        text-transform: uppercase;
+        font-size: 0.75rem;
+        letter-spacing: 0.05em;
+    }
+
+    .matrix-table td {
+        background: rgba(255, 255, 255, 0.6);
+    }
+
+    /* Selection & Dragging */
+    .cell-selected {
+        background-color: rgba(59, 130, 246, 0.2) !important;
+        border: 1px solid rgba(59, 130, 246, 0.5);
+    }
+
+    .cell-merged {
+        background-color: #ffffff !important;
+        vertical-align: middle;
+        text-align: center;
+        font-weight: 500;
+    }
+
+    /* Input Styles */
+    .matrix-input {
+        width: 100%;
+        background: transparent;
+        border: none;
+        padding: 4px;
+        border-radius: 4px;
+        font-size: 0.875rem;
+        color: #1e293b;
+        transition: all 0.2s;
+    }
+
+    .matrix-input:focus {
+        background: rgba(255, 255, 255, 0.9);
+        box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.5);
+        outline: none;
+    }
+
+    .matrix-input:hover {
+        background: rgba(255, 255, 255, 0.5);
+    }
+
+    /* Floating Action Menu */
+    #contextMenu {
+        display: none;
+        position: absolute;
+        z-index: 100;
+        background: rgba(255, 255, 255, 0.9);
+        backdrop-filter: blur(12px);
+        border: 1px solid rgba(255, 255, 255, 0.5);
+        box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+        border-radius: 0.75rem;
+        padding: 0.5rem;
+        animation: fadeIn 0.2s ease-out;
+    }
+
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+            transform: scale(0.95);
+        }
+
+        to {
+            opacity: 1;
+            transform: scale(1);
+        }
+    }
+</style>
+
+<div class="max-w-[1920px] mx-auto px-4 sm:px-6 lg:px-8">
+    <!-- Header Section -->
+    <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-8 gap-4">
+        <div class="glass px-6 py-4 rounded-2xl flex-1">
+            <h2 class="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-slate-900 to-slate-700">
+                직무분류체계 매트릭스
+            </h2>
+            <p class="mt-1 text-sm text-slate-500">
+                드래그하여 셀을 병합하고, 실시간으로 업무량을 분석하세요.
+            </p>
+        </div>
+
+        <div class="flex gap-3">
+            <div class="glass px-4 py-2 rounded-xl flex items-center gap-3">
+                <div class="text-right">
+                    <p class="text-xs text-slate-500 uppercase font-semibold">Total FTE</p>
+                    <p class="text-xl font-bold text-blue-600" id="totalFTE">0.0</p>
+                </div>
+                <div class="h-8 w-px bg-slate-200"></div>
+                <div class="text-right">
+                    <p class="text-xs text-slate-500 uppercase font-semibold">Total Hours</p>
+                    <p class="text-xl font-bold text-indigo-600" id="totalHours">0</p>
+                </div>
+            </div>
+
+            <button onclick="addRow()"
+                class="glass hover-lift px-4 py-2 rounded-xl text-sm font-semibold text-slate-700 hover:bg-white/80 flex items-center gap-2">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4" />
+                </svg>
+                행 추가
+            </button>
+            <button onclick="saveMatrix()"
+                class="bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 text-white px-6 py-2 rounded-xl text-sm font-semibold shadow-lg shadow-blue-500/30 hover:shadow-blue-500/50 transition-all flex items-center gap-2">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M8 7H5a2 2 0 00-2 2v9a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-3m-1 4l-3 3m0 0l-3-3m3 3V4" />
+                </svg>
+                저장하기
+            </button>
+        </div>
+    </div>
+
+    <!-- Main Matrix Area -->
+    <div class="glass rounded-2xl overflow-hidden border border-white/50 shadow-xl">
+        <div class="overflow-x-auto custom-scrollbar max-h-[75vh]">
+            <table class="matrix-table" id="matrixTable">
+                <thead>
+                    <tr>
+                        <th class="w-24">본부</th>
+                        <th class="w-24">부서</th>
+                        <th class="w-24">팀</th>
+                        <th class="w-32">직군</th>
+                        <th class="w-32">직렬</th>
+                        <th class="w-32">직무</th>
+                        <th class="w-16">직급</th>
+                        <th class="w-48">과업(Task)</th>
+                        <th class="w-48">세부업무(Activity)</th>
+                        <th class="w-24">빈도</th>
+                        <th class="w-24">시간/회</th>
+                        <th class="w-24">연간시간</th>
+                        <th class="w-20">FTE</th>
+                        <th class="w-12"></th>
+                    </tr>
+                </thead>
+                <tbody id="matrixBody">
+                    <!-- Rows generated by JS -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+<!-- Context Menu for Merge -->
+<div id="contextMenu">
+    <button onclick="mergeSelectedCells()"
+        class="w-full text-left px-4 py-2 text-sm text-slate-700 hover:bg-blue-50 rounded-lg flex items-center gap-2">
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4" />
+        </svg>
+        셀 병합 (Merge)
+    </button>
+    <button onclick="unmergeSelectedCells()"
+        class="w-full text-left px-4 py-2 text-sm text-slate-700 hover:bg-blue-50 rounded-lg flex items-center gap-2">
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 10h16m-8-8v16" />
+            ```
+            .custom-scrollbar::-webkit-scrollbar-track {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 4px;
+            }
+
+            .custom-scrollbar::-webkit-scrollbar-thumb {
+            background: rgba(156, 163, 175, 0.5);
+            border-radius: 4px;
+            }
+
+            .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+            background: rgba(107, 114, 128, 0.8);
+            }
+
+            /* Table Styles */
+            .matrix-table {
+            border-collapse: separate;
+            border-spacing: 0;
+            width: 100%;
+            }
+
+            .matrix-table th,
+            .matrix-table td {
+            border-right: 1px solid rgba(203, 213, 225, 0.4);
+            border-bottom: 1px solid rgba(203, 213, 225, 0.4);
+            padding: 0.75rem;
+            transition: background-color 0.2s;
+            }
+
+            .matrix-table th {
+            background: rgba(248, 250, 252, 0.8);
+            backdrop-filter: blur(8px);
+            position: sticky;
+            top: 0;
+            z-index: 10;
+            font-weight: 600;
+            color: #475569;
+            text-transform: uppercase;
+            font-size: 0.75rem;
+            letter-spacing: 0.05em;
+            }
+
+            .matrix-table td {
+            background: rgba(255, 255, 255, 0.6);
+            }
+
+            /* Selection & Dragging */
+            .cell-selected {
+            background-color: rgba(59, 130, 246, 0.2) !important;
+            border: 1px solid rgba(59, 130, 246, 0.5);
+            }
+
+            .cell-merged {
+            background-color: #ffffff !important;
+            vertical-align: middle;
+            text-align: center;
+            font-weight: 500;
+            }
+
+            /* Input Styles */
+            .matrix-input {
+            width: 100%;
+            background: transparent;
+            border: none;
+            padding: 4px;
+            border-radius: 4px;
+            font-size: 0.875rem;
+            color: #1e293b;
+            transition: all 0.2s;
+            }
+
+            .matrix-input:focus {
+            background: rgba(255, 255, 255, 0.9);
+            box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.5);
+            outline: none;
+            }
+
+            .matrix-input:hover {
+            background: rgba(255, 255, 255, 0.5);
+            }
+
+            /* Floating Action Menu */
+            #contextMenu {
+            display: none;
+            position: absolute;
+            z-index: 100;
+            background: rgba(255, 255, 255, 0.9);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.5);
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+            border-radius: 0.75rem;
+            padding: 0.5rem;
+            animation: fadeIn 0.2s ease-out;
+            }
+
+            @keyframes fadeIn {
+            from {
+            opacity: 0;
+            transform: scale(0.95);
+            }
+
+            to {
+            opacity: 1;
+            transform: scale(1);
+            }
+            }
+            </style>
+
+            <div class="max-w-[1920px] mx-auto px-4 sm:px-6 lg:px-8">
+                <!-- Header Section -->
+                <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-8 gap-4">
+                    <div class="glass px-6 py-4 rounded-2xl flex-1">
+                        <h2
+                            class="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-slate-900 to-slate-700">
+                            직무분류체계 매트릭스
+                        </h2>
+                        <p class="mt-1 text-sm text-slate-500">
+                            드래그하여 셀을 병합하고, 실시간으로 업무량을 분석하세요.
+                        </p>
+                    </div>
+
+                    <div class="flex gap-3">
+                        <div class="glass px-4 py-2 rounded-xl flex items-center gap-3">
+                            <div class="text-right">
+                                <p class="text-xs text-slate-500 uppercase font-semibold">Total FTE</p>
+                                <p class="text-xl font-bold text-blue-600" id="totalFTE">0.0</p>
+                            </div>
+                            <div class="h-8 w-px bg-slate-200"></div>
+                            <div class="text-right">
+                                <p class="text-xs text-slate-500 uppercase font-semibold">Total Hours</p>
+                                <p class="text-xl font-bold text-indigo-600" id="totalHours">0</p>
+                            </div>
+                        </div>
+
+                        <button onclick="addRow()"
+                            class="glass hover-lift px-4 py-2 rounded-xl text-sm font-semibold text-slate-700 hover:bg-white/80 flex items-center gap-2">
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M12 4v16m8-8H4" />
+                            </svg>
+                            행 추가
+                        </button>
+                        <button onclick="saveMatrix()"
+                            class="bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 text-white px-6 py-2 rounded-xl text-sm font-semibold shadow-lg shadow-blue-500/30 hover:shadow-blue-500/50 transition-all flex items-center gap-2">
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M8 7H5a2 2 0 00-2 2v9a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-3m-1 4l-3 3m0 0l-3-3m3 3V4" />
+                            </svg>
+                            저장하기
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Main Matrix Area -->
+                <div class="glass rounded-2xl overflow-hidden border border-white/50 shadow-xl">
+                    <div class="overflow-x-auto custom-scrollbar max-h-[75vh]">
+                        <table class="matrix-table" id="matrixTable">
+                            <thead>
+                                <tr>
+                                    <th class="w-24">본부</th>
+                                    <th class="w-24">부서</th>
+                                    <th class="w-24">팀</th>
+                                    <th class="w-32">직군</th>
+                                    <th class="w-32">직렬</th>
+                                    <th class="w-32">직무</th>
+                                    <th class="w-16">직급</th>
+                                    <th class="w-48">과업(Task)</th>
+                                    <th class="w-48">세부업무(Activity)</th>
+                                    <th class="w-24">빈도</th>
+                                    <th class="w-24">시간/회</th>
+                                    <th class="w-24">연간시간</th>
+                                    <th class="w-20">FTE</th>
+                                    <th class="w-12"></th>
+                                </tr>
+                            </thead>
+                            <tbody id="matrixBody">
+                                <!-- Rows generated by JS -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Context Menu for Merge -->
+            <div id="contextMenu">
+                <button onclick="mergeSelectedCells()"
+                    class="w-full text-left px-4 py-2 text-sm text-slate-700 hover:bg-blue-50 rounded-lg flex items-center gap-2">
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4" />
+                    </svg>
+                    셀 병합 (Merge)
+                </button>
+                <button onclick="unmergeSelectedCells()"
+                    class="w-full text-left px-4 py-2 text-sm text-slate-700 hover:bg-blue-50 rounded-lg flex items-center gap-2">
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 10h16m-8-8v16" />
+                    </svg>
+                    병합 해제 (Unmerge)
+                </button>
+            </div>
+
+            <script>
+                // State
+                let isDragging = false;
+                let startCell = null;
+                let selectedCells = new Set();
+
+                // Initialize
+                document.addEventListener('DOMContentLoaded', () => {
+                    // Add initial rows
+                    for (let i = 0; i < 5; i++) addRow();
+
+                    // Global Event Listeners
+                    document.addEventListener('mouseup', handleMouseUp);
+                    document.addEventListener('click', (e) => {
+                        if (!e.target.closest('#contextMenu')) {
+                            hideContextMenu();
+                        }
+                    });
+
+                    // Data Sync Listener (Delegation)
+                    document.getElementById('matrixBody').addEventListener('input', (e) => {
+                        if (e.target.matches('input, select')) {
+                            syncMergedValues(e.target);
+                        }
+                    });
+                });
+
+                function addRow(data = {}) {
+                    const tbody = document.getElementById('matrixBody');
+                    const tr = document.createElement('tr');
+                    tr.className = 'hover:bg-white/40 transition-colors';
+
+                    const cells = [
+                        { type: 'text', name: 'division', value: data.division || '' },
+                        { type: 'text', name: 'dept', value: data.dept || '' },
+                        { type: 'text', name: 'team', value: data.team || '' },
+                        { type: 'text', name: 'group', value: data.group || '' },
+                        { type: 'text', name: 'series', value: data.series || '' },
+                        { type: 'text', name: 'position', value: data.position || '' },
+                        { type: 'select', name: 'grade', options: ['G1', 'G2', 'G3', 'G4', 'G5'], value: data.grade || '' },
+                        { type: 'text', name: 'task', value: data.task || '' },
+                        { type: 'text', name: 'activity', value: data.activity || '' },
+                        { type: 'select', name: 'frequency', options: ['Daily', 'Weekly', 'Monthly', 'Yearly'], value: data.frequency || 'Daily', onchange: 'calculateRow(this)' },
+                        { type: 'number', name: 'time', value: data.time || 0, oninput: 'calculateRow(this)' },
+                        { type: 'readonly', name: 'total_hours', value: 0 },
+                        { type: 'readonly', name: 'fte', value: 0 },
+                        { type: 'action' }
+                    ];
+
+                    cells.forEach((cellData, index) => {
+                        const td = document.createElement('td');
+                        td.dataset.col = index;
+
+                        // Drag Events
+                        td.addEventListener('mousedown', (e) => handleMouseDown(e, td));
+                        td.addEventListener('mouseover', (e) => handleMouseMove(e, td));
+
+                        if (cellData.type === 'text' || cellData.type === 'number') {
+                            td.innerHTML = `<input type="${cellData.type}" class="matrix-input" value="${cellData.value}" ${cellData.oninput ? `oninput="${cellData.oninput}"` : ''}>`;
+                        } else if (cellData.type === 'select') {
+                            td.innerHTML = `
+                    <select class="matrix-input" ${cellData.onchange ? `onchange="${cellData.onchange}"` : ''}>
+                        ${cellData.options.map(opt => `<option ${opt === cellData.value ? 'selected' : ''}>${opt}</option>`).join('')}
+                    </select>`;
+                        } else if (cellData.type === 'readonly') {
+                            td.innerHTML = `<span class="font-mono font-bold text-slate-600 block text-right pr-2">0</span>`;
+                        } else if (cellData.type === 'action') {
+                            td.innerHTML = `<button onclick="this.closest('tr').remove(); calculateTotal();" class="text-red-400 hover:text-red-600 p-1 rounded hover:bg-red-50 transition-colors">×</button>`;
+                        }
+
+                        tr.appendChild(td);
+                    });
+
+                    tbody.appendChild(tr);
+                    calculateTotal();
+                }
+
+                // --- Drag & Merge Logic ---
+
+                function handleMouseDown(e, cell) {
+                    if (e.button !== 0) return; // Only left click
+                    isDragging = true;
+                    startCell = cell;
+                    clearSelection();
+                    selectCell(cell);
+                }
+
+                function handleMouseMove(e, cell) {
+                    if (!isDragging || !startCell) return;
+                    selectRange(startCell, cell);
+                }
+
+                function handleMouseUp(e) {
+                    if (!isDragging) return;
+                    isDragging = false;
+
+                    if (selectedCells.size > 1) {
+                        // Show Context Menu at mouse position
+                        showContextMenu(e.clientX, e.clientY);
+                    }
+                }
+
+                function selectCell(cell) {
+                    cell.classList.add('cell-selected');
+                    selectedCells.add(cell);
+                }
+
+                function clearSelection() {
+                    document.querySelectorAll('.cell-selected').forEach(el => el.classList.remove('cell-selected'));
+                    selectedCells.clear();
+                }
+
+                function selectRange(start, end) {
+                    clearSelection();
+
+                    // Get coordinates
+                    const startRow = start.parentElement.rowIndex;
+                    const startCol = parseInt(start.dataset.col);
+                    const endRow = end.parentElement.rowIndex;
+                    const endCol = parseInt(end.dataset.col);
+
+                    const minRow = Math.min(startRow, endRow);
+                    const maxRow = Math.max(startRow, endRow);
+                    const minCol = Math.min(startCol, endCol);
+                    const maxCol = Math.max(startCol, endCol);
+
+                    // Select cells in rectangle
+                    const rows = document.getElementById('matrixTable').rows;
+                    for (let r = minRow; r <= maxRow; r++) {
+                        for (let c = minCol; c <= maxCol; c++) {
+                            const cell = rows[r].cells[c];
+                            if (cell && !cell.classList.contains('hidden')) {
+                                selectCell(cell);
+                            }
+                        }
+                    }
+                }
+
+                function showContextMenu(x, y) {
+                    const menu = document.getElementById('contextMenu');
+                    menu.style.display = 'block';
+                    menu.style.left = x + 'px';
+                    menu.style.top = y + 'px';
+                }
+
+                function hideContextMenu() {
+                    document.getElementById('contextMenu').style.display = 'none';
+                }
+
+                function mergeSelectedCells() {
+                    const cells = Array.from(selectedCells);
+                    if (cells.length < 2) return;
+
+                    // Sort cells by row then col
+                    cells.sort((a, b) => {
+                        const rowDiff = a.parentElement.rowIndex - b.parentElement.rowIndex;
+                        if (rowDiff !== 0) return rowDiff;
+                        return parseInt(a.dataset.col) - parseInt(b.dataset.col);
+                    });
+
+                    const firstCell = cells[0];
+                    const rowSpan = new Set(cells.map(c => c.parentElement.rowIndex)).size;
+                    const colSpan = new Set(cells.map(c => parseInt(c.dataset.col))).size;
+
+                    // Generate Merge ID
+                    const mergeId = 'merge-' + Date.now() + '-' + Math.random().toString(36).substr(2, 9);
+                    firstCell.dataset.mergeId = mergeId;
+
+                    // Apply merge
+                    firstCell.rowSpan = rowSpan;
+                    firstCell.colSpan = colSpan;
+                    firstCell.classList.add('cell-merged');
+
+                    // Get value to sync
+                    const masterValue = firstCell.querySelector('input, select')?.value;
+
+                    // Hide others and sync data
+                    for (let i = 1; i < cells.length; i++) {
+                        const cell = cells[i];
+                        cell.style.display = 'none';
+                        cell.classList.add('hidden-by-merge');
+                        cell.dataset.mergedWith = mergeId;
+
+                        // Sync value
+                        const input = cell.querySelector('input, select');
+                        if (input && masterValue !== undefined) {
+                            input.value = masterValue;
+                        }
+                    }
+
+                    clearSelection();
+                    hideContextMenu();
+                }
+
+                function unmergeSelectedCells() {
+                    const cells = Array.from(selectedCells);
+                    if (cells.length === 0) return;
+
+                    cells.forEach(cell => {
+                        if (cell.rowSpan > 1 || cell.colSpan > 1) {
+                            const mergeId = cell.dataset.mergeId;
+                            if (mergeId) {
+                                // Reset Master
+                                cell.rowSpan = 1;
+                                cell.colSpan = 1;
+                                cell.classList.remove('cell-merged');
+                                delete cell.dataset.mergeId;
+
+                                // Restore Slaves
+                                document.querySelectorAll(`[data-merged-with="${mergeId}"]`).forEach(slave => {
+                                    slave.style.display = '';
+                                    slave.classList.remove('hidden-by-merge');
+                                    delete slave.dataset.mergedWith;
+                                });
+                            }
+                        }
+                    });
+
+                    clearSelection();
+                    hideContextMenu();
+                }
+
+                function syncMergedValues(targetInput) {
+                    const cell = targetInput.closest('td');
+                    if (!cell) return;
+
+                    const mergeId = cell.dataset.mergeId;
+                    if (mergeId) {
+                        // This is a master cell, update slaves
+                        const value = targetInput.value;
+                        document.querySelectorAll(`[data-merged-with="${mergeId}"]`).forEach(slave => {
+                            const slaveInput = slave.querySelector('input, select');
+                            if (slaveInput) slaveInput.value = value;
+                        });
+                    }
+                }
+
+                // --- Calculation Logic ---
+
+                function calculateRow(input) {
+                    const row = input.closest('tr');
+                    const freq = row.cells[9].querySelector('select').value;
+                    const time = parseFloat(row.cells[10].querySelector('input').value) || 0;
+
+                    let multiplier = 0;
+                    switch (freq) {
+                        case 'Daily': multiplier = 220; break; // Approx working days
+                        case 'Weekly': multiplier = 52; break;
+                        case 'Monthly': multiplier = 12; break;
+                        case 'Yearly': multiplier = 1; break;
+                    }
+
+                    const totalHours = time * multiplier;
+                    const fte = totalHours / 2080; // Standard 2080 hours/year
+
+                    row.cells[11].querySelector('span').textContent = Math.round(totalHours);
+                    row.cells[12].querySelector('span').textContent = fte.toFixed(2);
+
+                    calculateTotal();
+                }
+
+                function calculateTotal() {
+                    let totalH = 0;
+                    let totalF = 0;
+
+                    document.querySelectorAll('#matrixBody tr').forEach(row => {
+                        const h = parseFloat(row.cells[11].querySelector('span')?.textContent) || 0;
+                        const f = parseFloat(row.cells[12].querySelector('span')?.textContent) || 0;
+                        totalH += h;
+                        totalF += f;
+                    });
+
+                    document.getElementById('totalHours').textContent = Math.round(totalH).toLocaleString();
+                    document.getElementById('totalFTE').textContent = totalF.toFixed(2);
+                }
+
+                async function saveMatrix() {
+                    const rows = [];
+                    document.querySelectorAll('#matrixBody tr').forEach(tr => {
+                        const cells = tr.cells;
+                        rows.push({
+                            division: cells[0].querySelector('input').value,
+                            department: cells[1].querySelector('input').value,
+                            team: cells[2].querySelector('input').value,
+                            group_name: cells[3].querySelector('input').value,
+                            series_name: cells[4].querySelector('input').value,
+                            position_title: cells[5].querySelector('input').value,
+                            position_grade: cells[6].querySelector('select').value,
+                            task_name: cells[7].querySelector('input').value,
+                            work_item_name: cells[8].querySelector('input').value,
+                            frequency: cells[9].querySelector('select').value,
+                            workload: parseFloat(cells[10].querySelector('input').value) || 0
+                        });
+                    });
+
+                    try {
+                        const response = await fetch('/classification/matrix', {
+                            method: 'POST',
+                            headers: { 'Content-Type': 'application/json' },
+                            body: JSON.stringify(rows)
+                        });
+
+                        if (response.ok) {
+                            alert('✅ 저장되었습니다.');
+                        } else {
+                            const err = await response.json();
+                            alert('❌ 저장 실패: ' + (err.detail || 'Unknown error'));
+                        }
+                    } catch (e) {
+                        console.error(e);
+                        alert('❌ 오류 발생: ' + e.message);
+                    }
+                }
+            </script>
+            {% endblock %}
+            ```

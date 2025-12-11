@@ -1,0 +1,90 @@
+{
+  "slide_type": "Content",
+  "slide_number": 91,
+  "title": "4. 벤치마킹 - 해양수산부 산하기관 전략체계 (2/3)",
+  "governing_message": "Ⅱ. 내·외부 환경분석\n한국어촌어항공단은 포괄적인 미션과 비전을 채용하고 계량적인 연간목표를 경영목표로 채용하고 있으며,\n해양수산과학기술원은 미래가치, 혁신, 산업과 동반자를 키워드로 가치체계를 수립하고 있음",
+  "layout": {
+    "grid_type": "2-column",
+    "background_color": "string"
+  },
+  "content_data": {
+    "subtitle": null,
+    "date": null,
+    "client_name": null,
+    "framework_type": null,
+    "elements": null,
+    "sections": [
+      {
+        "title": "한국어촌어항공단",
+        "blocks": [
+          {
+            "block_type": "table",
+            "content": "미션\n해양수산의 미래가치창출을 통해 국가균형발전과 국민 삶의 질\n향상에 기여한다\n비전\n살기 좋은 어촌과 풍요로운 바다공간을 조성하는 1등 해양수산 전문기관\n핵심가치 성장 도전 국민행복 혁신\n경영목표 사업예산 규모\n6,200억원\n미래사업\n매출액비율\n80%\n일자리 창출 사업수행효율성\n3,700개\n11억원\n전략목표 사업경쟁력\n강화\n미래성장\n기반확립\n사회적가치\n실현\n경영관리체계\n고도화\n전략과제\n어촌경쟁력\n강화\n어촌지역\n활성화 지원\n효율적\n어항관리체계\n구축\n어항의 친환경\n생태계 조성 확대\n어촌·어항\n재생\n어장 지속성장\n동력 확보\n수산·어촌\n정보 고도화\n대외협력\n활성화\n동반성장/상생\n경영 강화\n공유가치 창출\n국민행복서비\n스 확대\n안전·투명\n경영체계 확립\n경영자원관리\n강화\n전문인재\n육성체계 구축\n지속가능\n경영기반 구축",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "Key\nFindings",
+            "position": "bottom-left",
+            "style": {
+              "is_bold": true,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "✓ 해양수산 미래가치창출 이라는 포괄적 미션과 해양수산\n전문기관이라는 폭 넓은 비전을 채용하고 있음\n예산규모, 일자리창출 등 구체적이고 계량적인 연간\n목표를 경영목표로 채용하고 있음",
+            "position": "bottom-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          }
+        ]
+      },
+      {
+        "title": "해양수산과학기술진흥원",
+        "blocks": [
+          {
+            "block_type": "table",
+            "content": "미션 해양수산 기술혁신과 산업진흥으로 국가경제발전에 기여\n비전 해양수산 미래가치를 창출하는 R&D혁신과 성장의 동반자\n경영방침 미래혁신 공정·신뢰 소통·공감 사회적책임\n핵심가치 전문성 창의·도전 투명·공정 사회적가치\n전략목표 혁신성장 성과창출 R&D 지속가능 국민공감\n해양수산 관리체계 혁신 해양수산 산업 사회적가치\n미래가치 선도 생태계 조성 기반 확립\n전략과제 국민체감형 가치창출형 R&D 시장지향형 R&D 상생협력 기반\n전략적 R&D 투자 관리체계 구현 사업화 촉진 사회적 책임경영\n확대\n미래선도형 R&D 연구자친화형 글로벌선도형 기술 지속혁신 기반\n기획 강화 연구환경 조성 평가·인증체계 확립 선진경영 인프라\n확충\n해양수산 정책 성과확산형 일자리창출형 소통·협력\nLeadership 확보 해양수산 창업·투자 활성화 신뢰받는\n지식플랫폼 고도화 조직문화",
+            "position": "top-right",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "Key\nFindings",
+            "position": "bottom-right",
+            "style": {
+              "is_bold": true,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "✓ R&D 전문기관으로 미래가치, 혁신, 산업 등을 키워드로\n사용하고 있으며, 진흥원 기관 특성으로 동반자 선택\n해양수산 정책, 시장지향형 R&D 사업화 영역은 공단의\n해양환경 정책 리더십, 해양환경 R&D와 겹치는 부분임",
+            "position": "bottom-right",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "footer": "KOEM 해양환경공단 90"
+}

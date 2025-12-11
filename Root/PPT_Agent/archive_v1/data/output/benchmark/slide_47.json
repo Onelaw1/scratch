@@ -1,0 +1,180 @@
+{
+  "slide_type": "Content",
+  "slide_number": 47,
+  "title": "1. 외부 환경분석 - 해양환경 관련 글로벌 트렌드",
+  "governing_message": "글로벌 해양환경 현안 이슈사항으로는 영구 동토층 해빙, 미세 플라스틱, 저서 생태계 파괴, 무분별한 양식, 자외선 차단제 유입, 과도한 어업활동(남획) 등이 제시되고 있으며, 사안에 대한 공단의 체계적이고 과학적인 대응이 요구됨",
+  "layout": {
+    "grid_type": "2-column",
+    "background_color": "#FFFFFF"
+  },
+  "content_data": {
+    "subtitle": null,
+    "date": null,
+    "client_name": null,
+    "framework_type": null,
+    "elements": null,
+    "sections": [
+      {
+        "title": "해양환경 관련 글로벌 현안 이슈 사항",
+        "blocks": [
+          {
+            "block_type": "text",
+            "content": "1. 영구 동토층 해빙 (Melting permafrost)",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "• 지구온난화로 영구 동토층이 녹아 결빙된 수은 방출\n• 수은이 바다에 도달하여 독성을 내뿜어 해양 생물에 영향을 끼칠 수 있으며, 이로 인해 먹이 사슬과 어업에 부정적인 요인으로 작용",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 10
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "2. 미세 플라스틱 (Microplastics)",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "• 플라스틱 폐기물의 91%는 재활용되지 않으며, 대부분 환경에 남아 있음\n• 바이오 플라스틱이나 신기술이 개발되고 있으나, 해양환경에 대한 영향은 검토가 요하고, 여전이 환경 발자국을 남길 것임",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 10
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "3. 저서 생태계 파괴 (Antarctic benthos)",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "• 남극 저서 생물은 온실기체 조절에 필수적인데, 지구 온난화로 남극의 얼음이 녹아 해저생명 파괴, 탄소저장 저해, 온난화 촉진 등 문제 야기\n• 해양환경 영향이 명확하지 않은 식물성플랑크톤을 증가시킬 수 있음",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 10
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "4. 무분별한 양식 (Aquaculture production)",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "• 세계인구 증가에 따른 해산물 소비 증가는 수산양식을 증가시킴\n• 양어장에는 영양이 풍부한 사료가 필요한데, 이것은 해양 먹이 사슬을 파괴하고 양식장 이용에 대한 이해관계 상충도 발생하게 됨",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 10
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "5. 자외선 차단제 유입 (Entering sunscreen)",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "• 매년 약 14,000 톤의 자외선 차단제가 바다로 유입됨\n• 자외선 차단제는 일부 해양 생물에 해롭고 산호 표백을 유발할 수 있음\n• 해양생물의 피해를 완화하는 녹색 시노린 성분의 자외선 차단제 개발 중",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 10
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "6. 과도한 어업활동 (Mesopelagic fisheries)",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "• 어족자원 감소와 수요 증가는 연근해 어업의 부담을 줄이고 심해어족 자원을 남획으로 이어지고 있음\n• 심해 어류군은 중요 탄소 흡수원인 동시 개체수 회복이 느려, 남획될 경우 해양 이산화탄소 조절에 어려움을 줄 수 있음",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 10
+            }
+          }
+        ]
+      },
+      {
+        "title": "Key Findings",
+        "blocks": [
+          {
+            "block_type": "text",
+            "content": "✓ 해양환경 관련 최근 부각되고 있는 글로벌 트랜드로는 기후변화(온난화)에 따른 해빙, 무분별한 양식과 어업활동의 문제, 플라스틱, 자외선차단제 등 오염물질의 감축 및 정화 등이 있음",
+            "position": "top-right",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 10
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "✓ 특히 해양오염 정화 및 예방, 해양생태계 복원과 보전을 수행하는 공단은 미세플라스틱, 자외선 차단제 등 새롭게 추가되는 오염물질에 대해 오염정도 조사, 정화계획 수립 및 정화사업 수행이 필요함",
+            "position": "top-right",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 10
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "✓ 해양환경, 해양생태계에 대한 조사연구 및 정화의 체계적, 과학적 대응과 추진이 요구됨",
+            "position": "top-right",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 10
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "footer": "*Source: Emerging marine trends, SAFETY4SEA, (2019) / The State of the Marine Environment, UNEP"
+}

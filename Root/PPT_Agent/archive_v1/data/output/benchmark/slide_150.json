@@ -1,0 +1,130 @@
+{
+  "slide_type": "Framework",
+  "slide_number": 150,
+  "title": "3. 전략목표·전략과제 수립 - S-O전략",
+  "governing_message": "강점과 기회요인을 결합하여 사업 확대와 영역 확장을 통한 S-O 성장 전략과제를 다음과 같이 도출함",
+  "layout": {
+    "grid_type": "custom",
+    "background_color": "#FFFFFF"
+  },
+  "content_data": {
+    "subtitle": null,
+    "date": null,
+    "client_name": null,
+    "framework_type": "List",
+    "elements": [
+      {
+        "label": "방제·정화에서 보전·이용으로 사업영역과 조직 확대",
+        "description": null,
+        "position": "top-left"
+      },
+      {
+        "label": "해양환경 영역의 정부사업 수행 주관기관 위상",
+        "description": null,
+        "position": "top-center"
+      },
+      {
+        "label": "해양환경분야 전문인력 보유",
+        "description": null,
+        "position": "top-center"
+      },
+      {
+        "label": "방제자산(선박·장비), 방제기술력 자체 보유",
+        "description": null,
+        "position": "top-center"
+      },
+      {
+        "label": "해양수산·해양정책 네트워크와 지역 인프라 보유",
+        "description": null,
+        "position": "top-center"
+      },
+      {
+        "label": "해양환경 측정·조사·연구기능 내부 보유",
+        "description": null,
+        "position": "top-center"
+      },
+      {
+        "label": "해양환경 정보제공 및 교육기능 보유",
+        "description": null,
+        "position": "top-right"
+      },
+      {
+        "label": "제5차 해양환경종합계획 시행",
+        "description": null,
+        "position": "bottom-left"
+      },
+      {
+        "label": "한국판 뉴딜(디지털, 그린, 안전망) 추진",
+        "description": null,
+        "position": "bottom-left"
+      },
+      {
+        "label": "기후변화대응·탄소중립 중요성 지속 강화",
+        "description": null,
+        "position": "bottom-left"
+      },
+      {
+        "label": "해양환경 관련 국제협약, 국제기구 영향력 증가",
+        "description": null,
+        "position": "bottom-left"
+      },
+      {
+        "label": "코로나19로 인한 디지털전환 가속화",
+        "description": null,
+        "position": "bottom-left"
+      },
+      {
+        "label": "국가 해양방제체계 개편",
+        "description": null,
+        "position": "bottom-left"
+      },
+      {
+        "label": "연안지역 인구감소 및 어촌 노령화 지속",
+        "description": null,
+        "position": "bottom-left"
+      },
+      {
+        "label": "해양환경 이용·향유 신산업 육성",
+        "description": null,
+        "position": "bottom-center"
+      },
+      {
+        "label": "해양환경 자원화 (개발·관리) 사업 강화",
+        "description": null,
+        "position": "bottom-center"
+      },
+      {
+        "label": "해양공간계획 수립 및 관리 주도",
+        "description": null,
+        "position": "bottom-center"
+      },
+      {
+        "label": "국민관심 현안에 대한 (신속) 대응역량 강화",
+        "description": null,
+        "position": "bottom-center"
+      },
+      {
+        "label": "해양 기후변화대응 및 탄소중립 선도",
+        "description": null,
+        "position": "bottom-center"
+      },
+      {
+        "label": "해양환경 국제협력 역량 강화",
+        "description": null,
+        "position": "bottom-center"
+      },
+      {
+        "label": "통합 해양방제체계 고도화",
+        "description": null,
+        "position": "bottom-center"
+      },
+      {
+        "label": "해양환경정보 분석 및 활용 체계화",
+        "description": null,
+        "position": "bottom-right"
+      }
+    ],
+    "sections": null
+  },
+  "footer": "KOEM 해양환경공단"
+}

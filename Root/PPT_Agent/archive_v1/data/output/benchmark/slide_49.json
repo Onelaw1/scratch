@@ -1,0 +1,45 @@
+{
+  "slide_type": "Data",
+  "slide_number": 49,
+  "title": "1. 외부 환경분석 - 외부 환경분석 종합",
+  "governing_message": "외부 환경변화 요인의 각 사업부문별 영향(기회/위협)은 다음과 같이 분류해 볼 수 있음",
+  "layout": {
+    "grid_type": "custom",
+    "background_color": null
+  },
+  "content_data": {
+    "subtitle": null,
+    "date": null,
+    "client_name": null,
+    "framework_type": null,
+    "elements": null,
+    "sections": [
+      {
+        "title": null,
+        "blocks": [
+          {
+            "block_type": "table",
+            "content": "The table shows an external environment analysis, categorizing factors and their potential impact (opportunity/threat) across various business sectors. The rows represent factors grouped under Policy, Economy, Society, Technology, and Environment/Industry. Columns represent potential impacts: Preservation, Prevention, Marine(Expected), Research, and Future Growth.",
+            "position": "full-width",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "Policy:\n- 5th Marine Environment Comprehensive Plan Implementation: Opportunity across all impact areas.\n- Korean New Deal (Digital, Green, Safety) Promotion: Opportunity across all impact areas.\n- Continuous Strengthening of Climate Change Response and Carbon Neutrality (Carbon Neutrality 2050): Opportunity across all impact areas.\n- 2030 Eco-Friendly Ship Promotion Strategy: Proactive Eco-Friendly Ship Transition Policy for the Public Sector: Threat in Preservation and Prevention.\n- Reorganization of the National Marine Disaster Prevention System: Transition to Joint Response System with Private Sector (Led by Corporation): Opportunity in Preservation; Neutral in Marine(Expected).\n\nEconomy:\n- Continued Trend of Low Growth and High Unemployment (New Normal): Neutral in Preservation; Threat in Marine(Expected); Neutral in Future Growth.\n- Decrease in Port Cargo Volume Due to COVID-19 and Economic Growth Decline: Threat in Prevention and Marine(Expected).\n- Increase in Business Failures and Small Business Closures Leading to Income Disparities: Threat in Marine(Expected); Opportunity in Future Growth.\n\nSociety:\n- Low Birth Rate, Increased Elderly Population Ratio, etc., Leading to Changes in Population Structure: Neutral in Preservation; Neutral in Future Growth.\n- Continued Population Decline in Coastal Areas and Aging in Rural Fishing Villages: Neutral in Preservation; Opportunity in Future Growth.\n- Non-Face-to-Face and Digital Consumption Pattern Changes Due to COVID-19: Threat in Preservation.\n\nTechnology:\n- Development and Commercialization of New Technologies such as Autonomous Vessels, AI, IoT, 5G: Neutral in Preservation; Opportunity in Prevention; Threat in Marine(Expected); Neutral in Research; Opportunity in Future Growth.\n- Acceleration of Digital Transformation Due to COVID-19: Neutral in Preservation and Prevention; Opportunity in Research and Future Growth.\n- Acceleration of Marine Environment Informatization and New Technology Application: Opportunity across all impact areas.\n\nEnvironment/Industry:\n- Changes in Trends and Issues Related to Marine Environment, such as New Pollutants: Opportunity in Preservation and Prevention; Neutral in Research; Opportunity in Future Growth.\n- Strengthening Research and Policy Interest in Blue Carbon: Opportunity across all impact areas.\n- Increased Influence of International Agreements and International Organizations Related to Marine Environment: Neutral in Preservation; Opportunity in Future Growth.",
+            "position": "full-width",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "footer": null
+}

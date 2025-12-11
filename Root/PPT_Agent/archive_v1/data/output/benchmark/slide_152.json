@@ -1,0 +1,130 @@
+{
+  "slide_type": "Framework",
+  "slide_number": 152,
+  "title": "3. 전략목표·전략과제 수립 - W-O전략 : 기회요인 활용을 위한 역량확보",
+  "governing_message": "약점과 기회요인을 결합하여 기회요인을 활용하기 위해 필요한 역량과 자원을 확보하는 W-O 기회를 위한 역량과\n자산 확보 전략 과제를 다음과 같이 도출함",
+  "layout": {
+    "grid_type": "custom",
+    "background_color": "#FFFFFF"
+  },
+  "content_data": {
+    "subtitle": null,
+    "date": null,
+    "client_name": null,
+    "framework_type": "2x2",
+    "elements": [
+      {
+        "label": "기회요인 (Opportunities)",
+        "description": "제5차 해양환경종합계획 시행",
+        "position": "bottom-left"
+      },
+      {
+        "label": "기회요인 (Opportunities)",
+        "description": "한국판 뉴딜(디지털, 그린, 안전망) 추진",
+        "position": "bottom-left"
+      },
+      {
+        "label": "기회요인 (Opportunities)",
+        "description": "기후변화대응·탄소중립 중요성 지속 강화",
+        "position": "bottom-left"
+      },
+      {
+        "label": "기회요인 (Opportunities)",
+        "description": "해양환경 관련 국제협약, 국제기구 영향력 증가",
+        "position": "bottom-left"
+      },
+      {
+        "label": "기회요인 (Opportunities)",
+        "description": "코로나19로 인한 디지털전환 가속화",
+        "position": "bottom-left"
+      },
+      {
+        "label": "기회요인 (Opportunities)",
+        "description": "국가 해양방제체계 개편",
+        "position": "bottom-left"
+      },
+      {
+        "label": "기회요인 (Opportunities)",
+        "description": "연안지역 인구감소 및 어촌 노령화 지속",
+        "position": "bottom-left"
+      },
+      {
+        "label": "약점요인 (Weakness)",
+        "description": "수익성 악화와 높은 인건비 비중으로 인한 재정 위기",
+        "position": "top-right"
+      },
+      {
+        "label": "약점요인 (Weakness)",
+        "description": "단위사업의 낮은 연속성",
+        "position": "top-right"
+      },
+      {
+        "label": "약점요인 (Weakness)",
+        "description": "단기성과 중심 사업관리 및 의사결정 성향",
+        "position": "top-right"
+      },
+      {
+        "label": "약점요인 (Weakness)",
+        "description": "해양환경 정책 연구·입안 역량 부족",
+        "position": "top-right"
+      },
+      {
+        "label": "약점요인 (Weakness)",
+        "description": "미래성장사업 투자를 위한 재원 부족",
+        "position": "top-right"
+      },
+      {
+        "label": "약점요인 (Weakness)",
+        "description": "부서간 정보공유 및 의사소통 부족",
+        "position": "top-right"
+      },
+      {
+        "label": "약점요인 (Weakness)",
+        "description": "기관에 대한 낮은 외부 인지도",
+        "position": "top-right"
+      },
+      {
+        "label": "W-O전략",
+        "description": "해양환경 정책기능 강화",
+        "position": "bottom-right"
+      },
+      {
+        "label": "W-O전략",
+        "description": "신규(미래)사업 연속성 및 규모 확보",
+        "position": "bottom-right"
+      },
+      {
+        "label": "W-O전략",
+        "description": "지역조직(지사, 사무소) 기능·역할 확대",
+        "position": "bottom-right"
+      },
+      {
+        "label": "W-O전략",
+        "description": "내부 인재육성 및 전문성 강화",
+        "position": "bottom-right"
+      },
+      {
+        "label": "W-O전략",
+        "description": "해양환경 분야 정책협력네트워크 강화",
+        "position": "bottom-right"
+      },
+      {
+        "label": "W-O전략",
+        "description": "디지털전환 적용 의사소통과 정보공유 혁신",
+        "position": "bottom-right"
+      },
+      {
+        "label": "W-O전략",
+        "description": "해양환경 보전 및 오염예방 국민인식 개선",
+        "position": "bottom-right"
+      },
+      {
+        "label": "W-O전략",
+        "description": "해안·어촌 활성화 뉴딜 사업 발굴, 추진",
+        "position": "bottom-right"
+      }
+    ],
+    "sections": null
+  },
+  "footer": ""
+}

@@ -1,0 +1,75 @@
+{
+  "slide_type": "Data",
+  "slide_number": 69,
+  "title": "2. 내부 환경·역량 분석 - 인사제도 및 운영 진단 (4/4)",
+  "governing_message": "배치·경력관리, 교육훈련을 진단해보면 순환보직과 CDP 부재, 역량개발을 위한 교육훈련에 대한 투자의 감소 등으로 인력의 전문성이 저하되고 있는 이슈가 나타남",
+  "layout": {
+    "grid_type": "custom",
+    "background_color": "#FFFFFF"
+  },
+  "content_data": {
+    "subtitle": null,
+    "date": null,
+    "client_name": null,
+    "framework_type": null,
+    "elements": null,
+    "sections": [
+      {
+        "title": "인사운영 진단",
+        "blocks": [
+          {
+            "block_type": "text",
+            "content": "• 순환보직으로 인해 전문 실무직, 연구직, 전문직, 기술직 등의 전문성 저하\n• 직원 역량강화를 위한 CDP(경력개발제도) 부족\n• 인재개발계획, 경력개발계획에 따르지 않는 보직배치와 인력운영 빈번히 발생함",
+            "position": "top-right",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "• 팀별로 직무 내 교육(OJT) 위주로 교육 훈련 수행\n• 직원 업무역량 강화를 위한 교육과정과 교육훈련 투자는 계속 감소되고 있음\n- '18년 이후 인력은 31명(4.6%) 증가하였으나, 교육훈련비는 6.2억(27.7%) 감소",
+            "position": "bottom-right",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          }
+        ]
+      },
+      {
+        "title": "보직 및 경력관리의 중요성",
+        "blocks": [
+          {
+            "block_type": "image",
+            "content": "Diagram showing relationships between Strategy, Job, Organization, Value Creation, and People",
+            "position": "center",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          }
+        ]
+      },
+      {
+        "title": "공단 교육훈련비 지출 내역 (단위: 백만원)",
+        "blocks": [
+          {
+            "block_type": "table",
+            "content": "Education & Training Expenses\nItem\t2018\t2019\t2020\nBusiness\t1,858\t1,545\t1,494\nManagement\t395\t335\t136\nTotal\t2,254\t1,880\t1,629",
+            "position": "bottom-right",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "footer": "Ⅱ. 내·외부 환경분석"
+}

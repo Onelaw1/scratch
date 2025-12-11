@@ -1,0 +1,175 @@
+{
+  "slide_type": "Content",
+  "slide_number": 25,
+  "title": "1. 외부 환경분석 - 디지털 뉴딜 추진전략 분석 (1/4)",
+  "governing_message": "D.N.A 생태계 강화는 공공데이터 개방 및 빅데이터 구축, 全산업 디지털 전환 및 新시장 창출 촉진의 추진으로\n해양환경정보 관리사업, 해양환경 산업 정보화 등 해양환경 관련 디지털·정보화 사업의 확대가 예상됨",
+  "layout": {
+    "grid_type": "custom",
+    "background_color": "white"
+  },
+  "content_data": {
+    "subtitle": null,
+    "date": null,
+    "client_name": null,
+    "framework_type": null,
+    "elements": null,
+    "sections": [
+      {
+        "title": "디지털 뉴딜 추진전략 ① D.N.A 생태계 강화",
+        "blocks": [
+          {
+            "block_type": "text",
+            "content": "D.N.A. 생태계 강화\n~22: 12.5조 원\n~25: 31.9조 원",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "1 국민생활 밀접 분야 데이터 구축·개방·활용\n~'25: 6.4조원\n• 공공데이터 개방·연계 확대\n• 생활밀접분야의 빅데이터 구축 및 활용 확대",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "2 1·2·3차 全산업으로 5G·AI 융합 확산\n~'25: 14.8조원\n• 5G 기반 융합서비스 확산\n• 디지털 혁신기업 육성 및 산업의 디지털 전환",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "3 5G·AI 기반 지능형 정부\n~'25: 9.7조원\n• 비대면 공공서비스 및 맞춤행정 제공\n• 5G 국가망 단계적 구축\n• 25개 분야 핵심서비스의 클라우드 전환 지원",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "4 K-사이버 방역체계 구축\n~'25: 1.0조원\n• 기업의 사이버 위협 예방·진단·대응 기반 강화\n• 사이버보안 산업 생태계 구축",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "교육 인프라\n디지털 전환",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "비대면 산업\n육성",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "SOC 디지털화",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          }
+        ]
+      },
+      {
+        "title": "全산업 디지털 전환 촉진 계획",
+        "blocks": [
+          {
+            "block_type": "text",
+            "content": "全산업의 디지털 전환 및 新시장 창출 촉진을 위해 산업현장에 5G·AI\n기술을 접목하는 융합프로젝트 추진",
+            "position": "top-right",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "5G 융합 확산\n실감·신유형 콘텐츠,\n자율주행차·선박,\n공공서비스",
+            "position": "top-right",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "AI 활용 확대\n스마트공장·건설 로봇·의료\n스마트팜·양식",
+            "position": "top-right",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "융복합",
+            "position": "top-right",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "디지털 혁신기업 육성\n스마트 대한민국펀드 + 차세대 혁신기술 + AI 바우처",
+            "position": "top-right",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          }
+        ]
+      },
+      {
+        "title": "Key Findings",
+        "blocks": [
+          {
+            "block_type": "text",
+            "content": "✓ 국가해양환경정보 통합관리에 관한 규정에 따른\n해양환경정보 관리 사업 성장, 확대 예상\n✓ 해양 빅데이터 분석 시스템 구축과 5G·AI를 활용한\n해양환경 산업 정보화 관련 사업기회 확대 전망\n✓ AI, 5G를 활용한 해양환경정보 신사업 창출 가능",
+            "position": "bottom-right",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "footer": "*Source: 한국판 뉴딜 종합계획, 관계부처 합동 (2020.07)"
+}

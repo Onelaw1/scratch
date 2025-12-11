@@ -1,0 +1,35 @@
+{
+  "slide_type": "Data",
+  "slide_number": 178,
+  "title": "4. 경영목표 수립 - 기후변화대응 지표 선정",
+  "governing_message": "해양 기후변화대응과 탄소중립 부문의 경영목표 지표 Pool 중, 해양기인 탄소중립 달성도, 연간 블루카본 생산 증가를 적용 가능한 적정 지표로 선정함",
+  "layout": {
+    "grid_type": "custom",
+    "background_color": "#FFFFFF"
+  },
+  "content_data": {
+    "subtitle": null,
+    "date": null,
+    "client_name": null,
+    "framework_type": null,
+    "elements": null,
+    "sections": [
+      {
+        "title": "경영목표 지표 Pool ⑧ 해양 기후변화대응, 탄소중립",
+        "blocks": [
+          {
+            "block_type": "table",
+            "content": "The slide contains a table outlining key performance indicators (KPIs) related to climate change adaptation and carbon neutrality within the marine sector. The table is structured with columns for category, blue carbon indicators, infrastructure indicators, carbon neutrality indicators, unit project indicators, and port/air quality indicators. The rows define the KPI candidates, their calculation methods, and an assessment of the indicators based on the SMART criteria (Specific, Measurable, Achievable, Relevant, Time-bound). The overall takeaway is the strategic alignment of these KPIs with the overarching goals of climate change mitigation and sustainable development within the marine environment.",
+            "position": "full-width",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 10
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "footer": "KOEM 해양환경공단"
+}

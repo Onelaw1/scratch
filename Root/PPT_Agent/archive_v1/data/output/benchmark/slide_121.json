@@ -1,0 +1,245 @@
+{
+  "slide_type": "Content",
+  "slide_number": 121,
+  "title": "2. 가치체계·전략체계 재정립 - 미션 후보 도출 (1/5)",
+  "governing_message": "전략 방향성으로부터 미션 구성 키워드를 추출하여 미션 후보 “깨끗하고 안전한 바다로 국민 행복을 증진하고, 해양의 더 나은 미래를 열어간다”를 아래와 같이 도출함",
+  "layout": {
+    "grid_type": "custom",
+    "background_color": "white"
+  },
+  "content_data": {
+    "subtitle": null,
+    "date": null,
+    "client_name": null,
+    "framework_type": null,
+    "elements": null,
+    "sections": [
+      {
+        "title": "전략 방향성",
+        "blocks": [
+          {
+            "block_type": "text",
+            "content": "1. 해양 방제 기본역량 강화",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "black",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "2. 공적기능과 공공성 강화",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "black",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "3. 해양생태 통합관리체계 확장",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "black",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "4. 해양폐기물 정화·관리체계 강화",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "black",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "5. 해양환경변화 예측역량 강화",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "black",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "6. 해양환경 정책기능 강화",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "black",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "7. 미래성장사업 규모의 경제 실현",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "black",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "8. 해양환경 국민 플랫폼으로 성장",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "black",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "9. 해양 신산업 육성 기반조성",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "black",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "10. 해양 기후변화·탄소중립 주도",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "black",
+              "font_size": 12
+            }
+          }
+        ]
+      },
+      {
+        "title": "미션 구성 키워드",
+        "blocks": [
+          {
+            "block_type": "text",
+            "content": "사업 범위",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "black",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "깨끗한, 안전한, 바다, 해양",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "black",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "고객·수혜자",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "black",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "국민, 미래",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "black",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "효과·효용",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "black",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "(국민) 행복, 더 나은",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "black",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "주요 가치",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "black",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "해양(환경) 개선·보전",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "black",
+              "font_size": 12
+            }
+          }
+        ]
+      },
+      {
+        "title": "미션 후보(案)",
+        "blocks": [
+          {
+            "block_type": "text",
+            "content": "“깨끗하고 안전한 바다로\n국민 행복을 증진하고,\n해양의 더 나은 미래를\n열어간다\"",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "black",
+              "font_size": 14
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "[설명]\n• 해양 방제·정화·보전으로 해양의\n  이용·향유를 통한 국민행복 증진\n• 해양환경 정책기능 강화와 기후 변화\n  대응 등 해양환경의 개선과\n  미래세대에 전하는 근본 존재이유",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "black",
+              "font_size": 10
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "[특징·장점]\n• '깨끗한', '안전한'으로 사업범위를\n  포괄적으로 표현함\n• 현재 역할과 미래를 위한 공단의\n  근원 기능을 내포함",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "black",
+              "font_size": 10
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "footer": "120"
+}

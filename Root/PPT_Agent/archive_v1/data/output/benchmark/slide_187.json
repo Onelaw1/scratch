@@ -1,0 +1,75 @@
+{
+  "slide_type": "Data",
+  "slide_number": 187,
+  "title": "4. 경영목표 수립 - 경영목표 설정 ② 갯벌복원 면적 (1/2)",
+  "governing_message": "갯벌복원 면적(누적) 목표는 기존 갯벌복원 사업의 추진 경과와 제5차 해양환경종합계획의 국가 목표를 반영하여 누적 복원면적을 '25년 4.5m², '30년 10.0㎢로 가속해서 증가시키는 것으로 연도별 목표를 구간별로 설정함",
+  "layout": {
+    "grid_type": "custom",
+    "background_color": "#FFFFFF"
+  },
+  "content_data": {
+    "subtitle": null,
+    "date": null,
+    "client_name": null,
+    "framework_type": null,
+    "elements": null,
+    "sections": [
+      {
+        "title": "목표 설정 방식",
+        "blocks": [
+          {
+            "block_type": "text",
+            "content": "✓ 갯벌복원 면적 목표설정은 제5차\n해양환경종합계획의 국가 목표를\n반영하여 '25년, '30년 복원면적 누적 목표를\n달성하기 위한 연간 목표를 설정함\n✓ '20년부터 '25년까지는 '25년 4.5m² 목표\n달성을 위해 연간 0.6m²를 매년 복원하는\n것으로 목표를 수립함\n✓ '26~'30년은 '25년부터 갯벌복원의 속도를\n가속하여 '30년 10.0m² 국가목표 달성을\n위해 연간 1.0~1.2m²를 매년 복원하는\n것으로 복원속도를 가속하는 것으로 목표를\n설정함",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          }
+        ]
+      },
+      {
+        "title": "지표",
+        "blocks": [
+          {
+            "block_type": "table",
+            "content": "||'20|'21|'22|'23|'24|'25|'26|'27|'28|'29|'30|\n|---|---|---|---|---|---|---|---|---|---|---|---|\n|갯벌복원 면적 (누적, km²)|1.5|2.1|2.7|3.3|3.9|4.5|5.5|6.5|7.6|8.8|10.0|",
+            "position": "center",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          }
+        ]
+      },
+      {
+        "title": "제5차 해양환경종합계획 국가목표",
+        "blocks": [
+          {
+            "block_type": "text",
+            "content": "'21년부터 '25년까지 年 0.6km²\n갯벌복원사업 실시하여 '25년\n◆ 누적 갯벌복원 목표인 4.5km²를\n달성하는 기준으로 연간 0.6km²\n갯벌복원 사업 시행 목표 수립",
+            "position": "bottom-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "'26년부터 '30년까지는 기존\n갯벌복원에 비해 가속된\n갯벌복원 사업 실시로, 연간\n1.0~1.2m²의 갯벌을 복원해 '30년\n10.0km² 갯벌복원 누적 목표를\n달성하도록 경영목표 수립",
+            "position": "bottom-right",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "footer": "KOEM 해양환경공단"
+}

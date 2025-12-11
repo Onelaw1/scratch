@@ -1,0 +1,295 @@
+{
+  "slide_type": "Data",
+  "slide_number": 196,
+  "title": "4. 경영목표 수립 - 경영목표 설정 ⑤ 미래성장 매출액 비중 (2/2)",
+  "governing_message": "미래성장 관련 경영목표로 미래사업의 매출액, 매출액 비중, 투자액 및 투자액 비중, 사업성과 등이 있으며, 공단은 해양환경 영역의 확장에 따른 지속 성장을 적절히 반영할 수 있는 매출비중을 채용하여 목표를 설정함",
+  "layout": {
+    "grid_type": "custom",
+    "background_color": "#FFFFFF"
+  },
+  "content_data": {
+    "subtitle": null,
+    "date": null,
+    "client_name": null,
+    "framework_type": null,
+    "elements": null,
+    "sections": [
+      {
+        "title": "신성장 지표",
+        "blocks": [
+          {
+            "block_type": "text",
+            "content": "매출액",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          }
+        ]
+      },
+      {
+        "title": "지표 형태",
+        "blocks": [
+          {
+            "block_type": "text",
+            "content": "• 신사업, 미래성장사업, 그린사업, 해외사업, 뉴딜사업 등 신성장 사업 매출 금액 목표\n• 억원 또는 조원 단위로 직접 매출액 목표 지정",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          }
+        ]
+      },
+      {
+        "title": "미래성장(사업) 목표 유형 및 사례",
+        "blocks": [
+          {
+            "block_type": "text",
+            "content": "특성 및 장단점\n• 목표가 명료하나 기업 규모에 따른 매출 편차로 미래성장사업에 대한 중요도를 판단하기는 어려움\n• 사업환경에 따라 매년 목표를 수정해야 함",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "공기업 및 해수부 산하 기관 채용 사례\n• 한국지역난방공사 신사업매출 5,000억원\n• 강원랜드 리조트및신사업매출 3,000억원\n• 한국서부발전 뉴딜신사업매출액 0.5조원\n• 한국남부발전 신성장매출 3.3조원",
+            "position": "top-right",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          }
+        ]
+      },
+      {
+        "title": "신성장 지표",
+        "blocks": [
+          {
+            "block_type": "text",
+            "content": "매출비중",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          }
+        ]
+      },
+      {
+        "title": "지표 형태",
+        "blocks": [
+          {
+            "block_type": "text",
+            "content": "• 신성장·미래사업 비중, 신사업·미래사업 매출비율 등 총매출 대비 신성장 및 미래사업 매출의 비중 목표\n• 비중 또는 비율 00%로 설정",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          }
+        ]
+      },
+      {
+        "title": "미래성장(사업) 목표 유형 및 사례",
+        "blocks": [
+          {
+            "block_type": "text",
+            "content": "• 미래성장사업에 대한 중요도 및 비중으로 중요도를 판단해 볼 수 있으나, 신설 또는 성장기 조직과 안정기 조직의 편차 있음\n• 미래성장사업에 대한 전략적 추진 반영",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "• 울산항만공사 신사업매출액비중 10%\n• 한국어촌어항공단 미래사업매출액비율 80%\n• 한국전력기술 신성장·미래사업비중 45%",
+            "position": "top-right",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          }
+        ]
+      },
+      {
+        "title": "신성장 지표",
+        "blocks": [
+          {
+            "block_type": "text",
+            "content": "투자액",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          }
+        ]
+      },
+      {
+        "title": "지표 형태",
+        "blocks": [
+          {
+            "block_type": "text",
+            "content": "• 신사업, 미래사업 및 인프라 투자규모(투자금액) 목표\n• 억원 또는 조원 단위 투자금액 목표 지정",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          }
+        ]
+      },
+      {
+        "title": "미래성장(사업) 목표 유형 및 사례",
+        "blocks": [
+          {
+            "block_type": "text",
+            "content": "• 미래성장 또는 미래성장을 위한 자산과 자원에 대한 투자 금액으로 명료하나, 투입지표 특성을 가짐",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "• 여수광양항만공사 스마트항만투자 1.2조원",
+            "position": "top-right",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          }
+        ]
+      },
+      {
+        "title": "신성장 지표",
+        "blocks": [
+          {
+            "block_type": "text",
+            "content": "투자비중",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          }
+        ]
+      },
+      {
+        "title": "지표 형태",
+        "blocks": [
+          {
+            "block_type": "text",
+            "content": "• 미래성장사업 투자비중 등 전체 투자규모 중 신성장·미래사업 투자 비중 목표\n• 비중 또는 비율 00%로 설정",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          }
+        ]
+      },
+      {
+        "title": "미래성장(사업) 목표 유형 및 사례",
+        "blocks": [
+          {
+            "block_type": "text",
+            "content": "• 미래성장에 대한 중요도를 판단해 볼 수 있는 지표이나, 투입지표 특성을 가짐\n• 투자 규모에 따라 변동이 큼",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "• 부산항만공사 미래성장사업 투자비중 5%\n• 한국남부발전 미래성장투자비율 60%",
+            "position": "top-right",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          }
+        ]
+      },
+      {
+        "title": "신성장 지표",
+        "blocks": [
+          {
+            "block_type": "text",
+            "content": "사업성과",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          }
+        ]
+      },
+      {
+        "title": "지표 형태",
+        "blocks": [
+          {
+            "block_type": "text",
+            "content": "• 사업 진행률, 인프라 구축 성과 등 신규 및 미래성장사업 추진 성과목표\n• 추진률 %, 인프라 구축 단위 목표 설정",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          }
+        ]
+      },
+      {
+        "title": "미래성장(사업) 목표 유형 및 사례",
+        "blocks": [
+          {
+            "block_type": "text",
+            "content": "• 특정 사업의 추진이나 자산의 구축에 대한 목표로, 핵심자원의 확보 성과를 나타냄\n• 특정 지표로 보편적 비교 어려움",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "• 한국도로공사 C-ITS 전국 4,075km 구축\n• (주)에스알 SR형 철도뉴딜 추진 43.67%",
+            "position": "top-right",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "footer": "Ⅲ. 가치체계·전략체계 재정립"
+}

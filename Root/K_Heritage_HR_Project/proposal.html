@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>국가문화유산진흥원 인사평가 시스템 제안서</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap');
+
+        :root {
+            --primary: #0055FF;
+            --secondary: #0A192F;
+            --accent: #00D4FF;
+            --text: #1F2937;
+            --text-light: #6B7280;
+            --bg: #FFFFFF;
+            --glass: rgba(255, 255, 255, 0.7);
+            --gradient: linear-gradient(135deg, #0055FF 0%, #00D4FF 100%);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Inter', 'Noto Sans KR', sans-serif;
+            color: var(--text);
+            background: #F3F4F6;
+            line-height: 1.6;
+            -webkit-print-color-adjust: exact;
+            print-color-adjust: exact;
+        }
+
+        .page {
+            width: 210mm;
+            height: 297mm;
+            padding: 20mm;
+            margin: 20px auto;
+            background: white;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            position: relative;
+            overflow: hidden;
+            page-break-after: always;
+        }
+
+        @media print {
+            body {
+                background: none;
+            }
+
+            .page {
+                margin: 0;
+                box-shadow: none;
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        /* Typography */
+        h1 {
+            font-size: 36pt;
+            font-weight: 900;
+            letter-spacing: -1px;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            font-size: 24pt;
+            font-weight: 700;
+            color: var(--secondary);
+            margin-bottom: 30px;
+            border-bottom: 3px solid var(--primary);
+            display: inline-block;
+            padding-bottom: 10px;
+        }
+
+        h3 {
+            font-size: 16pt;
+            font-weight: 600;
+            color: var(--primary);
+            margin-bottom: 15px;
+            margin-top: 20px;
+        }
+
+        p {
+            font-size: 11pt;
+            color: var(--text-light);
+            margin-bottom: 10px;
+            text-align: justify;
+        }
+
+        /* Cover Page */
+        .cover {
+            background: var(--secondary);
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            position: relative;
+        }
+
+        .cover::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background: radial-gradient(circle at 80% 20%, rgba(0, 212, 255, 0.3) 0%, transparent 50%);
+        }
+
+        .cover h1 {
+            font-size: 48pt;
+            line-height: 1.2;
+            margin-bottom: 40px;
+            background: var(--gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .cover .subtitle {
+            font-size: 18pt;
+            opacity: 0.8;
+            font-weight: 300;
+            border-left: 4px solid var(--accent);
+            padding-left: 20px;
+        }
+
+        .cover .meta {
+            position: absolute;
+            bottom: 20mm;
+            left: 20mm;
+            font-size: 12pt;
+            opacity: 0.6;
+        }
+
+        /* Components */
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .card {
+            background: #F9FAFB;
+            padding: 20px;
+            border-radius: 12px;
+            border: 1px solid #E5E7EB;
+        }
+
+        .card h4 {
+            color: var(--secondary);
+            margin-bottom: 10px;
+            font-size: 12pt;
+            font-weight: 700;
+        }
+
+        .highlight-box {
+            background: linear-gradient(135deg, rgba(0, 85, 255, 0.05) 0%, rgba(0, 212, 255, 0.05) 100%);
+            border-left: 5px solid var(--primary);
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 0 8px 8px 0;
+        }
+
+        /* UI Mockup Placeholder */
+        .mockup-container {
+            background: #111;
+            border-radius: 12px;
+            padding: 10px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+            margin: 30px 0;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .mockup-screen {
+            background: #fff;
+            border-radius: 8px;
+            height: 300px;
+            position: relative;
+            display: flex;
+        }
+
+        .sidebar {
+            width: 20%;
+            background: #F3F4F6;
+            border-right: 1px solid #eee;
+            padding: 15px;
+        }
+
+        .main-content {
+            width: 80%;
+            padding: 20px;
+        }
+
+        .skeleton-line {
+            height: 10px;
+            background: #eee;
+            margin-bottom: 10px;
+            border-radius: 4px;
+        }
+
+        .skeleton-chart {
+            height: 150px;
+            background: linear-gradient(to top, #E0F2FE 0%, #fff 100%);
+            border-radius: 8px;
+            border: 1px dashed #BAE6FD;
+            display: flex;
+            align-items: flex-end;
+            justify-content: space-around;
+            padding-bottom: 10px;
+        }
+
+        .bar {
+            width: 10%;
+            background: var(--primary);
+            border-radius: 4px 4px 0 0;
+            opacity: 0.7;
+        }
+
+        /* Table */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            font-size: 10pt;
+        }
+
+        th {
+            background: var(--secondary);
+            color: white;
+            padding: 12px;
+            text-align: left;
+        }
+
+        td {
+            border-bottom: 1px solid #E5E7EB;
+            padding: 12px;
+        }
+
+        tr:nth-child(even) {
+            background: #F9FAFB;
+        }
+
+        /* Footer */
+        .footer {
+            position: absolute;
+            bottom: 10mm;
+            right: 20mm;
+            font-size: 9pt;
+            color: #9CA3AF;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Page 1: Cover -->
+    <div class="page cover">
+        <div class="subtitle">국가문화유산진흥원</div>
+        <h1>인사평가 제도 개선<br>및 시스템 구축 제안서</h1>
+        <div style="margin-top: 50px;">
+            <p style="color:white; opacity: 0.9;">KOstrar 기법 기반의 맞춤형 HR 솔루션</p>
+        </div>
+        <div class="meta">
+            <p>2025. 12. 09.</p>
+            <p>제안사: Antigravity Solutions</p>
+        </div>
+    </div>
+
+    <!-- Page 2: Executive Summary -->
+    <div class="page">
+        <h2>I. 제안 개요 (Executive Summary)</h2>
+
+        <div class="highlight-box">
+            <h3>"공정하고 투명한 인사 혁신, 시스템으로 완성하다"</h3>
+            <p>우리는 진흥원의 인사평가 제도를 <strong>'공정성(Fairness)', '수용성(Acceptability)', '효율성(Efficiency)'</strong>의 3대 핵심 가치를
+                중심으로 혁신합니다.</p>
+        </div>
+
+        <h3>1. 추진 배경</h3>
+        <p>급변하는 대내외 환경 속에서 조직의 지속 가능한 성장을 위해서는 데이터 기반의 객관적인 성과 관리와 구성원이 납득할 수 있는 공정한 평가 체계가 필수적입니다.</p>
+
+        <h3>2. 핵심 전략 (Key Selling Points)</h3>
+        <div class="card-grid">
+            <div class="card">
+                <h4>01. Apple-Style UX</h4>
+                <p>직관적이고 아름다운 UI로 평가자의 피로도를 최소화하고 몰입도를 극대화합니다.</p>
+            </div>
+            <div class="card">
+                <h4>02. HR Analytics</h4>
+                <p>단순 점수 산출을 넘어, 개인과 조직의 역량을 시각적으로 분석하는 대시보드를 제공합니다.</p>
+            </div>
+            <div class="card">
+                <h4>03. 무결점 보안</h4>
+                <p>금융권 수준의 암호화 및 2-Factor 인증으로 민감한 인사 데이터를 완벽하게 보호합니다.</p>
+            </div>
+        </div>
+        <div class="footer">Page 1</div>
+    </div>
+
+    <!-- Page 3: Technical Solution -->
+    <div class="page">
+        <h2>II. 기술 부문 (Technical Solution)</h2>
+
+        <h3>1. HR Analytics Dashboard</h3>
+        <p>관리자가 전사의 평가 진행 현황과 역량 수준을 한눈에 파악할 수 있는 직관적인 대시보드입니다.</p>
+
+        <!-- CSS Mockup -->
+        <div class="mockup-container">
+            <div class="mockup-screen">
+                <div class="sidebar">
+                    <div class="skeleton-line" style="width: 60%"></div>
+                    <div class="skeleton-line" style="width: 80%"></div>
+                    <div class="skeleton-line" style="width: 70%"></div>
+                </div>
+                <div class="main-content">
+                    <div style="display:flex; justify-content:space-between; margin-bottom: 20px;">
+                        <div style="width:30%; height: 60px; background:#F3F4F6; border-radius:8px;"></div>
+                        <div style="width:30%; height: 60px; background:#F3F4F6; border-radius:8px;"></div>
+                        <div style="width:30%; height: 60px; background:#F3F4F6; border-radius:8px;"></div>
+                    </div>
+                    <div class="skeleton-chart">
+                        <div class="bar" style="height: 40%"></div>
+                        <div class="bar" style="height: 70%"></div>
+                        <div class="bar" style="height: 50%"></div>
+                        <div class="bar" style="height: 90%"></div>
+                        <div class="bar" style="height: 60%"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h3>2. 시스템 아키텍처</h3>
+        <p>클라우드 네이티브 환경을 고려한 유연하고 확장 가능한 아키텍처를 적용합니다.</p>
+        <ul>
+            <li><strong>Frontend:</strong> React / Next.js (SPA)</li>
+            <li><strong>Backend:</strong> Python FastAPI (RESTful API)</li>
+            <li><strong>Database:</strong> PostgreSQL (High Performance)</li>
+        </ul>
+        <div class="footer">Page 2</div>
+    </div>
+
+    <!-- Page 4: Schedule -->
+    <div class="page">
+        <h2>III. 사업 수행 일정 (Schedule)</h2>
+
+        <p>2025년 1월부터 9월까지, 총 9개월간의 체계적인 수행 일정을 제안합니다.</p>
+
+        <table>
+            <thead>
+                <tr>
+                    <th width="20%">구분</th>
+                    <th>1월</th>
+                    <th>2월</th>
+                    <th>3월</th>
+                    <th>4월</th>
+                    <th>5월</th>
+                    <th>6월</th>
+                    <th>7월</th>
+                    <th>8월</th>
+                    <th>9월</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>제도 개선</strong></td>
+                    <td style="background:#E0F2FE">분석</td>
+                    <td style="background:#E0F2FE">설계</td>
+                    <td style="background:#BAE6FD">확정</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><strong>시스템 구축</strong></td>
+                    <td style="background:#E0F2FE">개발</td>
+                    <td style="background:#E0F2FE">테스트</td>
+                    <td style="background:#BAE6FD">오픈</td>
+                    <td style="background:#F0F9FF">안정화</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><strong>역량평가(25H)</strong></td>
+                    <td style="background:#DBEAFE">운영</td>
+                    <td style="background:#BFDBFE">결과</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><strong>다면평가</strong></td>
+                    <td></td>
+                    <td style="background:#DBEAFE">운영</td>
+                    <td style="background:#BFDBFE">결과</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><strong>보직자평가</strong></td>
+                    <td></td>
+                    <td></td>
+                    <td style="background:#F3F4F6">준비</td>
+                    <td style="background:#DBEAFE">운영</td>
+                    <td style="background:#BFDBFE">결과</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><strong>최종보고</strong></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td style="background:#1E40AF; color:white;">보고</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="highlight-box" style="margin-top: 50px;">
+            <h3>성공적인 사업 수행을 약속합니다.</h3>
+            <p>검증된 기술력과 풍부한 경험을 바탕으로 국가문화유산진흥원의 인사 혁신을 완수하겠습니다.</p>
+        </div>
+        <div class="footer">Page 3</div>
+    </div>
+
+</body>
+
+</html>

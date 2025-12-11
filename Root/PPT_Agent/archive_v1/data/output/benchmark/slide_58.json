@@ -1,0 +1,210 @@
+{
+  "slide_type": "Content",
+  "slide_number": 58,
+  "title": "2. 내부 환경·역량 분석 - 경영목표 변화",
+  "governing_message": "공단은 정부 정책과 경영평가를 반영하여 매년 경영목표를 조정해 왔으며, 현재의 경영목표는 4개로 간소화 하면서\n공단 자체적으로 제정한 보편적으로 사용되지 않는 지표를 채용하여 외부 관점에서는 목표의 모호성이 커짐",
+  "layout": {
+    "grid_type": "custom",
+    "background_color": "#FFFFFF"
+  },
+  "content_data": {
+    "subtitle": null,
+    "date": null,
+    "client_name": null,
+    "framework_type": null,
+    "elements": null,
+    "sections": [
+      {
+        "title": "경영목표 변화 분석 : 세분화 목표 → 통합 간소화",
+        "blocks": [
+          {
+            "block_type": "text",
+            "content": "2018년 사업계획",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "• 성장일자리 1,100명\n• 미래 성장매출액 1,600억원\n• 해양오염사고 예방율 40% 이하\n• 해양오염사고 방제율 50% 이상\n• 고객만족도 우수\n• KOBEX AAA\n• 비정규직 Zero",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          }
+        ]
+      },
+      {
+        "title": null,
+        "blocks": [
+          {
+            "block_type": "text",
+            "content": "2019년 사업계획",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "• 해양보호구역 39개소 지정·관리\n• 특별관리해역수질 2등급 이상 100%\n• 해양오염사고 예방률 65% 이상\n• 침몰선박 위해도 조사 100%\n• 미래성장 매출액 1,100억 원\n• 양질의 일자리창출 연간 3,000명\n• 고객만족도 S등급\n• 청렴도 평가 1등급",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          }
+        ]
+      },
+      {
+        "title": null,
+        "blocks": [
+          {
+            "block_type": "text",
+            "content": "2020년 사업계획",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "• 해양보호구역 40개소 지정·관리\n• 특별관리해역수질 2등급 이상 100%\n• 해양오염사고 예방률 65% 이상\n• 침몰선박 위해도 조사 100%\n• 미래성장 매출액 1,300억 원\n• 차입금의존도 ZERO\n• 양질의 일자리창출 연간 3,100명\n• 고객만족도 S등급\n• 청렴도 평가 1등급",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          }
+        ]
+      },
+      {
+        "title": null,
+        "blocks": [
+          {
+            "block_type": "text",
+            "content": "2021년 사업계획",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "• 해양생태계 보전지수 90 달성\n• 해양오염사고 방제율 50% 이상\n• 미래성장 매출액 1,400억 원\n• 양질의 일자리창출 연간 3,200명",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          }
+        ]
+      },
+      {
+        "title": null,
+        "blocks": [
+          {
+            "block_type": "text",
+            "content": "연도별\n경영목표\n변동",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "• 정부의 공공기관 관리 정책\n및 경영평가 변경에 따른\n경영목표 개편\n→ 일자리창출 목표 조정 등",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "• 기존 경영목표의 점증 조정\n및 성과창출 가능 재무목표\n추가 구성\n→ 기존 목표의 일부 조정",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "• 핵심지표 4개로 축소 개편\n→ “해양생태계 보전지수”를\n새로운 제정·사용",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          }
+        ]
+      },
+      {
+        "title": null,
+        "blocks": [
+          {
+            "block_type": "text",
+            "content": "진단분석",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "✓ '19년 경영목표는 정부 정책과\n공공기관 경영평가를 반영하여 개편\n✓ '20년 경영목표는 '19년 경영목표를\n계승하고 있으며, 기존 목표를 점증\n조정하는 수준으로 변경함",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "✓ '21년(현재) 경영목표는 다소 많았던\n전년도 경영목표를 자체 지수 제정을\n통해 4개의 경영목표로 간소화함\n✓ “해양생태계 보전지수”는 직접 제정한\n지표로, 보편적으로 사용되지 않음",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "✓ 경영목표의 선택과 운영에서 정부\n정책, 경영평가의 영향이 크고,\n✓ 명료성을 위한 간소화 과정에서\n보편적이지 않은 지표를 활용하여\n외부 관점에서는 모호성이 커졌음",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "footer": "KOEM 해양환경공단"
+}

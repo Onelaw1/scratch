@@ -1,0 +1,240 @@
+{
+  "slide_type": "Content",
+  "slide_number": 35,
+  "title": "1. 외부 환경분석 - 제1차 해양폐기물 및 해양오염퇴적물 관리 기본계획 (1/2)",
+  "governing_message": "'제1차 해양폐기물 및 해양오염퇴적물 관리 기본계획'은 예방부터 수거·처리, 인식 개선까지 전주기적 관리 강화에 중점을 두고 있으며, 해양폐기물관리센터의 기능 확대와 전문성 강화 등에서 공단의 역할이 요구되고 있음",
+  "layout": {
+    "grid_type": "2-column",
+    "background_color": "#ffffff"
+  },
+  "content_data": {
+    "subtitle": null,
+    "date": null,
+    "client_name": null,
+    "framework_type": null,
+    "elements": null,
+    "sections": [
+      {
+        "title": "제1차 해양폐기물 및 해양오염퇴적물 관리 기본계획",
+        "blocks": [
+          {
+            "block_type": "text",
+            "content": "비전\n목표\n해양플라스틱폐기물 발생량 2030년 60% 감축, 2050년 제로화 달성\n(現)6.7만톤 → ('30)2.7만톤→ ('50)0",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "깨끗한 해양환경 조성으로 다 함께 누리는 건강한 미래\n해양폐기물 및 해양오염퇴적물 관리체계 개선으로\n해양환경의 건강성 조성",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "해양폐기물 관리 전략",
+            "position": "top-left",
+            "style": {
+              "is_bold": true,
+              "color_hex": "#000000",
+              "font_size": 14
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "추진 전략",
+            "position": "top-left",
+            "style": {
+              "is_bold": true,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "추진 과제",
+            "position": "top-left",
+            "style": {
+              "is_bold": true,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "① 해상발생원 관리 강화\n② 육상 발생원 관리강화\n③ 외국 발생원 관리 강화",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "① 수거 사각지대 해소\n② 민관협력 및 지역참여 활성화\n③ 수거체계 효율화",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "① 처리 인프라 확충 및 관리 강화\n② 재활용 활성화 기반 조성",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "① 거버넌스 구축·운영 및 관리\n전문성·이행력 강화\n② 스마트 관리기반 구축\n③ 해양플라스틱 관리 기반 구축\n④ 해양배출 관리 기반 구축\n⑤ 국제 현안 대응 및 협력 강화\n⑥ 재원확보",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "① 국민 참여 확대\n② 맞춤형 교육 강화",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "발생 예방",
+            "position": "top-left",
+            "style": {
+              "is_bold": true,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "수거·운반체계 개선",
+            "position": "top-left",
+            "style": {
+              "is_bold": true,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "처리·재활용 촉진",
+            "position": "top-left",
+            "style": {
+              "is_bold": true,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "관리기반 강화",
+            "position": "top-left",
+            "style": {
+              "is_bold": true,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "국민인식 제고",
+            "position": "top-left",
+            "style": {
+              "is_bold": true,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          }
+        ]
+      },
+      {
+        "title": null,
+        "blocks": [
+          {
+            "block_type": "text",
+            "content": "<강·하천 유역 폐기물 총량관리제 단계적 도입·시행 방안>\n(1단계) 5대강 유역 폐기물 발생량 추정 및 하구역 모니터링을 통합 해양 유입량\n산정\n(2단계) 중장기 감축 목표 설정 및 유역 지자체의 폐기물 중장기 감축량 할당 산정\n(3단계) 5대강 중 하나에 시범 적용 및 추진 협의체 구성·운영",
+            "position": "top-right",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "• 홍수·태풍 등 재해발생 시 대량 유입되는 폐기물에 대한 대응 체계 마련\n• 국립공원 내 해양폐기물 합동 수거 활동 및 관계기관 협의체 운영\n• 인공위성, 드론 등을 활용한 ICT 기반 모니터링 체계 개편과 해양폐기물 발생 및\n이동경로 등 예측 시스템 개발\n■ 해안가 미세플라스틱 및 접근이 어려운 지역의 해양쓰레기 수거 장비 기술 개발",
+            "position": "top-right",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "• 해양폐기물관리 위원회를 설치·운영하고, 해양폐기물관리센터의 활성화 및 기능을\n확대하여 전문성을 강화\n• 미세플라스틱 분표현황의 주기적 조사 및 이동 특성 분석",
+            "position": "top-right",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "• 국민의 적극적인 참여를 유도하기 위해 다양한 국민 참여 프로그램 발굴\n• 다양한 계층에 대한 교육 프로그램 제작·보급",
+            "position": "top-right",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "Key\nFindings",
+            "position": "top-right",
+            "style": {
+              "is_bold": true,
+              "color_hex": "#000000",
+              "font_size": 14
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "✓ 해양폐기물관리센터의 기능 확대와 전문성 제고에 대한\n정부의 요구\n✓ ICT 기반 모니터링 예측 시스템 개발과 해양쓰레기 수거 장비\n기술 개발 등의 R&D 사업 확대 전망\n✓ 협의체 구성 및 국민참여 증진을 위한 방안 마련 필요",
+            "position": "top-right",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "footer": "Ⅱ. 내·외부 환경분석"
+}

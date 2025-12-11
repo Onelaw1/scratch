@@ -1,0 +1,110 @@
+{
+  "slide_type": "Data",
+  "slide_number": 188,
+  "title": "4. 경영목표 수립 - 경영목표 설정 ② 갯벌복원 면적 (2/2)",
+  "governing_message": "제5차 해양환경 종합계획의 주요지표 중 갯벌복원 면적은 해양생태관광, 해양치유의 자원으로 활용할 수 있으며,\n블루카본으로 탄소흡수 기능을 가진 갯벌복원 사업에서 공단의 주도적인 역할과 목표의 관리가 필요함",
+  "layout": {
+    "grid_type": "2-column",
+    "background_color": "#FFFFFF"
+  },
+  "content_data": {
+    "subtitle": null,
+    "date": null,
+    "client_name": null,
+    "framework_type": null,
+    "elements": null,
+    "sections": [
+      {
+        "title": "경영목표 설정 ② 갯벌복원 면적(누적) : 제5차 해양환경종합계획 갯벌복원 면적 목표",
+        "blocks": [
+          {
+            "block_type": "text",
+            "content": "갯벌면적 현황 (2018년 기준)",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "갯벌 면적은 '18년 2,482m²로 '87년 대비 22.5% 감소함",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "chart",
+            "content": "Bar chart showing 갯벌 면적 현황 from '87년 to '18년",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "지역별로는 전남(42.5%),\n인천·경기(36.1%) 및\n충남(13.7%) 지역에 우리나라\n연안습지의 90% 이상이\n분포되어 있음",
+            "position": "bottom-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "chart",
+            "content": "Pie chart showing 지역별 갯벌 분포",
+            "position": "bottom-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          }
+        ]
+      },
+      {
+        "title": "제5차 해양환경종합계획 갯벌복원 면적 목표",
+        "blocks": [
+          {
+            "block_type": "text",
+            "content": "갯벌복원 면적(누적) 목표 : '25년 4.5km², '30년 10.0㎢ 누적 복원",
+            "position": "top-right",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "chart",
+            "content": "Circular diagram showing 누적 갯벌복원 목표",
+            "position": "top-right",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "✓ 해양생태계 기능 복원, 버려진 염전·양식장 등의 경제적 가치\n회복, 온실가스 저감 등을 위해 오염·훼손된 갯벌 복원 확대\n: 복원기술의 체계화를 위해 갯벌복원사업 기술지침 제정\n\n✓ 해양정원 조성 : 우수한 해양생태자원을 관리·보호하고 연안 생태도시\n경제 활성화, 일자리 창출을 위해 권역별 특화 해양생태관광 거점 조성\n- 람사르습지, 세계자연유산 등재지, 우수 해양생태자원(갯벌, 사구,\n해양생물 등) 보유지역 등을 대상으로 해양정원 조성\n- 가로림만 해양정원('20.2~, 예타 중)\n\n* 와덴해(독일, 네덜란드, 덴마크 등 3국 인접) 갯벌은 생태관광인구 연간\n1,000만명, 생태관광수입 28~53억 유로, 고용효과 38,000여명 발생",
+            "position": "bottom-right",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "footer": "KOEM 해양환경공단 187"
+}

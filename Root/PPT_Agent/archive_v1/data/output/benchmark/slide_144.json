@@ -1,0 +1,155 @@
+{
+  "slide_type": "Content",
+  "slide_number": 144,
+  "title": "2. 가치체계·전략체계 재정립 - 경영방침 후보 선정",
+  "governing_message": "도출된 경영방침 후보 중 주요가치, 사업운영, 업무방식 분류의 유사항목 중 의미전달이 명확한 ‘환경경영(선도)', '공정경제', '공익우선', '국민참여', '개성의 조화', '일하는 보람'을 경영방침 후보로 선정함",
+  "layout": {
+    "grid_type": "3-column",
+    "background_color": "#FFFFFF"
+  },
+  "content_data": {
+    "subtitle": null,
+    "date": null,
+    "client_name": null,
+    "framework_type": null,
+    "elements": null,
+    "sections": [
+      {
+        "title": "추구하는 주요 가치",
+        "blocks": [
+          {
+            "block_type": "text",
+            "content": "사회적가치(선도)\n• 공기업으로 ESG, 사회적가치 실현\n트렌드 선도",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "환경경영(선도)\n• 공기업으로 ESG경영의 \"환경\"영역\n기업활동 대안제시 및 선도",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "공정한 동행\n• 협력업체와 관계에서 공정경제\n추구(갑질 근절, 상생추구)",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "공정경제\n• 기업 투명성과 상생 분위기 확산\n• 정당한 경쟁과 보상을 보장",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          }
+        ]
+      },
+      {
+        "title": "사업운영 우선 기준",
+        "blocks": [
+          {
+            "block_type": "text",
+            "content": "공익우선\n• 공기업으로 공공의 가치에 우선을\n두어 업무를 수행함",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "공공성 강화(추구)\n• 공공기관으로서 사회의 공적 가치\n추구 강화",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "국민참여\n• 국민·시민이 참여하고 함께 만들어\n가는 국민참여 지향",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "국민소통\n• 해양환경은 국민과 함께 소통하고\n만들어가는 것이 필요",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          }
+        ]
+      },
+      {
+        "title": "일하는 방식의 기준",
+        "blocks": [
+          {
+            "block_type": "text",
+            "content": "개성의 조화\n• 구성원 개인 역량과 특성에 대한\n존중을 바탕으로 조화를 이룸",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "개성존중\n• 구성원 개인의 성격과 특성을\n존중하여 역량을 펼치게 함",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "일하는 보람\n• 보람 있는 노동과 직장생활\n• 일하는 방식의 변화 추구",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "일하는 기쁨\n• 보람 있는 직장생활의 추구\n• 일과 삶의 조화를 통한 삶의 보람",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "footer": "KOEM 해양환경공단"
+}

@@ -1,0 +1,180 @@
+
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+
+    body {
+        font-family: 'Inter', sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        background: #e0e5ec;
+        margin: 0;
+    }
+
+    .slide-container {
+        width: 960px;
+        height: 540px;
+        background: white;
+        box-shadow: 0 20px 50px rgba(0,0,0,0.1);
+        position: relative;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        padding: 40px 50px;
+        box-sizing: border-box;
+    }
+
+    /* Header */
+    .header {
+        border-bottom: 2px solid #003366;
+        padding-bottom: 10px;
+        margin-bottom: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+    .header h1 {
+        font-size: 24px;
+        color: #003366;
+        margin: 0;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+    }
+    .governing-message {
+        font-size: 14px;
+        color: #444;
+        margin-bottom: 20px;
+        padding: 10px 15px;
+        background: #f1f3f5;
+        border-left: 4px solid #003366;
+        font-weight: 500;
+    }
+
+    /* Layout Grid */
+    .content-area {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        flex: 1;
+    }
+
+    /* Recursive Block Rendering */
+    .block-container {
+        padding: 10px;
+        border-radius: 4px;
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+    .block-container h4 {
+        margin: 0 0 8px 0;
+        font-size: 13px;
+        color: #003366;
+        border-bottom: 1px solid #ccc;
+        padding-bottom: 4px;
+    }
+
+    .block-text { font-size: 11px; line-height: 1.4; color: #333; }
+    .block-kpi { 
+        background: white; 
+        padding: 8px; 
+        border-radius: 4px; 
+        text-align: center; 
+        box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        border: 1px solid #eee;
+    }
+
+    /* Strategy House Layouts */
+    .layout-roof {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .layout-columns-3 {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 15px;
+    }
+    .layout-full-width {
+        width: 100%;
+    }
+    
+    /* Process Flow */
+    .layout-process-flow {
+        display: flex;
+        gap: 10px;
+        margin-top: auto; /* Push to bottom of content area */
+    }
+    .chevron {
+        flex: 1;
+        position: relative;
+        padding: 10px 20px 10px 30px;
+        font-size: 11px;
+        font-weight: 600;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        clip-path: polygon(0% 0%, 90% 0%, 100% 50%, 90% 100%, 0% 100%, 10% 50%);
+        margin-right: -15px; /* Overlap */
+        z-index: 1;
+    }
+    .chevron:first-child {
+        clip-path: polygon(0% 0%, 90% 0%, 100% 50%, 90% 100%, 0% 100%);
+        padding-left: 20px;
+    }
+
+    /* Footer */
+    .footer {
+        position: absolute;
+        bottom: 10px;
+        left: 50px;
+        right: 50px;
+        border-top: 1px solid #eee;
+        padding-top: 5px;
+        font-size: 9px;
+        color: #999;
+        display: flex;
+        justify-content: space-between;
+    }
+    </style>
+    </head>
+    <body>
+        
+    <div class="slide-container">
+        <div class="header">
+            <h1>2030 Strategic Transformation Roadmap</h1>
+            <div style="font-size: 10px; color: #666; align-self: center;">STRATEGY 2030</div>
+        </div>
+        <div class="governing-message">Achieving market leadership requires a synchronized transformation across three pillars, supported by a robust digital foundation and executed through a phased rollout.</div>
+        <div class="content-area">
+            
+        <div class="layout-roof">
+            <div class="block-text" style="background-color: #003366; color: white; font-size: 18px; font-weight: bold; padding: 15px; text-align: center; ">To become the #1 Provider of Sustainable Energy Solutions in APAC by 2030</div>
+        </div>
+        
+        <div class="layout-columns-3">
+            <div class="block-container" style="background-color: #f0f4f8; border: 1px solid #d1d9e6; "><h4>Pillar 1: Operational Excellence</h4><div class="block-text" style="font-size: 11px; ">• Reduce OpEx by 15% through automation.</div><div class="block-text" style="font-size: 11px; ">• Optimize supply chain logistics.</div><div class="block-kpi" style="color: #007bff; font-weight: bold; ">Target: $50M Savings</div></div><div class="block-container" style="background-color: #f0f4f8; border: 1px solid #d1d9e6; "><h4>Pillar 2: Customer Experience</h4><div class="block-text" style="font-size: 11px; ">• Launch omnichannel platform.</div><div class="block-text" style="font-size: 11px; ">• Implement AI-driven support.</div><div class="block-kpi" style="color: #28a745; font-weight: bold; ">NPS Score: >70</div></div><div class="block-container" style="background-color: #f0f4f8; border: 1px solid #d1d9e6; "><h4>Pillar 3: Innovation & Growth</h4><div class="block-text" style="font-size: 11px; ">• Enter 2 new markets (Vietnam, Thailand).</div><div class="block-text" style="font-size: 11px; ">• R&D investment in green tech.</div><div class="block-kpi" style="color: #dc3545; font-weight: bold; ">Revenue: +20% YoY</div></div>
+        </div>
+        
+        <div class="layout-full-width">
+            <div class="block-text" style="background-color: #e9ecef; color: #495057; font-size: 14px; padding: 10px; text-align: center; ">Enabler: Digital Core & Talent Transformation</div>
+        </div>
+        
+        <div class="layout-process-flow">
+            <div class="chevron" style="background-color: #004085; color: white; ">Phase 1: Mobilize (Q1-Q2)</div><div class="chevron" style="background-color: #0056b3; color: white; ">Phase 2: Pilot (Q3-Q4)</div><div class="chevron" style="background-color: #007bff; color: white; ">Phase 3: Scale (Year 2)</div><div class="chevron" style="background-color: #3395ff; color: white; ">Phase 4: Sustain (Year 3+)</div>
+        </div>
+        
+        </div>
+        <div class="footer">
+            <div>Confidential - 2030 Strategy Document - Draft v4.2</div>
+            <div>Page 3</div>
+        </div>
+    </div>
+    
+    </body>
+    </html>
+    

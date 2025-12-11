@@ -1,0 +1,110 @@
+{
+  "slide_type": "Framework",
+  "slide_number": 156,
+  "title": "3. 전략목표·전략과제 수립 - 사업영역별 전략목표 도출 (3/6)",
+  "governing_message": "전략방향성과 SWOT 분석을 통해 도출된 전략과제에 기반하여 해양사업 부문의 전략목표를 ‘해양사업 공공성 강화'로 아래와 같이 도출하고 해당 전략과제를 선정함",
+  "layout": {
+    "grid_type": "custom",
+    "background_color": "#FFFFFF"
+  },
+  "content_data": {
+    "subtitle": null,
+    "date": null,
+    "client_name": null,
+    "framework_type": "List",
+    "elements": [
+      {
+        "label": "해양 방제 기본역량 강화",
+        "description": null,
+        "position": "top-left"
+      },
+      {
+        "label": "공적기능과 공공성 강화",
+        "description": null,
+        "position": "top-left"
+      },
+      {
+        "label": "해양생태 통합관리체계 확장",
+        "description": null,
+        "position": "top-left"
+      },
+      {
+        "label": "해양폐기물 정화·관리체계 강화",
+        "description": null,
+        "position": "top-left"
+      },
+      {
+        "label": "해양환경변화 예측역량 강화",
+        "description": null,
+        "position": "top-left"
+      },
+      {
+        "label": "해양환경 정책기능 강화",
+        "description": null,
+        "position": "top-left"
+      },
+      {
+        "label": "미래성장사업 규모의 경제 실현",
+        "description": null,
+        "position": "top-left"
+      },
+      {
+        "label": "해양환경 국민 플랫폼으로 성장",
+        "description": null,
+        "position": "top-left"
+      },
+      {
+        "label": "해양 신산업 육성 기반조성",
+        "description": null,
+        "position": "top-left"
+      },
+      {
+        "label": "해양 기후변화·탄소중립 주도",
+        "description": null,
+        "position": "top-left"
+      },
+      {
+        "label": "해양사업 장기 발전계획 수립",
+        "description": null,
+        "position": "center"
+      },
+      {
+        "label": "예선 등 자체수익사업 공공성 강화",
+        "description": null,
+        "position": "center"
+      },
+      {
+        "label": "구조적 손실 사업의 축소 및 조정",
+        "description": null,
+        "position": "center"
+      },
+      {
+        "label": "해양재난 예방 및 대응체계 고도화",
+        "description": null,
+        "position": "center"
+      },
+      {
+        "label": "해양사업 공공성 강화",
+        "description": null,
+        "position": "center"
+      },
+      {
+        "label": "해양사업 공익우선 운영",
+        "description": null,
+        "position": "bottom-right"
+      },
+      {
+        "label": "상생기반 해양사업 효율성 제고",
+        "description": null,
+        "position": "bottom-right"
+      },
+      {
+        "label": "국민안전 증진 해양사업 운영",
+        "description": null,
+        "position": "bottom-right"
+      }
+    ],
+    "sections": null
+  },
+  "footer": "155"
+}

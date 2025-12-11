@@ -1,0 +1,130 @@
+{
+  "slide_type": "Framework",
+  "slide_number": 154,
+  "title": "3. 전략목표·전략과제 수립 - 사업영역별 전략목표 도출 (1/6)",
+  "governing_message": "전략방향성과 SWOT 분석을 통해 도출된 전략과제에 기반하여 해양보전사업 부문 전략목표를 ‘협력적 해양환경관리 강화'로 아래와 같이 도출하고 해당 전략과제를 선정함",
+  "layout": {
+    "grid_type": "custom",
+    "background_color": "#FFFFFF"
+  },
+  "content_data": {
+    "subtitle": null,
+    "date": null,
+    "client_name": null,
+    "framework_type": "List",
+    "elements": [
+      {
+        "label": "1. 해양 방제 기본역량 강화",
+        "description": null,
+        "position": "left"
+      },
+      {
+        "label": "2. 공적기능과 공공성 강화",
+        "description": null,
+        "position": "left"
+      },
+      {
+        "label": "3. 해양생태 통합관리체계 확장",
+        "description": null,
+        "position": "left"
+      },
+      {
+        "label": "4. 해양폐기물 정화·관리체계 강화",
+        "description": null,
+        "position": "left"
+      },
+      {
+        "label": "5. 해양환경변화 예측역량 강화",
+        "description": null,
+        "position": "left"
+      },
+      {
+        "label": "6. 해양환경 정책기능 강화",
+        "description": null,
+        "position": "left"
+      },
+      {
+        "label": "7. 미래성장사업 규모의 경제 실현",
+        "description": null,
+        "position": "left"
+      },
+      {
+        "label": "8. 해양환경 국민 플랫폼으로 성장",
+        "description": null,
+        "position": "left"
+      },
+      {
+        "label": "9. 해양 신산업 육성 기반조성",
+        "description": null,
+        "position": "left"
+      },
+      {
+        "label": "10. 해양 기후변화·탄소중립 주도",
+        "description": null,
+        "position": "left"
+      },
+      {
+        "label": "해양생태계 보전 민·관·공 네트워크 구축",
+        "description": null,
+        "position": "center"
+      },
+      {
+        "label": "지역 해양환경 개선사업 발굴·추진 확대",
+        "description": null,
+        "position": "center"
+      },
+      {
+        "label": "해양환경 국제협력 역량 강화",
+        "description": null,
+        "position": "center"
+      },
+      {
+        "label": "해양환경정보 분석 및 활용 체계화",
+        "description": null,
+        "position": "center"
+      },
+      {
+        "label": "해양정화 신기술 개발 및 상용화 선도",
+        "description": null,
+        "position": "center"
+      },
+      {
+        "label": "해양환경보전 및 오염예방 국민인식 개선",
+        "description": null,
+        "position": "center"
+      },
+      {
+        "label": "국민관심 현안에 대한 대응역량 강화",
+        "description": null,
+        "position": "center"
+      },
+      {
+        "label": "건강한 해양생태계 보전",
+        "description": null,
+        "position": "right"
+      },
+      {
+        "label": "해양환경 통합 Solution 제공",
+        "description": null,
+        "position": "right"
+      },
+      {
+        "label": "해양폐기물 선순환 체계 구축",
+        "description": null,
+        "position": "right"
+      },
+      {
+        "label": "해양환경 국민참여 강화",
+        "description": null,
+        "position": "right"
+      },
+      {
+        "label": "지역협력 해양보전사업 확대",
+        "description": null,
+        "position": "right"
+      }
+    ],
+    "sections": null
+  },
+  "footer": "Ⅲ. 가치체계·전략체계 재정립"
+}

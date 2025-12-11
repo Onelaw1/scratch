@@ -1,0 +1,65 @@
+{
+  "slide_type": "Data",
+  "slide_number": 70,
+  "title": "2. 내부 환경·역량 분석 - 재무실적",
+  "governing_message": "공단은 예선사업 등 수익사업의 이익률 감소, 정부사업(수익·비수익)의 적자운영 지속으로 '17~'20년까지 4년간 영업손실을 기록하고 있으며, 전환적 변화가 없을 경우, 공단의 재무적 지속가능성에 문제가 발생됨",
+  "layout": {
+    "grid_type": "custom",
+    "background_color": "#FFFFFF"
+  },
+  "content_data": {
+    "subtitle": null,
+    "date": null,
+    "client_name": null,
+    "framework_type": null,
+    "elements": null,
+    "sections": [
+      {
+        "title": null,
+        "blocks": [
+          {
+            "block_type": "chart",
+            "content": "Bar and line chart depicting revenue, operating income, and operating income rate from '09 to '20",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          }
+        ]
+      },
+      {
+        "title": null,
+        "blocks": [
+          {
+            "block_type": "table",
+            "content": "Financial data table showing revenue, cost of sales, SG&A, operating income, and net income from '09 to '20",
+            "position": "bottom-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          }
+        ]
+      },
+      {
+        "title": null,
+        "blocks": [
+          {
+            "block_type": "text",
+            "content": "✓ 영업이익률 9~10%\n 사업이익 유지\n : 예선, 기중기 등 사업 이익률 우수('12년 15.7%)\n✓ 영업이익률 3~5%로\n 사업이익 감소\n: 수익사업 이익률 유지, 국고보조, 정부용역 및 대행사업 사업적자 기록\n✓ 영업이익률 -1~-8%로\n 사업손실 지속\n: 예선 등 자체 수익사업 이익률 감소, 정부사업 등 적자 지속\n✓ 사업 적자 지속에 따른 재무위기 : 극복을 위한 전환적 변화 없을 경우, (재무적) 지속가능성에 문제 발생",
+            "position": "top-right",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "footer": null
+}

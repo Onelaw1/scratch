@@ -1,0 +1,95 @@
+{
+  "slide_type": "Framework",
+  "slide_number": 123,
+  "title": "2. 가치체계·전략체계 재정립 - 미션 후보 도출 (3/5)",
+  "governing_message": "전략 방향성으로부터 미션 구성 키워드를 추출하여 미션 후보 “깨끗하고 안전한 해양을 현재와 미래의 국민에게 제공한다”를 아래와 같이 도출함",
+  "layout": {
+    "grid_type": "custom",
+    "background_color": "#FFFFFF"
+  },
+  "content_data": {
+    "subtitle": null,
+    "date": null,
+    "client_name": null,
+    "framework_type": "List",
+    "elements": [
+      {
+        "label": "1. 해양 방제 기본역량 강화",
+        "description": null,
+        "position": "step-1"
+      },
+      {
+        "label": "2. 공적기능과 공공성 강화",
+        "description": null,
+        "position": "step-2"
+      },
+      {
+        "label": "3. 해양생태 통합관리체계 확장",
+        "description": null,
+        "position": "step-3"
+      },
+      {
+        "label": "4. 해양폐기물 정화·관리체계 강화",
+        "description": null,
+        "position": "step-4"
+      },
+      {
+        "label": "5. 해양환경변화 예측역량 강화",
+        "description": null,
+        "position": "step-5"
+      },
+      {
+        "label": "6. 해양환경 정책기능 강화",
+        "description": null,
+        "position": "step-6"
+      },
+      {
+        "label": "7. 미래성장사업 규모의 경제 실현",
+        "description": null,
+        "position": "step-7"
+      },
+      {
+        "label": "8. 해양환경 국민 플랫폼으로 성장",
+        "description": null,
+        "position": "step-8"
+      },
+      {
+        "label": "9. 해양 신산업 육성 기반조성",
+        "description": null,
+        "position": "step-9"
+      },
+      {
+        "label": "10. 해양 기후변화·탄소중립 주도",
+        "description": null,
+        "position": "step-10"
+      },
+      {
+        "label": "깨끗한, 안전한, 해양(환경)",
+        "description": null,
+        "position": "step-11"
+      },
+      {
+        "label": "현재의 국민, 미래의 국민",
+        "description": null,
+        "position": "step-12"
+      },
+      {
+        "label": "현재 세대 이용, 미래 세대 전달",
+        "description": null,
+        "position": "step-13"
+      },
+      {
+        "label": "(미래 세대를 위한 보전)",
+        "description": null,
+        "position": "step-14"
+      },
+      {
+        "label": "깨끗하고 안전한 해양을 현재와 미래의 국민에게 제공한다",
+        "description": null,
+        "position": "step-15"
+      }
+    ],
+    "sections": null
+  },
+  "footer": "KOEM 해양환경공단 122"
+}

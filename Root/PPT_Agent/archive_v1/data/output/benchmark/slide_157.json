@@ -1,0 +1,115 @@
+{
+  "slide_type": "Framework",
+  "slide_number": 157,
+  "title": "3. 전략목표·전략과제 수립 - 사업영역별 전략목표 도출 (4/6)",
+  "governing_message": "전략방향성과 SWOT 분석을 통해 도출된 전략과제에 기반하여 신규 영역으로 부서를 신설할 해양환경자원화 부문 전략목표를 '해양환경 이용·향유 증진'으로 아래와 같이 도출하고 해당 전략과제를 선정함",
+  "layout": {
+    "grid_type": "custom",
+    "background_color": "#FFFFFF"
+  },
+  "content_data": {
+    "subtitle": null,
+    "date": null,
+    "client_name": null,
+    "framework_type": "List",
+    "elements": [
+      {
+        "label": "1. 해양 방제 기본역량 강화",
+        "description": null,
+        "position": "left"
+      },
+      {
+        "label": "2. 공적기능과 공공성 강화",
+        "description": null,
+        "position": "left"
+      },
+      {
+        "label": "3. 해양생태 통합관리체계 확장",
+        "description": null,
+        "position": "left"
+      },
+      {
+        "label": "4. 해양폐기물 정화·관리체계 강화",
+        "description": null,
+        "position": "left"
+      },
+      {
+        "label": "5. 해양환경변화 예측역량 강화",
+        "description": null,
+        "position": "left"
+      },
+      {
+        "label": "6. 해양환경 정책기능 강화",
+        "description": null,
+        "position": "left"
+      },
+      {
+        "label": "7. 미래성장사업 규모의 경제 실현",
+        "description": null,
+        "position": "left"
+      },
+      {
+        "label": "8. 해양환경 국민 플랫폼으로 성장",
+        "description": null,
+        "position": "left"
+      },
+      {
+        "label": "9. 해양 신산업 육성 기반조성",
+        "description": null,
+        "position": "left"
+      },
+      {
+        "label": "10. 해양 기후변화·탄소중립 주도",
+        "description": null,
+        "position": "left"
+      },
+      {
+        "label": "해양환경 이용·향유 신산업 육성",
+        "description": null,
+        "position": "center"
+      },
+      {
+        "label": "해양환경자원 개발·관리 사업 강화",
+        "description": null,
+        "position": "center"
+      },
+      {
+        "label": "해양공간계획 수립 및 관리 주도",
+        "description": null,
+        "position": "center"
+      },
+      {
+        "label": "해안·어촌 활성화 뉴딜 사업 발굴, 추진",
+        "description": null,
+        "position": "center"
+      },
+      {
+        "label": "지역조직(지사, 사무소) 기능·역할 확대",
+        "description": null,
+        "position": "center"
+      },
+      {
+        "label": "국민의 해양 이용·향유 증진",
+        "description": null,
+        "position": "right"
+      },
+      {
+        "label": "해양환경 이용·향유 자원화 확대",
+        "description": null,
+        "position": "right"
+      },
+      {
+        "label": "해양공간계획 수립·관리 주관",
+        "description": null,
+        "position": "right"
+      },
+      {
+        "label": "해양 이용·향유산업 기반조성",
+        "description": null,
+        "position": "right"
+      }
+    ],
+    "sections": null
+  },
+  "footer": null
+}

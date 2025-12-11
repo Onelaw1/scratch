@@ -1,0 +1,50 @@
+{
+  "slide_type": "Content",
+  "slide_number": 95,
+  "title": "4. 벤치마킹 - 한국환경공단 전략체계",
+  "governing_message": "한국환경공단은 '환경개선과 자원순환 촉진으로 환경친화적 국가발전에 기여'하기 위한 조직으로 비전과 별도로 슬로건을 통해 대외적으로 소통하고 있으며, 대기·온실가스, 물환경, 자원순환, 안전관리를 주요 사업으로 하고 있음",
+  "layout": {
+    "grid_type": "1-column",
+    "background_color": "#FFFFFF"
+  },
+  "content_data": {
+    "subtitle": null,
+    "date": null,
+    "client_name": null,
+    "framework_type": null,
+    "elements": null,
+    "sections": [
+      {
+        "title": "한국환경공단 전략체계",
+        "blocks": [
+          {
+            "block_type": "table",
+            "content": "Contains mission, vision, slogan, core values, management direction, strategic goals, strategic tasks and main business project goals for Korea Environment Corporation",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 10
+            }
+          }
+        ]
+      },
+      {
+        "title": "Key Findings",
+        "blocks": [
+          {
+            "block_type": "text",
+            "content": "✓ 설립목표를 미션에 인용, 환경과 미래를 결합한 간결한 비전 채용\n✓ 비전 외에 슬로건을 별도로 제정하여 기관의 가치체계 소통에 활용하고 있음\n✓ 전략목표는 주요사업인 기후대기, 물관리, 자원순환관리, 안전관리 목표에 지속가능 경영 기반 사회적책임을 포함 5개 목표로 수립하고 있음\n✓ 그린뉴딜, 탄소중립 등 정부정책을 충실히 반영한 전략과제를 수립하여 추진 중\n✓ 안전을 맨 왼쪽에 배치하고 안전한 환경과 일터 조성을 중요 과제로 인식시키고 있음\n✓ 경영평가 주요사업은 대기·온실가스관리, 물환경관리, 자원순환 관리, 안전관리 등 4개로 구성되어 있으며, 전략목표와 일맥 상통하도록 구성되어 있음",
+            "position": "top-right",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 10
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "footer": "KOEM 해양환경공단 94"
+}

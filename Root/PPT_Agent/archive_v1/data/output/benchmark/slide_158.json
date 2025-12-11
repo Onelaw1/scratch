@@ -1,0 +1,120 @@
+{
+  "slide_type": "Framework",
+  "slide_number": 158,
+  "title": "3. 전략목표·전략과제 수립 - 사업영역별 전략목표 도출 (5/6)",
+  "governing_message": "전략방향성과 SWOT 분석을 통해 도출된 전략과제에 기반하여 신규 영역으로 부서를 신설할 해양기후변화대응 부문의 전략목표를 ‘해양 기후변화대응 주도'로 아래와 같이 도출하고 해당 전략과제를 선정함",
+  "layout": {
+    "grid_type": "custom",
+    "background_color": "#FFFFFF"
+  },
+  "content_data": {
+    "subtitle": null,
+    "date": null,
+    "client_name": null,
+    "framework_type": "Process",
+    "elements": [
+      {
+        "label": "1. 해양 방제 기본역량 강화",
+        "description": null,
+        "position": "step-1"
+      },
+      {
+        "label": "2. 공적기능과 공공성 강화",
+        "description": null,
+        "position": "step-2"
+      },
+      {
+        "label": "3. 해양생태 통합관리체계 확장",
+        "description": null,
+        "position": "step-3"
+      },
+      {
+        "label": "4. 해양폐기물 정화·관리체계 강화",
+        "description": null,
+        "position": "step-4"
+      },
+      {
+        "label": "5. 해양환경변화 예측역량 강화",
+        "description": null,
+        "position": "step-5"
+      },
+      {
+        "label": "6. 해양환경 정책기능 강화",
+        "description": null,
+        "position": "step-6"
+      },
+      {
+        "label": "7. 미래성장사업 규모의 경제 실현",
+        "description": null,
+        "position": "step-7"
+      },
+      {
+        "label": "8. 해양환경 국민 플랫폼으로 성장",
+        "description": null,
+        "position": "step-8"
+      },
+      {
+        "label": "9. 해양 신산업 육성 기반조성",
+        "description": null,
+        "position": "step-9"
+      },
+      {
+        "label": "10. 해양 기후변화·탄소중립 주도",
+        "description": null,
+        "position": "step-10"
+      },
+      {
+        "label": "해양 기후변화대응 및 탄소중립 선도",
+        "description": null,
+        "position": "step-11"
+      },
+      {
+        "label": "해양환경 국제협력 역량 강화",
+        "description": null,
+        "position": "step-12"
+      },
+      {
+        "label": "해양환경정보 분석 및 활용 체계화",
+        "description": null,
+        "position": "step-13"
+      },
+      {
+        "label": "해안·어촌 활성화 뉴딜 사업 발굴, 추진",
+        "description": null,
+        "position": "step-14"
+      },
+      {
+        "label": "해양환경 정책기능 강화",
+        "description": null,
+        "position": "step-15"
+      },
+      {
+        "label": "내부 인재육성 및 전문성 강화",
+        "description": null,
+        "position": "step-16"
+      },
+      {
+        "label": "해양 기후변화대응 주도",
+        "description": null,
+        "position": "step-17"
+      },
+      {
+        "label": "해양 기후변화대응 네트워크 주도",
+        "description": null,
+        "position": "step-18"
+      },
+      {
+        "label": "해양 기후변화대응 체계 수립",
+        "description": null,
+        "position": "step-19"
+      },
+      {
+        "label": "해양 탄소중립 이행기반 구축",
+        "description": null,
+        "position": "step-20"
+      }
+    ],
+    "sections": null
+  },
+  "footer": "KOEM 해양환경공단"
+}

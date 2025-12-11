@@ -1,0 +1,140 @@
+{
+  "slide_type": "Content",
+  "slide_number": 28,
+  "title": "1. 외부 환경분석 - 디지털 뉴딜 추진전략 분석 (4/4)",
+  "governing_message": "SOC 디지털화 과제를 통해 육상 및 해상 핵심 인프라의 디지털 관리체계(디지털 트윈 활용) 구축이 진행될 계획이며, 해양환경 보전, 복원 및 방제 관리에서 디지털 트윈 활용 확대를 통한 효율적, 효과적 업무수행이 가능함",
+  "layout": {
+    "grid_type": "2-column",
+    "background_color": null
+  },
+  "content_data": {
+    "subtitle": null,
+    "date": null,
+    "client_name": null,
+    "framework_type": null,
+    "elements": null,
+    "sections": [
+      {
+        "title": null,
+        "blocks": [
+          {
+            "block_type": "text",
+            "content": "D.N.A. 생태계\n강화",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "교육 인프라\n디지털 전환",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "비대면 산업\n육성",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "SOC 디지털화\n~22: 4.4조 원\n~25: 10.0조 원",
+            "position": "bottom-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "1 4대 분야 핵심 인프라 디지털 관리체계 구축\n~'25: 8.5조원\n• 도로·철도·항만·공항 등에 디지털 관리 체계 도입\n■ 도로·지하공간·항만 대상 디지털 트윈 구축\n• 국가하천·저수지·댐에 대한 원격제어 시스템과\n상시 모니터링 체계 구축\n• 민·관 재난관리자원의 효율적 활용을 위한\n통합관리시스템 구축",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "2 도시·산단의 공간 디지털 혁신\n~'25: 1.2조원\n■ 통합플랫폼 연계·구축과 스마트시티 술루션\n확산 및 시범도시 조성\n• 산단 운영 효율화와 입주기업 생산성 제고를\n위한 스마트산단 확대 구축",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "3 스마트 물류체계 구축\n~'25: 0.3조원\n• 수도권·교통 중심지에 스마트 물류단지·센터\n확충 지원\n• 항만 물류 인프라 디지털화\n• 농·축산물 온라인·비대면 유통 플랫폼 지원",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          }
+        ]
+      },
+      {
+        "title": null,
+        "blocks": [
+          {
+            "block_type": "text",
+            "content": "디지털 트윈 활용 (예시)",
+            "position": "top-right",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "image",
+            "content": "Diagram of digital twin use cases including smart city, drone, big data, augmented reality, autonomous vehicles, intelligent robots, space information, administrative/private information.",
+            "position": "top-right",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "Key Findings",
+            "position": "bottom-right",
+            "style": {
+              "is_bold": true,
+              "color_hex": "0070C0",
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "✓ 항만 물류 자동화를 위한 테스트베드(4선석) 구축,\n지하시설물 실시간 모니터링 등 디지털관리체계\n구축(29개 무역항) 등 해양부문 SOC 디지털화\n✓ 해양오염사고 방제 시뮬레이션, 해양환경 복원 및\n오염정화 계획 수립 등 해양환경 관련 디지털 트윈\n활용 확대를 통한 효율적, 효과적 업무수행 가능",
+            "position": "bottom-right",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "footer": "*Source: 한국판 뉴딜 종합계획, 관계부처 합동 (2020.07)"
+}

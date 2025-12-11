@@ -1,0 +1,189 @@
+{
+  "slide_type": "Data",
+  "slide_number": 195,
+  "title": "4. 경영목표 수립 - 경영목표 설정 ⑤ 미래성장 매출액 비중 (1/2)",
+  "governing_message": "미래성장 매출액 비중 목표는 미래성장사업의 매출액 성장 목표를 전략적으로 수립하고 이에 따른 사업매출구성의 추산을 통해 '30년 미래성장 매출액 비중 60%를 목표로 설정함",
+  "layout": {
+    "grid_type": "custom",
+    "background_color": "#FFFFFF"
+  },
+  "content_data": {
+    "subtitle": null,
+    "date": null,
+    "client_name": null,
+    "framework_type": null,
+    "elements": null,
+    "sections": [
+      {
+        "title": "경영목표 설정 ⑤ 미래성장 매출액 비중",
+        "blocks": []
+      },
+      {
+        "title": "전략목표",
+        "blocks": [
+          {
+            "block_type": "text",
+            "content": "국민의 해양 이용·향유 증진",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          }
+        ]
+      },
+      {
+        "title": "경영목표",
+        "blocks": [
+          {
+            "block_type": "text",
+            "content": "미래성장 매출액 비중",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          }
+        ]
+      },
+      {
+        "title": "목표설정 유형",
+        "blocks": [
+          {
+            "block_type": "text",
+            "content": "전략형",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 10
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "기술\n분석형1",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 10
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "기술\n분석형2",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 10
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "벤치마킹형",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 10
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "현업설정형",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 10
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "관리\nKPI化*",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 10
+            }
+          }
+        ]
+      },
+      {
+        "title": "목표 설정 방식",
+        "blocks": [
+          {
+            "block_type": "text",
+            "content": "✓ '21년 매출액 목표는 골재채취단지 매출 증가 등 급격한 변화로 직접 반영하고, '21년 이후는 미래성장사업의 추진계획 및 신규사업 발굴·추진을 반영하고 '28~30년은 '27년 일몰 계획인 사업을 대체하는 미래성장사업 신규 발굴을 통해 추가 매출 목표를 수립하여 목표의 도전성을 확보할 수 있도록 수립\n✓ 현재 추진 중인 미래성장사업에 국한되지 않고, 지속적인 사업 발굴과 추진을 통해 미래성장사업 매출을 증가시키는 점증적 성장을 고려하여 목표를 수립함\n✓ 대형 신규·미래성장사업의 전략적 추진 의사결정시 목표 조정이 필요할 수 있음",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 11
+            }
+          }
+        ]
+      },
+      {
+        "title": "구성요소",
+        "blocks": [
+          {
+            "block_type": "table",
+            "content": "구성요소\t'19\t'20\t'21\t'22\t'23\t'24\t'25\t'26\t'27\t'28\t'29\t'30\n미래성장 매출액\n비중 계획 (%)\t24%\t23%\t39%\t46%\t48%\t49%\t50%\t54%\t55%\t57%\t58%\t60%\n미래성장 매출액\n(억원)\t296\t295\t650\t900\t1,000\t1,100\t1,200\t1,400\t1,500\t1,700\t1,850\t2,000",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 10
+            }
+          }
+        ]
+      },
+      {
+        "title": "",
+        "blocks": [
+          {
+            "block_type": "text",
+            "content": "• 기존사업 : 방제, 예선, 정화\n• 미래성장사업 : 조사연구,\n교육, 골재채취관리,\n국제사업, 기후, 치유 등\n기존사업 外 성장사업",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 11
+            }
+          }
+        ]
+      },
+      {
+        "title": "",
+        "blocks": [
+          {
+            "block_type": "text",
+            "content": "골재채취단지관리 매출 증가 직접 반영",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 11
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "미래성장사업 추진 계획 목표 반영\n(부서 사업계획 및 신규 미래성장사업 발굴-추진 계획)\n+ '28~'30년 도전적 목표 수립을 위한 사업목표 추가",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 11
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "footer": "194"
+}

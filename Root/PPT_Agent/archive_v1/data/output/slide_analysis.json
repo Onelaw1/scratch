@@ -1,0 +1,71 @@
+{
+  "slide_type": "Content",
+  "slide_number": 2,
+  "title": "Market Entry Strategy: Key Considerations",
+  "governing_message": "To successfully enter the Southeast Asian market, we must address three critical pillars: Regulatory Compliance, Local Partnerships, and Supply Chain Optimization.",
+  "layout": {
+    "grid_type": "3-column",
+    "background_color": "white"
+  },
+  "content_data": {},
+  "sections": [
+    {
+      "title": "Regulatory Compliance",
+      "blocks": [
+        {
+          "block_type": "text",
+          "content": "Navigating the complex legal landscape is paramount. We need to secure licenses for import/export and adhere to local labor laws.",
+          "style": {
+            "font_size": 14
+          }
+        },
+        {
+          "block_type": "text",
+          "content": "Key Action: Hire local legal counsel by Q3.",
+          "style": {
+            "is_bold": true,
+            "color_hex": "#003366"
+          }
+        }
+      ]
+    },
+    {
+      "title": "Local Partnerships",
+      "blocks": [
+        {
+          "block_type": "image",
+          "content": "Map of Potential Partners",
+          "style": {}
+        },
+        {
+          "block_type": "text",
+          "content": "Partnering with established local distributors will accelerate market penetration by 40%.",
+          "style": {
+            "font_size": 14
+          }
+        }
+      ]
+    },
+    {
+      "title": "Supply Chain",
+      "blocks": [
+        {
+          "block_type": "text",
+          "content": "Establishing a regional distribution hub in Singapore will reduce lead times.",
+          "style": {
+            "font_size": 14
+          }
+        },
+        {
+          "block_type": "text",
+          "content": "Target: < 48h delivery window.",
+          "style": {
+            "is_bold": true,
+            "color_hex": "#d9534f"
+          }
+        }
+      ]
+    }
+  ],
+  "footer": "Confidential - For Internal Use Only"
+}

@@ -1,0 +1,135 @@
+{
+  "slide_type": "Framework",
+  "slide_number": 76,
+  "title": "3. 이해관계자 분석 - 가치사슬(Value Chain) 분석",
+  "governing_message": "공단은 해양보전, 정화, 방제 및 해양사업을 본원 사업으로 하고 있으며, 보전·정화는 조사, 발굴하고 시행을 관리하는 위탁관리형 사업이고, 방제는 계획을 수립해 자원을 확보하고 사고시 방제를 실시하는 협력적 사고대응형 사업임",
+  "layout": {
+    "grid_type": "custom",
+    "background_color": "#FFFFFF"
+  },
+  "content_data": {
+    "subtitle": null,
+    "date": null,
+    "client_name": null,
+    "framework_type": "Process",
+    "elements": [
+      {
+        "label": "기획",
+        "description": "경영기획, 회계·재무, 법무, 세무",
+        "position": "step-1"
+      },
+      {
+        "label": "인사",
+        "description": "인사관리·교육연수·인재양성",
+        "position": "step-2"
+      },
+      {
+        "label": "지원",
+        "description": "시설·자원관리, 안전",
+        "position": "step-3"
+      },
+      {
+        "label": "R&D",
+        "description": "연구조사, 정책연구, 기술개발",
+        "position": "step-4"
+      },
+      {
+        "label": "IT",
+        "description": "정보시스템, 정보화전략",
+        "position": "step-5"
+      },
+      {
+        "label": "해양 환경·생태\n조사·분석",
+        "description": null,
+        "position": "step-6"
+      },
+      {
+        "label": "해양환경 보전\n(복원) 계획",
+        "description": null,
+        "position": "step-7"
+      },
+      {
+        "label": "보전사업 승인\n(해수부, 기재부)",
+        "description": null,
+        "position": "step-8"
+      },
+      {
+        "label": "보전사업\n협력업체 선정",
+        "description": null,
+        "position": "step-9"
+      },
+      {
+        "label": "보전사업 시행\n(복원 등)",
+        "description": null,
+        "position": "step-10"
+      },
+      {
+        "label": "보전사업 결과\n모니터링",
+        "description": null,
+        "position": "step-11"
+      },
+      {
+        "label": "해양폐기물\n측정·조사",
+        "description": null,
+        "position": "step-12"
+      },
+      {
+        "label": "해양쓰레기\n정화계획 수립",
+        "description": null,
+        "position": "step-13"
+      },
+      {
+        "label": "쓰레기, 퇴적물\n제거사업 승인",
+        "description": null,
+        "position": "step-14"
+      },
+      {
+        "label": "해양정화\n사업자 계약",
+        "description": null,
+        "position": "step-15"
+      },
+      {
+        "label": "해양정화 실시\n(수행자 감독)",
+        "description": null,
+        "position": "step-16"
+      },
+      {
+        "label": "사후 결과(성과)\n모니터링, 정산",
+        "description": null,
+        "position": "step-17"
+      },
+      {
+        "label": "방제계획\n(w. 해양경찰청)",
+        "description": null,
+        "position": "step-18"
+      },
+      {
+        "label": "방제자원확보\n(선박·장비 등)",
+        "description": null,
+        "position": "step-19"
+      },
+      {
+        "label": "예방적 방제\n(상시 운영)",
+        "description": null,
+        "position": "step-20"
+      },
+      {
+        "label": "오염사고 대응\n(w. 해양경찰청)",
+        "description": null,
+        "position": "step-21"
+      },
+      {
+        "label": "오염방제 실시",
+        "description": null,
+        "position": "step-22"
+      },
+      {
+        "label": "방제비용 정산",
+        "description": null,
+        "position": "step-23"
+      }
+    ],
+    "sections": null
+  },
+  "footer": "75"
+}

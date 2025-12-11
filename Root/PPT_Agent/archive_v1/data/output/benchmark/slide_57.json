@@ -1,0 +1,370 @@
+{
+  "slide_type": "Content",
+  "slide_number": 57,
+  "title": "2. 내부 환경·역량 분석 - 공단 전략체계 분석",
+  "governing_message": "공단 전략체계에서 경영목표에 보편적으로 통용되지 않고 있는 자체제작 지수 활용, 경영평가 트렌드에 맞춘 전략목표와 과제 수립으로 비전달성 개연성 저하, 해양환경 영역 포괄적 과제수립 여부는 확인과 검증이 필요함",
+  "layout": {
+    "grid_type": "2-column",
+    "background_color": "white"
+  },
+  "content_data": {
+    "subtitle": null,
+    "date": null,
+    "client_name": null,
+    "framework_type": null,
+    "elements": null,
+    "sections": [
+      {
+        "title": "KOEM 전략체계",
+        "blocks": [
+          {
+            "block_type": "text",
+            "content": "미션",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "비전",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "경영목표",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "전략목표\n전략과제",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "깨끗하고 안전한 해양환경을 조성하여 국민의 삶의 질 향상",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "건강한 바다, 풍요로운 미래, 행복한 국민 with KOEM",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "깨끗한 바다\n해양생태계\n보전지수 90 달성",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "안전한 바다\n해양오염사고\n방제율 50% 이상",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "풍요로운 바다\n미래성장 매출액\n1,400억원",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "공감의 바다\n양질의 일자리 창출\n연간 3,200명",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "건강한 해양환경\n조성을 통한\n생태복지 실현",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "국민 안심\n재난·안전대응\n체계 공고화",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "함께 성장하는\n지속가능 경영",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "경영혁신을 통한\n사회적가치 실현",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "해양생태계 통합\nSolution 제공",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "SMART 해양사고\n대응역량 강화",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "미래성장사업\n성과창출",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "국민체감\n사회적 가치 실현",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "해양환경 대국민\n서비스 확대",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "국가해양오염 통합\nGo-Work\n예방·대응",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "상생협력기반\n해양사업\n효율성 제고",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "국민소통 경영혁신",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "해양폐기물 정화\n및 관리체계\n고도화",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "잠재적 해양오염\n요인 선제적 대응",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "지속 성장을 위한\n재무 건전성 제고",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "사람중심 조직\n구현",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          }
+        ]
+      },
+      {
+        "title": "진단분석",
+        "blocks": [
+          {
+            "block_type": "text",
+            "content": "경영\n목표",
+            "position": "top-left",
+            "style": {
+              "is_bold": true,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "비전-전략과제를 연계하는 4개 핵심지표를 선정, 목표로 수립하여 간결성 확보\n✓ 공단 자체제작 지수로 보편적으로 통용되는 지표가 아니어서 지표에 대한 설명 필요",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "전략\n목표",
+            "position": "top-left",
+            "style": {
+              "is_bold": true,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "재난·안전, 사회적가치 등 정부 관심사안에 따라 구성한 전략목표 선정\n✓ 주요사업 2개, 미래성장 1개, 사회적가치 1개로 최근 경영평가 대응 트렌드 반영함",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "전략\n과제",
+            "position": "top-left",
+            "style": {
+              "is_bold": true,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "경영평가 트렌드를 반영한 전략목표에 맞춘 전략과제 구성으로 비전달성 개연성 저하\n✓ (해양환경 대표기관으로서) 해양환경 영역에 대한 포괄적 과제수립 여부 확인 필요",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "체계성",
+            "position": "top-left",
+            "style": {
+              "is_bold": true,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "✓ 전략목표와 전략과제에 공단 발전 방향성과 확장 영역이 충분하게 나타나지 않음\n✓ 비전과 전략목표 달성의 시금석으로 전체를 연결하는 경영목표가 보편적·직관적이지 않아 상호 연계를 모호하게 함",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "footer": ""
+}

@@ -1,0 +1,260 @@
+{
+  "slide_type": "Content",
+  "slide_number": 165,
+  "title": "3. 전략목표·전략과제 수립 - 세부실행과제 수립 및 신사업 발굴 (1/2)",
+  "governing_message": "전략목표 달성을 위한 전략과제별 세부실행과제와 우선투자 및 집중육성 미래성장사업을 아래와 같이 수립함",
+  "layout": {
+    "grid_type": "custom",
+    "background_color": "#FFFFFF"
+  },
+  "content_data": {
+    "subtitle": null,
+    "date": null,
+    "client_name": null,
+    "framework_type": null,
+    "elements": null,
+    "sections": [
+      {
+        "title": "Strategic Objectives",
+        "blocks": [
+          {
+            "block_type": "text",
+            "content": "Strategic Goal",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "Healthy Marine Ecosystem Preservation",
+            "position": "center",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "Safe Marine Environment Protection",
+            "position": "bottom-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          }
+        ]
+      },
+      {
+        "title": "Strategic Initiatives",
+        "blocks": [
+          {
+            "block_type": "text",
+            "content": "Strategic Task",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "1. Providing Integrated Marine Environment Solutions",
+            "position": "center",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "2. Establishing a virtuous cycle system for marine waste",
+            "position": "center",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "3. Strengthening public participation in the marine environment",
+            "position": "center",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "4. Strengthening SMART marine accident response capabilities",
+            "position": "center",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "5. Systematizing cooperative marine pollution prevention and response",
+            "position": "center",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "6. Strengthening the publicness of marine projects",
+            "position": "bottom-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          }
+        ]
+      },
+      {
+        "title": "Detailed Implementation Tasks & New Businesses",
+        "blocks": [
+          {
+            "block_type": "text",
+            "content": "Detailed Implementation Tasks (80)",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "Systematizing comprehensive national marine ecosystem surveys, removing and managing harmful marine organisms, restoring habitat functions and populations, operating marine environment and water quality measurement networks, operating marine environment quality control systems, establishing cooperative systems for measuring and monitoring marine radioactivity, expanding and strengthening the designation and management system of marine protected areas, strengthening tidal flat and estuarine ecosystem restoration projects, and strengthening the monitoring of persistent organic pollutants (9 implementation tasks)",
+            "position": "center",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "Strengthening the role of hubs for responding to marine waste, systematizing the timely collection of marine waste and waste oil, investigating and purifying contaminated areas and sedimentary deposits, systematizing the investigation and purification of submerged waste, and establishing a system for investigating the distribution of marine microplastics (5 implementation tasks)",
+            "position": "center",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "Establishing an integrated marine environment information management system and promoting public marine environment education (2 implementation tasks)",
+            "position": "center",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "Strengthening the management of prevention burden charges and fees, establishing an HNS prevention response system, integrating private prevention resources management system, establishing an ICT-based proactive prevention response system, enhancing the construction capacity of prevention vessels and improving prevention infrastructure, systematizing the comprehensive management of prevention equipment, strengthening the management capacity of prevention vessels, and promoting research and development of prevention technologies (8 implementation tasks)",
+            "position": "center",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "Implementing co-work prevention responses with related organizations and local residents, implementing national, public, and private integrated prevention systems, establishing prevention response centers, fostering resident-led prevention responses, establishing a safety-first marine disaster response posture, expanding international prevention services, managing sunken vessels, and promoting public marine pollution prevention and prevention education (8 implementation tasks)",
+            "position": "center",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "Strengthening support for marine accident prevention and response, strengthening the public function of port tugboats, providing stable pilot services, and managing environmentally friendly aggregate extraction sites (4 implementation tasks)",
+            "position": "bottom-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          }
+        ]
+      },
+      {
+        "title": "Intensive Development of Future Growth Projects",
+        "blocks": [
+          {
+            "block_type": "text",
+            "content": "Intensive Development of Future Growth Projects (10)",
+            "position": "top-right",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "Monitoring marine radioactive materials, restoring marine ecosystems (tidal flats) (2 nurturing projects)",
+            "position": "center",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "Developing and distributing marine waste collection and treatment technologies, operating the National Marine Waste Management Center (2 nurturing projects)",
+            "position": "center",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "Building and nurturing a platform for public participation in the marine environment (1 nurturing project)",
+            "position": "center",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "Operating environmentally friendly aggregate extraction sites (1 nurturing project)",
+            "position": "bottom-right",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "footer": "KOEM 해양환경공단"
+}

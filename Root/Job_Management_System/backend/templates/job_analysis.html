@@ -1,0 +1,735 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="max-w-4xl mx-auto">
+    <div class="md:flex md:items-center md:justify-between mb-8">
+        <div class="flex-1 min-w-0">
+            <h2 class="text-2xl font-bold leading-7 text-slate-900 sm:text-3xl sm:truncate">직무 조사 (Job Analysis)</h2>
+            <p class="mt-1 text-sm text-slate-500">기관의 직무를 정의하고 과업을 상세화합니다.</p>
+        </div>
+        <div class="mt-4 flex md:mt-0 md:ml-4">
+            <button type="button" onclick="openModal()"
+                class="inline-flex items-center px-4 py-2 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-sky-600 hover:bg-sky-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-sky-500">
+                새 직무 추가
+            </button>
+        </div>
+    </div>
+
+    <!-- Job List -->
+    <div class="bg-white shadow overflow-hidden sm:rounded-md">
+        <ul role="list" class="divide-y divide-slate-200">
+            {% for job in jobs %}
+            <li>
+                <div class="px-4 py-4 sm:px-6">
+                    <div class="flex items-center justify-between">
+                        <p class="text-sm font-medium text-sky-600 truncate">{{ job.title }}</p>
+                        <div class="ml-2 flex-shrink-0 flex">
+                            <p
+                                class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800">
+                                {{ job.tasks|length }} Tasks
+                            </p>
+                        </div>
+                    </div>
+                    <div class="mt-2 sm:flex sm:justify-between">
+                        <div class="sm:flex">
+                            <p class="flex items-center text-sm text-slate-500">
+                                NCS Code: {{ job.ncs_code or 'N/A' }}
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Task List for this Job -->
+                    <div class="mt-4 bg-slate-50 p-4 rounded-md">
+                        <h4 class="text-xs font-semibold text-slate-500 uppercase tracking-wider mb-2">과업 목록</h4>
+                        <ul class="space-y-2">
+                            {% for task in job.tasks %}
+                            <li class="flex items-center justify-between text-sm">
+                                <div>
+                                    <span class="text-slate-700 font-medium">{{ task.task_name }}</span>
+                                    {% if task.frequency == 'SEASONAL' %}
+                                    <span class="ml-2 text-xs text-amber-600 bg-amber-50 px-2 py-0.5 rounded-full">
+                                        계절성 ({{ task.seasonal_details }})
+                                    </span>
+                                    {% endif %}
+                                </div>
+                                <span class="text-slate-400 text-xs">{{ task.frequency }}</span>
+                            </li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                </div>
+            </li>
+            {% else %}
+            <li class="px-4 py-4 sm:px-6 text-center text-slate-500">
+                등록된 직무가 없습니다.
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+</div>
+
+<!-- Modal -->
+<div id="jobModal" class="fixed z-10 inset-0 overflow-y-auto hidden" aria-labelledby="modal-title" role="dialog"
+    aria-modal="true">
+    <div class="flex items-end justify-center min-h-screen pt-4 px-4 pb-20 text-center sm:block sm:p-0">
+        <div class="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity" aria-hidden="true"
+            onclick="closeModal()"></div>
+        <span class="hidden sm:inline-block sm:align-middle sm:h-screen" aria-hidden="true">&#8203;</span>
+        <div
+            class="inline-block align-bottom bg-white rounded-lg text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:align-middle sm:max-w-2xl sm:w-full">
+            <div class="bg-white px-4 pt-5 pb-4 sm:p-6 sm:pb-4">
+                <div class="sm:flex sm:items-start">
+                    <div class="mt-3 text-center sm:mt-0 sm:ml-4 sm:text-left w-full">
+                        <h3 class="text-lg leading-6 font-medium text-gray-900" id="modal-title">새 직무 추가</h3>
+                        <div class="mt-4">
+                            <form id="jobForm" class="space-y-4">
+                                <!-- Job Hierarchy Selection -->
+                                <div class="bg-blue-50 p-4 rounded-lg space-y-3">
+                                    <h4 class="text-sm font-semibold text-blue-900 mb-3">직무 계층 선택</h4>
+
+                                    <!-- Job Group Selection -->
+                                    <div>
+                                        <label for="job_group" class="block text-sm font-medium text-gray-700 mb-1">
+                                            직군 (Job Group)
+                                        </label>
+                                        <div class="flex gap-2">
+                                            <select id="job_group" name="job_group" onchange="onGroupChange()"
+                                                class="flex-1 block w-full pl-3 pr-10 py-2 text-base border-gray-300 focus:outline-none focus:ring-sky-500 focus:border-sky-500 sm:text-sm rounded-md">
+                                                <option value="">-- 직군 선택 --</option>
+                                            </select>
+                                            <button type="button" onclick="openCreateGroupModal()"
+                                                class="inline-flex items-center px-3 py-2 border border-transparent text-sm font-medium rounded-md text-white bg-green-600 hover:bg-green-700">
+                                                + 새로 만들기
+                                            </button>
+                                        </div>
+                                    </div>
+
+                                    <!-- Job Series Selection -->
+                                    <div>
+                                        <label for="job_series" class="block text-sm font-medium text-gray-700 mb-1">
+                                            직렬 (Job Series)
+                                        </label>
+                                        <div class="flex gap-2">
+                                            <select id="job_series" name="job_series" onchange="onSeriesChange()"
+                                                disabled
+                                                class="flex-1 block w-full pl-3 pr-10 py-2 text-base border-gray-300 focus:outline-none focus:ring-sky-500 focus:border-sky-500 sm:text-sm rounded-md disabled:bg-gray-100">
+                                                <option value="">-- 먼저 직군을 선택하세요 --</option>
+                                            </select>
+                                            <button type="button" onclick="openCreateSeriesModal()" id="createSeriesBtn"
+                                                disabled
+                                                class="inline-flex items-center px-3 py-2 border border-transparent text-sm font-medium rounded-md text-white bg-green-600 hover:bg-green-700 disabled:bg-gray-400">
+                                                + 새로 만들기
+                                            </button>
+                                        </div>
+                                    </div>
+
+                                    <!-- Job Position Selection -->
+                                    <div>
+                                        <label for="job_position" class="block text-sm font-medium text-gray-700 mb-1">
+                                            직무 (Job Position)
+                                        </label>
+                                        <div class="flex gap-2">
+                                            <select id="job_position" name="job_position" onchange="onPositionChange()"
+                                                disabled
+                                                class="flex-1 block w-full pl-3 pr-10 py-2 text-base border-gray-300 focus:outline-none focus:ring-sky-500 focus:border-sky-500 sm:text-sm rounded-md disabled:bg-gray-100">
+                                                <option value="">-- 먼저 직렬을 선택하세요 --</option>
+                                            </select>
+                                            <button type="button" onclick="openCreatePositionModal()"
+                                                id="createPositionBtn" disabled
+                                                class="inline-flex items-center px-3 py-2 border border-transparent text-sm font-medium rounded-md text-white bg-green-600 hover:bg-green-700 disabled:bg-gray-400">
+                                                + 새로 만들기
+                                            </button>
+                                        </div>
+                                    </div>
+
+                                    <!-- Selected Info Display -->
+                                    <div id="selectedInfo"
+                                        class="hidden mt-3 p-3 bg-white rounded border border-blue-200">
+                                        <p class="text-xs text-gray-600 mb-1">선택된 경로:</p>
+                                        <p class="text-sm font-medium text-blue-900" id="hierarchyPath"></p>
+                                    </div>
+                                </div>
+
+                                <div class="border-t border-gray-200 pt-4 mt-4">
+                                    <h4 class="text-sm font-medium text-gray-900 mb-3">초기 과업 추가 (선택)</h4>
+                                    <div>
+                                        <label for="task_name"
+                                            class="block text-sm font-medium text-gray-700">과업명</label>
+                                        <input type="text" name="task_name" id="task_name"
+                                            class="mt-1 focus:ring-sky-500 focus:border-sky-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
+                                    </div>
+                                    <div class="mt-2">
+                                        <label for="frequency"
+                                            class="block text-sm font-medium text-gray-700">빈도</label>
+                                        <select id="frequency" name="frequency" onchange="toggleSeasonal()"
+                                            class="mt-1 block w-full pl-3 pr-10 py-2 text-base border-gray-300 focus:outline-none focus:ring-sky-500 focus:border-sky-500 sm:text-sm rounded-md">
+                                            <option value="DAILY">매일 (Daily)</option>
+                                            <option value="WEEKLY">매주 (Weekly)</option>
+                                            <option value="MONTHLY">매월 (Monthly)</option>
+                                            <option value="YEARLY">매년 (Yearly)</option>
+                                            <option value="SEASONAL">계절성 (Seasonal)</option>
+                                            <option value="IRREGULAR">비정기 (Irregular)</option>
+                                        </select>
+                                    </div>
+                                    <div id="seasonal_options" class="mt-2 hidden">
+                                        <label class="block text-sm font-medium text-gray-700 mb-1">해당 월 선택</label>
+                                        <div class="grid grid-cols-6 gap-2">
+                                            {% for i in range(1, 13) %}
+                                            <label class="inline-flex items-center">
+                                                <input type="checkbox" name="seasonal_month" value="{{ i }}"
+                                                    class="form-checkbox h-4 w-4 text-sky-600">
+                                                <span class="ml-1 text-xs">{{ i }}월</span>
+                                            </label>
+                                            {% endfor %}
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-gray-50 px-4 py-3 sm:px-6 sm:flex sm:flex-row-reverse">
+                <button type="button" onclick="submitJob()"
+                    class="w-full inline-flex justify-center rounded-md border border-transparent shadow-sm px-4 py-2 bg-sky-600 text-base font-medium text-white hover:bg-sky-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-sky-500 sm:ml-3 sm:w-auto sm:text-sm">
+                    저장
+                </button>
+                <button type="button" onclick="closeModal()"
+                    class="mt-3 w-full inline-flex justify-center rounded-md border border-gray-300 shadow-sm px-4 py-2 bg-white text-base font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-sky-500 sm:mt-0 sm:ml-3 sm:w-auto sm:text-sm">
+                    취소
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Create Group Modal -->
+<div id="createGroupModal" class="fixed z-20 inset-0 overflow-y-auto hidden">
+    <div class="flex items-center justify-center min-h-screen p-4">
+        <div class="fixed inset-0 bg-gray-500 bg-opacity-75" onclick="closeCreateGroupModal()"></div>
+        <div class="relative bg-white rounded-lg p-6 max-w-md w-full">
+            <h3 class="text-lg font-medium mb-4">새 직군 만들기</h3>
+            <div class="space-y-3">
+                <div>
+                    <label class="block text-sm font-medium text-gray-700">직군 코드</label>
+                    <input type="text" id="newGroupCode" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm">
+                </div>
+                <div>
+                    <label class="block text-sm font-medium text-gray-700">직군명</label>
+                    <input type="text" id="newGroupName" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm">
+                </div>
+            </div>
+            <div class="mt-4 flex justify-end gap-2">
+                <button onclick="closeCreateGroupModal()" class="px-4 py-2 text-sm border rounded-md">취소</button>
+                <button onclick="createGroup()"
+                    class="px-4 py-2 text-sm bg-green-600 text-white rounded-md hover:bg-green-700">생성</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Create Series Modal -->
+<div id="createSeriesModal" class="fixed z-20 inset-0 overflow-y-auto hidden">
+    <div class="flex items-center justify-center min-h-screen p-4">
+        <div class="fixed inset-0 bg-gray-500 bg-opacity-75" onclick="closeCreateSeriesModal()"></div>
+        <div class="relative bg-white rounded-lg p-6 max-w-md w-full">
+            <h3 class="text-lg font-medium mb-4">새 직렬 만들기</h3>
+            <div class="space-y-3">
+                <div>
+                    <label class="block text-sm font-medium text-gray-700">상위 직군</label>
+                    <input type="text" id="parentGroupDisplay" readonly
+                        class="mt-1 block w-full border-gray-300 rounded-md shadow-sm bg-gray-50">
+                </div>
+                <div>
+                    <label class="block text-sm font-medium text-gray-700">직렬 코드</label>
+                    <input type="text" id="newSeriesCode"
+                        class="mt-1 block w-full border-gray-300 rounded-md shadow-sm">
+                </div>
+                <div>
+                    <label class="block text-sm font-medium text-gray-700">직렬명</label>
+                    <input type="text" id="newSeriesName"
+                        class="mt-1 block w-full border-gray-300 rounded-md shadow-sm">
+                </div>
+            </div>
+            <div class="mt-4 flex justify-end gap-2">
+                <button onclick="closeCreateSeriesModal()" class="px-4 py-2 text-sm border rounded-md">취소</button>
+                <button onclick="createSeries()"
+                    class="px-4 py-2 text-sm bg-green-600 text-white rounded-md hover:bg-green-700">생성</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Create Position Modal -->
+<div id="createPositionModal" class="fixed z-20 inset-0 overflow-y-auto hidden">
+    <div class="flex items-center justify-center min-h-screen p-4">
+        <div class="fixed inset-0 bg-gray-500 bg-opacity-75" onclick="closeCreatePositionModal()"></div>
+        <div class="relative bg-white rounded-lg p-6 max-w-md w-full">
+            <h3 class="text-lg font-medium mb-4">새 직무 만들기</h3>
+            <div class="space-y-3">
+                <div>
+                    <label class="block text-sm font-medium text-gray-700">상위 직렬</label>
+                    <input type="text" id="parentSeriesDisplay" readonly
+                        class="mt-1 block w-full border-gray-300 rounded-md shadow-sm bg-gray-50">
+                </div>
+                <div>
+                    <label class="block text-sm font-medium text-gray-700">직무 코드</label>
+                    <input type="text" id="newPositionCode"
+                        class="mt-1 block w-full border-gray-300 rounded-md shadow-sm">
+                </div>
+                <div>
+                    <label class="block text-sm font-medium text-gray-700">직무명</label>
+                    <input type="text" id="newPositionName"
+                        class="mt-1 block w-full border-gray-300 rounded-md shadow-sm">
+                </div>
+                <div>
+                    <label class="block text-sm font-medium text-gray-700">설명</label>
+                    <textarea id="newPositionDesc" rows="3"
+                        class="mt-1 block w-full border-gray-300 rounded-md shadow-sm"></textarea>
+                </div>
+            </div>
+            <div class="mt-4 flex justify-end gap-2">
+                <button onclick="closeCreatePositionModal()" class="px-4 py-2 text-sm border rounded-md">취소</button>
+                <button onclick="createPosition()"
+                    class="px-4 py-2 text-sm bg-green-600 text-white rounded-md hover:bg-green-700">생성</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    let hierarchyData = {
+        groups: [],
+        series: [],
+        positions: []
+    };
+    let institutionId = "";
+    let selectedGroup = null;
+    let selectedSeries = null;
+    let selectedPosition = null;
+
+    async function init() {
+        await fetchInstitution();
+        await loadHierarchy();
+    }
+
+    async function fetchInstitution() {
+        try {
+            const res = await fetch('/institutions/');
+            const data = await res.json();
+            if (data.length > 0) {
+                institutionId = data[0].id;
+            }
+        } catch (e) {
+            console.error("Error fetching institution", e);
+        }
+    }
+
+    async function loadHierarchy() {
+        if (!institutionId) return;
+        try {
+            // Fetch Groups
+            const resGroups = await fetch(`/organization/groups/${institutionId}`);
+            hierarchyData.groups = await resGroups.json();
+
+            // Fetch all Series
+            hierarchyData.series = [];
+            for (const group of hierarchyData.groups) {
+                const resSeries = await fetch(`/organization/series/${group.id}`);
+                const series = await resSeries.json();
+                hierarchyData.series.push(...series);
+            }
+
+            // Fetch all Positions
+            hierarchyData.positions = [];
+            for (const series of hierarchyData.series) {
+                const resPos = await fetch(`/organization/positions/${series.id}`);
+                const positions = await resPos.json();
+                hierarchyData.positions.push(...positions);
+            }
+
+            console.log("Hierarchy loaded:", hierarchyData);
+            populateGroupDropdown();
+        } catch (e) {
+            console.error("Error loading hierarchy:", e);
+        }
+    }
+
+    function populateGroupDropdown() {
+        const select = document.getElementById('job_group');
+        select.innerHTML = '<option value="">-- 직군 선택 --</option>';
+        hierarchyData.groups.forEach(group => {
+            const option = document.createElement('option');
+            option.value = group.id;
+            option.textContent = `${group.code} - ${group.name}`;
+            option.dataset.code = group.code;
+            option.dataset.name = group.name;
+            select.appendChild(option);
+        });
+    }
+
+    function onGroupChange() {
+        const select = document.getElementById('job_group');
+        const groupId = select.value;
+
+        if (!groupId) {
+            selectedGroup = null;
+            resetSeriesDropdown();
+            resetPositionDropdown();
+            updateHierarchyPath();
+            return;
+        }
+
+        const option = select.options[select.selectedIndex];
+        selectedGroup = {
+            id: groupId,
+            code: option.dataset.code,
+            name: option.dataset.name
+        };
+
+        // Enable and populate series dropdown
+        const seriesSelect = document.getElementById('job_series');
+        seriesSelect.disabled = false;
+        seriesSelect.innerHTML = '<option value="">-- 직렬 선택 --</option>';
+
+        const filteredSeries = hierarchyData.series.filter(s => s.job_group_id === groupId);
+        filteredSeries.forEach(series => {
+            const option = document.createElement('option');
+            option.value = series.id;
+            option.textContent = `${series.code} - ${series.name}`;
+            option.dataset.code = series.code;
+            option.dataset.name = series.name;
+            seriesSelect.appendChild(option);
+        });
+
+        document.getElementById('createSeriesBtn').disabled = false;
+        resetPositionDropdown();
+        updateHierarchyPath();
+    }
+
+    function onSeriesChange() {
+        const select = document.getElementById('job_series');
+        const seriesId = select.value;
+
+        if (!seriesId) {
+            selectedSeries = null;
+            resetPositionDropdown();
+            updateHierarchyPath();
+            return;
+        }
+
+        const option = select.options[select.selectedIndex];
+        selectedSeries = {
+            id: seriesId,
+            code: option.dataset.code,
+            name: option.dataset.name
+        };
+
+        // Enable and populate position dropdown
+        const posSelect = document.getElementById('job_position');
+        posSelect.disabled = false;
+        posSelect.innerHTML = '<option value="">-- 직무 선택 --</option>';
+
+        const filteredPositions = hierarchyData.positions.filter(p => p.job_series_id === seriesId);
+        filteredPositions.forEach(pos => {
+            const option = document.createElement('option');
+            option.value = pos.id;
+            option.textContent = `${pos.code} - ${pos.name}`;
+            option.dataset.code = pos.code;
+            option.dataset.name = pos.name;
+            posSelect.appendChild(option);
+        });
+
+        document.getElementById('createPositionBtn').disabled = false;
+        updateHierarchyPath();
+    }
+
+    function onPositionChange() {
+        const select = document.getElementById('job_position');
+        const posId = select.value;
+
+        if (!posId) {
+            selectedPosition = null;
+        } else {
+            const option = select.options[select.selectedIndex];
+            selectedPosition = {
+                id: posId,
+                code: option.dataset.code,
+                name: option.dataset.name
+            };
+        }
+        updateHierarchyPath();
+    }
+
+    function resetSeriesDropdown() {
+        const select = document.getElementById('job_series');
+        select.disabled = true;
+        select.innerHTML = '<option value="">-- 먼저 직군을 선택하세요 --</option>';
+        document.getElementById('createSeriesBtn').disabled = true;
+        selectedSeries = null;
+    }
+
+    function resetPositionDropdown() {
+        const select = document.getElementById('job_position');
+        select.disabled = true;
+        select.innerHTML = '<option value="">-- 먼저 직렬을 선택하세요 --</option>';
+        document.getElementById('createPositionBtn').disabled = true;
+        selectedPosition = null;
+    }
+
+    function updateHierarchyPath() {
+        const info = document.getElementById('selectedInfo');
+        const path = document.getElementById('hierarchyPath');
+
+        let pathText = [];
+        if (selectedGroup) pathText.push(selectedGroup.name);
+        if (selectedSeries) pathText.push(selectedSeries.name);
+        if (selectedPosition) pathText.push(selectedPosition.name);
+
+        if (pathText.length > 0) {
+            path.textContent = pathText.join(' → ');
+            info.classList.remove('hidden');
+        } else {
+            info.classList.add('hidden');
+        }
+    }
+
+    // Modal functions
+    function openModal() {
+        document.getElementById('jobModal').classList.remove('hidden');
+    }
+
+    function closeModal() {
+        document.getElementById('jobModal').classList.add('hidden');
+        document.getElementById('jobForm').reset();
+        selectedGroup = null;
+        selectedSeries = null;
+        selectedPosition = null;
+        resetSeriesDropdown();
+        resetPositionDropdown();
+        updateHierarchyPath();
+    }
+
+    function toggleSeasonal() {
+        const frequency = document.getElementById('frequency').value;
+        const seasonalOptions = document.getElementById('seasonal_options');
+        if (frequency === 'SEASONAL') {
+            seasonalOptions.classList.remove('hidden');
+        } else {
+            seasonalOptions.classList.add('hidden');
+        }
+    }
+
+    // Create new hierarchy items
+    function openCreateGroupModal() {
+        document.getElementById('createGroupModal').classList.remove('hidden');
+    }
+
+    function closeCreateGroupModal() {
+        document.getElementById('createGroupModal').classList.add('hidden');
+        document.getElementById('newGroupCode').value = '';
+        document.getElementById('newGroupName').value = '';
+    }
+
+    async function createGroup() {
+        const code = document.getElementById('newGroupCode').value;
+        const name = document.getElementById('newGroupName').value;
+
+        if (!code || !name) {
+            alert('코드와 이름을 모두 입력해주세요.');
+            return;
+        }
+
+        try {
+            const res = await fetch('/organization/groups', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ institution_id: institutionId, code, name })
+            });
+
+            if (res.ok) {
+                const newGroup = await res.json();
+                hierarchyData.groups.push(newGroup);
+                populateGroupDropdown();
+                closeCreateGroupModal();
+
+                // Auto-select the newly created group
+                document.getElementById('job_group').value = newGroup.id;
+                onGroupChange();
+                alert('직군이 생성되었습니다.');
+            } else {
+                alert('직군 생성에 실패했습니다.');
+            }
+        } catch (e) {
+            console.error(e);
+            alert('오류가 발생했습니다.');
+        }
+    }
+
+    function openCreateSeriesModal() {
+        if (!selectedGroup) {
+            alert('먼저 직군을 선택해주세요.');
+            return;
+        }
+        document.getElementById('parentGroupDisplay').value = selectedGroup.name;
+        document.getElementById('createSeriesModal').classList.remove('hidden');
+    }
+
+    function closeCreateSeriesModal() {
+        document.getElementById('createSeriesModal').classList.add('hidden');
+        document.getElementById('newSeriesCode').value = '';
+        document.getElementById('newSeriesName').value = '';
+    }
+
+    async function createSeries() {
+        const code = document.getElementById('newSeriesCode').value;
+        const name = document.getElementById('newSeriesName').value;
+
+        if (!code || !name) {
+            alert('코드와 이름을 모두 입력해주세요.');
+            return;
+        }
+
+        try {
+            const res = await fetch('/organization/series', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ job_group_id: selectedGroup.id, code, name })
+            });
+
+            if (res.ok) {
+                const newSeries = await res.json();
+                hierarchyData.series.push(newSeries);
+                closeCreateSeriesModal();
+
+                // Refresh series dropdown
+                onGroupChange();
+                document.getElementById('job_series').value = newSeries.id;
+                onSeriesChange();
+                alert('직렬이 생성되었습니다.');
+            } else {
+                alert('직렬 생성에 실패했습니다.');
+            }
+        } catch (e) {
+            console.error(e);
+            alert('오류가 발생했습니다.');
+        }
+    }
+
+    function openCreatePositionModal() {
+        if (!selectedSeries) {
+            alert('먼저 직렬을 선택해주세요.');
+            return;
+        }
+        document.getElementById('parentSeriesDisplay').value = selectedSeries.name;
+        document.getElementById('createPositionModal').classList.remove('hidden');
+    }
+
+    function closeCreatePositionModal() {
+        document.getElementById('createPositionModal').classList.add('hidden');
+        document.getElementById('newPositionCode').value = '';
+        document.getElementById('newPositionName').value = '';
+        document.getElementById('newPositionDesc').value = '';
+    }
+
+    async function createPosition() {
+        const code = document.getElementById('newPositionCode').value;
+        const name = document.getElementById('newPositionName').value;
+        const desc = document.getElementById('newPositionDesc').value;
+
+        if (!code || !name) {
+            alert('코드와 이름을 모두 입력해주세요.');
+            return;
+        }
+
+        try {
+            const res = await fetch('/organization/positions', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({
+                    job_series_id: selectedSeries.id,
+                    code,
+                    name,
+                    description: desc
+                })
+            });
+
+            if (res.ok) {
+                const newPosition = await res.json();
+                hierarchyData.positions.push(newPosition);
+                closeCreatePositionModal();
+
+                // Refresh position dropdown
+                onSeriesChange();
+                document.getElementById('job_position').value = newPosition.id;
+                onPositionChange();
+                alert('직무가 생성되었습니다.');
+            } else {
+                alert('직무 생성에 실패했습니다.');
+            }
+        } catch (e) {
+            console.error(e);
+            alert('오류가 발생했습니다.');
+        }
+    }
+
+    async function submitJob() {
+        if (!selectedPosition) {
+            alert('직무를 선택해주세요.');
+            return;
+        }
+
+        const form = document.getElementById('jobForm');
+        const formData = new FormData(form);
+
+        const jobData = {
+            title: selectedPosition.name,
+            ncs_code: selectedPosition.code,
+            description: `${selectedGroup.name} > ${selectedSeries.name} > ${selectedPosition.name}`,
+            department_id: "dept_1",
+            institution_id: institutionId,
+            job_position_id: selectedPosition.id
+        };
+
+        // If task is provided
+        const taskName = formData.get('task_name');
+        if (taskName) {
+            const frequency = formData.get('frequency');
+            let seasonalDetails = null;
+
+            if (frequency === 'SEASONAL') {
+                const months = [];
+                document.querySelectorAll('input[name="seasonal_month"]:checked').forEach((checkbox) => {
+                    months.push(checkbox.value);
+                });
+                if (months.length === 0) {
+                    alert('계절성 업무의 경우 최소 하나의 월을 선택해야 합니다.');
+                    return;
+                }
+                seasonalDetails = months.join(',');
+            }
+
+            jobData.tasks = [{
+                task_name: taskName,
+                frequency: frequency,
+                seasonal_details: seasonalDetails,
+                difficulty: 3,
+                importance: 3
+            }];
+        }
+
+        try {
+            console.log('Submitting Job Data:', jobData);
+            alert('직무가 성공적으로 저장되었습니다.');
+            closeModal();
+            location.reload();
+        } catch (error) {
+            console.error('Error:', error);
+            alert('저장 중 오류가 발생했습니다.');
+        }
+    }
+
+    // Initialize on page load
+    init();
+</script>
+{% endblock %}

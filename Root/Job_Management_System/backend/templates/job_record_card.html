@@ -1,0 +1,174 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="space-y-8 animate-fade-in-up">
+    <!-- Header -->
+    <div class="flex justify-between items-center">
+        <div>
+            <h1 class="text-3xl font-extrabold text-slate-900 tracking-tight">직무 기록카드</h1>
+            <p class="text-lg text-slate-500 font-medium">개인 인사 기록 및 직무 이력 관리</p>
+        </div>
+        <button
+            class="bg-white/50 hover:bg-white/80 text-slate-700 px-4 py-2 rounded-xl border border-white/50 shadow-sm transition-all font-medium flex items-center gap-2">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z">
+                </path>
+            </svg>
+            PDF 다운로드
+        </button>
+    </div>
+
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+        <!-- Profile Card -->
+        <div class="glass rounded-3xl p-8 text-center space-y-6">
+            <div class="relative inline-block">
+                <div class="w-32 h-32 rounded-full bg-gradient-to-br from-slate-200 to-slate-300 p-1 shadow-xl mx-auto">
+                    <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Felix" alt="Profile"
+                        class="w-full h-full rounded-full bg-white">
+                </div>
+                <div
+                    class="absolute bottom-0 right-0 bg-green-500 w-6 h-6 rounded-full border-4 border-white shadow-sm">
+                </div>
+            </div>
+            <div>
+                <h2 class="text-2xl font-bold text-slate-900">홍길동</h2>
+                <p class="text-slate-500 font-medium">인사팀 / 과장</p>
+            </div>
+            <div class="grid grid-cols-2 gap-4 text-left bg-white/40 rounded-2xl p-4 border border-white/50">
+                <div>
+                    <p class="text-xs text-slate-500 font-bold uppercase">사번</p>
+                    <p class="text-slate-900 font-semibold">2024001</p>
+                </div>
+                <div>
+                    <p class="text-xs text-slate-500 font-bold uppercase">입사일</p>
+                    <p class="text-slate-900 font-semibold">2020.03.01</p>
+                </div>
+                <div>
+                    <p class="text-xs text-slate-500 font-bold uppercase">직군</p>
+                    <p class="text-slate-900 font-semibold">행정직</p>
+                </div>
+                <div>
+                    <p class="text-xs text-slate-500 font-bold uppercase">직무 등급</p>
+                    <span
+                        class="inline-flex items-center px-2 py-0.5 rounded text-xs font-bold bg-blue-100 text-blue-800">
+                        G3
+                    </span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="lg:col-span-2 space-y-8">
+            <!-- Current Job Position -->
+            <div class="glass rounded-3xl p-8 relative overflow-hidden">
+                <div class="absolute top-0 right-0 p-6 opacity-5">
+                    <svg class="w-32 h-32 text-slate-900" fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd"
+                            d="M6 6V5a3 3 0 013-3h2a3 3 0 013 3v1h2a2 2 0 012 2v3.57A22.952 22.952 0 0110 13a22.95 22.95 0 01-8-1.43V8a2 2 0 012-2h2zm2-1a1 1 0 011-1h2a1 1 0 011 1v1H8V5zm1 5a1 1 0 011-1h.01a1 1 0 110 2H10a1 1 0 01-1-1z"
+                            clip-rule="evenodd"></path>
+                        <path
+                            d="M2 13.692V16a2 2 0 002 2h12a2 2 0 002-2v-2.308A24.974 24.974 0 0110 15c-2.796 0-5.487-.46-8-1.308z">
+                        </path>
+                    </svg>
+                </div>
+                <h3 class="text-xl font-bold text-slate-900 mb-4 relative z-10">현재 수행 직무</h3>
+                <div class="space-y-4 relative z-10">
+                    <div>
+                        <p class="text-sm text-slate-500 font-bold uppercase">직무명</p>
+                        <p class="text-lg font-semibold text-slate-900">인사 기획 및 채용 관리</p>
+                    </div>
+                    <div>
+                        <p class="text-sm text-slate-500 font-bold uppercase">직무 정의</p>
+                        <p class="text-slate-700 leading-relaxed">
+                            조직의 인적 자원 효율성을 극대화하기 위해 중장기 인사 전략을 수립하고,
+                            우수 인재 확보를 위한 채용 프로세스를 기획 및 운영하는 직무입니다.
+                        </p>
+                    </div>
+                    <div class="flex gap-2 mt-2">
+                        <span class="px-3 py-1 bg-slate-100 rounded-lg text-xs font-bold text-slate-600">#전략기획</span>
+                        <span class="px-3 py-1 bg-slate-100 rounded-lg text-xs font-bold text-slate-600">#채용관리</span>
+                        <span class="px-3 py-1 bg-slate-100 rounded-lg text-xs font-bold text-slate-600">#조직문화</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Performance History -->
+            <div class="glass rounded-3xl p-8">
+                <h3 class="text-xl font-bold text-slate-900 mb-6">인사평가 이력</h3>
+                <div class="overflow-x-auto">
+                    <table class="min-w-full text-left text-sm">
+                        <thead class="bg-slate-50/50 border-b border-slate-200/50">
+                            <tr>
+                                <th class="px-4 py-3 font-bold text-slate-500">평가 연도</th>
+                                <th class="px-4 py-3 font-bold text-slate-500">평가 유형</th>
+                                <th class="px-4 py-3 font-bold text-slate-500">종합 점수</th>
+                                <th class="px-4 py-3 font-bold text-slate-500">등급</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-slate-200/50">
+                            <tr>
+                                <td class="px-4 py-3 font-medium text-slate-900">2023</td>
+                                <td class="px-4 py-3 text-slate-600">정기 평가</td>
+                                <td class="px-4 py-3 text-slate-900">92.5</td>
+                                <td class="px-4 py-3"><span
+                                        class="px-2 py-0.5 bg-purple-100 text-purple-700 rounded text-xs font-bold">S</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="px-4 py-3 font-medium text-slate-900">2022</td>
+                                <td class="px-4 py-3 text-slate-600">정기 평가</td>
+                                <td class="px-4 py-3 text-slate-900">88.0</td>
+                                <td class="px-4 py-3"><span
+                                        class="px-2 py-0.5 bg-blue-100 text-blue-700 rounded text-xs font-bold">A</span>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Training History -->
+            <div class="glass rounded-3xl p-8">
+                <h3 class="text-xl font-bold text-slate-900 mb-6">교육 훈련 이력</h3>
+                <div class="space-y-4">
+                    <div class="flex items-center justify-between p-4 bg-white/40 rounded-2xl border border-white/50">
+                        <div>
+                            <p class="font-bold text-slate-900">전략적 리더십 워크숍</p>
+                            <p class="text-xs text-slate-500 mt-1">2023.11.15 | 16시간 | 수료</p>
+                        </div>
+                        <span
+                            class="px-3 py-1 bg-green-100 text-green-700 rounded-lg text-xs font-bold">COMPLETED</span>
+                    </div>
+                    <div class="flex items-center justify-between p-4 bg-white/40 rounded-2xl border border-white/50">
+                        <div>
+                            <p class="font-bold text-slate-900">데이터 분석 기초</p>
+                            <p class="text-xs text-slate-500 mt-1">2023.05.20 | 24시간 | 수료</p>
+                        </div>
+                        <span
+                            class="px-3 py-1 bg-green-100 text-green-700 rounded-lg text-xs font-bold">COMPLETED</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    @keyframes fadeInUp {
+        from {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    .animate-fade-in-up {
+        animation: fadeInUp 0.8s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
+    }
+</style>
+{% endblock %}

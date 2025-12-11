@@ -1,0 +1,90 @@
+{
+  "slide_type": "Content",
+  "slide_number": 68,
+  "title": "2. 내부 환경·역량 분석 - 인사제도 및 운영 진단 (3/4)",
+  "governing_message": "목표·성과관리, 평가, 보상을 진단해보면 과정에 대한 피드백 없이 결과에 대한 평가만 이루어지고 있고, 개인 평가가 승진 순번에 따라 이루어지는 경우가 있는 등의 제도적·운영적 이슈사항이 있음",
+  "layout": {
+    "grid_type": "2-column",
+    "background_color": "#FFFFFF"
+  },
+  "content_data": {
+    "subtitle": null,
+    "date": null,
+    "client_name": null,
+    "framework_type": null,
+    "elements": null,
+    "sections": [
+      {
+        "title": "인사운영 진단",
+        "blocks": [
+          {
+            "block_type": "text",
+            "content": "직원 인사운영 진단 : 목표·성과관리, 평가, 보상",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 16
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "• 개인 성과목표수립-실행-성과평가의 과정이 연간 1회 과정으로 이루어져 목표달성의 과정에 대한 관리와 중간 피드백이 부재함\n• 부서 및 개인의 성과지표가 공단 경영평가 위주로 운영됨",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "• 개인 평가가 승진 순번에 따라 시행되는 경우가 많아 피평가자의 공정성, 신뢰도 문제 제기 있음\n• 공단 전체 관점의 평가기준과 평가 결과에 대한 조율이 없는 항목에 대한 본부별 평가운영 원칙 차등 이슈 있음",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "• 직무급의 도입에서 직무의 난이도와 가치에 따른 평가에 준한 직무급보다 보직을 직무급 분류 기준으로 채용함\n- 직무급이 연공서열식 보상을 강화하고 있음",
+            "position": "bottom-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          }
+        ]
+      },
+      {
+        "title": "개인 목표·관리 프로세스",
+        "blocks": [
+          {
+            "block_type": "text",
+            "content": "개인 목표달성 중간 과정의 피드백 부재\n→ 과정 관리 없이 결과만 평가",
+            "position": "center",
+            "style": {
+              "is_bold": true,
+              "color_hex": "#000080",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "table",
+            "content": "직무급\n 대상 (일반직)\nG1 해양사업본부장\nG2 기획조정실장, 감사실장\nG3 해양환경교육원장, 부산지사장\nG4 평택지사장\nG5 부서장 및 지사장 (부산 및 평택지사장 제외)\nG6~G10 3급~7급",
+            "position": "bottom-right",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "footer": "해양환경공단"
+}

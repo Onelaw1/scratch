@@ -1,0 +1,55 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="max-w-7xl mx-auto">
+    <div class="md:flex md:items-center md:justify-between mb-8">
+        <div class="flex-1 min-w-0">
+            <h2 class="text-2xl font-bold leading-7 text-slate-900 sm:text-3xl sm:truncate">통계 대시보드 (Dashboard)</h2>
+        </div>
+        <div class="mt-4 flex md:mt-0 md:ml-4 space-x-3">
+            <a href="/statistics/export/excel/{{ institution_id }}"
+                class="inline-flex items-center px-4 py-2 border border-slate-300 rounded-md shadow-sm text-sm font-medium text-slate-700 bg-white hover:bg-slate-50 focus:outline-none">
+                Excel 내보내기
+            </a>
+            <button type="button"
+                class="inline-flex items-center px-4 py-2 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-sky-600 hover:bg-sky-700 focus:outline-none">
+                보고서 생성
+            </button>
+        </div>
+    </div>
+
+    <!-- Stats Grid -->
+    <div class="grid grid-cols-1 gap-5 sm:grid-cols-3 mb-8">
+        <div class="bg-white overflow-hidden shadow rounded-lg">
+            <div class="px-4 py-5 sm:p-6">
+                <dt class="text-sm font-medium text-slate-500 truncate">경영지원 인력 비율</dt>
+                <dd class="mt-1 text-3xl font-semibold text-slate-900">{{ stats.management_ratio }}%</dd>
+                <dd class="mt-2 text-sm text-green-600">업계 평균 대비 +2.3%</dd>
+            </div>
+        </div>
+        <div class="bg-white overflow-hidden shadow rounded-lg">
+            <div class="px-4 py-5 sm:p-6">
+                <dt class="text-sm font-medium text-slate-500 truncate">IT 인력 비율</dt>
+                <dd class="mt-1 text-3xl font-semibold text-slate-900">{{ stats.it_ratio }}%</dd>
+                <dd class="mt-2 text-sm text-red-600">업계 평균 대비 -0.5%</dd>
+            </div>
+        </div>
+        <div class="bg-white overflow-hidden shadow rounded-lg">
+            <div class="px-4 py-5 sm:p-6">
+                <dt class="text-sm font-medium text-slate-500 truncate">1인당 매출액</dt>
+                <dd class="mt-1 text-3xl font-semibold text-slate-900">{{ "{:,.0f}".format(stats.revenue_per_head) }} 원
+                </dd>
+            </div>
+        </div>
+    </div>
+
+    <!-- Charts Placeholder -->
+    <div
+        class="bg-white shadow rounded-lg p-6 h-96 flex items-center justify-center bg-slate-50 border-2 border-dashed border-slate-300">
+        <div class="text-center">
+            <p class="text-slate-500">차트 영역 (Chart.js 또는 Plotly 연동 예정)</p>
+            <p class="text-xs text-slate-400 mt-1">산점도 및 비교 그래프</p>
+        </div>
+    </div>
+</div>
+{% endblock %}

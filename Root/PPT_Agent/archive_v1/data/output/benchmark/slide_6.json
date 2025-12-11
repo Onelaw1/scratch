@@ -1,0 +1,60 @@
+{
+  "slide_type": "Data",
+  "slide_number": 6,
+  "title": "3. 프로젝트 진행 일정",
+  "governing_message": "본 프로젝트는 총 15주 동안 수행될 것이며, 프로젝트 기간 내 착수보고, 중간보고(서면) 및 최종보고의 총 3회 보고를 진행하며 가치체계·전략체계 및 조직개편에 대한 직원 설명회를 시행함",
+  "layout": {
+    "grid_type": "custom",
+    "background_color": "white"
+  },
+  "content_data": {
+    "subtitle": null,
+    "date": null,
+    "client_name": null,
+    "framework_type": null,
+    "elements": null,
+    "sections": [
+      {
+        "title": null,
+        "blocks": [
+          {
+            "block_type": "table",
+            "content": "Table depicting project phases, modules, key activities, and timeline (W1-W15). Phases include Planning, Phase I (경영환경 및 역량분석), Phase II (가치체계·전략체계 재수립), Phase III (조직, 인력 및 자원배분계획 도출), Phase IV (미래사업 발굴 및 추진체계 수립), and Phase V (기타사항). Key activities are listed for each phase, with a timeline showing start and end points for each activity across weeks W1-W15.",
+            "position": "full-width",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          }
+        ]
+      },
+      {
+        "title": null,
+        "blocks": [
+          {
+            "block_type": "text",
+            "content": "*F.G.I - Focus Group Interview - 임직원을 대상으로 한 인터뷰를 통하여 조직·정원에 대한 Employer-Side Opinion 조사 - Focus Group을 대상으로 조직·정원의 전반적인 이슈에 대한 Employee-Side Opinion 조사",
+            "position": "bottom-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "**E.O.S - Employee Opinion Survey - 전직원 대상 설문조사(기관 인트라넷 혹은 온라인 사이트를 활용) - 표본추출방법 및 표본크기는 TFT와의 협의를 통해 결정 - SPSS를 통한 통계분석 실시",
+            "position": "bottom-right",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "footer": "5"
+}

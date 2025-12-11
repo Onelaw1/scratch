@@ -1,0 +1,35 @@
+{
+  "slide_type": "Data",
+  "slide_number": 175,
+  "title": "4. 경영목표 수립 - 경영관리 부문 지표선정",
+  "governing_message": "경영관리 부문의 경영목표 지표 Pool 중, 재무건전성, 인재개발 프로그램 참여 직원 수를 적용 가능한 적정 지표로 선정함",
+  "layout": {
+    "grid_type": "custom",
+    "background_color": null
+  },
+  "content_data": {
+    "subtitle": null,
+    "date": null,
+    "client_name": null,
+    "framework_type": null,
+    "elements": null,
+    "sections": [
+      {
+        "title": null,
+        "blocks": [
+          {
+            "block_type": "table",
+            "content": "See Table Data",
+            "position": "full-width",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "footer": null
+}

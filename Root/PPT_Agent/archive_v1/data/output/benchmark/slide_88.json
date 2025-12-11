@@ -1,0 +1,125 @@
+{
+  "slide_type": "Content",
+  "slide_number": 88,
+  "title": "3. 이해관계자 분석 - 분야 전문가 의견수렴 (2/2)",
+  "governing_message": "해양방제 전문가 인터뷰에서 공단의 미래 방향성과 개선사항에 대해 아래와 같이 의견을 수렴함",
+  "layout": {
+    "grid_type": "2-column",
+    "background_color": "#FFFFFF"
+  },
+  "content_data": {
+    "subtitle": null,
+    "date": null,
+    "client_name": null,
+    "framework_type": null,
+    "elements": null,
+    "sections": [
+      {
+        "title": "미래 방향성과 위상",
+        "blocks": [
+          {
+            "block_type": "text",
+            "content": "• 공단은 해양방제를 주관하는 기관으로서, 해경과 다른 종합기관으로 발전 필요\n- 해경과 유사하게 사고대응과 관리에 집중하기보다 환경변화에 따른 방제전략과 대응체계의 변화, 방제자산(하드웨어)과 방제기술 R&D 등 전문성과 차별성을 가진 종합 해양방제 전문기관으로 나아갈 필요 있음\n• 현재와 미래 환경 변화에 따른 방제 변화의 필요를 파악하고 대응하는 전문기관\n- 선박기술, 규제와 정책의 변화에 따른 해양방제 중점의 변화를 미리 읽고 대응하는 해양방제 전문기관이 되어야 함\n• 국민의 관심 현안과 우려에 신속하게 대응하는 국민중심 기관\n- (방사능 등) 국민의 관심 현안에 대해 신속하게 확인하고 답하는 국민의 기관",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          }
+        ]
+      },
+      {
+        "title": "미래를 위한 개선사항",
+        "blocks": [
+          {
+            "block_type": "text",
+            "content": "• HNS, 저유황유 등 환경변화에 따른 새로운 방제역량을 갖추고 대비해야 함\n- IMO 배출가스 규제에 따른 저유황유 연료 사용에 따른 방제전략, 자재 변화 필요\n- 폭발 위험 등으로 새로운 방제기술이 필요한 HNS 방제 기술·자원 확보 필요\n• 후쿠시마 오염수 방류에 대한 국민관심과 국가 대응을 위한 해양방사능의 체계적, 전문적인 측정과 분석 필요\n- 해양 방사능에 대한 측정 기술과 인력의 전문화, 고도화 필요\n• 예측과 시뮬레이션 등을 통한 사전 방제계획 수립 역량 확보, 활용 필요\n- 사고 많은 지역 또는 침몰선 유출 시뮬레이션을 통한 방제자재의 유동적 배치\n- 침몰선 유출시 방제 집중 영역과 범위를 사전 확인, 대응방안 수립하여 활용\n• 방제사업 부문 경영목표에 대한 조언 : 방제 하드웨어 뿐 아니라 소프트 역량 중요\n- 오일 방제역량 등 지표는 방제자산과 자재 등 하드웨어에 지나치게 편중되어, 인력양성과 활용, 선제적 대응방안 수립·시행 등 소프트역량도 반영 필요함(70:30)",
+            "position": "bottom-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          }
+        ]
+      },
+      {
+        "title": null,
+        "blocks": [
+          {
+            "block_type": "text",
+            "content": "전문성과 차별성을 가진\n종합 해양방제 전문기관",
+            "position": "top-right",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "미래환경 변화에 따른 해양방제 변화에\n대비하는 해양방제 전문기관",
+            "position": "top-right",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "국민의 관심 현안과 우려에\n신속하게 대응하는 국민중심 기관",
+            "position": "top-right",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "환경변화에 따른 새로운 방제자산과\n방제역량 확보 필요",
+            "position": "bottom-right",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "해양방사능 측정과 분석 전문성 확보\n필요(인력과 기술의 전문화)",
+            "position": "bottom-right",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "방제범위 예측 등을 활용한 사전\n방제계획 수립과 활용",
+            "position": "bottom-right",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "방제역량은 방제자산·자재의 합 보다는\n소프트역량과 믹스된 개념 필요",
+            "position": "bottom-right",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "footer": "Ⅱ. 내·외부 환경분석"
+}

@@ -1,0 +1,30 @@
+{
+  "slide_type": "Framework",
+  "slide_number": 100,
+  "title": "4. 벤치마킹 - 일본 해양정책 변화",
+  "governing_message": "일본은 국토교통부 주관 제3차 해양기본계획에서 기존 12개 과제를 9개로 통합하여 운영하고 있으며, 해양환경 유지·보전은 해양환경 보전과 해안지역 관리를 통합한 과제로 해양환경 유지·보전에 연안지역 관리를 병합하고 있음",
+  "layout": {
+    "grid_type": "custom",
+    "background_color": "#FFFFFF"
+  },
+  "content_data": {
+    "subtitle": null,
+    "date": null,
+    "client_name": null,
+    "framework_type": "List",
+    "elements": [
+      {
+        "label": "해양환경 보전",
+        "description": "생물다양성 보호\n기후변화와 해양 산성화 대응\n해양 쓰레기 대응\n해양 오염 방지\n방사능 모니터링\n해양환경과 개발의 조화",
+        "position": "top-right"
+      },
+      {
+        "label": "해안지역 종합관리",
+        "description": "해안지역 종합관리 강화\n해안과 육지의 통합종합관리 강화\n폐쇄해안 내 연안관리 촉진\n해안지역 내 활동 조정",
+        "position": "bottom-right"
+      }
+    ],
+    "sections": null
+  },
+  "footer": ""
+}

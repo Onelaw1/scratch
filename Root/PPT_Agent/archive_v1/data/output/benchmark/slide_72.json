@@ -1,0 +1,65 @@
+{
+  "slide_type": "Data",
+  "slide_number": 72,
+  "title": "내부 환경·역량 분석 - 사업부문 재무실적 분석 (2/3)",
+  "governing_message": "해양사업부문의 주요 사업인 예선 사업은 경쟁심화에 따른 매출감소와 인건비, 감가상각비 등 비용 증가로 '18년부터 수익과 이익이 동시에 감소하고 있으며, 단기간 내에 수익과 이익률의 개선은 어려울 것으로 판단됨",
+  "layout": {
+    "grid_type": "custom",
+    "background_color": "#FFFFFF"
+  },
+  "content_data": {
+    "subtitle": null,
+    "date": null,
+    "client_name": null,
+    "framework_type": null,
+    "elements": null,
+    "sections": [
+      {
+        "title": "해양사업부문 재무실적 분석",
+        "blocks": [
+          {
+            "block_type": "chart",
+            "content": "Bar and line chart illustrating revenue, operating profit, and operating profit margin trends for the marine business",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          }
+        ]
+      },
+      {
+        "title": "Key Findings",
+        "blocks": [
+          {
+            "block_type": "text",
+            "content": "✓ 해양사업부문은 '17년 기중기 매각 이후 '20년 예선사업이 부문 전체 사업수익의 95% 이상을 차지하고 있음\n✓ 예선사업은 경쟁심화에 따른 매출감소, 인건비, 감가상각비 등 비용 증가로 수익성 악화됨\n✓ 예선 사업은 공단 자체 수익사업이나, 매출과 이익이 급격히 감소하여 공단의 재정에 어려움을 주고 있음\n✓ 시장과 구조적 변화로 인안 문제로 단기간 내 수익, 이익률 개선은 어려울 것으로 판단됨",
+            "position": "top-right",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          }
+        ]
+      },
+      {
+        "title": null,
+        "blocks": [
+          {
+            "block_type": "table",
+            "content": "Financial data table showing revenue, operating profit, and net profit for the marine business from '09 to '20",
+            "position": "bottom-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "footer": "71"
+}

@@ -1,0 +1,255 @@
+{
+  "slide_type": "Content",
+  "slide_number": 30,
+  "title": "1. 외부 환경분석 - 그린 뉴딜 추진전략 분석 (2/3)",
+  "governing_message": "녹색산업 혁신생태계 조성 부문에서는 해상풍력발전의 실증과 지원이 포함되어 있으며, 공단은 해양 신재생에너지 기반 조성과 관리를 주관하는 기관으로 역할을 수행할 수 있으며, 적극적 사업 추진이 요구되고 있음",
+  "layout": {
+    "grid_type": "custom",
+    "background_color": "#FFFFFF"
+  },
+  "content_data": {
+    "subtitle": null,
+    "date": null,
+    "client_name": null,
+    "framework_type": null,
+    "elements": null,
+    "sections": [
+      {
+        "title": null,
+        "blocks": [
+          {
+            "block_type": "text",
+            "content": "도시·공간·생활\n인프라 녹색전환",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "녹색산업\n혁신생태계 조성\n~22: 10.3조 원\n~25: 24.3조 원",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "그린 뉴딜 추진전략 ② 녹색산업 혁신생태계 조성",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "1 에너지관리 효율화 지능형 스마트 그리드 구축\n~'25: 2.0조원",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "■ 소비자 중심의 스마트 전력망 및 통합관제\n시스템 구축\n• 건물에너지 진단 DB 구축",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "2 신재생에너지 확산 기반 구축 및 공정한 전환 지원\n~'25: 9.2조원",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "■ 신재생에너지 보급 확대 및 산업 생태계\n육성을 위한 연구 인프라 구축\n• 융자·보급 지원 등을 통해 신재생에너지 설비\n보급 확대\n• 사업축소가 예상되는 위기지역 대상\n신재생에너지 업종전환 지원",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "해상풍력 실증단지\n조성 및 실증 전 예비\n타당성 검토",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "해상풍력 후보지\n어민, 지자체\n협력관계 구축",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "해상풍력단지의\n해양환경영향 사전\n점검(시뮬레이션)",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "image",
+            "content": "image",
+            "position": "center",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "해상풍력발전 실증 인프라 지원",
+            "position": "top-right",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "풍황 계측·타당성 조사\n(최대 13개 권역)",
+            "position": "top-right",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "해상풍력터빈 테스트베드 및\n실증단지 단계적 구축",
+            "position": "top-right",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "해상풍력단지 조성 및 운영",
+            "position": "top-right",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "■ 초대형 풍력 실증단지 구축\n• 풍력 너셀 테스트베드 구축",
+            "position": "bottom-right",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "2차 사업확장 타당성 검토",
+            "position": "bottom-right",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "~'25: 13.1조원",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "3 전기차·수소차 등 그린 모빌리티 보급 확대",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "• 전기·수소차 보급 가속화\n• 노후 차량·선박의 친환경(LNG, LPG,\n하이브리드 등) 전환 확대\n■ 전기차, 수소차, 친환경 선박관련 연구개발\n추진",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "저탄소 분산형\n에너지 확산",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "Key\nFindings",
+            "position": "bottom-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "✓ 해상풍력발전 사업은 실증 추진 이전 후보지에 대한\n예비 타당성 검토, 어민·지자체 협력관계 구축,\n해양환경 영향 검토 등 사업기반 조성 역할 필요\n✓ 해양 신재생에너지 사업을 주관하여 추진할 가능성이\n높은 사업 영역으로, 사업 발굴과 적극적 추진 요구됨",
+            "position": "bottom-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "footer": ""
+}

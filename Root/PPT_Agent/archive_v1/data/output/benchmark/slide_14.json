@@ -1,0 +1,260 @@
+{
+  "slide_type": "Content",
+  "slide_number": 14,
+  "title": "1. 외부 환경분석 - 제5차 해양환경종합계획 전략체계",
+  "governing_message": "제5차 해양환경종합계획은 사람과 자연이 건강하게 공존하는 바다를 비전으로, 보전·이용·성장의 관점에서 목표를 수립하고 있으며, 특히 국민이 쾌적한 해양생활을 즐기는 해양환경의 이용과 향유는 새롭게 도입된 관점임",
+  "layout": {
+    "grid_type": "custom",
+    "background_color": "#FFFFFF"
+  },
+  "content_data": {
+    "subtitle": null,
+    "date": null,
+    "client_name": null,
+    "framework_type": null,
+    "elements": null,
+    "sections": [
+      {
+        "title": "제5차 해양환경종합계획 체계",
+        "blocks": [
+          {
+            "block_type": "text",
+            "content": "비전",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "사람과 자연이 건강하게 공존하는 바다",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "정책\n목표",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "(보전) 해양의 가치를 높이는\n환경 생태관리\n1등급 해역비율: ('19)54%→(`30)73%\n해양보호구역: (`20)9.2%→(`30)20%",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "(이용) 쾌적한 해양환경의\n조성과 이용도 증진\n해양플라스틱: (18)11.8만톤→(30)5.9만톤\n항만 미세먼지 : (17)7,958톤→(30)1,266톤",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "(성장) 친환경적 해양 경제활동의\n정착과 지속가능한 성장\n해양바이오 기술수준: (19)78.6%→(30)85%\n2025년 해양수산 부문 탄소중립 실현",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "추진\n전략",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "깨끗한 수질이\n유지되는\n청정한 바다",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "건강한\n생태계가\n살아있는 바다",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "쾌적한\n해양생활을\n즐기는 바다",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "친환경적인\n경제활동이\n이루어지는\n바다",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "녹색\n해양산업이\n펼쳐지는 바다",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "기후변화에\n대응하고\n체계적으로\n계획된 바다",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "①참여형 스마트\n해역환경\n관리기반 조성\n②육상기인\n오염물질 저감\n③해역별 맞춤형\n관리 강화",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "①해양생태계\n상태·변화 과학적\n평가\n②해양생물 다양성\n유지와 개선\n③해양생태계의\n복원과 개선\n④해양생태계\n거버넌스 확장",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "①생활밀착형\n해양쓰레기 관리\n②해안이 제공하는\n다양한 친수기회\n확대\n③해양생태관광\n활성화 기반\n마련\n④배우며 즐기는\n해양환경",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "①해양오염사고\n대비체계 재정비\n②해양오염사고\n대응능력 강화\n③온실가스·대기오\n염물질 관리\n강화\n④해양·항만\n대기환경\n분석·예측 고도화",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "①해양바이오산업\n의 기반 고도화\n②친환경\n에너지산업으로\n의 전환\n③융합형 해양환경\n보전산업 육성",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "①해양 기후변화\n과학적 대응능력\n강화\n② 기후변화 적응형\n해안관리\n③생태기반\n해양공간관리\n지원체계 구축\n④ 해양환경영향\n평가체계 전문성\n강화\n⑤해양환경 분야\n국제협력 선도",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          }
+        ]
+      },
+      {
+        "title": "Key Findings",
+        "blocks": [
+          {
+            "block_type": "text",
+            "content": "✓ 해양환경의 정화와 복원 등\n보전에서 이용과 향유에 대한\n관점이 추가됨\n✓ 수질에서 대기, 배출가스 등\n해양환경의 영역 확대",
+            "position": "top-right",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "✓ 친환경적 경제활동을 통해\n해양오염에 대한 예방과 오염\n방제 및 정화활동 병행",
+            "position": "top-right",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "✓ 해양환경 영역의 친환경 녹색\n산업 및 친환경 에너지 투자와\n육성에 대한 요구 확대",
+            "position": "top-right",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "✓ 기후변화에 대한 능동적,\n적극적 대응 요구 확대\n✓ 해양환경보전 및 해양\n기후변화 대응에서 과학적,\n체계적 대응역량 강화 필요\n→ 정보화, 전문성 요구",
+            "position": "top-right",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "footer": "*Source : 제5차 해양환경종합계획(2021~2030), 2021.01, 해양수산부"
+}

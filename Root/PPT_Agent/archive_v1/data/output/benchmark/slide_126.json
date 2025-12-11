@@ -1,0 +1,35 @@
+{
+  "slide_type": "Data",
+  "slide_number": 126,
+  "title": "2. 가치체계·전략체계 재정립 - 미션 후보案 평가",
+  "governing_message": "전략방향성에 기반하여 도출된 미션 후보를 미션 구성항목의 적절한 반영을 기준으로 평가하여 아래와 같이 미션 후보의 평가를 통해 새로운 미션 후보 안을 선택함",
+  "layout": {
+    "grid_type": "custom",
+    "background_color": "#FFFFFF"
+  },
+  "content_data": {
+    "subtitle": null,
+    "date": null,
+    "client_name": null,
+    "framework_type": null,
+    "elements": null,
+    "sections": [
+      {
+        "title": "미션 구성항목 적정 반영 기준에 따른 미션 후보 案 평가",
+        "blocks": [
+          {
+            "block_type": "table",
+            "content": "Table containing Mission options and assessment against criteria",
+            "position": "full-width",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "footer": "KOEM 해양환경공단 125"
+}

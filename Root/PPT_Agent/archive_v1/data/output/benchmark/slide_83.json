@@ -1,0 +1,150 @@
+{
+  "slide_type": "Content",
+  "slide_number": 83,
+  "title": "3. 이해관계자 분석 - 사업부서 FGI (3/6)",
+  "governing_message": "조직과 성과 관리와 관련하여 해양보전본부와 조사연구원 조직편제 검토 필요, 정원산정과 증원관련 문제, 직무와 R&R 지정 문제, 정원확보 및 인력배분, 목표와 과정관리 필요성 등을 현안 이슈로 제시함",
+  "layout": {
+    "grid_type": "2-column",
+    "background_color": "#FFFFFF"
+  },
+  "content_data": {
+    "subtitle": null,
+    "date": null,
+    "client_name": null,
+    "framework_type": null,
+    "elements": null,
+    "sections": [
+      {
+        "title": "사업부서 FGI 의견 정리 ③ 조직 & 성과관리",
+        "blocks": [
+          {
+            "block_type": "text",
+            "content": "해양보전본부는 사업을 수행하는 사업부서와 수행사업의 결과에 대한 모니터링을 수행하는\n조사연구원이 같은 본부에 구성되어 있는 문제 있음. 해양보전본부의 사업이 점점 늘어나\n조직이 커지고 있는데 조사연구원을 본부에서 분리하는 편제 변경에 대한 검토가 필요함",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "사업부서에서는 인력이 부족한데, 기획부서는 정부정책이나 경영평가에 맞춰서 계속 늘고\n있음. 정원 산정 방식에 문제가 있는 것 같음",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "직무가 부서 직무정의를 따라가지 않고 개인을 따라가는 경우가 상당 수 있음. 부서의 R&R\n영역에 포함되지 않은 직무라도 부서 또는 부서장의 선택, 업무수행 역량 등의 이유로\n직무분류를 벗어나는 업무를 수행하는 경우가 있음",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "한국판뉴딜사업, 해상풍력사업, R&D사업 등 미래성장을 위한 신규사업을 개인의 역량에 맡겨\n수행하고 있음. 신규사업을 따내도 인력을 늘려주지 않고, 해수부에서 승인 받아도 기재부가\n700명 규모의 회사이기 때문에 내부에서 인원조정을 통해 충원하라며 정원을 주지 않는\n상황임. (실제 기술직이 다수로 사업에 운용할 수 있는 일반직은 280여명 남짓 정도임)",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "공단의 경영목표는 과거 10년 동안 크게 변화되지 않았음. 전략은 KPI로 연계되어 있어 부서별\nKPI로 성과에 대해 평가받고 있으나 목표달성 과정과 중간 피드백은 이루어지지 않고 있음.\n과정의 평가를 위한 정성적인 목표와 단계별 실행전략이 필요함",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "성과편람에 KPI로 경영관리부서들은 경상경비 전년대비 절감률을, 사업부서들은 매출 성장률,\n예산 확보율을 잡고 있지만 배점이 낮으니 각 부서에서 크게 신경을 쓰지 않는 있는 상황임.\n공단의 재무 건전성을 확인하고 모니터링 할 수 있는 성과지표가 필요함",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          }
+        ]
+      },
+      {
+        "title": "주요 의견과 이슈사항",
+        "blocks": [
+          {
+            "block_type": "text",
+            "content": "해양보전본부, 조사연구원\n조직편제 검토 필요",
+            "position": "top-right",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "정원산정과 증원 승인 등\n정원관리 이슈",
+            "position": "top-right",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "부서 직무분류에서 벗어난\n개인 기준 직무 배분",
+            "position": "top-right",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "정원확보 및 인력배분 이슈",
+            "position": "top-right",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "목표에 대한 성과 관리와\n과정에 대한 관리 필요",
+            "position": "top-right",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "적정 성과지표 개발 필요",
+            "position": "top-right",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "footer": "Copyrights 2021  All Rights Reserved & Confidential"
+}

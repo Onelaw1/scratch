@@ -1,0 +1,95 @@
+{
+  "slide_type": "Framework",
+  "slide_number": 124,
+  "title": "2. 가치체계·전략체계 재정립 - 미션 후보 도출 (4/5)",
+  "governing_message": "전략 방향성으로부터 미션 구성 키워드를 추출하여 미션 후보 “깨끗하고 안전한 해양의 보전과 이용으로 해양의 가치를 높인다”를 아래와 같이 도출함",
+  "layout": {
+    "grid_type": "custom",
+    "background_color": "#FFFFFF"
+  },
+  "content_data": {
+    "subtitle": null,
+    "date": null,
+    "client_name": null,
+    "framework_type": "Process",
+    "elements": [
+      {
+        "label": "1. 해양 방제 기본역량 강화",
+        "description": null,
+        "position": "step-1"
+      },
+      {
+        "label": "2. 공적기능과 공공성 강화",
+        "description": null,
+        "position": "step-1"
+      },
+      {
+        "label": "3. 해양생태 통합관리체계 확장",
+        "description": null,
+        "position": "step-1"
+      },
+      {
+        "label": "4. 해양폐기물 정화·관리체계 강화",
+        "description": null,
+        "position": "step-1"
+      },
+      {
+        "label": "5. 해양환경변화 예측역량 강화",
+        "description": null,
+        "position": "step-1"
+      },
+      {
+        "label": "6. 해양환경 정책기능 강화",
+        "description": null,
+        "position": "step-1"
+      },
+      {
+        "label": "7. 미래성장사업 규모의 경제 실현",
+        "description": null,
+        "position": "step-1"
+      },
+      {
+        "label": "8. 해양환경 국민 플랫폼으로 성장",
+        "description": null,
+        "position": "step-1"
+      },
+      {
+        "label": "9. 해양 신산업 육성 기반조성",
+        "description": null,
+        "position": "step-1"
+      },
+      {
+        "label": "10. 해양 기후변화·탄소중립 주도",
+        "description": null,
+        "position": "step-1"
+      },
+      {
+        "label": "깨끗한, 안전한, 보전, 이용",
+        "description": null,
+        "position": "step-2"
+      },
+      {
+        "label": "해양 (공공재화로서)",
+        "description": null,
+        "position": "step-2"
+      },
+      {
+        "label": "이용, 가치",
+        "description": null,
+        "position": "step-2"
+      },
+      {
+        "label": "가치를 높임",
+        "description": null,
+        "position": "step-2"
+      },
+      {
+        "label": "깨끗하고 안전한\n해양의 보전과 이용으로\n해양의 가치를 높인다",
+        "description": null,
+        "position": "step-3"
+      }
+    ],
+    "sections": null
+  },
+  "footer": null
+}

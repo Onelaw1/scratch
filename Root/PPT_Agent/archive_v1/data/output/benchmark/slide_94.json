@@ -1,0 +1,170 @@
+{
+  "slide_type": "Content",
+  "slide_number": 94,
+  "title": "4. 벤치마킹 - 해양수산부 소속기관 전략체계 (2/2)",
+  "governing_message": "국립수산과학원, 국립해양측위정보원은 기능과 역할을 충실하게 담은 미션·비전을 선정하고, 영역 확대에 대한 계획과 방향성을 전략목표와 전략과제를 통해 천명하고 있음",
+  "layout": {
+    "grid_type": "2-column",
+    "background_color": null
+  },
+  "content_data": {
+    "subtitle": null,
+    "date": null,
+    "client_name": null,
+    "framework_type": null,
+    "elements": null,
+    "sections": [
+      {
+        "title": "국립수산과학원",
+        "blocks": [
+          {
+            "block_type": "text",
+            "content": "미션\n수산연구를 통한 수산정책 지원 및 현장기술 보급",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "비전\n수산과학기술 혁신을 이끄는 글로벌 연구기관",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "핵심가치\n도전 지속 국민 공정",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "운영방침 선택과 집중 과학기반 정책지원 실용연구 강화 소통·공감·화합",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "목표\n연1건 세계 최고수준\n기술(품종)확보\n수산자원변동 예측\n정확도 80% 달성\n고객만족도 최고\n등급 달성(90점)",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "전략방향\n미래대비\n수산기술 혁신\n지속가능한\n수산업 실현\n수산현안\n대응기술 개발\n국제화 및\n산업화\n역량강화",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "전략과제\n스마트 수산기술\n개발\n수산자원 조사 및\n관리 기술 선진화\n수산 재해대응\n활용기술 개발\n투명·공정·청렴의\n윤리경영 강화\n고부가 양식품종\n개발\n수산생명자원 확보\n및 활용기술 개발\n안전한 수산물\n생산 관리체계\n고도화\n사회적 가치\n중심의 효율적\n조직 운영\n수산식품 사업화 해양환경 조사 및 수산현안 해결 국제경쟁력 및\n기술 개발\n관리 통합시스템 연구 산업화 역량 강화\n구축",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "✓ 연구기관으로서 기능과 역할을 가치체계에 담고 있으며,\n운영방침을 통해 핵심가치를 보완하고 있음\n✓ 전략과제에서 해양환경 조사·관리 통합시스템 구축은\n공단의 기능·역할과 중복이 발생할 수 있는 과제임",
+            "position": "bottom-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          }
+        ]
+      },
+      {
+        "title": "국립해양측위정보원",
+        "blocks": [
+          {
+            "block_type": "text",
+            "content": "미션\n국민의 안전과 행복을 위한 해양안전정보 제공",
+            "position": "top-right",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "비전\n해양정보 기술혁신을 통한 안전한 바다 구현",
+            "position": "top-right",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "핵심가치 정보제공 고객중심 첨단기술 안전보장 고객신뢰",
+            "position": "top-right",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "전략목표\n차세대\n항법시스템\n인프라\n구축\n빅데이터\n기반\n해양안전정\n보 제공\n해양안전\n서비스\n사회적가치\n실현\n측위정보\n서비스\n이용자\n환경 개선\n조직역량\n강화로\n고객신뢰도\n향상",
+            "position": "top-right",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "전략과제\n측위정보시\n스템 고도화\n해양기상관\n측 정보제공\n서비스강화\n해로드\n(海Road) 앱\n해양안전\n기능 강화\n신호품질\n측정 및 재난\n대응력 향상\n기관 운영효율\n향상을 위한\n청사이전 및\n조직 확대\n첨단\n지상파항법\n시스템 구축\n안정적인\n측위정보\n제공\n정책홍보를\n통한 대국민\n소통 강화\n측위정보\n안정성 향상\n및 국산화\n개발\n항법시스템\n시설물\n안전관리 강화\n추진\n내부직원 역량\n강화 및 소통\n프로그램 운영",
+            "position": "top-right",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "✓ 가치체계에 해양(측위) 정보에 기반한 안전이라는 가치를\n담고 있으며, 항법 이외의 다양한 정보로 확대하고 있음\n✓ 측위정보, 해양안전정보 등 공단의 해양공간계획,\n해양환경정보시스템과 연계할 수 있는 정보임",
+            "position": "bottom-right",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "footer": null
+}

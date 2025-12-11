@@ -1,0 +1,50 @@
+{
+  "slide_type": "Data",
+  "slide_number": 186,
+  "title": "4. 경영목표 수립 - 경영목표 설정 ① 1등급 해역 비율 (3/3)",
+  "governing_message": "'18년~'20년 26개 해역에 대한 수질등급 조사에서 1등급은 '18년, '19년 14개에서 '20년 10개로 4개 지역이 감소된 것으로 측정되었으며, 수질개선이 필요한 해역은 2등급 및 3등급의 16개 해역으로 조사됨",
+  "layout": {
+    "grid_type": "custom",
+    "background_color": null
+  },
+  "content_data": {
+    "subtitle": null,
+    "date": null,
+    "client_name": null,
+    "framework_type": null,
+    "elements": null,
+    "sections": [
+      {
+        "title": "경영목표 설정 ① 1등급 해역 비율 : 3개년 26개 해역 수질등급 현황",
+        "blocks": [
+          {
+            "block_type": "table",
+            "content": "Table with water quality data by region, year, and water quality grade. Columns include 측정망 구성, 생태구역, 해역명칭, 해수수질(등급) for 2018, 2019, and 2020. There is also a table showing grade, count, and percentage for each grade for 2018, 2019, and 2020.",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          }
+        ]
+      },
+      {
+        "title": "해수수질 개선 필요 구역",
+        "blocks": [
+          {
+            "block_type": "table",
+            "content": "Table listing areas requiring water quality improvement for 2018, 2019, and 2020. Columns are 구분, 2018년, 2019년, 2020년, with specific locations listed for each year.",
+            "position": "bottom-right",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "footer": "KOEM 해양환경공단"
+}

@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>공공기관 직무중심 인사관리 통합 시스템 (Advanced)</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap"
+        rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#1e3a8a', // Dark Blue
+                        secondary: '#64748b', // Slate 500
+                        accent: '#0ea5e9', // Sky 500
+                        success: '#10b981',
+                        warning: '#f59e0b',
+                    },
+                    fontFamily: {
+                        sans: ['Noto Sans KR', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        .nav-item.active {
+            background-color: #eff6ff;
+            border-left: 4px solid #1e3a8a;
+            color: #1e3a8a;
+            font-weight: 700;
+        }
+
+        .nav-item {
+            border-left: 4px solid transparent;
+            transition: all 0.2s;
+        }
+
+        .comparison-table th {
+            background-color: #f8fafc;
+            color: #475569;
+            font-weight: 600;
+            padding: 0.75rem;
+            text-align: left;
+            border-bottom: 2px solid #e2e8f0;
+        }
+
+        .comparison-table td {
+            padding: 0.75rem;
+            border-bottom: 1px solid #e2e8f0;
+            color: #334155;
+        }
+
+        .comparison-table tr:last-child td {
+            border-bottom: none;
+        }
+
+        .feature-badge {
+            display: inline-block;
+            padding: 0.25rem 0.5rem;
+            border-radius: 9999px;
+            font-size: 0.75rem;
+            font-weight: 700;
+            margin-right: 0.5rem;
+        }
+
+        .badge-new {
+            background-color: #dbeafe;
+            color: #1e40af;
+        }
+
+        .badge-ai {
+            background-color: #f3e8ff;
+            color: #7e22ce;
+        }
+    </style>
+</head>
+
+<body class="bg-slate-50 text-slate-800 antialiased overflow-hidden h-screen flex">
+
+    <!-- Left Sidebar: Navigation -->
+    <aside class="w-80 bg-white border-r border-slate-200 flex flex-col shadow-xl z-20 h-full flex-shrink-0">
+        <div class="p-6 border-b border-slate-100 bg-slate-900 text-white">
+            <div class="text-xs text-sky-400 font-bold mb-1">Advanced HR Solution</div>
+            <h1 class="text-xl font-bold leading-tight">
+                직무중심 인사관리<br>통합 솔루션 v5.0
+            </h1>
+        </div>
+
+        <nav class="flex-1 overflow-y-auto py-4 custom-scroll">
+            <div class="px-6 text-xs font-bold text-slate-400 mb-2 mt-2">1. 직무 분석 (Analysis)</div>
+            <a href="#m1" class="nav-item block px-6 py-3 text-sm hover:bg-slate-50">01. 직무조사 (Survey)</a>
+            <a href="#m2" class="nav-item block px-6 py-3 text-sm hover:bg-slate-50">02. 직무분류 (Classification)</a>
+            <a href="#m3" class="nav-item block px-6 py-3 text-sm hover:bg-slate-50">03. 업무량조사 (Workload)</a>
+
+            <div class="px-6 text-xs font-bold text-slate-400 mb-2 mt-6">2. 조직 설계 (Design)</div>
+            <a href="#m4" class="nav-item block px-6 py-3 text-sm hover:bg-slate-50">04. 직무재설계 (Redesign)</a>
+            <a href="#m5" class="nav-item block px-6 py-3 text-sm hover:bg-slate-50">05. 정원산정 (Headcount)</a>
+
+            <div class="px-6 text-xs font-bold text-slate-400 mb-2 mt-6">3. 직무 평가 (Evaluation) <span
+                    class="text-red-500 text-xs">★</span></div>
+            <a href="#m6" class="nav-item block px-6 py-3 text-sm hover:bg-slate-50 font-bold text-primary">06. 직무평가
+                (Job Eval)</a>
+            <a href="#m7" class="nav-item block px-6 py-3 text-sm hover:bg-slate-50">07. 직무기술서 (JD)</a>
+
+            <div class="px-6 text-xs font-bold text-slate-400 mb-2 mt-6">4. 인사 관리 (Management)</div>
+            <a href="#m8" class="nav-item block px-6 py-3 text-sm hover:bg-slate-50">08. 인사평가 (Performance)</a>
+            <a href="#m9" class="nav-item block px-6 py-3 text-sm hover:bg-slate-50">09. 직무관리카드 (Job Card)</a>
+            <a href="#m10" class="nav-item block px-6 py-3 text-sm hover:bg-slate-50">10. 인사기록카드 (Record)</a>
+            <a href="#m11" class="nav-item block px-6 py-3 text-sm hover:bg-slate-50">11. 승진서열명부 (Promotion)</a>
+
+            <div class="px-6 text-xs font-bold text-slate-400 mb-2 mt-6">5. 인재 육성 (Development)</div>
+            <a href="#m12" class="nav-item block px-6 py-3 text-sm hover:bg-slate-50 mb-12">12. 교육관리 설계 (Training)</a>
+        </nav>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="flex-1 overflow-y-auto h-full relative scroll-smooth bg-slate-50" id="main-content">
+
+        <!-- Hero Section -->
+        <div class="bg-white border-b border-slate-200 p-12">
+            <div class="max-w-5xl mx-auto">
+                <span class="text-primary font-bold tracking-wider text-sm uppercase">Why This System?</span>
+                <h2 class="text-4xl font-bold text-slate-900 mt-2 mb-6">기존 방식의 한계를 뛰어넘는<br>압도적 우월성 (Superiority)</h2>
+                <p class="text-xl text-slate-600 leading-relaxed">
+                    단순한 전산화가 아닙니다. <strong class="text-slate-900">산업 평균 데이터(Benchmark)</strong>와 <strong
+                        class="text-slate-900">AI 검증 엔진</strong>을 통해
+                    인사 담당자의 경험적 판단을 과학적 데이터로 전환합니다.
+                </p>
+            </div>
+        </div>
+
+        <div class="max-w-5xl mx-auto py-12 px-8 space-y-32 pb-32">
+
+            <!-- Module 6: Job Evaluation (KILLER FEATURE) -->
+            <section id="m6"
+                class="scroll-mt-8 bg-white p-8 rounded-2xl shadow-lg border-2 border-primary/10 ring-1 ring-primary/5">
+                <div class="flex items-center gap-4 mb-8 border-b border-slate-100 pb-6">
+                    <span class="bg-primary text-white font-bold px-4 py-1.5 rounded text-sm">핵심 모듈</span>
+                    <h3 class="text-3xl font-bold text-slate-900">06. 직무평가 (Job Evaluation)</h3>
+                </div>
+
+                <!-- Superiority Grid -->
+                <div class="grid md:grid-cols-2 gap-12 mb-12">
+                    <div>
+                        <h4 class="text-lg font-bold text-slate-900 mb-4 flex items-center">
+                            <svg class="w-5 h-5 mr-2 text-red-500" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z">
+                                </path>
+                            </svg>
+                            기존 방식의 문제점 (Pain Points)
+                        </h4>
+                        <ul class="space-y-4 text-slate-600">
+                            <li class="flex items-start">
+                                <span class="text-red-500 mr-2">✖</span>
+                                <div>
+                                    <strong>평가자 관대화 경향:</strong><br>
+                                    "우리 팀원 챙겨주기" 식으로 전원 상위 점수 부여, 변별력 상실.
+                                </div>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-red-500 mr-2">✖</span>
+                                <div>
+                                    <strong>주관적 판단 개입:</strong><br>
+                                    데이터 없이 "힘든 부서"라는 막연한 이미지로 평가.
+                                </div>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-red-500 mr-2">✖</span>
+                                <div>
+                                    <strong>단일 평가의 한계:</strong><br>
+                                    부서장 1인의 평가에 의존하여 공정성 시비 발생.
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="text-lg font-bold text-primary mb-4 flex items-center">
+                            <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                            </svg>
+                            본 시스템의 해결책 (Solution)
+                        </h4>
+                        <ul class="space-y-4 text-slate-700">
+                            <li class="flex items-start">
+                                <span class="text-primary mr-2">✔</span>
+                                <div>
+                                    <strong>관대화 사전 차단 (Anti-Leniency):</strong><br>
+                                    평가 점수를 <strong class="text-primary">표준정규분포(Z-Score)</strong>로 자동 변환하여 개인별 편차 제거.
+                                </div>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-primary mr-2">✔</span>
+                                <div>
+                                    <strong>데이터 기반 검증:</strong><br>
+                                    업무량, 난이도, 책임성 데이터를 화면에 띄워놓고 평가 (Evidence-based).
+                                </div>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-primary mr-2">✔</span>
+                                <div>
+                                    <strong>멀티 레이터(Multi-Rater) 가중치:</strong><br>
+                                    내부(30%) + 직상위(30%) + 차상위(20%) + <strong class="text-red-600">외부위원(20%)</strong> 합산.
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Deep Dive Box -->
+                <div class="bg-slate-50 p-6 rounded-xl border border-slate-200">
+                    <h4 class="font-bold text-slate-900 mb-3">💡 객관성 담보 프로세스 (Objectivity Assurance)</h4>
+                    <div class="flex items-center justify-between text-sm text-slate-600">
+                        <div class="text-center px-4">
+                            <div class="font-bold mb-1">1. 사전 필터링</div>
+                            이상치(Outlier) 자동 탐지<br>및 소명 요청
+                        </div>
+                        <div class="text-slate-300">→</div>
+                        <div class="text-center px-4">
+                            <div class="font-bold mb-1">2. 다면 평가</div>
+                            내/외부 위원 교차 평가<br>(Blind Review)
+                        </div>
+                        <div class="text-slate-300">→</div>
+                        <div class="text-center px-4">
+                            <div class="font-bold mb-1">3. 통계적 보정</div>
+                            평가자 성향(가혹/관대)<br>통계적 상쇄
+                        </div>
+                        <div class="text-slate-300">→</div>
+                        <div class="text-center px-4">
+                            <div class="font-bold mb-1">4. 이의 신청</div>
+                            점수 공개 및<br>조정 위원회 회부
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Module 1: Job Survey -->
+            <section id="m1" class="scroll-mt-8">
+                <div class="flex items-center gap-4 mb-6">
+                    <span class="text-slate-400 font-bold text-sm">01</span>
+                    <h3 class="text-2xl font-bold text-slate-900">직무조사 (Job Survey)</h3>
+                </div>
+                <table class="w-full comparison-table text-sm">
+                    <thead>
+                        <tr>
+                            <th class="w-1/3">기존 방식 (Excel/Paper)</th>
+                            <th class="w-2/3 text-primary">본 시스템 (Web-Based)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>자유 서술형으로 작성하여 <strong>데이터 표준화 불가</strong></td>
+                            <td><span class="feature-badge badge-ai">AI</span> 표준 과업(Task) <strong>자동 추천 및 선택</strong>
+                                방식</td>
+                        </tr>
+                        <tr>
+                            <td>작성-취합-검토에 <strong>2주 이상 소요</strong></td>
+                            <td>실시간 입력 현황 대시보드 제공, <strong>3일 내 완료</strong></td>
+                        </tr>
+                        <tr>
+                            <td>오기입, 누락 발생 시 <strong>수기 검증</strong></td>
+                            <td>입력 단계에서 <strong>Validation Rule</strong> (필수값, 글자수) 자동 체크</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <!-- Module 2: Classification -->
+            <section id="m2" class="scroll-mt-8">
+                <div class="flex items-center gap-4 mb-6">
+                    <span class="text-slate-400 font-bold text-sm">02</span>
+                    <h3 class="text-2xl font-bold text-slate-900">직무분류 (Classification)</h3>
+                </div>
+                <table class="w-full comparison-table text-sm">
+                    <thead>
+                        <tr>
+                            <th class="w-1/3">기존 방식</th>
+                            <th class="w-2/3 text-primary">본 시스템</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>부서 단위로 뭉뚱그려 분류</td>
+                            <td><span class="feature-badge badge-new">NCS</span> <strong>국가직무능력표준</strong> 기반 세분화</td>
+                        </tr>
+                        <tr>
+                            <td>유사 직무 식별 어려움</td>
+                            <td><strong>유사도 분석 알고리즘</strong>으로 동일 가치 직무 그룹핑</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <!-- Module 3: Workload -->
+            <section id="m3" class="scroll-mt-8">
+                <div class="flex items-center gap-4 mb-6">
+                    <span class="text-slate-400 font-bold text-sm">03</span>
+                    <h3 class="text-2xl font-bold text-slate-900">업무량조사 (Workload)</h3>
+                </div>
+                <table class="w-full comparison-table text-sm">
+                    <thead>
+                        <tr>
+                            <th class="w-1/3">기존 방식</th>
+                            <th class="w-2/3 text-primary">본 시스템</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>"바쁘다"는 주관적 호소에 의존</td>
+                            <td><span class="feature-badge badge-new">Data</span> <strong>산업 평균 소요시간(Standard
+                                    Time)</strong>과 비교 검증</td>
+                        </tr>
+                        <tr>
+                            <td>총량적 접근 (연간 2000시간 등)</td>
+                            <td>빈도(Frequency) x 시간(Time) = <strong>FTE 자동 산출</strong></td>
+                        </tr>
+                        <tr>
+                            <td>검증 불가능</td>
+                            <td><strong>이상치(Outlier) 자동 탐지</strong> (평균 대비 ±30% 이탈 시 경고)</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <!-- Module 5: Headcount -->
+            <section id="m5" class="scroll-mt-8">
+                <div class="flex items-center gap-4 mb-6">
+                    <span class="text-slate-400 font-bold text-sm">05</span>
+                    <h3 class="text-2xl font-bold text-slate-900">정원산정 (Headcount)</h3>
+                </div>
+                <div class="bg-white p-6 rounded-lg border border-slate-200">
+                    <h4 class="font-bold text-sm text-slate-500 mb-2 uppercase">Superiority Point</h4>
+                    <p class="text-slate-700">
+                        기존의 <strong>'Top-down 총액인건비 통제'</strong> 방식에서 벗어나,
+                        <strong class="text-primary">'Bottom-up 업무량 기반 산정'</strong> 결과를 제시함으로써
+                        기재부/주무부처와의 정원 협상에서 <strong>압도적인 논리적 우위</strong>를 점할 수 있습니다.
+                    </p>
+                </div>
+            </section>
+
+            <!-- Module 12: Training -->
+            <section id="m12" class="scroll-mt-8">
+                <div class="flex items-center gap-4 mb-6">
+                    <span class="text-slate-400 font-bold text-sm">12</span>
+                    <h3 class="text-2xl font-bold text-slate-900">교육관리 설계 (Training)</h3>
+                </div>
+                <table class="w-full comparison-table text-sm">
+                    <thead>
+                        <tr>
+                            <th class="w-1/3">기존 방식</th>
+                            <th class="w-2/3 text-primary">본 시스템</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>직무와 무관한 공통 교육 위주</td>
+                            <td><strong>직무 역량 갭(Gap) 분석</strong> 기반 맞춤형 교육 추천</td>
+                        </tr>
+                        <tr>
+                            <td>교육 이력 단순 기록</td>
+                            <td>교육 이수 후 <strong>역량 향상도(Pre-Post)</strong> 측정 및 승진 반영</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+        </div>
+    </main>
+
+    <script>
+        // ScrollSpy Logic
+        const mainContent = document.getElementById('main-content');
+        const navItems = document.querySelectorAll('.nav-item');
+        const sections = document.querySelectorAll('section');
+
+        mainContent.addEventListener('scroll', () => {
+            let current = '';
+
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                // Check if section is in middle of viewport
+                if (mainContent.scrollTop >= (sectionTop - 300)) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navItems.forEach(item => {
+                item.classList.remove('active');
+                if (item.getAttribute('href').includes(current)) {
+                    item.classList.add('active');
+                }
+            });
+        });
+
+        // Initial check
+        mainContent.dispatchEvent(new Event('scroll'));
+    </script>
+</body>
+
+</html>

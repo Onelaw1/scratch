@@ -1,0 +1,264 @@
+{
+  "slide_type": "Content",
+  "slide_number": 22,
+  "title": "1. 외부 환경분석 - 해양환경종합계획 추진과제 분석 (6/6)",
+  "governing_message": "전략과제 6. 기후변화에 대응하고 체계적으로 계획된 바다에서는 기후변화 대응, 해양환경 및 해양공간 정보화, 해양환경 분야 국제적 위상 강화 및 협력 증진에서 공단의 주도적 역할에 대한 기대를 확인할 수 있음",
+  "layout": {
+    "grid_type": "custom",
+    "background_color": "#FFFFFF"
+  },
+  "content_data": {
+    "subtitle": null,
+    "date": null,
+    "client_name": null,
+    "framework_type": null,
+    "elements": null,
+    "sections": [
+      {
+        "title": "전략과제 6. 기후변화에 대응하고 체계적으로 계획된 바다",
+        "blocks": []
+      },
+      {
+        "title": "추진 전략",
+        "blocks": [
+          {
+            "block_type": "text",
+            "content": "깨끗한 수질이 유지되는\n청정한 바다",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "건강한 생태계가\n살아있는 바다",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "쾌적한 해양생활을\n즐기는 바다",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "친환경적인 경제활동이\n이루어지는 바다",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "녹색 해양산업이\n펼쳐지는 바다",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          }
+        ]
+      },
+      {
+        "title": "추진 과제",
+        "blocks": [
+          {
+            "block_type": "text",
+            "content": "해양 기후변화 과학적 대응\n능력 강화",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "기후변화 적응형 해안관리",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "해역의 가치와 영향을 고려한\n해양공간관리 지원체계 구축",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "해양환경영향평가체계 전문성\n강화",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "기후변화에 대응하고\n체계적으로 계획된 바다",
+            "position": "bottom-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "해양환경 분야 국제협력 선도",
+            "position": "bottom-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          }
+        ]
+      },
+      {
+        "title": "세부 실행 과제",
+        "blocks": [
+          {
+            "block_type": "text",
+            "content": "• 해양 기후환경 통합관측시스템 구축\n• 해양 기후변화 분석 및 예측 모델 구축\n• 해양 기후변화 취약성 평가 및 대응전략 마련",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "• 자연해안을 활용한 연안 재해대응 추진\n• 시민과 함께하는 해안관리 방안 마련\n• 연안재해 위험평가 제도화 및 연안침식\n  상습지역 개발 최소화 방안 마련",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "• 해양공간의 능동형·통합 관리기반 구축\n• 해양공간의 스마트 관리기반 구축\n• 해양생태계서비스 공간가치지도 제작\n• 해양공간·생태 관리정책 제도 정비",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "• 해양환경영향평가 기술 고도화 및\n  정보지원시스템 구축·운영\n• 해양환경영향평가체계 고도화",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "• 해양환경 국제협력 추진체계 고도화\n• 해양환경 분야별 국제협력 강화\n• 신남방국가 등 해양환경 역량강화 지원",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          }
+        ]
+      },
+      {
+        "title": "공단의 역할 기대",
+        "blocks": [
+          {
+            "block_type": "text",
+            "content": "해양기후변화 예측모델 개발,\n예측시스템 운영관리",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "지역·시민 참여형 해안환경 관리\n체계 구축, 관리",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "해양공간 관리체계 구축 및\n해양공간정보시스템 기획, 구축",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "해양환경 평가 체계 재정립(고도화)\n및 평가 전문성 강화",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "해양환경 국제협력 추진전략 수립,\n추진체계 고도화",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "✓ 기후변화 대응 전반에서 공단의\n   주도적 역할 요구\n✓ 해양환경 및 해양 정보화 주도\n✓ 해양환경 국제위상 강화 주도",
+            "position": "bottom-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "footer": "*Source : 제5차 해양환경종합계획(2021~2030), 2021.01, 해양수산부"
+}

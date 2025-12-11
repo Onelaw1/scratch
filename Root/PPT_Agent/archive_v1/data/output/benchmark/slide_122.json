@@ -1,0 +1,55 @@
+{
+  "slide_type": "Framework",
+  "slide_number": 122,
+  "title": "2. 가치체계·전략체계 재정립 - 미션 후보 도출 (2/5)",
+  "governing_message": "전략 방향성으로부터 미션 구성 키워드를 추출하여 미션 후보 “국민에게 깨끗하고 안전한 해양환경을 제공하고, 더 나은 미래해양을 만들어 간다”를 아래와 같이 도출함",
+  "layout": {
+    "grid_type": "custom",
+    "background_color": "#FFFFFF"
+  },
+  "content_data": {
+    "subtitle": null,
+    "date": null,
+    "client_name": null,
+    "framework_type": "List",
+    "elements": [
+      {
+        "label": "1. 해양 방제 기본역량 강화\n2. 공적기능과 공공성 강화\n3. 해양생태 통합관리체계 확장\n4. 해양폐기물 정화·관리체계 강화\n5. 해양환경변화 예측역량 강화\n6. 해양환경 정책기능 강화\n7. 미래성장사업 규모의 경제 실현\n8. 해양환경 국민 플랫폼으로 성장\n9. 해양 신산업 육성 기반조성\n10. 해양 기후변화·탄소중립 주도",
+        "description": null,
+        "position": "top-left"
+      },
+      {
+        "label": "깨끗한, 안전한, 해양환경",
+        "description": "사업 범위",
+        "position": "center"
+      },
+      {
+        "label": "국민, 미래",
+        "description": "고객·수혜자",
+        "position": "center"
+      },
+      {
+        "label": "(보전, 이용, 향유, 활용), 미래해양",
+        "description": "효과·효용",
+        "position": "center"
+      },
+      {
+        "label": "해양환경, 친환경, 환경자산",
+        "description": "주요 가치",
+        "position": "center"
+      },
+      {
+        "label": "“국민에게 깨끗하고 안전한\n해양환경을 제공하고,\n더 나은 미래해양을 만들어\n간다”",
+        "description": "미션 후보(案)",
+        "position": "top-right"
+      },
+      {
+        "label": "[설명]\n• 수혜대상인 국민을 전면에 배치, 해양\n방제·정화·보전 기본 역할에 미래를\n위한 개선을 내포한 미션\n• 현재와 미래를 연결적으로 구성\n\n[특징·장점]\n• 현재 국민을 위한 해양환경 조성,\n제공 기능과 미래 개선을 포괄함\n• 사업영역을 넓게 해석할 수 있어\n해양 이용·향유·개발로 확대 수월",
+        "description": null,
+        "position": "bottom-right"
+      }
+    ],
+    "sections": null
+  },
+  "footer": "KOEM 해양환경공단"
+}

@@ -1,0 +1,150 @@
+{
+  "slide_type": "Content",
+  "slide_number": 51,
+  "title": "2. 내부 환경·역량 분석 - 해양환경정책과 공단 연혁 (1/2)",
+  "governing_message": "해양환경종합계획 정책과 공단 연혁 (1/2)",
+  "layout": {
+    "grid_type": "3-column",
+    "background_color": "string"
+  },
+  "content_data": {
+    "subtitle": null,
+    "date": null,
+    "client_name": null,
+    "framework_type": null,
+    "elements": null,
+    "sections": [
+      {
+        "title": "제1차 해양오염방지 5개년 계획",
+        "blocks": [
+          {
+            "block_type": "text",
+            "content": "추진\n방향",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "string",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "• 대규모 유해성 적조 및 유류오염사고\n  예방\n• 적조방지종합대책 수립, 시행\n• 해양오염사고 방제기능 강화",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "string",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "성과",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "string",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "• 적조피해액 및 유류 유출량 감소\n• 「연안관리법」, 「습지보전법」,\n  「해양오염방지법」 등 관련 법률\n  제·개정하여 해양환경보전 기반 확보",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "string",
+              "font_size": 12
+            }
+          }
+        ]
+      },
+      {
+        "title": "제2차 해양환경보전 종합계획",
+        "blocks": [
+          {
+            "block_type": "text",
+            "content": "•오염물질의 사후처리에서 사전에\n 억제하는 '사전예방적 관리 체제'로 기본\n 정책방향 전환\n• 육상기인 오염원의 해양유입방지 강화",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "string",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "• 연안해역 평균수질 COD기준 II등급 유지\n• 해양보호구역 확대 지정\n•국민의 해양보전 인식 및 참여 제고,\n•해양환경측정망 확대(296개소, 1999년 →\n 347개소, 2005년)",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "string",
+              "font_size": 12
+            }
+          }
+        ]
+      },
+      {
+        "title": "제3차 해양환경보전 종합계획",
+        "blocks": [
+          {
+            "block_type": "text",
+            "content": "• 해양생태계 중심의 관리\n• 인간과 해양환경의 공존·조화 추구를\n 기본방향으로 해양생태계 보전·관리\n• 육상기인 오염원 관리, 해양환경개선 및\n 오염원의 예방적 관리\n• 해양환경관리 정책 인프라 강화",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "string",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "• 전국 연안의 육상기인 오염원 관리 기본 틀\n 마련, 연안오염총량제 성공적 도입\n• 유류오염 방제능력 강화, 해양쓰레기 수거처리\n 기본계획 수립 및 유역관리책임제 도입\n•「해양환경관리법」 제정 및 해양환경관리\n 전문기관 '해양환경관리공단' 설립",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "string",
+              "font_size": 12
+            }
+          }
+        ]
+      },
+      {
+        "title": "공단\n연혁",
+        "blocks": [
+          {
+            "block_type": "text",
+            "content": "• '97. 한국해양오염방제조합 설립\n• '98. 예선사업 인수",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "string",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "• '04. 지자체와 해안방제작업협약 체결\n• '00. 수중침적폐기물 수거사업 및 전문방제교육 실시",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "string",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "• '08. 해양환경관리공단 설립\n• '10. 해양환경개발교육원 설립",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "string",
+              "font_size": 12
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "footer": ""
+}

@@ -1,0 +1,205 @@
+{
+  "slide_type": "Content",
+  "slide_number": 117,
+  "title": "1. 전략수립 방향성 - 해양환경 전문기관 지향",
+  "governing_message": "해양환경의 영역과 범위, 개념을 정의하고 해양환경 정책의 목표와 방향성을 수립하며, 정책 우선순위와 추진을 선도할 해양환경 전문기관으로서 공단의 역할과 위상을 재정의하고 해양환경 전문기관으로 거듭나는 발전이 필요함",
+  "layout": {
+    "grid_type": "1-column",
+    "background_color": "#FFFFFF"
+  },
+  "content_data": {
+    "subtitle": null,
+    "date": null,
+    "client_name": null,
+    "framework_type": null,
+    "elements": null,
+    "sections": [
+      {
+        "title": "국가 해양환경 개념 변화와 전문기관 필요성 : 공단의 새로운 역할과 위상",
+        "blocks": [
+          {
+            "block_type": "text",
+            "content": "'90년대",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "• 오염사고 (사후) 방제\n• 오염피해 지원제도 도입",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "• 해양오염의 심각성, 국가적\n대응역량 확보 필요성에 따라\n한국해양오염방제조합 설립",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "• 대규모 해양오염사고에 대한\n대응으로 재난예방 및 사고\n방제 등 해양방제 체계 확보",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "'00년대",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "• 해양환경·생태계 개념 도입\n• 오염정화, 오염원 관리 체계화",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "• 해양환경·해양생태계 개념이\n도입되면서 해양환경관리공단\n으로 기능 확대(설립)",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "• 공단 설립과 별개로 해수부가\n국토부·농수산식품부·환경부로\n분리되어 정책 주관 불분명",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "'10년대",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "• 해양생태계 건강성 유지·보전\n• 해양환경 정책 범위 확대",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "• 해양환경 정책 연구·입안·평가\n인프라 확대를 꾀했으나 정책\n선도 주체의 모호성(해수부,\n공단, KMI 등), 정책역량 보유\n기관의 부재로 국가 해양환경\n정책의 확대 제한적",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "'20년대",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "• 해양 보전·이용·성장 관점 도입\n• 해양환경 개념·정책 재정의 필요",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "• 해양환경의 영역과 범위 확대에\n따라 해양환경 개념 재정의 필요",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "• 새로운 해양환경 개념에 따라\n해양환경 정책 방향성 수립을\n지원하고 정책 수행을 선도할\n해양환경 전문기관 필요",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "해양환경\n전문기관으로서\n공단의 역할과\n위상 재정의",
+            "position": "bottom-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "✓ 해양환경은 해운물류, 수산업 등 직접적 경제효과를 가진 부문에 비해 정책 연구와 개발에 충분한 투자가 이루어지지 않음\n✓ 해양환경의 영역과 범위의 확대, 보전·복원의 개념에 대한 정의가 선제적으로 이루어지지 않고, 국제기구·시민단체 또는 산업자원부·환경부 등 외부적 요구에 따라가는 정책 수준에 머무르고 있음",
+            "position": "bottom-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "✓ 해양환경의 영역과 범위, 개념을 정의하고,\n✓ 해양환경 정책 방향성을 수립을 지원하며,\n√ 정책 수행을 선도할 전문기관 필요\n\n⇒ “해양환경공단\"의 새로운 역할과 위상",
+            "position": "bottom-right",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "footer": ""
+}

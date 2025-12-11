@@ -1,0 +1,125 @@
+{
+  "slide_type": "Framework",
+  "slide_number": 159,
+  "title": "3. 전략목표·전략과제 수립 - 사업영역별 전략목표 도출 (6/6)",
+  "governing_message": "전략방향성과 SWOT 분석을 통해 도출된 전략과제에 기반한 미래사업 및 정책기능 부문 전략목표를 ‘해양환경 정책 네트워크 강화'로 아래와 같이 도출하고 해당 전략과제를 선정함",
+  "layout": {
+    "grid_type": "custom",
+    "background_color": "#FFFFFF"
+  },
+  "content_data": {
+    "subtitle": null,
+    "date": null,
+    "client_name": null,
+    "framework_type": "List",
+    "elements": [
+      {
+        "label": "1. 해양 방제 기본역량 강화",
+        "description": null,
+        "position": "left"
+      },
+      {
+        "label": "2. 공적기능과 공공성 강화",
+        "description": null,
+        "position": "left"
+      },
+      {
+        "label": "3. 해양생태 통합관리체계 확장",
+        "description": null,
+        "position": "left"
+      },
+      {
+        "label": "4. 해양폐기물 정화·관리체계 강화",
+        "description": null,
+        "position": "left"
+      },
+      {
+        "label": "5. 해양환경변화 예측역량 강화",
+        "description": null,
+        "position": "left"
+      },
+      {
+        "label": "6. 해양환경 정책기능 강화",
+        "description": null,
+        "position": "left"
+      },
+      {
+        "label": "7. 미래성장사업 규모의 경제 실현",
+        "description": null,
+        "position": "left"
+      },
+      {
+        "label": "8. 해양환경 국민 플랫폼으로 성장",
+        "description": null,
+        "position": "left"
+      },
+      {
+        "label": "9. 해양 신산업 육성 기반조성",
+        "description": null,
+        "position": "left"
+      },
+      {
+        "label": "10. 해양 기후변화·탄소중립 주도",
+        "description": null,
+        "position": "left"
+      },
+      {
+        "label": "해양환경 정책기능 강화",
+        "description": null,
+        "position": "center"
+      },
+      {
+        "label": "해양환경정책 협력 네트워크 강화",
+        "description": null,
+        "position": "center"
+      },
+      {
+        "label": "해양환경 국민참여 통합 플랫폼 구축·육성",
+        "description": null,
+        "position": "center"
+      },
+      {
+        "label": "해양환경 국제협력 역량 강화",
+        "description": null,
+        "position": "center"
+      },
+      {
+        "label": "해양환경정보 분석 및 활용 체계화",
+        "description": null,
+        "position": "center"
+      },
+      {
+        "label": "신규(미래)사업 연속성 및 규모 확보",
+        "description": null,
+        "position": "center"
+      },
+      {
+        "label": "사업·투자 선택 기준과 절차 재정립",
+        "description": null,
+        "position": "center"
+      },
+      {
+        "label": "해양환경 네트워크 중심",
+        "description": null,
+        "position": "right"
+      },
+      {
+        "label": "해양정책 협력 네트워크 강화\n(국제협력 포함)",
+        "description": null,
+        "position": "right"
+      },
+      {
+        "label": "해양환경 국민 플랫폼 육성",
+        "description": null,
+        "position": "right"
+      },
+      {
+        "label": "미래사업 연속성·수익성 확보",
+        "description": null,
+        "position": "right"
+      }
+    ],
+    "sections": null
+  },
+  "footer": "KOEM 해양환경공단"
+}

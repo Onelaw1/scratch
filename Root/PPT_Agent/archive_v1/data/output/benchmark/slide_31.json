@@ -1,0 +1,215 @@
+{
+  "slide_type": "Content",
+  "slide_number": 31,
+  "title": "1. 외부 환경분석 - 그린 뉴딜 추진전략 분석 (3/3)",
+  "governing_message": "저탄소 분산형 에너지 확산 추진에서 공단은 R&D, 기술투자, 자금지원 등 다양한 유형의 지원사업을 수행할 수 있으며, 특히 블루카본, 친환경선박 등 공단이 선도적으로 추진할 수 있는 분야의 사업확대 기회가 제공될 수 있음",
+  "layout": {
+    "grid_type": "custom",
+    "background_color": "#FFFFFF"
+  },
+  "content_data": {
+    "subtitle": null,
+    "date": null,
+    "client_name": null,
+    "framework_type": null,
+    "elements": null,
+    "sections": [
+      {
+        "title": "그린 뉴딜 추진전략 ③ 저탄소 분산형 에너지 확산",
+        "blocks": [
+          {
+            "block_type": "text",
+            "content": "도시·공간·생활\n인프라 녹색전환",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "녹색산업\n혁신생태계 조성",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "저탄소 분산형\n에너지 확산\n~22: 3.2조 원\n~25: 6.3조 원",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "1 녹색 선도 유망기업 육성 및 저탄소 녹색산단 조성\n~'25: 3.6조원",
+            "position": "top-left",
+            "style": {
+              "is_bold": true,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "• 녹색기업 육성과 녹색 융합 클러스터 조성\n• 마이크로그리드 기반 스마트 에너지 플랫폼 조성\n• 친환경 제조공정을 위한 생산방식 전환",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "2 R&D·금융 등 녹색혁신기반 조성\n~'25: 2.7조원",
+            "position": "top-left",
+            "style": {
+              "is_bold": true,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "• 녹색기술 분야의 기술 개발·평가 시스템 마련\n- 온실가스 감축기술개발 지원\n- 미세먼지 대응 기술 개발 추진\n- 노후 자재 재제조 기술 및 희소금속 회수·활용 기술 개발\n• 환경·에너지 관련 공적자금을 제공하고 제도적 기반 마련",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          }
+        ]
+      },
+      {
+        "title": "녹색기술 분야 R&D 기술개발 지원",
+        "blocks": [
+          {
+            "block_type": "text",
+            "content": "탄소포집",
+            "position": "top-right",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "온실가스 감축\n• 이산화탄소 포집·저장·활용 등 온실가스 감축 관련 기술",
+            "position": "top-right",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "R&D",
+            "position": "center",
+            "style": {
+              "is_bold": true,
+              "color_hex": "#000000",
+              "font_size": 14
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "재제조",
+            "position": "top-right",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "희소금속 회수",
+            "position": "top-right",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "자연순환 촉진\n• 재제조 및 자원순환 촉진 관련 기술 개발",
+            "position": "top-right",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "기술투자\n·자금지원",
+            "position": "bottom-right",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "R&D사업\n직접 발굴,\n수행",
+            "position": "bottom-right",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "해양녹색기술\nR&D 기업\n인큐베이팅",
+            "position": "bottom-right",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "블루카본,\n친환경선박\n기술이양",
+            "position": "bottom-right",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          }
+        ]
+      },
+      {
+        "title": "Key Findings",
+        "blocks": [
+          {
+            "block_type": "text",
+            "content": "✓ 공단은 R&D 사업 직접 수행, 투자 및 자금지원, 민간 기업 발굴 및 지원, 기술 민간 이양 및 사업화 등 다양한 형태의 지원사업의 추진이 가능\n✓ 특히, 블루카본, 친환경선박 등 공단이 선도적으로 추진할 수 있는 녹색기술 분야에 사업확대 기회 제공",
+            "position": "bottom-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "footer": "*Source: 한국판 뉴딜 종합계획, 관계부처 합동 (2020.07)"
+}

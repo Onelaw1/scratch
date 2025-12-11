@@ -1,0 +1,145 @@
+{
+  "slide_type": "Data",
+  "slide_number": 166,
+  "title": "3. 전략목표·전략과제 수립 - 세부실행과제 수립 및 신사업 발굴 (2/2)",
+  "governing_message": "전략목표 달성을 위한 전략과제별 세부실행과제와 우선투자 및 집중육성 미래성장사업을 아래와 같이 수립함",
+  "layout": {
+    "grid_type": "custom",
+    "background_color": "#FFFFFF"
+  },
+  "content_data": {
+    "subtitle": null,
+    "date": null,
+    "client_name": null,
+    "framework_type": null,
+    "elements": null,
+    "sections": [
+      {
+        "title": null,
+        "blocks": [
+          {
+            "block_type": "table",
+            "content": "Strategic Alignment Table with Strategic Objectives, Action Items, Detailed Execution Items and Focused Growth Future Businesses",
+            "position": "full-width",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          }
+        ]
+      },
+      {
+        "title": null,
+        "blocks": [
+          {
+            "block_type": "text",
+            "content": "7. 해양환경 이용·향유 자원화 확대 해양치유산업 기반조성, 해양공간 통합관리 기반 구축 (2개 실행과제)",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "연안뉴딜 : 연안습지·갯벌\n생태복원 사업, 해양 이용·향유\n新산업 육성 (2개 육성사업)",
+            "position": "top-right",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          }
+        ]
+      },
+      {
+        "title": null,
+        "blocks": [
+          {
+            "block_type": "text",
+            "content": "8. 해양 탄소중립 이행기반 구축\n해양수산부문 기후변화 대응체계 구축, 해상풍력단지 개발 지원, 블루카본\n국가 통계 생산기반 구축, 해양대기환경 통합관리체계 구축 (4개 실행과제)",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "지역밀착형 탄소중립 오션뉴딜\n운영, 해상풍력 실증 지원 및\n디지털 정보화 (2개 육성사업)",
+            "position": "top-right",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          }
+        ]
+      },
+      {
+        "title": null,
+        "blocks": [
+          {
+            "block_type": "text",
+            "content": "9. 지속가능 성장기반 확보\n전사적 통합 재무위험관리, 지속적 재무건전성 유지, 예산 편성·집행·사후평가\n효율화, 전략기반 재무계획 수립 및 변화 관리 체계화, 상시적 기능점검체계 운영,\n전문성을 갖춘 KOEM형 인재 양성, 임직원 직무역량 개발·향상, 합리적 보수체계\n구축, 전략적 자산관리 종합체계 구축, 전사 디지털전환 전략 수립·추진, 해양환경\n국제협력 네트워크 강화, 국제협력을 통한 新사업 창출 (12개 실행과제)",
+            "position": "full-width",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          }
+        ]
+      },
+      {
+        "title": null,
+        "blocks": [
+          {
+            "block_type": "text",
+            "content": "10. 상생협력 공정경제 생태계 조성\n국민참여·소통을 통한 국민체감 혁신, 경영혁신체계 구축·운영, 공정문화 조성\n및 제도개선, 중소기업 동반성장 활성화, 사회공헌 및 지역경제 활성화,\nCS경영체계 관리 고도화, 공공데이터 및 지식자산 관리 고도화, KOEM 국민\n희망 일자리 창출, 민간일자리 확대 추진 (9개 실행과제)",
+            "position": "full-width",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          }
+        ]
+      },
+      {
+        "title": null,
+        "blocks": [
+          {
+            "block_type": "text",
+            "content": "11. 건강하고 안전한 근로환경 제공\n안전한 근로환경 조성 및 제공, 안전관리 영역 확대 및 체계화, 노사 상생\n조직문화 정착, 노사관계 관리 역량 강화, 정보보안 및 접근성 증대 (5개\n실행과제)",
+            "position": "full-width",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          }
+        ]
+      },
+      {
+        "title": null,
+        "blocks": [
+          {
+            "block_type": "text",
+            "content": "12. 투명한 경영으로 공정한 기회 보장\n청렴문화 확산, 내부견제 제도 운영 강화, 대국민 소통 활성화, 윤리경영시스템\n활성화, 경영공시 고도화, 성과관리 체계 고도화, 기록정보서비스 제공 및 기록문화\n확산, 인사관리 공정성 제고, 여성인재 육성 강화, 사회형평적 채용 및 일자리 확대,\n임금피크제 운영을 통한 청년 채용 확대, 데이터 기반 행정 활성화 (12개 실행과제)",
+            "position": "full-width",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "footer": "KOEM 해양환경공단"
+}

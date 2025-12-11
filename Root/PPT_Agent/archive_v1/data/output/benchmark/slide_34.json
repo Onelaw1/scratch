@@ -1,0 +1,245 @@
+{
+  "slide_type": "Content",
+  "slide_number": 34,
+  "title": "1. 외부 환경분석 - 2030 한국형 친환경선박(Greenship-K) 추진전략",
+  "governing_message": "2030 Greenship-K 추진전략의 공공부문 친환경선박 선제적 전환 정책에 따라 공단은 보유 선박 전체를 2030년까지\n친환경선박으로 전환하여야 하며, 이는 높은 비용에 따른 재정부담과 사업성 악화 등 문제로 이어질 가능성이 큼",
+  "layout": {
+    "grid_type": "custom",
+    "background_color": "#FFFFFF"
+  },
+  "content_data": {
+    "subtitle": null,
+    "date": null,
+    "client_name": null,
+    "framework_type": null,
+    "elements": null,
+    "sections": [
+      {
+        "title": "2030 한국형 친환경선박 추진전략 : 공단 보유 선박의 친환경선박 전환 필요",
+        "blocks": [
+          {
+            "block_type": "text",
+            "content": "비전 및 추진전략",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "비전",
+            "position": "top-left",
+            "style": {
+              "is_bold": true,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "Greenship-K 기반 구축으로 2050 탄소중립 산업 생태계 구현",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "목표 및\n추진전략",
+            "position": "top-left",
+            "style": {
+              "is_bold": true,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "미래 친환경선박\n세계 선도 기술 확보\n온실가스 70% 감축기술 개발\n['25년 40% → '30년 70%]",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "선박배출 온실가스 감축 및\n친환경 新시장 창출\n친환경선박 전환율 15% 달성\n[전환대상 3,542척 중 528척 전환]",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "1 미래 친환경선박 세계 선도 기술 확보",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "2 新기술 확산을 위한 시험기반 구축",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "3 한국형 실증 프로젝트 [그린쉽-K] 추진",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "중점\n추진과제",
+            "position": "top-left",
+            "style": {
+              "is_bold": true,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "4 연료공급 인프라 확충",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "5 친환경선박 보급 촉진",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "6 친환경 선박시장 주도 생태계 조성",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          }
+        ]
+      },
+      {
+        "title": "5. 친환경선박 보급 촉진 - ① 공공부문 선제적 전환",
+        "blocks": [
+          {
+            "block_type": "text",
+            "content": "공공부문 보유선박의 선제적 전환 및 민간부문 보급 확산\n* 2030년까지 528척(관공선 388, 민간 140) 친환경 전환(15%)",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "✓ 공공선박의 친환경선박 전환비율을 '30년까지\n83%수준으로 확대\n* ('20) 1% → ('25) 20% → ('30) 83%",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "chart",
+            "content": "bar chart showing 1% at 2020, 20% at 2025, 83% at 2030",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "✓ 노후관공선 199척을 친환경선박(LNG·하이브리드)으로 대체건조하고,\n선령 10년 미만 189척 친환경 개조(저감장치 장착 등)",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "table",
+            "content": "Table with columns: 방식, LNG 추진, 전기추진, 하이브리드, 저감장치장착. Rows: 대상(안), 200톤 이상, 200톤 미만 (운항시간 2시간 이내), 200톤 미만 또는 LNG 또는 전기추진 적용불가 선박, 선령 10년 이하 또는 친환경기술 적용이 어려운 선박",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "※ (한국판 뉴딜, ~'25) : 해수부·해경 소속 관공선·함정 등 총 114척을\n친환경선박으로 전환 추진(해수부: 29척 건조, 80척 개조, 해경: 5척 건조)",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "① 공공부문 선제적 전환\n② 민간부문 전환 확산",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          }
+        ]
+      },
+      {
+        "title": "Key Findings",
+        "blocks": [
+          {
+            "block_type": "text",
+            "content": "✓ 공단은 공공부문 선제적 전환에 따라 544톤급 LNG 예방선을\n건조 중이며, '30년까지 전체 예방선의 전환이 필요함\n✓ 친환경선박 전환은 기존 선박보다 높은(LNG 예방선은 3배\n수준) 건조비용으로 재정부담 증가, 사업성 등 문제 발생",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "footer": "* Source: 2030 한국형 친환경선박(Greenship-K) 추진전략, 2020. 12. 23, 관계부처 합동\nKOEM 해양환경공단 33"
+}

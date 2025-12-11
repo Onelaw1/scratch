@@ -1,0 +1,255 @@
+{
+  "slide_type": "Content",
+  "slide_number": 17,
+  "title": "1. 외부 환경분석 - 해양환경종합계획 추진과제 분석 (1/6)",
+  "governing_message": "전략과제 1. 깨끗한 수질이 유지되는 청정한 바다는 해양오염관리의 디지털화, 정보화에 대한 기대와 오염원, 해역 등 기준에 따른 맞춤관리 등 체계적 오염관리 강화를 요구하고 있음",
+  "layout": {
+    "grid_type": "custom",
+    "background_color": null
+  },
+  "content_data": {
+    "subtitle": null,
+    "date": null,
+    "client_name": null,
+    "framework_type": null,
+    "elements": null,
+    "sections": [
+      {
+        "title": "전략과제 1. 깨끗한 수질이 유지되는 청정한 바다",
+        "blocks": [
+          {
+            "block_type": "text",
+            "content": "추진 전략",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "추진 과제",
+            "position": "top-right",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "세부 실행 과제",
+            "position": "center",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "공단의 역할 기대",
+            "position": "bottom-right",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "깨끗한 수질이 유지되는\n청정한 바다",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "참여형 스마트 해역환경\n관리기반 조성",
+            "position": "top-right",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "• ICT 기반 해역환경 모니터링 체계 개선\n• 빅데이터를 활용한 해양환경 기준 설정\n• 해역환경 관리기술 연구개발 추진\n• 참여형 해역환경 관리 거버넌스 정착\n• 방사성물질 해양 유입 사전대응 및\n  관리역량 확보",
+            "position": "center",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "해양환경 관리 디지털화·정보화",
+            "position": "bottom-right",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "건강한 생태계가\n살아있는 바다",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "정부·지자체-공공-민간의 협력적\n해양환경 거버넌스 강화",
+            "position": "bottom-right",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "쾌적한 해양생활을\n즐기는 바다",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "육상기인 오염물질 저감",
+            "position": "top-right",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "• 연안 환경기초시설 운영 강화\n• 비점오염원 유래 오염물질의 해양 유입\n  저감\n• 하천 하구역 해양환경관리 강화",
+            "position": "center",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "해양오염 예방을 위한 투자와\n오염원 관리 강화",
+            "position": "bottom-right",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "친환경적인 경제활동이\n이루어지는 바다",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "해양오염 관리기준 재정립\n(오염관리 지표 등)",
+            "position": "bottom-right",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "녹색 해양산업이\n펼쳐지는 바다",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "해역별 맞춤형 관리 강화",
+            "position": "top-right",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "• 해역환경 관리 전국연안으로 대상 확대\n• 환경관리해역의 효율적 관리\n• 특별관리해역 연안오염총량관리 확대 및\n  심화\n• 해역의 해저퇴적물 오염 개선",
+            "position": "center",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "해안 구역별 오염관리 체계 정립\n및 관리영역 확대",
+            "position": "bottom-right",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "기후변화에 대응하고\n체계적으로 계획된 바다",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "✓ 해양오염 관리의 디지털화,\n 정보화에 대한 기대 확대",
+            "position": "bottom-right",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "✓ 오염원, 해역별 관리 등 체계적\n 오염관리 강화 필요성",
+            "position": "bottom-right",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "footer": "*Source : 제5차 해양환경종합계획(2021~2030), 2021.01, 해양수산부"
+}

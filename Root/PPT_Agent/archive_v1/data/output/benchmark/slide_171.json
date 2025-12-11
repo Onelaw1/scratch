@@ -1,0 +1,35 @@
+{
+  "slide_type": "Data",
+  "slide_number": 171,
+  "title": "4. 경영목표 수립 - 해양보전부문 지표 선정",
+  "governing_message": "해양보전 부문의 경영목표 지표 Pool 중, 1등급 해역 비율, 갯벌복원 면적을 적용 가능한 적정 지표로 선정함",
+  "layout": {
+    "grid_type": "custom",
+    "background_color": "#FFFFFF"
+  },
+  "content_data": {
+    "subtitle": null,
+    "date": null,
+    "client_name": null,
+    "framework_type": null,
+    "elements": null,
+    "sections": [
+      {
+        "title": "경영목표 지표 Pool ① 해양보전",
+        "blocks": [
+          {
+            "block_type": "table",
+            "content": "Table describing key performance indicators related to marine conservation including metrics for water quality, ecosystem health, protected areas, and restoration efforts.",
+            "position": "center",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 10
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "footer": "Ⅲ. 가치체계·전략체계 재정립"
+}

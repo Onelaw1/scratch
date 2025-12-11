@@ -1,0 +1,35 @@
+{
+  "slide_type": "Framework",
+  "slide_number": 160,
+  "title": "3. 전략목표·전략과제 수립 - 경영관리 전략목표 도출 (1/2)",
+  "governing_message": "전략방향성과 SWOT 분석을 통해 도출된 전략과제에 기반하여 경영관리 부문의 전략목표를 ‘지속가능 성장 기반 확보'로 아래와 같이 도출하고 해당 전략과제를 선정함",
+  "layout": {
+    "grid_type": "custom",
+    "background_color": "white"
+  },
+  "content_data": {
+    "subtitle": null,
+    "date": null,
+    "client_name": null,
+    "framework_type": "List",
+    "elements": [
+      {
+        "label": "전략 방향성",
+        "description": "1. 해양 방제 기본역량 강화\n2. 공적기능과 공공성 강화\n3. 해양생태 통합관리체계 확장\n4. 해양폐기물 정화·관리체계 강화\n5. 해양환경변화 예측역량 강화\n6. 해양환경 정책기능 강화\n7. 미래성장사업 규모의 경제 실현\n8. 해양환경 국민 플랫폼으로 성장\n9. 해양 신산업 육성 기반조성\n10. 해양 기후변화·탄소중립 주도",
+        "position": "top-left"
+      },
+      {
+        "label": "SWOT 분석 도출 전략과제",
+        "description": "공단 재정구조 전환 검토, 추진\n사업·투자 선택 기준과 절차 재정립\n신규(미래)사업 연속성 및 규모 확보\n내부 인재육성 및 전문성 강화\nDT 적용 의사소통과 정보공유 혁신\n데이터 기반 의사결정 체계 강화\n공단 관리사업 안전관리 확대 적용",
+        "position": "center"
+      },
+      {
+        "label": "경영관리 전략목표",
+        "description": "지속가능 성장 기반 확보\n사업구조 및 재무건전성 제고\n인재육성을 통한 전문성 강화\n데이터 기반 의사결정 체계화",
+        "position": "top-right"
+      }
+    ],
+    "sections": null
+  },
+  "footer": ""
+}

@@ -1,0 +1,50 @@
+{
+  "slide_type": "Data",
+  "slide_number": 64,
+  "title": "2. 내부 환경·역량 분석 - 일반직·기능직 인력구성",
+  "governing_message": "공단 인력은 선박기술직이 288명(41.9%)로 가장 높고, 일반직 286명(41.6%), 공무직 57명(8.3%), 환경기술직 48명 (7.0%)으로 구성되어 있으며, 단일 노조로 선박기술직의 의견이 제일 강하게 작용함",
+  "layout": {
+    "grid_type": "2-column",
+    "background_color": null
+  },
+  "content_data": {
+    "subtitle": null,
+    "date": null,
+    "client_name": null,
+    "framework_type": null,
+    "elements": null,
+    "sections": [
+      {
+        "title": "인력구조 : 기술직 정원이 가장 큰 비율, 일반직 정원 상대적으로 작음",
+        "blocks": [
+          {
+            "block_type": "table",
+            "content": "공단 정원현황 (2020.11.20 정원표 기준)\n 구분\t계\t임원\t일반직\t기술직(선박)기술직(환경)\t별정직\t공무직\n계\t688\t4\t286\t288\t48\t5\t57\n구성비\t100.0%\t0.6%\t41.6%\t41.9%\t7.0%\t0.7%\t8.3%\n임원\t4\t4\t \t \t \t \t \n소계\t286\t \t286\t \t \t \t \n1급\t17\t \t17\t \t \t \t \n2급\t23\t \t23\t \t \t \t \n일반직\t3급\t39\t \t39\t122\t13\t \t \n4급\t63\t \t63\t82\t17\t \t \n5급\t101\t \t101\t84\t18\t \t \n6~7급\t43\t \t43\t \t \t \t \n기술직\t336\t \t \t336\t \t \t \n별정직\t5\t \t \t \t \t5\t \n공무직\t57\t \t \t \t \t \t57",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          }
+        ]
+      },
+      {
+        "title": null,
+        "blocks": [
+          {
+            "block_type": "text",
+            "content": "Key Findings\n✓ 공단은 '20년 11월 정원 기준 선박기술직 인력이 가장 큰 비중(41.9%)를 차지함\n✓ 일반직의 비율은 41.6%로 상대적으로 작음\n✓ 단일노조로 노조가 운영되고 있어, 일반직보다는 기술직, 공무직 인력의 비율이 높아 의견이 주로 반영됨\n✓ '22년 4월 다목적 대형 방제선이 인도되어 운영되면 26~30인의 선박 기술직 인력이 증가할 예정임 (전체의 44.3% 선박기술직)\n✓ 예선사업, 방제사업 중장기 운영방침 수립과 실행에 제약요소로 작용할 수 있음",
+            "position": "top-right",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "footer": "63"
+}

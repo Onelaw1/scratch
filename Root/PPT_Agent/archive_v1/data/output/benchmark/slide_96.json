@@ -1,0 +1,95 @@
+{
+  "slide_type": "Data",
+  "slide_number": 96,
+  "title": "4. 벤치마킹 - 한국환경공단 예산 구성 추이",
+  "governing_message": "한국환경공단은 '16~'19년 연간 2% 수준의 낮은 성장률을 보이고 있으며, '20년 '19년 대비 7% 증가한 예산을 편성했는데, 주로 수질, 대기, 온실가스 등 정부대행사업의 예산을 집중적으로 편성하고 있음을 확인할 수 있음",
+  "layout": {
+    "grid_type": "custom",
+    "background_color": null
+  },
+  "content_data": {
+    "subtitle": null,
+    "date": null,
+    "client_name": null,
+    "framework_type": null,
+    "elements": null,
+    "sections": [
+      {
+        "title": "한국환경공단 사업별 연간 예산구성 추이",
+        "blocks": [
+          {
+            "block_type": "chart",
+            "content": "연간 예산구성 추이 막대 그래프",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "정부대행사업(年 3,146억 원, 21.7%)\n수질, 대기, 탄소배출권, 온실가스, 토양오염, 음식물쓰레기 관리 정부대행 사업",
+            "position": "top-right",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "정부보조사업(年 342억 원, 2.4%)\n하이브리드/전기자동차 보급 지원 및 노후 재활용시설 장비 보강",
+            "position": "top-right",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "환경시설설치지원사업 (年 7,430억 원, 51.2%)\n상하수·폐수처리장, 하수관거, 소각·매립장 및 폐자원 에너지화 시설 등에 대한 시설설치 지원",
+            "position": "top-right",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "정부출연사업(年 2,076억 원, 14.3%)\n수처리시설 진단, 악취시설 진단 등 수입-지출 차액 출연금 지원 사업",
+            "position": "top-right",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "환경시설 수탁운영 사업 (年 461억 원, 3.2%)\n지자체 환경기초시설의 수탁운영 : 한강수계하수관망계측시스템관리, 댐상류하수도시설통합운영, 지방상수도통합운영",
+            "position": "top-right",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          },
+          {
+            "block_type": "text",
+            "content": "기타 용역 등(年 1,042억 원, 7.21%)\n그 외 지자체 환경기초시설 수탁운영 및 기타 위·수탁용역 수행",
+            "position": "top-right",
+            "style": {
+              "is_bold": false,
+              "color_hex": null,
+              "font_size": null
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "footer": null
+}

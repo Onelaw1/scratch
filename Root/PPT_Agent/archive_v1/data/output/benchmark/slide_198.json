@@ -1,0 +1,195 @@
+{
+  "slide_type": "Framework",
+  "slide_number": 198,
+  "title": "[New 미션·비전 전략체계도]",
+  "governing_message": "Strategic alignment across mission, vision, and strategic goals.",
+  "layout": {
+    "grid_type": "custom",
+    "background_color": "#FFFFFF"
+  },
+  "content_data": {
+    "subtitle": null,
+    "date": null,
+    "client_name": null,
+    "framework_type": "List",
+    "elements": [
+      {
+        "label": "미션",
+        "description": "깨끗하고 안전한 바다로 국민 행복을 증진하고, 해양의 더 나은 미래를 열어간다",
+        "position": "top"
+      },
+      {
+        "label": "비전",
+        "description": "해양의 보전과 이용을 선도하는 해양환경 국민 플랫폼 기관",
+        "position": "middle"
+      },
+      {
+        "label": "슬로건",
+        "description": "건강한 바다, 풍요로운 미래, 행복한 국민 with KOEM",
+        "position": "middle"
+      },
+      {
+        "label": "핵심가치",
+        "description": "전문역량",
+        "position": "middle"
+      },
+      {
+        "label": "핵심가치",
+        "description": "안전우선",
+        "position": "middle"
+      },
+      {
+        "label": "핵심가치",
+        "description": "열린혁신",
+        "position": "middle"
+      },
+      {
+        "label": "핵심가치",
+        "description": "협력성장",
+        "position": "middle"
+      },
+      {
+        "label": "경영방침",
+        "description": "공정경제",
+        "position": "middle"
+      },
+      {
+        "label": "경영방침",
+        "description": "공익우선",
+        "position": "middle"
+      },
+      {
+        "label": "경영방침",
+        "description": "국민참여",
+        "position": "middle"
+      },
+      {
+        "label": "경영방침",
+        "description": "일하는 보람",
+        "position": "middle"
+      },
+      {
+        "label": "경영목표",
+        "description": "깨끗한 바다",
+        "position": "bottom-left"
+      },
+      {
+        "label": "경영목표",
+        "description": "1등급 해역 비율 ('20년 38%, 25년 65%, '30년 73%) 갯벌복원 면적(누적) ('20년 1.5km², '25년 4.5km², '30년 10.0km²)",
+        "position": "bottom-left"
+      },
+      {
+        "label": "경영목표",
+        "description": "안전한 바다",
+        "position": "bottom-center"
+      },
+      {
+        "label": "경영목표",
+        "description": "공단 통합 해상방제능력 ('20년 15,000+ kl, 25년 17,100+ kl, '30년 20,250+ kl) (3일 기준, 유출유회수량)",
+        "position": "bottom-center"
+      },
+      {
+        "label": "경영목표",
+        "description": "풍요로운 바다",
+        "position": "bottom-right"
+      },
+      {
+        "label": "경영목표",
+        "description": "미래성장사업 매출 비율 ('20년 23%, '25년 50%, '30년 60%) 재무건전성 제고 (영업이익률'20년 -2.9%, 25년 3%, 30년 5%)",
+        "position": "bottom-right"
+      },
+      {
+        "label": "경영목표",
+        "description": "상생의 바다",
+        "position": "bottom-right"
+      },
+      {
+        "label": "경영목표",
+        "description": "중대재해 Zero (중대재해사고 \"0\"건)",
+        "position": "bottom-right"
+      },
+      {
+        "label": "전략목표",
+        "description": "건강한 해양생태계 보전",
+        "position": "bottom-left"
+      },
+      {
+        "label": "전략목표",
+        "description": "안전한 해양환경 수호",
+        "position": "bottom-center"
+      },
+      {
+        "label": "전략목표",
+        "description": "국민의 해양 이용·향유 증진",
+        "position": "bottom-right"
+      },
+      {
+        "label": "전략목표",
+        "description": "사람중심 안전·혁신 경영",
+        "position": "bottom-right"
+      },
+      {
+        "label": "전략과제",
+        "description": "1 해양환경 통합 Solution 제공",
+        "position": "bottom-left"
+      },
+      {
+        "label": "전략과제",
+        "description": "2 해양폐기물 선순환 체계 구축",
+        "position": "bottom-left"
+      },
+      {
+        "label": "전략과제",
+        "description": "3 해양환경 국민참여 강화",
+        "position": "bottom-left"
+      },
+      {
+        "label": "전략과제",
+        "description": "4 SMART 해양사고 대응역량 강화",
+        "position": "bottom-center"
+      },
+      {
+        "label": "전략과제",
+        "description": "5 협력적 해양오염 예방·대응 체계화",
+        "position": "bottom-center"
+      },
+      {
+        "label": "전략과제",
+        "description": "6 해양사업 공공성 강화",
+        "position": "bottom-center"
+      },
+      {
+        "label": "전략과제",
+        "description": "7 해양환경 이용·향유 자원화 확대",
+        "position": "bottom-right"
+      },
+      {
+        "label": "전략과제",
+        "description": "8 해양 탄소중립 이행기반 구축",
+        "position": "bottom-right"
+      },
+      {
+        "label": "전략과제",
+        "description": "9 지속가능 성장기반 확보",
+        "position": "bottom-right"
+      },
+      {
+        "label": "전략과제",
+        "description": "10 상생협력 공정경제 생태계 조성",
+        "position": "bottom-right"
+      },
+      {
+        "label": "전략과제",
+        "description": "11 건강하고 안전한 근로환경 제공",
+        "position": "bottom-right"
+      },
+      {
+        "label": "전략과제",
+        "description": "12 투명한 경영으로 공정한 기회 보장",
+        "position": "bottom-right"
+      }
+    ],
+    "sections": null
+  },
+  "footer": "KOEM 해양환경공단"
+}

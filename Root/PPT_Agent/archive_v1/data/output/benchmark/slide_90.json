@@ -1,0 +1,260 @@
+{
+  "slide_type": "Framework",
+  "slide_number": 90,
+  "title": "4. 벤치마킹 - 해양수산부 산하기관 전략체계 (1/3)",
+  "governing_message": "한국수산자원공단과 국립해양생물자원관은 전략체계에서 2030 장기 경영목표를 채용하고 있으며, 해양생태계 및 서식환경 개선 영역에서 공단의 해양보전부문과 겹치는 전략과제들을 확인해 볼 수 있음",
+  "layout": {
+    "grid_type": "2-column",
+    "background_color": "white"
+  },
+  "content_data": {
+    "subtitle": null,
+    "date": null,
+    "client_name": null,
+    "framework_type": "List",
+    "elements": [
+      {
+        "label": "미션",
+        "description": "수산자원의 지속적 이용기반 구축으로 국가경제에 기여",
+        "position": "top-left"
+      },
+      {
+        "label": "비전",
+        "description": "깨끗하고 풍요로운 어장, 어촌경제 활성화, 국민에게 신뢰받는 FIRA",
+        "position": "top-left"
+      },
+      {
+        "label": "핵심가치",
+        "description": "전문성",
+        "position": "top-left"
+      },
+      {
+        "label": "핵심가치",
+        "description": "공공성",
+        "position": "top-left"
+      },
+      {
+        "label": "핵심가치",
+        "description": "고객지향성",
+        "position": "top-left"
+      },
+      {
+        "label": "경영목표 2030",
+        "description": "연근해 자원량 회복 (503만톤 달성)",
+        "position": "top-left"
+      },
+      {
+        "label": "경영목표 2030",
+        "description": "어가소득 증대 (80백만원/년 달성)",
+        "position": "top-left"
+      },
+      {
+        "label": "경영목표 2030",
+        "description": "국민평가 최고등급 (S등급 달성)",
+        "position": "top-left"
+      },
+      {
+        "label": "전략목표",
+        "description": "생태계 기반 수산자원 증대",
+        "position": "top-left"
+      },
+      {
+        "label": "전략목표",
+        "description": "지속가능 수산 자원 관리 강화",
+        "position": "top-left"
+      },
+      {
+        "label": "전략목표",
+        "description": "미래 성장 동력 강화",
+        "position": "top-left"
+      },
+      {
+        "label": "전략목표",
+        "description": "사회적 가치 창출",
+        "position": "top-left"
+      },
+      {
+        "label": "전략목표",
+        "description": "국민 공감경영 신뢰 구현",
+        "position": "top-left"
+      },
+      {
+        "label": "전략과제",
+        "description": "수산자원 조성 확대",
+        "position": "top-left"
+      },
+      {
+        "label": "전략과제",
+        "description": "체계적 어업 생산 관리",
+        "position": "top-left"
+      },
+      {
+        "label": "전략과제",
+        "description": "성장동력 발굴 및 실용화",
+        "position": "top-left"
+      },
+      {
+        "label": "전략과제",
+        "description": "일자리 ·사회적 책임 강화",
+        "position": "top-left"
+      },
+      {
+        "label": "전략과제",
+        "description": "윤리·인권 경영 강화",
+        "position": "top-left"
+      },
+      {
+        "label": "전략과제",
+        "description": "수산자원 서식환경 개선",
+        "position": "top-left"
+      },
+      {
+        "label": "전략과제",
+        "description": "방류 수산자원 관리",
+        "position": "top-left"
+      },
+      {
+        "label": "전략과제",
+        "description": "혁신기술 개발 강화",
+        "position": "top-left"
+      },
+      {
+        "label": "전략과제",
+        "description": "혁신성장· 상생경영 지원",
+        "position": "top-left"
+      },
+      {
+        "label": "전략과제",
+        "description": "경영혁신 내재화",
+        "position": "top-left"
+      },
+      {
+        "label": "미션",
+        "description": "해양생물 주권 확립을 통한 국가경제 발전 및 국민행복 기여",
+        "position": "top-right"
+      },
+      {
+        "label": "비전",
+        "description": "더 나은 미래를 여는 해양생물 가치 혁신 기관",
+        "position": "top-right"
+      },
+      {
+        "label": "핵심가치",
+        "description": "혁신",
+        "position": "top-right"
+      },
+      {
+        "label": "핵심가치",
+        "description": "소통",
+        "position": "top-right"
+      },
+      {
+        "label": "핵심가치",
+        "description": "책임",
+        "position": "top-right"
+      },
+      {
+        "label": "핵심가치",
+        "description": "신뢰",
+        "position": "top-right"
+      },
+      {
+        "label": "경영목표 2030",
+        "description": "국가자산화 기반 구축 해양생물자원 강국 진입",
+        "position": "top-right"
+      },
+      {
+        "label": "경영목표 2030",
+        "description": "성장동력 창출 유용소재 정보 10만건",
+        "position": "top-right"
+      },
+      {
+        "label": "경영목표 2030",
+        "description": "기관인지도 제고 PCSI최우수기관",
+        "position": "top-right"
+      },
+      {
+        "label": "추진전략",
+        "description": "해양생물자원 강국 실현 2030 미래비전 기반 구축",
+        "position": "top-right"
+      },
+      {
+        "label": "추진전략",
+        "description": "국내·외 전략적 자원 확보 및 관리 고도화",
+        "position": "top-right"
+      },
+      {
+        "label": "추진전략",
+        "description": "해양바이오산업화 허브(Hub) 역할 확립",
+        "position": "top-right"
+      },
+      {
+        "label": "추진전략",
+        "description": "해양생물 대국민 및 정책 서비스 강화",
+        "position": "top-right"
+      },
+      {
+        "label": "추진과제",
+        "description": "2030 중장기 발전방안 수립",
+        "position": "top-right"
+      },
+      {
+        "label": "추진과제",
+        "description": "서식지 기초조사 및 국내외 전략적 자원 확보",
+        "position": "top-right"
+      },
+      {
+        "label": "추진과제",
+        "description": "원천소재 확보 및 해양바이오뱅크 운영 고도화",
+        "position": "top-right"
+      },
+      {
+        "label": "추진과제",
+        "description": "체험 및 언택트 전시교육 강화",
+        "position": "top-right"
+      },
+      {
+        "label": "추진과제",
+        "description": "법적·제도적 혁신성장 기반 마련",
+        "position": "top-right"
+      },
+      {
+        "label": "추진과제",
+        "description": "해양생태계 및 서식처 보전관리 강화",
+        "position": "top-right"
+      },
+      {
+        "label": "추진과제",
+        "description": "소재개발 확대 및 효능 고도화로 산업화 성과 도출",
+        "position": "top-right"
+      },
+      {
+        "label": "추진과제",
+        "description": "해양생물 전시·교육프로그램 서비스 확대",
+        "position": "top-right"
+      },
+      {
+        "label": "추진과제",
+        "description": "해양생물 확보 및 바이오 연구 인프라 확대",
+        "position": "top-right"
+      },
+      {
+        "label": "추진과제",
+        "description": "해양생명자원 및 정보관리체계 고도화",
+        "position": "top-right"
+      },
+      {
+        "label": "추진과제",
+        "description": "해양바이오 산업화 육성 지원 강화",
+        "position": "top-right"
+      },
+      {
+        "label": "추진과제",
+        "description": "해양생명자원 관련 국제규범 대응",
+        "position": "top-right"
+      }
+    ],
+    "sections": null
+  },
+  "footer": "KOEM 해양환경공단"
+}

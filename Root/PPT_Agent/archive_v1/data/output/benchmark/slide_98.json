@@ -1,0 +1,50 @@
+{
+  "slide_type": "Data",
+  "slide_number": 98,
+  "title": "4. 벤치마킹 - 미국 해양대기청(NOAA) 해양환경분야 주요사업",
+  "governing_message": "미국해양대기청(NOAA)의 해양공간, 생태계, 인프라 중심으로 '21년 주요 예산을 편성하고 있고, 전체 예산은 감소했으나, 해양환경 분야 예산은 소폭 증가하여 전체 NOAA 예산 중 15.9%로 비중을 높이고 있으며, 특히 생물자원, 수산업 및 생태계 과학 부문의 예산 증가가 두드러짐",
+  "layout": {
+    "grid_type": "2-column",
+    "background_color": "#FFFFFF"
+  },
+  "content_data": {
+    "subtitle": null,
+    "date": null,
+    "client_name": null,
+    "framework_type": null,
+    "elements": null,
+    "sections": [
+      {
+        "title": "NOAA 해양환경분야 주요 사업 내용",
+        "blocks": [
+          {
+            "block_type": "table",
+            "content": "구분\t해양환경분야 주요사업\t영문 사업명\t'15년 예산\t'21년 예산\n연안 과학·평가·대응·복원\tCoastal Science, Assessment, Response and Restoration\t73,003\t46,062\n공간\t국가 하구 연구구역시스템\tNational Estuarine Research Reserve System\t21,300\t-\n\t국가 하구 연구구역 건설(NERRS)\tNational Estuarine Research Reserve System Construction (NERRS)\t1,700\t-\n\t보호구역 및 MPA\tSanctuaries and Marine Protected Areas\t47,139\t54,922\n\t해양 보호구역 기지 건설\tSubtotal, Marine Sanctuary Construction\t2,000\t-\n\t미국 통합 해양 관측 시스템(IOOS)\tIOOS Regional Observations\t29,500\t19,444\n\t해양 탐사 및 연구\tOcean Exploration and Research\t19,220\t32,096\n\t해양 연안, 5대호 연구\tOcean, Coastal, and Great Lakes Research\t24,669\t29,585\n\t연안 구역 관리 및 서비스\tCoastal Zone Management and Services\t46,472\t46,269\n\t소계\t\t200,549\t228,378\n위협\t기후체제 및 생태계 생산성\tClimate Regimes & Ecosystem Productivity\t2,879\t-\n요소\t통합 해양산성화 연구\tIntegrated Ocean Acidification\t14,922\t8,227\n\t소계\t\t17,801\t8,227\n생태계\t산호초 프로그램\tCoral Reef Program\t26,078\t26,107\n\t보호자원 연구 및 관리\tProtected Resources Science and Management\t186,211\t192,207\n\t서식지 보전 및 복원\tSubtotal, Habitat Conservation & Restoration\t42,190\t39,048\n\t태평양 연안 연어 회복 기금\tPacific Coastal Salmon Recovery Fund\t50,000\t-\n\t수산업 및 생태계 과학 프로그램 및 서비스\tFisheries and Ecosystem Science Programs and Services\t-\t138,375\n\t소계\t\t304,479\t395,737\n인프라\t국가환경정책법(NEPA)\tNational Environmental Policy Act (NEPA)\t6,609\t-\n\t지속적 해양 관측 및 모니터링\tSustained Ocean Observations and Monitoring\t41,347\t37,301\n\t국가 환경정보국\tNational Centers for Environmental Information\t69,067\t52,507\n\t보호구역 기금 충당금\tSanctuaries Enforcement Asset Forfeiture Fund\t120\t120\n\t걸프 연안 생태계 복원 기금 충당금\tGulf Coast Ecosystem Restoration Fund\t2,078\t6,937\n\t환경 개선 및 복원 기금 충당금\tEnvironmental Improvement & Restoration Fund\t292\t4,361\n\t국립 해양학 파트너십 프로그램\tNational Oceanographic Partnership Program\t-\t5,545\n\t소계\t\t119,513\t106,771\n\t계\t\t642,342\t739,113\n\tNOAA 총 예산\t\t5,496,671\t4,634,033\n\t전체 예산 대비 해양환경분야 주요사업 예산 비중\t\t11.7%\t15.9%",
+            "position": "top-left",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 10
+            }
+          }
+        ]
+      },
+      {
+        "title": "Key Findings",
+        "blocks": [
+          {
+            "block_type": "text",
+            "content": "✓ 미국 해양대기청(NOAA)의\n전체 예산은 축소되었으나\n해양환경은 예산을 증액해\n'15년 11.7% 비중에서 '21년\n전체 예산의 15.9%로 증가함\n\n✓ 특히 보호종에 대한 영향\n최소화를 위한 보호자원의\n연구와 관리가 가장 큰\n비중을 차지하고 있음\n\n✓ 수산업 및 생태계 과학\n프로그램과 서비스는 어민과\n어장 관련 정보 수집·공유\n사업으로 지속 성장 중임\n\n✓ 이미 높은 수준의 투자로\n선도적 역량을 확보하고 있는\n기상·환경 정보 시스템은\n급격한 예산 증가 없이\n꾸준한 투자가 지속되고 있음",
+            "position": "top-right",
+            "style": {
+              "is_bold": false,
+              "color_hex": "#000000",
+              "font_size": 12
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "footer": null
+}
