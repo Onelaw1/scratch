@@ -1,43 +1,26 @@
-# Project Task List: Phase 3 (Final Polish & Launch)
+# 전략적 실행 과제
 
-## 1. UI Harmony & Navigation (Sprint 3-1)
-- [x] **Task 3-1**: Unify Global Navigation & Sidebar <!-- id: 401 -->
-- [x] **Task 3-2**: Visual Polish (Theme, Spacing, Empty States) <!-- id: 402 -->
+- [/] **1단계: 기반 구축 (생산성 & 인사기록)** <!-- id: 0 -->
+    - [x] **대원칙 강제 적용** <!-- id: 1 -->
+        - [x] **[NEW] 소통 원칙 적용** (한글 보고 + A/B 의사결정) <!-- id: 14 -->
+        - [x] **[NEW] 다국어 지원 (한글 기본 / 영문 토글)** <!-- id: 15 -->
+        - [x] `직무조사` 및 `생산성` 페이지에 Apple-Style 심미성 적용 <!-- id: 2 -->
+        - [x] 핵심 백엔드(`workforce.py`, `productivity.py`)에 한글 "전략적 맥락(Strategic Context)" 주석 추가 <!-- id: 3 -->
 
-## 2. Performance & Reliability (Sprint 3-2)
-- [x] **Task 3-3**: Global Error Boundaries & Loading States <!-- id: 501 -->
-- [x] **Task 3-4**: Final Code Cleanup & Build Verification <!-- id: 502 -->
+- [x] **자율 개발 세션: 문서화 및 아키텍처 고도화** <!-- id: 16 -->
+    - [x] **[DOCS] 시스템 ERD (Entity Relationship Diagram) 최신화** (Mermaid) <!-- id: 17 -->
+    - [x] **[DOCS] 정보 구조(IA) 및 사이트맵 정의** <!-- id: 18 -->
+    - [x] **[BIZ] 시스템 도입 제안서 / 기획안 초안 (PPT 스타일)** <!-- id: 19 -->
+    - [x] **[CODE] 주요 백엔드 모듈 전략적 주석(Korean) 전수 점검 및 보완** <!-- id: 20 -->
 
-## 3. Launch (Sprint 3-3)
-- [x] **Task 3-5**: Master Walkthrough Creation <!-- id: 601 -->
+    - [/] **생산성 지표 (HCROI/HCVA)** <!-- id: 4 -->
+        - [x] 백엔드 로직 구현 (`productivity.py`) <!-- id: 5 -->
+        - [x] 프론트엔드 시각화 (차트 및 비교 분석) <!-- id: 6 -->
+        - [x] **시각적 검증**: 생산성 대시보드 스크린샷 (수동 검증 필요) <!-- id: 7 -->
+    - [/] **인사기록 (이원화된 근속연수)** <!-- id: 8 -->
+        - [x] `절대 근속연수` vs `직무 근속연수` 계산 로직 구현 (`workforce.py`) <!-- id: 9 -->
+        - [x] 인사기록카드 내 이원화된 근속연수 UI 표시 <!-- id: 10 -->
 
-## 4. Public Sector Transformation (Phase 4)
-- [x] **Task 4-1**: Wage Transition Simulator (Scenario Planning) <!-- id: 701 -->
-- [ ] **Task 4-2**: NCS Compliance AI (Auto-Audit) <!-- id: 702 -->
-- [x] **Task 4-3**: Fairness & DEI Dashboard <!-- id: 703 -->
-
-## 5. Global Ecosystem & Prediction (Phase 5)
-- [ ] **Task 5-1**: Predictive Attrition Model (AI) <!-- id: 801 -->
-- [x] **Task 5-2**: Global Currency & Localization Engine <!-- id: 802 -->
-- [x] **Task 5-3**: Blockchain Experience Certificate <!-- id: 803 -->
-
-## 6. Scientific HR & Track Record (Phase 6)
-- [x] **Task 6-1**: Job Grade Calibration Bot (Drift Detection) <!-- id: 901 -->
-- [x] **Task 6-2**: Performance Integral Dashboard (Longitudinal) <!-- id: 902 -->
-- [x] **Task 6-3**: Promotion Simulation Game (Growth Slope) <!-- id: 903 -->
-
-## 7. Scientific Management & Optimization (Phase 7)
-- [x] **Task 7-1**: Scientific Promotion Rank Register (Weighted Ranking) <!-- id: 1001 -->
-- [x] **Task 7-2**: Optimal Workforce Calculator (Standard Time Model) <!-- id: 1002 -->
-
-## 8. Job Architecture & The Living JD (Phase 8)
-- [x] **Task 8-1**: Dynamic JD Generator (Auto-Update) <!-- id: 1101 -->
-- [x] **Task 8-2**: R&R Conflict Map (Matrix View) <!-- id: 1102 -->
-- [x] **Task 8-3**: RACI Chart Generator <!-- id: 1103 -->
-- [x] **Task 8-4**: 9-Box Grid (Talent Mapping) <!-- id: 1104 -->
-- [x] **Task 8-5**: Span of Control Analyzer <!-- id: 1105 -->
-- [ ] **Task 8-6**: Competency Fit Radar (Job vs Person) <!-- id: 1106 -->
-
----
-*Phase 2 (Advanced Intelligence) completed [Archive]*
-*Phase 1 (Foundation) completed [Archive]*
+- [ ] **2단계: 확장** <!-- id: 11 -->
+    - [ ] 9-Box Grid (인재 매핑) 구현 <!-- id: 12 -->
+    - [ ] Span of Control (통솔범위) 분석 구현 <!-- id: 13 -->
