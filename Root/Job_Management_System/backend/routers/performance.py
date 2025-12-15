@@ -126,3 +126,37 @@ def finalize_review(review_id: str, db: Session = Depends(get_db)):
     db.commit()
     db.refresh(review)
     return review
+
+@router.get("/suggestions/{position_id}", response_model=List[schemas.PerformanceGoalCreate])
+def get_goal_suggestions(position_id: str, db: Session = Depends(get_db)):
+    """
+    Suggests performance goals based on:
+    1. Job Description KPIs
+    2. High-importance Job Tasks
+    """
+    suggestions = []
+    
+    # 1. From Job Description KPIs
+    jd = db.query(models.JobDescription).filter(models.JobDescription.job_position_id == position_id).first()
+    if jd and jd.kpi_indicators:
+        # Split by newlines or commas
+        kpis = [k.strip() for k in jd.kpi_indicators.replace('\r', '').split('\n') if k.strip()]
+        for kpi in kpis:
+            suggestions.append(schemas.PerformanceGoalCreate(
+                category="JD_KPI",
+                goal_text=kpi,
+                weight=0.0
+            ))
+            
+    # 2. From Critical Job Tasks (Top 3 by importance/FTE)
+    position = db.query(models.JobPosition).filter(models.JobPosition.id == position_id).first()
+    if position:
+        # Sort tasks by some metric or just take first few
+        for task in position.tasks[:3]:
+            suggestions.append(schemas.PerformanceGoalCreate(
+                category="JOB_TASK",
+                goal_text=f"Execute {task.task_name} effectively",
+                weight=0.0
+            ))
+            
+    return suggestions

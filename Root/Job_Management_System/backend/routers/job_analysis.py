@@ -1,5 +1,6 @@
 from fastapi import APIRouter, Depends, HTTPException
 from sqlalchemy.orm import Session
+from sqlalchemy import func
 from typing import List
 from .. import models, schemas, database
 
@@ -72,3 +73,86 @@ def create_workload_entry(entry: schemas.WorkloadEntryCreate, db: Session = Depe
 @router.get("/workload-entries/", response_model=List[schemas.WorkloadEntry])
 def read_workload_entries(skip: int = 0, limit: int = 100, db: Session = Depends(get_db)):
     return db.query(models.WorkloadEntry).offset(skip).limit(limit).all()
+
+# --- Analysis & Aggregation ---
+@router.get("/analysis/fte-by-org")
+def get_fte_by_org(db: Session = Depends(get_db)):
+    results = db.query(
+        models.OrgUnit.name,
+        func.sum(models.WorkloadEntry.fte).label("total_fte")
+    ).join(models.User, models.WorkloadEntry.user_id == models.User.id)\
+     .join(models.OrgUnit, models.User.org_unit_id == models.OrgUnit.id)\
+     .group_by(models.OrgUnit.id, models.OrgUnit.name).all()
+    
+    return [{"name": r[0], "fte": r[1]} for r in results]
+
+@router.get("/analysis/fte-by-position")
+def get_fte_by_position(db: Session = Depends(get_db)):
+    results = db.query(
+        models.JobPosition.title,
+        func.sum(models.WorkloadEntry.fte).label("total_fte")
+    ).join(models.JobTask, models.WorkloadEntry.task_id == models.JobTask.id)\
+     .join(models.JobPosition, models.JobTask.job_position_id == models.JobPosition.id)\
+     .group_by(models.JobPosition.id, models.JobPosition.title).all()
+     
+    return [{"name": r[0], "fte": r[1]} for r in results]
+
+# --- Productivity (HCROI / HCVA) ---
+@router.post("/productivity/financial", response_model=schemas.FinancialPerformance)
+def create_financial_performance(data: schemas.FinancialPerformanceCreate, db: Session = Depends(get_db)):
+    # Calculate Net Income
+    net_income = data.revenue - (data.operating_expenses + data.personnel_costs)
+    
+    db_obj = models.FinancialPerformance(**data.dict(), net_income=net_income)
+    db.add(db_obj)
+    db.commit()
+    db.refresh(db_obj)
+    return db_obj
+
+@router.get("/productivity/metrics/{institution_id}")
+def get_productivity_metrics(institution_id: str, db: Session = Depends(get_db)):
+    # 1. Get Financial Data (Latest Year)
+    fin_data = db.query(models.FinancialPerformance)\
+        .filter(models.FinancialPerformance.institution_id == institution_id)\
+        .order_by(models.FinancialPerformance.year.desc())\
+        .first()
+        
+    if not fin_data:
+        raise HTTPException(status_code=404, detail="No financial data found")
+        
+    # 2. Calculate Total FTE for that Institution
+    # (Simplified: Sum of all current workload entries. Ideally should be snapshot by year)
+    total_fte_res = db.query(func.sum(models.WorkloadEntry.fte))\
+        .join(models.User, models.WorkloadEntry.user_id == models.User.id)\
+        .filter(models.User.institution_id == institution_id)\
+        .scalar()
+        
+    total_fte = total_fte_res if total_fte_res else 0.0
+    
+    if total_fte == 0 or fin_data.personnel_costs == 0:
+        return {
+            "year": fin_data.year,
+            "hcroi": 0.0,
+            "hcva": 0.0,
+            "revenue_per_fte": 0.0,
+            "message": "Insufficient data for calculation"
+        }
+
+    # 3. Calculate Metrics
+    # HCROI = (Revenue - (OpEx - PersonnelCost?? No, OpEx typically excludes personnel)) 
+    # Formula: (Revenue - (Total Expenses - Personnel Cost)) / Personnel Cost
+    # Here OpEx excludes personnel, so Total Expenses = OpEx + Personnel
+    # Adjusted Revenue = Revenue - OpEx
+    adjusted_revenue = fin_data.revenue - fin_data.operating_expenses
+    hcroi = adjusted_revenue / fin_data.personnel_costs
+    
+    # HCVA = Adjusted Revenue / FTE
+    hcva = adjusted_revenue / total_fte
+    
+    return {
+        "year": fin_data.year,
+        "hcroi": round(hcroi, 2),
+        "hcva": round(hcva, 2), # Value Added per FTE
+        "revenue_per_fte": round(fin_data.revenue / total_fte, 2),
+        "total_fte": round(total_fte, 1)
+    }

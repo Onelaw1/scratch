@@ -71,6 +71,23 @@ class Institution(InstitutionBase):
     class Config:
         from_attributes = True
 
+# --- Productivity ---
+class FinancialPerformanceBase(BaseModel):
+    year: int
+    revenue: float
+    operating_expenses: float
+    personnel_costs: float
+
+class FinancialPerformanceCreate(FinancialPerformanceBase):
+    institution_id: str
+
+class FinancialPerformance(FinancialPerformanceBase):
+    id: str
+    institution_id: str
+    net_income: float
+    class Config:
+        from_attributes = True
+
 class OrgUnitBase(BaseModel):
     name: str
     unit_type: UnitType
@@ -96,6 +113,7 @@ class UserBase(BaseModel):
     education_level: Optional[str] = None
     certifications: Optional[List[Dict[str, Any]]] = None
     career_history: Optional[List[Dict[str, Any]]] = None
+    reports_to_id: Optional[str] = None
 
 class UserCreate(UserBase):
     institution_id: str
@@ -105,6 +123,7 @@ class User(UserBase):
     id: str
     institution_id: str
     org_unit_id: str
+    reports_to_id: Optional[str] = None
     class Config:
         from_attributes = True
 
@@ -145,8 +164,28 @@ class JobPositionCreate(JobPositionBase):
 class JobPosition(JobPositionBase):
     id: str
     series_id: str
+    scenario_id: Optional[str] = None
     class Config:
         from_attributes = True
+
+# --- Job Redesign (Simulation) ---
+class SimulationScenarioBase(BaseModel):
+    name: str
+    description: Optional[str] = None
+
+class SimulationScenarioCreate(SimulationScenarioBase):
+    pass
+
+class SimulationScenario(SimulationScenarioBase):
+    id: str
+    created_at: datetime
+    # positions: related items omitted for brevity
+    class Config:
+        from_attributes = True
+
+class MoveTaskRequest(BaseModel):
+    task_id: str
+    target_position_id: str
 
 class JobTaskBase(BaseModel):
     task_name: str
@@ -162,6 +201,52 @@ class JobTaskCreate(JobTaskBase):
 class JobTask(JobTaskBase):
     id: str
     job_position_id: str
+    class Config:
+        from_attributes = True
+
+# --- 2.12 Competency ---
+class CompetencyBase(BaseModel):
+    name: str
+    description: Optional[str] = None
+    category: Optional[str] = None
+
+class CompetencyCreate(CompetencyBase):
+    pass
+
+class Competency(CompetencyBase):
+    id: str
+    class Config:
+        from_attributes = True
+
+class JobCompetencyBase(BaseModel):
+    required_level: int = 1
+    weight: float = 1.0
+
+class JobCompetencyCreate(JobCompetencyBase):
+    job_position_id: str
+    competency_id: str
+
+class JobCompetency(JobCompetencyBase):
+    id: str
+    job_position_id: str
+    competency_id: str
+    competency: Optional[Competency] = None 
+    class Config:
+        from_attributes = True
+
+class UserCompetencyBase(BaseModel):
+    current_level: int = 1
+
+class UserCompetencyCreate(UserCompetencyBase):
+    user_id: str
+    competency_id: str
+
+class UserCompetency(UserCompetencyBase):
+    id: str
+    user_id: str
+    competency_id: str
+    competency: Optional[Competency] = None
+    evaluated_at: Optional[datetime] = None
     class Config:
         from_attributes = True
 
@@ -438,6 +523,7 @@ class PerformanceReviewBase(BaseModel):
     review_date: Optional[date] = None
     score_common: float = 0.0
     score_leadership: float = 0.0
+    score_potential: float = 0.0
 
 class PerformanceReviewCreate(PerformanceReviewBase):
     pass
@@ -448,14 +534,20 @@ class PerformanceReviewUpdate(BaseModel):
     score_common: Optional[float] = None
     score_leadership: Optional[float] = None
     score_job: Optional[float] = None
+    score_potential: Optional[float] = None
     total_score: Optional[float] = None
     grade: Optional[str] = None
+    potential_grade: Optional[str] = None
+    nine_box_position: Optional[int] = None
 
 class PerformanceReview(PerformanceReviewBase):
     id: str
     score_job: float
+    score_potential: float
     total_score: float
     grade: Optional[str] = None
+    potential_grade: Optional[str] = None
+    nine_box_position: Optional[int] = None
     goals: List[PerformanceGoal] = []
 
     class Config:

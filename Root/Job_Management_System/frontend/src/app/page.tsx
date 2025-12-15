@@ -1,81 +1,277 @@
 "use client";
 
-import { GlassCard } from "@/components/ui/glass-card";
-import { motion } from "framer-motion";
-import { ArrowRight, BarChart2, Users, FileText, Layers } from "lucide-react";
+import { Container, Title, SimpleGrid, Card, Text, Button, Group, List, ThemeIcon, Badge } from "@mantine/core";
+import { IconChartPie, IconBriefcase, IconUsers, IconBrain, IconScale, IconGavel, IconCertificate, IconRobot, IconChartBar, IconTrophy, IconListNumbers, IconCalculator, IconRefresh, IconMap, IconSitemap, IconGridDots, IconHierarchy, IconRadar } from "@tabler/icons-react";
+import Link from "next/link";
+import { useRouter } from "next/navigation";
 
 export default function Home() {
+  const router = useRouter();
+
   return (
-    <main className="min-h-screen p-8 md:p-24 flex flex-col items-center justify-center relative overflow-hidden">
-      {/* Background Elements for Depth */}
-      <div className="absolute top-[-10%] left-[-10%] w-[40%] h-[40%] bg-purple-500/30 rounded-full blur-[120px] pointer-events-none" />
-      <div className="absolute bottom-[-10%] right-[-10%] w-[40%] h-[40%] bg-blue-500/30 rounded-full blur-[120px] pointer-events-none" />
+    <Container size="lg" py="xl">
+      <Group justify="space-between" mb="xl">
+        <Title order={1}>Job Management System</Title>
+        <Button variant="light">Settings</Button>
+      </Group>
 
-      <motion.div
-        initial={{ opacity: 0, y: -20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8 }}
-        className="z-10 text-center mb-16"
-      >
-        <h1 className="text-5xl md:text-7xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-white to-white/70 mb-6 tracking-tight">
-          Job Management System
-        </h1>
-        <p className="text-xl text-white/60 max-w-2xl mx-auto leading-relaxed">
-          Next-Generation HR Intelligence for Public Institutions.
-          <br />
-          Powered by <span className="text-blue-400 font-semibold">Liquid Glass</span> Design & <span className="text-purple-400 font-semibold">AI Analytics</span>.
-        </p>
-      </motion.div>
+      <SimpleGrid cols={{ base: 1, sm: 2, lg: 3 }} spacing="lg">
+        {/* Existing Cards */}
+        <Card withBorder padding="lg">
+          <Title order={3} mb="sm">Job Analysis</Title>
+          <Text size="sm" c="dimmed" mb="md">
+            Conduct time studies and workload analysis.
+          </Text>
+          <Button component={Link} href="/job-survey" fullWidth>
+            Go to Survey
+          </Button>
+        </Card>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 w-full max-w-7xl z-10">
-        <GlassCard className="flex flex-col items-center text-center">
-          <div className="p-3 rounded-full bg-blue-500/20 mb-4">
-            <Users className="w-8 h-8 text-blue-400" />
-          </div>
-          <h3 className="text-xl font-semibold text-white mb-2">Workforce Planning</h3>
-          <p className="text-sm text-white/50">
-            Scientific headcount calculation based on productivity analysis.
-          </p>
-        </GlassCard>
+        <Card withBorder padding="lg">
+          <Title order={3} mb="sm">Workload Analysis</Title>
+          <Text size="sm" c="dimmed" mb="md">
+            Analyze FTE, Standard Time, and ROI.
+          </Text>
+          <Button component={Link} href="/workload-analysis" fullWidth>
+            View Dashboard
+          </Button>
+        </Card>
 
-        <GlassCard className="flex flex-col items-center text-center" style={{ transitionDelay: "100ms" }}>
-          <div className="p-3 rounded-full bg-purple-500/20 mb-4">
-            <Layers className="w-8 h-8 text-purple-400" />
-          </div>
-          <h3 className="text-xl font-semibold text-white mb-2">Job Classification</h3>
-          <p className="text-sm text-white/50">
-            NCS-based hierarchy and functional job design.
-          </p>
-        </GlassCard>
+        <Card withBorder padding="lg">
+          <Title order={3} mb="sm">Job Classification</Title>
+          <Text size="sm" c="dimmed" mb="md">
+            Manage job hierarchy and descriptions.
+          </Text>
+          <Button component={Link} href="/job-classification" fullWidth>
+            Manage Jobs
+          </Button>
+        </Card>
 
-        <GlassCard className="flex flex-col items-center text-center" style={{ transitionDelay: "200ms" }}>
-          <div className="p-3 rounded-full bg-pink-500/20 mb-4">
-            <FileText className="w-8 h-8 text-pink-400" />
-          </div>
-          <h3 className="text-xl font-semibold text-white mb-2">Job Description</h3>
-          <p className="text-sm text-white/50">
-            Dynamic generation linked with recruitment & manuals.
-          </p>
-        </GlassCard>
+        <Card withBorder padding="lg">
+          <Title order={3} mb="sm">Productivity Analytics</Title>
+          <Text size="sm" c="dimmed" mb="md">
+            View HCROI and HCVA metrics.
+          </Text>
+          <Button component={Link} href="/productivity" fullWidth>
+            View Metrics
+          </Button>
+        </Card>
 
-        <GlassCard className="flex flex-col items-center text-center" style={{ transitionDelay: "300ms" }}>
-          <div className="p-3 rounded-full bg-emerald-500/20 mb-4">
-            <BarChart2 className="w-8 h-8 text-emerald-400" />
-          </div>
-          <h3 className="text-xl font-semibold text-white mb-2">Analytics Dashboard</h3>
-          <p className="text-sm text-white/50">
-            Real-time insights for every organizational level.
-          </p>
-        </GlassCard>
-      </div>
+        <Card withBorder padding="lg" radius="md">
+          <Group justify="space-between" mb="xs">
+            <Text fw={500}>Classification AI</Text>
+            <Badge color="pink" variant="light">Beta</Badge>
+          </Group>
+          <Text size="sm" c="dimmed" mb="md">
+            AI-driven job classification and analysis.
+          </Text>
+          <Button component={Link} href="/classification-ai" fullWidth variant="light" color="pink">
+            AI Assistant
+          </Button>
+        </Card>
 
-      <motion.button
-        whileHover={{ scale: 1.05 }}
-        whileTap={{ scale: 0.95 }}
-        className="mt-16 px-8 py-4 bg-white/10 hover:bg-white/20 text-white rounded-full font-medium backdrop-blur-md border border-white/20 transition-all flex items-center gap-2 group"
-      >
-        Enter System <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-      </motion.button>
-    </main>
+        <Card withBorder padding="lg" radius="md">
+          <Group justify="space-between" mb="xs">
+            <Text fw={500}>Fairness Check</Text>
+            <Badge color="orange" variant="light">Compliance</Badge>
+          </Group>
+          <Text size="sm" c="dimmed" mb="md">
+            Verification of equal pay and non-discrimination.
+          </Text>
+          <Button component={Link} href="/admin/fairness" fullWidth variant="light" color="orange">
+            Run Audit
+          </Button>
+        </Card>
+
+        <Card withBorder padding="lg" radius="md">
+          <Group justify="space-between" mb="xs">
+            <Text fw={500}>AI Prediction</Text>
+            <Badge color="violet" variant="light">Future</Badge>
+          </Group>
+          <Text size="sm" c="dimmed" mb="md">
+            Predict future role demand and skills.
+          </Text>
+          <Button component={Link} href="/admin/prediction" fullWidth variant="light" color="violet">
+            View Forecast
+          </Button>
+        </Card>
+
+        <Card withBorder padding="lg" radius="md">
+          <Group justify="space-between" mb="xs">
+            <Text fw={500}>Global HR</Text>
+            <Badge color="cyan" variant="light">Global</Badge>
+          </Group>
+          <Text size="sm" c="dimmed" mb="md">
+            Multi-currency and global policy management.
+          </Text>
+          <Button component={Link} href="/admin/global" fullWidth variant="light" color="cyan">
+            Global Settings
+          </Button>
+        </Card>
+
+        <Card withBorder padding="lg" radius="md">
+          <Group justify="space-between" mb="xs">
+            <Text fw={500}>Digital Wallet</Text>
+            <Badge color="indigo" variant="light">Blockchain</Badge>
+          </Group>
+          <Text size="sm" c="dimmed" mb="md">
+            Verifiable Career & Experience Certificates.
+          </Text>
+          <Button component={Link} href="/my-job/certificate" fullWidth variant="light" color="indigo">
+            My Wallet
+          </Button>
+        </Card>
+
+        <Card withBorder padding="lg" radius="md">
+          <Group justify="space-between" mb="xs">
+            <Text fw={500}>Job Calibration Bot</Text>
+            <Badge color="red" variant="light">Drift</Badge>
+          </Group>
+          <Text size="sm" c="dimmed" mb="md">
+            Detect workload drift and suggest upgrades.
+          </Text>
+          <Button component={Link} href="/admin/calibration" fullWidth variant="light" color="red">
+            Check Drift
+          </Button>
+        </Card>
+
+        <Card withBorder padding="lg" radius="md">
+          <Group justify="space-between" mb="xs">
+            <Text fw={500}>Growth Integral</Text>
+            <Badge color="teal" variant="light">Longitudinal</Badge>
+          </Group>
+          <Text size="sm" c="dimmed" mb="md">
+            View long-term performance consistency (Area).
+          </Text>
+          <Button component={Link} href="/admin/performance-integral" fullWidth variant="light" color="teal">
+            View Integral
+          </Button>
+        </Card>
+
+        <Card withBorder padding="lg" radius="md">
+          <Group justify="space-between" mb="xs">
+            <Text fw={500}>Promotion Game</Text>
+            <Badge color="grape" variant="light">Sim</Badge>
+          </Group>
+          <Text size="sm" c="dimmed" mb="md">
+            Tenure vs. Growth Slope Simulation.
+          </Text>
+          <Button component={Link} href="/admin/promotion-sim" fullWidth variant="light" color="grape">
+            Run Simulation
+          </Button>
+        </Card>
+
+        <Card withBorder padding="lg" radius="md">
+          <Group justify="space-between" mb="xs">
+            <Text fw={500}>Promotion Ranker</Text>
+            <Badge color="dark" variant="filled">Official</Badge>
+          </Group>
+          <Text size="sm" c="dimmed" mb="md">
+            Generate binding Scientific Promotion List (SPS).
+          </Text>
+          <Button component={Link} href="/admin/rank" fullWidth variant="filled" color="dark">
+            Open Register
+          </Button>
+        </Card>
+
+        <Card withBorder padding="lg" radius="md">
+          <Group justify="space-between" mb="xs">
+            <Text fw={500}>Workforce Optimizer</Text>
+            <Badge color="orange" variant="filled">TO Calc</Badge>
+          </Group>
+          <Text size="sm" c="dimmed" mb="md">
+            Calculate Required FTE using Standard Time.
+          </Text>
+          <Button component={Link} href="/admin/optimal-workforce" fullWidth variant="outline" color="orange">
+            Calculate TO
+          </Button>
+        </Card>
+
+        {/* Phase 8: Dynamic JD */}
+        <Card withBorder padding="lg" radius="md">
+          <Group justify="space-between" mb="xs">
+            <Text fw={500}>Dynamic JD Generator</Text>
+            <Badge color="blue" variant="filled">Living JD</Badge>
+          </Group>
+          <Text size="sm" c="dimmed" mb="md">
+            Auto-update JDs based on Workload Logs.
+          </Text>
+          <Button component={Link} href="/admin/dynamic-jd" fullWidth variant="outline" color="blue">
+            Sync JD
+          </Button>
+        </Card>
+
+        {/* Phase 8: R&R Conflict */}
+        <Card withBorder padding="lg" radius="md">
+          <Group justify="space-between" mb="xs">
+            <Text fw={500}>R&R Conflict Map</Text>
+            <Badge color="red" variant="filled">Gap/Dup</Badge>
+          </Group>
+          <Text size="sm" c="dimmed" mb="md">
+            Visualize Duplication & Gaps in R&R.
+          </Text>
+          <Button component={Link} href="/admin/r-and-r" fullWidth variant="outline" color="red">
+            View Matrix
+          </Button>
+        </Card>
+
+        {/* Phase 8.5: RACI Chart */}
+        <Card withBorder padding="lg" radius="md">
+          <Group justify="space-between" mb="xs">
+            <Text fw={500}>RACI Generator</Text>
+            <Badge color="cyan" variant="filled">Toolkit</Badge>
+          </Group>
+          <Text size="sm" c="dimmed" mb="md">
+            Auto-generate Responsibility Matrix (R/A/C/I).
+          </Text>
+          <Button component={Link} href="/admin/raci" fullWidth variant="outline" color="cyan">
+            View RACI
+          </Button>
+        </Card>
+
+        {/* Phase 8.5: 9-Box Grid */}
+        <Card withBorder padding="lg" radius="md">
+          <Group justify="space-between" mb="xs">
+            <Text fw={500}>9-Box Grid</Text>
+            <Badge color="teal" variant="filled">Talent</Badge>
+          </Group>
+          <Text size="sm" c="dimmed" mb="md">
+            Visualize Performance vs. Potential Matrix.
+          </Text>
+          <Button component={Link} href="/admin/9-box" fullWidth variant="outline" color="teal">
+            View Talent Map
+          </Button>
+        </Card>
+
+        {/* Phase 8.5: Span of Control */}
+        <Card withBorder padding="lg" radius="md">
+          <Group justify="space-between" mb="xs">
+            <Text fw={500}>Span of Control</Text>
+            <Badge color="pink" variant="filled">Org</Badge>
+          </Group>
+          <Text size="sm" c="dimmed" mb="md">
+            Analyze Org Depth & Manager Reports.
+          </Text>
+          <Button component={Link} href="/admin/span-of-control" fullWidth variant="outline" color="pink">
+            Analyze Structure
+          </Button>
+        </Card>
+
+        {/* Phase 8.6: Competency Fit Radar */}
+        <Card withBorder padding="lg" radius="md">
+          <Group justify="space-between" mb="xs">
+            <Text fw={500}>Competency Radar</Text>
+            <Badge color="indigo" variant="filled">Soft HR</Badge>
+          </Group>
+          <Text size="sm" c="dimmed" mb="md">
+            Job-Person Fit Radar & Gap Analysis.
+          </Text>
+          <Button component={Link} href="/admin/competency" fullWidth variant="outline" color="indigo">
+            View Fit
+          </Button>
+        </Card>
+
+      </SimpleGrid>
+    </Container>
   );
 }

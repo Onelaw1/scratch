@@ -20,3 +20,4 @@ rich
 pandas
 pillow
 numpy
+scikit-learn

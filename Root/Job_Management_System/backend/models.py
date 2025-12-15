@@ -75,6 +75,7 @@ class Institution(Base):
     benchmark_data = relationship("ExternalBenchmarkData", back_populates="institution")
     strategic_analyses = relationship("StrategicAnalysis", back_populates="institution")
     headcount_plans = relationship("HeadcountPlan", back_populates="institution")
+    financial_performance = relationship("FinancialPerformance", back_populates="institution")
 
 class OrgUnit(Base):
     __tablename__ = "org_units"
@@ -84,6 +85,10 @@ class OrgUnit(Base):
     name = Column(String, nullable=False)
     unit_type = Column(Enum(UnitType), nullable=False)
     mission = Column(Text, nullable=True) # For Cascading
+    
+    # ERP Synced Fields
+    budget = Column(Float, default=0.0)
+    authorized_headcount = Column(Float, default=0.0)
     
     institution = relationship("Institution", back_populates="org_units")
     parent = relationship("OrgUnit", remote_side=[id], backref="children")
@@ -95,6 +100,7 @@ class User(Base):
     id = Column(String, primary_key=True, default=generate_uuid)
     institution_id = Column(String, ForeignKey("institutions.id"))
     org_unit_id = Column(String, ForeignKey("org_units.id"))
+    reports_to_id = Column(String, ForeignKey("users.id"), nullable=True)
     email = Column(String, unique=True, index=True)
     name = Column(String)
     hire_date = Column(Date, nullable=True)
@@ -106,6 +112,8 @@ class User(Base):
     education_level = Column(String, nullable=True) # e.g., Bachelor, Master
     certifications = Column(JSON, nullable=True) # List of certifications
     career_history = Column(JSON, nullable=True) # List of previous jobs
+    current_salary = Column(Float, default=50000000.0) # Mock Salary
+    gender = Column(String, default="Male") # Male, Female
     
     institution = relationship("Institution", back_populates="users")
     org_unit = relationship("OrgUnit", back_populates="users")
@@ -114,6 +122,10 @@ class User(Base):
     workload_entries = relationship("WorkloadEntry", back_populates="user")
     trainings = relationship("EmployeeTraining", back_populates="user")
     promotion_entries = relationship("PromotionList", back_populates="user")
+    career_goals = relationship("CareerGoal", back_populates="user")
+    
+    reports_to = relationship("User", remote_side=[id], backref="direct_reports")
+    competencies = relationship("UserCompetency", back_populates="user")
 
 # --- Strategic Analysis ---
 class StrategicAnalysis(Base):
@@ -148,20 +160,37 @@ class JobSeries(Base):
     positions = relationship("JobPosition", back_populates="series")
     training_programs = relationship("TrainingProgram", back_populates="series")
 
+# --- 2.11 Job Redesign (Simulation) ---
+class SimulationScenario(Base):
+    __tablename__ = "simulation_scenarios"
+    id = Column(String, primary_key=True, default=generate_uuid)
+    name = Column(String, nullable=False)
+    description = Column(Text, nullable=True)
+    created_at = Column(DateTime, default=func.now())
+    updated_at = Column(DateTime, default=func.now(), onupdate=func.now())
+    
+    positions = relationship("JobPosition", back_populates="scenario")
+
 class JobPosition(Base):
     __tablename__ = "job_positions"
     id = Column(String, primary_key=True, default=generate_uuid)
     series_id = Column(String, ForeignKey("job_series.id"))
     user_id = Column(String, ForeignKey("users.id"), nullable=True)
+    scenario_id = Column(String, ForeignKey("simulation_scenarios.id"), nullable=True) # If null, it's LIVE data
+    
     title = Column(String, nullable=False)
     grade = Column(Enum(JobGrade), nullable=True)
     is_future_model = Column(Boolean, default=False)
+    assignment_date = Column(Date, nullable=True) # For Job Tenure Tracking
     
     series = relationship("JobSeries", back_populates="positions")
     user = relationship("User", back_populates="job_positions")
-    tasks = relationship("JobTask", back_populates="position")
-    evaluation = relationship("JobEvaluation", uselist=False, back_populates="position")
+    scenario = relationship("SimulationScenario", back_populates="positions")
+    
+    tasks = relationship("JobTask", back_populates="position", cascade="all, delete-orphan") # Added cascade for easy cleanup
+    evaluation = relationship("JobEvaluation", uselist=False, back_populates="position", cascade="all, delete-orphan")
     descriptions = relationship("JobDescription", back_populates="position")
+    required_competencies = relationship("JobCompetency", back_populates="position")
     history = relationship("JobHistory", back_populates="position")
 
 class JobTask(Base):
@@ -183,6 +212,39 @@ class JobTask(Base):
     next_tasks = relationship("TaskDependency", foreign_keys="[TaskDependency.source_task_id]", back_populates="source_task")
     prev_tasks = relationship("TaskDependency", foreign_keys="[TaskDependency.target_task_id]", back_populates="target_task")
 
+# --- 2.12 Competency Model ---
+class Competency(Base):
+    __tablename__ = "competencies"
+    id = Column(String, primary_key=True, default=generate_uuid)
+    name = Column(String, nullable=False)
+    description = Column(Text, nullable=True)
+    category = Column(String, nullable=True) # e.g. Technical, Leadership
+    
+    job_links = relationship("JobCompetency", back_populates="competency")
+    user_links = relationship("UserCompetency", back_populates="competency")
+
+class JobCompetency(Base):
+    __tablename__ = "job_competencies"
+    id = Column(String, primary_key=True, default=generate_uuid)
+    job_position_id = Column(String, ForeignKey("job_positions.id"))
+    competency_id = Column(String, ForeignKey("competencies.id"))
+    required_level = Column(Integer, default=1) # 1-5
+    weight = Column(Float, default=1.0)
+    
+    position = relationship("JobPosition", back_populates="required_competencies")
+    competency = relationship("Competency", back_populates="job_links")
+
+class UserCompetency(Base):
+    __tablename__ = "user_competencies"
+    id = Column(String, primary_key=True, default=generate_uuid)
+    user_id = Column(String, ForeignKey("users.id"))
+    competency_id = Column(String, ForeignKey("competencies.id"))
+    current_level = Column(Integer, default=1) # 1-5
+    evaluated_at = Column(DateTime, default=func.now())
+    
+    user = relationship("User", back_populates="competencies")
+    competency = relationship("Competency", back_populates="user_links")
+
 # --- 2.9 Job Management Card (History) ---
 class JobHistory(Base):
     __tablename__ = "job_histories"
@@ -195,6 +257,39 @@ class JobHistory(Base):
     position = relationship("JobPosition", back_populates="history")
 
 # --- 2.1 Workforce Planning & 2.5 Workload Survey ---
+class CareerGoalStatus(str, enum.Enum):
+    NOT_STARTED = "NOT_STARTED"
+    IN_PROGRESS = "IN_PROGRESS"
+    COMPLETED = "COMPLETED"
+
+class CareerGoal(Base):
+    __tablename__ = "career_goals"
+    id = Column(String, primary_key=True, default=generate_uuid)
+    user_id = Column(String, ForeignKey("users.id"))
+    title = Column(String, nullable=False)
+    deadline = Column(Date, nullable=True)
+    status = Column(Enum(CareerGoalStatus), default=CareerGoalStatus.NOT_STARTED)
+    
+    user = relationship("User", back_populates="career_goals")
+
+# --- Employee Experience (Pulse) ---
+class PulseWorkloadLevel(str, enum.Enum):
+    LOW = "LOW"
+    NORMAL = "NORMAL"
+    HIGH = "HIGH"
+    OVERLOAD = "OVERLOAD"
+
+class DailyPulse(Base):
+    __tablename__ = "daily_pulses"
+    id = Column(String, primary_key=True, default=generate_uuid)
+    user_id = Column(String, ForeignKey("users.id"))
+    mood_score = Column(Integer) # 1-5
+    workload_level = Column(Enum(PulseWorkloadLevel))
+    note = Column(Text, nullable=True)
+    created_at = Column(DateTime(timezone=True), server_default=func.now())
+    
+    user = relationship("User")
+
 class SurveyPeriod(Base):
     __tablename__ = "survey_periods"
     id = Column(String, primary_key=True, default=generate_uuid)
@@ -261,6 +356,21 @@ class ExternalBenchmarkData(Base):
     avg_hcva = Column(Float, default=0.0) # Human Capital Value Added
     
     institution = relationship("Institution", back_populates="benchmark_data")
+
+class FinancialPerformance(Base):
+    __tablename__ = "financial_performance"
+    id = Column(String, primary_key=True, default=generate_uuid)
+    institution_id = Column(String, ForeignKey("institutions.id"))
+    year = Column(Integer, nullable=False)
+    
+    revenue = Column(Float, default=0.0) # Total Revenue (매출액)
+    operating_expenses = Column(Float, default=0.0) # Excluding Personnel (인건비 제외 운영비용)
+    personnel_costs = Column(Float, default=0.0) # Total Personnel Costs (총 인건비)
+    
+    # Pre-calculated Metrics (Optional, as they can be computed on fly)
+    net_income = Column(Float, default=0.0) # Revenue - (OpEx + Personnel)
+    
+    institution = relationship("Institution", back_populates="financial_performance")
 
 class TeamBudget(Base):
     __tablename__ = "team_budgets"
@@ -339,6 +449,9 @@ class PerformanceReview(Base):
     score_common = Column(Float, default=0.0) # Common Competency
     score_leadership = Column(Float, default=0.0) # Leadership
     score_job = Column(Float, default=0.0) # Job Performance (Calculated from Goals)
+    score_potential = Column(Float, default=0.0) # Potential Score
+    potential_grade = Column(String, nullable=True) # High, Mod, Low
+    nine_box_position = Column(Integer, nullable=True) # 1-9
     total_score = Column(Float, default=0.0)
     grade = Column(String, nullable=True) # S, A, B, C, D
     
@@ -377,6 +490,17 @@ class PromotionList(Base):
     score_training = Column(Float, default=0.0)
     
     user = relationship("User", back_populates="promotion_entries")
+
+# --- 3. Enterprise Integration (ERP) ---
+class ERPSyncLog(Base):
+    __tablename__ = "erp_sync_logs"
+    id = Column(String, primary_key=True, default=generate_uuid)
+    sync_date = Column(DateTime(timezone=True), server_default=func.now())
+    status = Column(String, nullable=False) # SUCCESS, FAILED
+    records_updated = Column(Integer, default=0)
+    details = Column(Text, nullable=True) # JSON log of changes
+    
+    institution_id = Column(String, ForeignKey("institutions.id"))
 
 class TrainingProgram(Base):
     __tablename__ = "training_programs"

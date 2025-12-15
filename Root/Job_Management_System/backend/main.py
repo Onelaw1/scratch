@@ -4,7 +4,8 @@ from fastapi.middleware.cors import CORSMiddleware
 from .routers import (
     institutions, jobs, surveys, statistics, workflow, 
     organization, tasks, frontend, job_centric, strategy, 
-    reporting, job_analysis, ai_impact, evaluation, performance, users, training, workforce, classification
+    reporting, job_analysis, ai_impact, evaluation, performance, users, training, workforce, classification, productivity,
+    simulation, descriptions, personnel, career, ai, erp, wage, compliance, fairness, prediction, global_settings, blockchain, calibration, integral, promotion, rank, workforce_optimization, dynamic_jd, r_and_r, raci, nine_box, span_of_control, competency
 )
 from .database import engine, Base
 
@@ -51,6 +52,22 @@ app.include_router(ai_impact.router)
 app.include_router(evaluation.router)
 app.include_router(workforce.router)
 app.include_router(classification.router)
+app.include_router(productivity.router)
+app.include_router(simulation.router)
+app.include_router(personnel.router)
+app.include_router(career.router)
+app.include_router(ai.router)
+app.include_router(erp.router)
+app.include_router(wage.router)
+app.include_router(wage.router)
+app.include_router(compliance.router)
+app.include_router(fairness.router)
+app.include_router(prediction.router)
+app.include_router(global_settings.router)
+app.include_router(blockchain.router)
+app.include_router(calibration.router)
+app.include_router(integral.router)
+app.include_router(promotion.router)
 
 @app.get("/")
 def read_root():

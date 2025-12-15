@@ -121,9 +121,13 @@ def calculate_results(evaluation_id: str, db: Session = Depends(get_db)):
     db.refresh(evaluation)
     return evaluation
 
-@router.get("/{evaluation_id}", response_model=schemas.JobEvaluation)
-def read_evaluation(evaluation_id: str, db: Session = Depends(get_db)):
-    evaluation = db.query(models.JobEvaluation).filter(models.JobEvaluation.id == evaluation_id).first()
-    if not evaluation:
-        raise HTTPException(status_code=404, detail="Evaluation not found")
-    return evaluation
+@router.get("/positions/status", response_model=List[schemas.JobPosition])
+def get_evaluation_positions(db: Session = Depends(get_db)):
+    """
+    Get all job positions with their evaluation status.
+    This is effectively a Left Join between JobPosition and JobEvaluation.
+    """
+    positions = db.query(models.JobPosition).all()
+    # In a real scenario, we might want to return a specific schema that includes the evaluation summary
+    # For now, relying on the 'evaluation' relationship in the JobPosition model
+    return positions

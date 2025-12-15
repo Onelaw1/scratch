@@ -1,97 +1,99 @@
-from fastapi import APIRouter, UploadFile, File, Form, HTTPException, BackgroundTasks
-from fastapi.responses import FileResponse
-import shutil
-import os
+from fastapi import APIRouter, Depends, HTTPException
+from sqlalchemy.orm import Session
+from sqlalchemy import func
+from typing import List, Dict, Any
+from .. import crud, models, schemas
+from ..database import get_db
 import uuid
-from typing import Optional
-import sys
-
-# Add PPT Agent to path to import services
-# Add PPT Agent to path to import services
-ppt_agent_path = os.path.join(os.path.dirname(__file__), '..', '..', '..', 'PPT_Agent')
-sys.path.append(ppt_agent_path)
-
-from src.services.data_ingestion_service import DataIngestionService
-from src.services.pptx_service import PPTXService
-from src.models.schema import PresentationSchema, SlideContent
 
 router = APIRouter(
-    prefix="/api/reporting",
+    prefix="/reporting",
     tags=["reporting"],
+    responses={404: {"description": "Not found"}},
 )
 
-ingestion_service = DataIngestionService()
-pptx_service = PPTXService(output_dir=os.path.join(ppt_agent_path, "output", "web_reports"))
+@router.get("/job-card/{user_id}")
+def get_job_management_card(user_id: str, db: Session = Depends(get_db)):
+    """
+    Aggregates a comprehensive "Job Management Card" for a user.
+    Includes:
+    1. Profile (User, OrgUnit)
+    2. Current Position (Title, Series, Grade)
+    3. Job History (Past positions)
+    4. Performance (Latest Review Score/Grade)
+    5. Evaluation (Job Grade)
+    6. Training (Recent courses)
+    """
+    
+    # 1. Fetch User and Profile
+    user = db.query(models.User).filter(models.User.id == user_id).first()
+    if not user:
+        raise HTTPException(status_code=404, detail="User not found")
+        
+    # 2. Current Position
+    current_pos = None
+    for pos in user.job_positions:
+        # Simplistic logic: assume the one without end date or most recent is current
+        # For MVP, just taking the first one or the one marked as 'is_future_model=False'
+        if not pos.is_future_model: 
+            current_pos = pos
+            break
+            
+    # If no current pos found, just take first
+    if not current_pos and user.job_positions:
+        current_pos = user.job_positions[0]
+        
+    # 3. Job History
+    # Derived from modifications to JobPosition or a separate History table if implemented fully.
+    # For now, we can show list of positions assigned to user as history
+    history_data = []
+    for pos in user.job_positions:
+        history_data.append({
+            "title": pos.title,
+            "period": "2024 - Present" if pos == current_pos else "Past", # Placeholder dates
+            "series": pos.series.name if pos.series else "N/A"
+        })
 
-@router.post("/generate")
-async def generate_report(
-    file: UploadFile = File(...),
-    framework_type: str = Form(...),
-    title: str = Form("Strategic Report")
-):
-    """
-    Generate a PPT report from an uploaded file (Excel or Image).
-    """
-    try:
-        # Save uploaded file temporarily
-        temp_filename = f"temp_{uuid.uuid4()}_{file.filename}"
-        temp_path = os.path.join(ppt_agent_path, "output", "temp", temp_filename)
-        os.makedirs(os.path.dirname(temp_path), exist_ok=True)
+    # 4. Performance (Latest)
+    latest_review = db.query(models.PerformanceReview)\
+        .filter(models.PerformanceReview.user_id == user_id)\
+        .order_by(models.PerformanceReview.year.desc())\
+        .first()
         
-        with open(temp_path, "wb") as buffer:
-            shutil.copyfileobj(file.file, buffer)
-            
-        # Determine source type
-        filename = file.filename.lower()
-        source_type = "dict"
-        if filename.endswith(('.xlsx', '.xls')):
-            source_type = "excel"
-        elif filename.endswith(('.png', '.jpg', '.jpeg')):
-            source_type = "image"
-        else:
-            raise HTTPException(status_code=400, detail="Unsupported file type")
-            
-        # Ingest Data
-        print(f"Ingesting data from {source_type} file: {temp_path}")
-        data = ingestion_service.ingest_data(temp_path, source_type)
+    # 5. Job Evaluation (for current position)
+    job_grade = "N/A"
+    if current_pos and current_pos.evaluation:
+        job_grade = current_pos.evaluation.grade
+    elif current_pos:
+        job_grade = current_pos.grade # Fallback to position grade
         
-        if not data:
-            raise HTTPException(status_code=400, detail="Failed to extract data from file")
-            
-        # Create Presentation Schema
-        slides = [
-            SlideContent(
-                title=f"{framework_type.upper()} Analysis", 
-                bullet_points=["Generated from uploaded file"]
-            )
-        ]
-        schema = PresentationSchema(topic=title, slides=slides)
-        
-        # Create Design Schema
-        design_schema = [
-            {
-                "diagram_type": framework_type,
-                "diagram_data": data
-            }
-        ]
-        
-        # Generate PPT
-        output_filename = f"report_{uuid.uuid4()}.pptx"
-        output_path = pptx_service.create_presentation(
-            schema, 
-            filename=output_filename, 
-            design_schema=design_schema
-        )
-        
-        # Cleanup temp file
-        os.remove(temp_path)
-        
-        return FileResponse(
-            output_path, 
-            media_type="application/vnd.openxmlformats-officedocument.presentationml.presentation", 
-            filename=f"{title}.pptx"
-        )
-        
-    except Exception as e:
-        print(f"Error generating report: {e}")
-        raise HTTPException(status_code=500, detail=str(e))
+    # 6. Training
+    trainings = []
+    for t in user.trainings:
+        trainings.append({
+            "program": t.program.name if t.program else "Unknown",
+            "date": t.completion_date,
+            "status": t.status
+        })
+
+    return {
+        "profile": {
+            "name": user.name,
+            "email": user.email,
+            "department": user.org_unit.name if user.org_unit else "Unassigned",
+            "hire_date": user.hire_date
+        },
+        "position": {
+            "title": current_pos.title if current_pos else "No Position",
+            "series": current_pos.series.name if current_pos and current_pos.series else "N/A",
+            "group": current_pos.series.group.name if current_pos and current_pos.series and current_pos.series.group else "N/A",
+            "grade": job_grade
+        },
+        "performance": {
+            "year": latest_review.year if latest_review else "N/A",
+            "grade": latest_review.grade if latest_review else "N/A",
+            "score": latest_review.total_score if latest_review else 0
+        },
+        "history": history_data,
+        "trainings": trainings
+    }
