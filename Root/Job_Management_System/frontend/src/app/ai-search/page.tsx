@@ -63,8 +63,8 @@ export default function AiSearchPage() {
                 <ThemeIcon size={64} radius="xl" variant="gradient" gradient={{ from: 'indigo', to: 'cyan' }} className="mb-4">
                     <IconBrain size={32} />
                 </ThemeIcon>
-                <Title order={1} className="mb-2">AI Workforce Intelligence</Title>
-                <Text c="dimmed" size="lg">Semantic Search across Jobs, Tasks, and Talent.</Text>
+                <Title order={1} className="mb-2">AI 인력 인텔리전스</Title>
+                <Text c="dimmed" size="lg">직무, 과업, 인재에 대한 시맨틱 검색 (Semantic Search)</Text>
             </div>
 
             {/* Search Bar */}
@@ -72,7 +72,7 @@ export default function AiSearchPage() {
                 <TextInput
                     size="xl"
                     variant="unstyled"
-                    placeholder="Ask anything... e.g., 'Leadership roles with data skills'"
+                    placeholder="무엇이든 물어보세요... 예: '데이터 역량을 갖춘 리더십 직무'"
                     value={query}
                     onChange={setQuery}
                     leftSection={<IconSearch size={22} className="text-gray-400" />}
@@ -107,7 +107,7 @@ export default function AiSearchPage() {
 
                             <Group>
                                 <Badge variant="dot" color={item.score > 0.5 ? 'green' : 'yellow'}>
-                                    Match: {Math.round(item.score * 100)}%
+                                    일치도: {Math.round(item.score * 100)}%
                                 </Badge>
                                 <ActionIcon variant="subtle" color="gray" className="opacity-0 group-hover:opacity-100 transition-opacity">
                                     <IconArrowRight size={18} />
@@ -119,7 +119,7 @@ export default function AiSearchPage() {
 
                 {results.length === 0 && query.length > 0 && !loading && (
                     <div className="text-center py-12 text-gray-400">
-                        <Text>No semantic matches found.</Text>
+                        <Text>검색 결과가 없습니다.</Text>
                     </div>
                 )}
             </Stack>

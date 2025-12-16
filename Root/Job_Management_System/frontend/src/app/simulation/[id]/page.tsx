@@ -41,7 +41,7 @@ export default function SimulationBoard() {
             setPositions(data);
         } catch (error) {
             console.error(error);
-            notifications.show({ title: 'Error', message: 'Failed to load board data', color: 'red' });
+            notifications.show({ title: '오류', message: '보드 데이터를 불러오는데 실패했습니다.', color: 'red' });
         } finally {
             setLoading(false);
         }
@@ -70,10 +70,10 @@ export default function SimulationBoard() {
 
         try {
             await api.moveTask(draggableId, destination.droppableId);
-            notifications.show({ title: 'Moved', message: 'Task reassigned successfully', color: 'blue', autoClose: 1000, withCloseButton: false });
+            notifications.show({ title: '이동 완료', message: '업무가 재할당되었습니다.', color: 'blue', autoClose: 1000, withCloseButton: false });
         } catch (error) {
             console.error(error);
-            notifications.show({ title: 'Error', message: 'Failed to sync move', color: 'red' });
+            notifications.show({ title: '오류', message: '이동 동기화 실패', color: 'red' });
             loadData();
         }
     };
@@ -87,10 +87,10 @@ export default function SimulationBoard() {
                 <div>
                     <Group gap="xs">
                         <ThemeIcon variant="light" size="lg" radius="md" color="indigo"><IconClock /></ThemeIcon>
-                        <Title order={3} style={{ fontFamily: '-apple-system, BlinkMacSystemFont, sans-serif', fontWeight: 600 }}>Simulation Board</Title>
+                        <Title order={3} style={{ fontFamily: '-apple-system, BlinkMacSystemFont, sans-serif', fontWeight: 600 }}>시뮬레이션 보드</Title>
                     </Group>
                     <Text size="sm" c="dimmed" mt={4} fw={500}>
-                        Drag tasks to redesign job roles. Use <Badge variant="outline" size="xs">Space</Badge> to pick up, <Badge variant="outline" size="xs">Arrows</Badge> to move.
+                        과업을 드래그하여 직무를 재설계하세요. <Badge variant="outline" size="xs">스페이스바</Badge>로 선택하고 <Badge variant="outline" size="xs">화살표</Badge>로 이동할 수 있습니다.
                     </Text>
                 </div>
             </div>
@@ -121,7 +121,7 @@ export default function SimulationBoard() {
                                         </Badge>
                                     </Group>
                                     <Group gap="xs">
-                                        <Badge size="xs" variant="dot" color="blue">{pos.grade || 'No Grade'}</Badge>
+                                        <Badge size="xs" variant="dot" color="blue">{pos.grade || '직급 없음'}</Badge>
                                     </Group>
                                 </div>
 
@@ -178,7 +178,7 @@ export default function SimulationBoard() {
                                                                             </Text>
                                                                             {snapshot.isDragging && (
                                                                                 <Badge size="xs" variant="gradient" gradient={{ from: 'indigo', to: 'cyan' }}>
-                                                                                    Moving...
+                                                                                    이동 중...
                                                                                 </Badge>
                                                                             )}
                                                                         </div>

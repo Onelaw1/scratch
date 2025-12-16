@@ -3,9 +3,9 @@
 import { AppShell, Burger, Group, NavLink, ScrollArea, Text, ThemeIcon, SegmentedControl } from '@mantine/core';
 import { useDisclosure } from '@mantine/hooks';
 import {
-    IconLayoutDashboard, IconSitemap, IconBriefcase, IconUsers,
     IconBrain, IconDeviceMobile, IconServer, IconChartDots, IconSchool,
-    IconAnalyze, IconSettings, IconSearch, IconBulb, IconChartPie, IconTrendingUp
+    IconAnalyze, IconSettings, IconSearch, IconBulb, IconChartPie, IconTrendingUp,
+    IconSchema, IconLayoutDashboard, IconSitemap, IconBriefcase, IconUsers, IconFileDescription, IconClipboardCheck
 } from '@tabler/icons-react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
@@ -16,60 +16,52 @@ import { useLanguage } from '@/contexts/LanguageContext';
 type NavItem = {
     label?: string;
     labelKey?: string;
-    icon: any;
+    icon?: any;
     link?: string;
-    links?: { label: string; labelKey?: string; link: string; icon?: any }[];
+    links?: NavItem[];
 };
 
 const NAV_ITEMS: NavItem[] = [
-    { labelKey: 'nav.dashboard', icon: IconLayoutDashboard, link: '/' },
+    { label: '대시보드', labelKey: 'nav.dashboard', icon: IconLayoutDashboard, link: '/analytics/dashboard' },
+    { label: '시스템 개요', labelKey: 'nav.overview', icon: IconSchema, link: '/system-overview' },
 
     {
-        labelKey: 'nav.org_jobs', icon: IconSitemap, links: [
-            { label: 'Job Classification', labelKey: 'nav.job_class', link: '/job-classification' },
-            { label: 'Job Descriptions', labelKey: 'nav.job_desc', link: '/job-descriptions' },
-            { label: 'Job Evaluation', labelKey: 'nav.job_eval', link: '/job-evaluation' },
-            { label: 'Org Chart (Span)', labelKey: 'nav.span', link: '/admin/span-of-control', icon: IconSitemap },
+        label: '직무 관리 흐름', labelKey: 'nav.workflow', icon: IconTrendingUp, links: [
+            { label: '1. 직무 기술서', labelKey: 'nav.job_desc', link: '/job-descriptions', icon: IconFileDescription },
+            { label: '2. 직무 분류', labelKey: 'nav.job_class', link: '/job-classification', icon: IconSitemap },
+            { label: '3. 적정 인력', labelKey: 'nav.workload', link: '/workload-analysis', icon: IconChartPie },
+            {
+                label: '4. 직무 평가',
+                labelKey: 'nav.job_eval',
+                icon: IconClipboardCheck,
+                links: [
+                    { label: '개별 평가', link: '/evaluation/rate/demo-job-001' },
+                    { label: '종합 매트릭스', link: '/evaluation/matrix' }
+                ]
+            },
         ]
     },
 
     {
-        labelKey: 'nav.workforce', icon: IconAnalyze, links: [
-            { label: 'Workforce Planning', labelKey: 'nav.wf_planning', link: '/workforce-planning' },
-            { label: 'Workload Analysis', labelKey: 'nav.wl_analysis', link: '/workload-analysis' },
-            { label: 'Simulation Board', labelKey: 'nav.sim_board', link: '/simulation' },
+        label: '분석 및 최적화', labelKey: 'nav.analytics', icon: IconAnalyze, links: [
+            { label: '전략 대시보드', labelKey: 'nav.strat_dash', link: '/analytics/dashboard', icon: IconLayoutDashboard },
+            { label: '조직 구조 분석', labelKey: 'nav.span', link: '/admin/span-of-control', icon: IconUsers },
+            { label: 'AI 시맨틱 검색', labelKey: 'nav.ai_search', link: '/ai-search', icon: IconSearch },
+            { label: '예측 분석', labelKey: 'nav.pred', link: '/admin/prediction', icon: IconBrain },
         ]
     },
 
     {
-        labelKey: 'nav.personnel', icon: IconUsers, links: [
-            { label: 'Personnel Records', labelKey: 'nav.personnel_rec', link: '/personnel-record' },
-            { label: 'Performance Mgmt', labelKey: 'nav.perf_mgmt', link: '/performance-management' },
-            { label: 'Career Development', labelKey: 'nav.career_dev', link: '/career-development' },
-            { label: 'Talent Mapping (9-Box)', labelKey: 'nav.talent_map', link: '/scientific-hr/9-box', icon: IconChartDots },
-            { label: 'Competency Radar', labelKey: 'nav.comp_radar', link: '/admin/competency', icon: IconBrain },
+        label: '직원 경험', labelKey: 'nav.emp_exp', icon: IconDeviceMobile, links: [
+            { label: '나의 직무 관리', labelKey: 'nav.my_job', link: '/my-job' },
+            { label: '직무 조사', labelKey: 'nav.job_survey', link: '/job-survey' },
         ]
     },
 
     {
-        labelKey: 'nav.ai_brain', icon: IconBrain, links: [
-            { label: 'AI Semantic Search', labelKey: 'nav.ai_search', link: '/ai-search', icon: IconSearch },
-            { label: 'JD Generator', labelKey: 'nav.jd_gen', link: '/jd-generator', icon: IconBulb },
-            { label: 'Smart Gap Analysis', labelKey: 'nav.gap_analysis', link: '/smart-gap-analysis', icon: IconChartPie },
-            { label: 'Predictive Analytics', labelKey: 'nav.pred_analytics', link: '/admin/prediction', icon: IconTrendingUp },
-        ]
-    },
-
-    {
-        labelKey: 'nav.emp_exp', icon: IconDeviceMobile, links: [
-            { label: 'My Job (Mobile)', labelKey: 'nav.my_job', link: '/my-job' },
-            { label: 'Job Survey (Input)', labelKey: 'nav.job_survey', link: '/job-survey' },
-        ]
-    },
-
-    {
-        labelKey: 'nav.admin', icon: IconServer, links: [
-            { label: 'ERP Sync', labelKey: 'nav.erp_sync', link: '/admin/erp-sync' },
+        label: '관리자', labelKey: 'nav.admin', icon: IconServer, links: [
+            { label: 'ERP 데이터 연동', labelKey: 'nav.erp_sync', link: '/admin/erp-sync' },
+            { label: '사용자 권한 관리', labelKey: 'nav.permissions', link: '/admin/permissions', icon: IconUsers },
         ]
     },
 ];
@@ -81,10 +73,36 @@ export function Shell({ children }: { children: ReactNode }) {
 
     const isMobileView = pathname.startsWith('/my-job');
 
-    // Mobile View: Hide Shell (Full screen app feel)
     if (isMobileView) {
         return <>{children}</>;
     }
+
+    const renderNavItem = (item: any) => {
+        if (item.links && item.links.length > 0) {
+            return (
+                <NavLink
+                    key={item.labelKey || item.label}
+                    label={t(item.labelKey || '') || item.label}
+                    leftSection={item.icon ? <item.icon size="1rem" stroke={1.5} /> : null}
+                    childrenOffset={28}
+                    defaultOpened
+                >
+                    {item.links.map(renderNavItem)}
+                </NavLink>
+            );
+        }
+
+        return (
+            <NavLink
+                key={item.link || item.label}
+                component={Link}
+                href={item.link || '#'}
+                label={t(item.labelKey || '') || item.label}
+                leftSection={item.icon ? <item.icon size="1rem" stroke={1.5} /> : null}
+                active={pathname === item.link}
+            />
+        );
+    };
 
     return (
         <AppShell
@@ -121,40 +139,7 @@ export function Shell({ children }: { children: ReactNode }) {
             <AppShell.Navbar p="md">
                 <ScrollArea className="h-full">
                     <div className="space-y-1">
-                        {NAV_ITEMS.map((item) => {
-                            if (item.links) {
-                                return (
-                                    <NavLink
-                                        key={item.labelKey || item.label}
-                                        label={t(item.labelKey || '') || item.label}
-                                        leftSection={<item.icon size="1rem" stroke={1.5} />}
-                                        childrenOffset={28}
-                                        defaultOpened
-                                    >
-                                        {item.links.map((sublink) => (
-                                            <NavLink
-                                                key={sublink.link}
-                                                component={Link}
-                                                href={sublink.link}
-                                                label={t(sublink.labelKey || '') || sublink.label}
-                                                active={pathname === sublink.link}
-                                                leftSection={'icon' in sublink && sublink.icon ? <sublink.icon size="0.8rem" /> : null}
-                                            />
-                                        ))}
-                                    </NavLink>
-                                );
-                            }
-                            return (
-                                <NavLink
-                                    key={item.link}
-                                    component={Link}
-                                    href={item.link || '#'}
-                                    label={t(item.labelKey || '') || item.label}
-                                    leftSection={<item.icon size="1rem" stroke={1.5} />}
-                                    active={pathname === item.link}
-                                />
-                            );
-                        })}
+                        {NAV_ITEMS.map(renderNavItem)}
                     </div>
                 </ScrollArea>
 

@@ -44,14 +44,14 @@ export default function SimulationDashboard() {
     };
 
     const handleCreateScenario = async () => {
-        const name = prompt("Enter scenario name:");
+        const name = prompt("시나리오 이름을 입력하세요:");
         if (!name) return;
         try {
-            await api.createScenario({ name, description: "New simulation" });
+            await api.createScenario(name, "새 시뮬레이션");
             loadData();
         } catch (error) {
             console.error(error);
-            Notifications.show({ title: 'Error', message: 'Failed to create scenario', color: 'red' });
+            Notifications.show({ title: '오류', message: '시나리오 생성 실패', color: 'red' });
         }
     };
 
@@ -100,7 +100,7 @@ export default function SimulationDashboard() {
                         </Group>
                         <Group align="flex-end" gap="xs">
                             <Text size="2rem" fw={800} lh={1}>{latest ? latest.hcroi.toFixed(2) : '0.00'}</Text>
-                            {latest && latest.hcroi < 2.5 && <Badge color="red" variant="light">Loss Warning</Badge>}
+                            {latest && latest.hcroi < 2.5 && <Badge color="red" variant="light">손실 경고</Badge>}
                         </Group>
                         <Text size="xs" c="dimmed" mt="sm">{t('prod.hcroi_desc')}</Text>
                     </Paper>
@@ -138,8 +138,8 @@ export default function SimulationDashboard() {
                                     contentStyle={{ borderRadius: '8px', border: 'none', boxShadow: '0 4px 12px rgba(0,0,0,0.1)' }}
                                 />
                                 <Legend />
-                                <Bar yAxisId="left" dataKey="personnel_costs" name="Personnel Costs" fill="#e0e0e0" radius={[4, 4, 0, 0]} />
-                                <Line yAxisId="left" type="monotone" dataKey="revenue" name="Revenue" stroke="#8884d8" strokeWidth={2} dot={{ r: 4 }} />
+                                <Bar yAxisId="left" dataKey="personnel_costs" name="인건비" fill="#e0e0e0" radius={[4, 4, 0, 0]} />
+                                <Line yAxisId="left" type="monotone" dataKey="revenue" name="매출" stroke="#8884d8" strokeWidth={2} dot={{ r: 4 }} />
                                 <Line yAxisId="right" type="monotone" dataKey="hcroi" name="HCROI" stroke="#00c49f" strokeWidth={2} dot={{ r: 4 }} />
                             </ComposedChart>
                         </ResponsiveContainer>
@@ -163,10 +163,10 @@ export default function SimulationDashboard() {
                                     </ThemeIcon>
                                     <div>
                                         <Text fw={600}>{s.name}</Text>
-                                        <Text size="sm" c="dimmed">Last updated: {new Date().toLocaleDateString()}</Text>
+                                        <Text size="sm" c="dimmed">최종 수정: {new Date().toLocaleDateString()}</Text>
                                     </div>
                                 </Group>
-                                <Badge variant="light">Draft</Badge>
+                                <Badge variant="light">초안</Badge>
                             </Group>
                         </Paper>
                     ))}

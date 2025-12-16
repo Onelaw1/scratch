@@ -48,9 +48,9 @@ export default function GapAnalysisPage() {
                 <ThemeIcon size={64} radius="xl" variant="light" color="orange" className="mb-4">
                     <IconChartPie size={32} />
                 </ThemeIcon>
-                <Title order={1}>Smart Workload & Gap Analysis</Title>
+                <Title order={1}>스마트 적정 인력 및 갭(Gap) 분석</Title>
                 <Text c="dimmed">
-                    AI automatically clusters scattered tasks into "Duties" and identifies staffing gaps.
+                    AI가 산발적인 과업을 '책무(Duty)' 단위로 자동 클러스터링하고 인력 공백을 식별합니다.
                 </Text>
             </div>
 
@@ -58,8 +58,8 @@ export default function GapAnalysisPage() {
             <Paper p="xl" radius="md" withBorder className="mb-8 bg-gray-50">
                 <Group justify="space-between">
                     <div>
-                        <Title order={4}>Data Source</Title>
-                        <Text size="sm" c="dimmed">Loaded 10 raw tasks from Survey (Simulated)</Text>
+                        <Title order={4}>데이터 소스 (Data Source)</Title>
+                        <Text size="sm" c="dimmed">10개의 설문 원본 데이터 로드됨 (시뮬레이션)</Text>
                     </div>
                     <Button
                         size="md"
@@ -68,7 +68,7 @@ export default function GapAnalysisPage() {
                         onClick={handleAnalyze}
                         loading={loading}
                     >
-                        Run AI Clustering
+                        AI 클러스터링 실행
                     </Button>
                 </Group>
             </Paper>
@@ -97,7 +97,7 @@ export default function GapAnalysisPage() {
 
                             {/* Recommendation Alert */}
                             <Alert
-                                title="AI Recommendation"
+                                title="AI 추천 (인사이트)"
                                 color={cluster.fte_sum > 1.0 ? 'red' : 'blue'}
                                 icon={<IconBulb size={16} />}
                                 className="mb-4"
@@ -106,7 +106,7 @@ export default function GapAnalysisPage() {
                             </Alert>
 
                             {/* Task Breakdown */}
-                            <Text size="sm" fw={700} c="dimmed" mb="xs">CLUSTERED TASKS:</Text>
+                            <Text size="sm" fw={700} c="dimmed" mb="xs">클러스터링된 과업 목록</Text>
                             <Table withTableBorder withRowBorders={false} horizontalSpacing="xs">
                                 <Table.Tbody>
                                     {cluster.tasks.map((t: any, i: number) => (
@@ -126,7 +126,7 @@ export default function GapAnalysisPage() {
             {!loading && analysis.length === 0 && (
                 <div className="text-center py-20 text-gray-400">
                     <IconBrain size={48} className="mb-4 text-gray-300 mx-auto" />
-                    <Text>Click "Run AI Clustering" to analyze workload patterns.</Text>
+                    <Text>'AI 클러스터링 실행' 버튼을 눌러 업무 패턴을 분석하세요.</Text>
                 </div>
             )}
         </Container>

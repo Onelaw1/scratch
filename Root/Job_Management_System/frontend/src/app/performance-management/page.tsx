@@ -3,7 +3,8 @@
 import { useState, useEffect } from "react";
 import {
     Container, Title, Text, Grid, Paper, Group, Stack, Badge,
-    Button, Loader, Select, Modal, TextInput, NumberInput, RingProgress, Divider
+    Button, Loader, Select, Modal, TextInput, NumberInput, RingProgress, Divider,
+    Progress, Slider, Card, ActionIcon
 } from "@mantine/core";
 import { useDisclosure } from "@mantine/hooks";
 import { notifications } from "@mantine/notifications";
@@ -171,18 +172,90 @@ export default function PerformanceManagementPage() {
 
                             <EmptyState visible={review.goals.length === 0} />
 
-                            <Stack>
-                                {review.goals.map((goal: any) => (
-                                    <Paper key={goal.id} p="sm" withBorder bg="gray.0">
-                                        <Group justify="space-between" mb="xs">
-                                            <Badge variant="outline">{goal.category}</Badge>
-                                            <Text fw={700} size="sm">{goal.weight}%</Text>
+                            {review.goals.length > 0 && (
+                                <Stack gap="xs">
+                                    {/* Smart Weight Budget Bar */}
+                                    <Paper p="sm" bg="blue.0" className="border border-blue-200">
+                                        <Group justify="space-between" mb={4}>
+                                            <Group gap={4}>
+                                                <IconTarget size={16} className="text-blue-600" />
+                                                <Text fw={700} size="sm" c="blue.9">Total Weight Allocation</Text>
+                                            </Group>
+                                            <Text fw={700} size="sm" c={
+                                                review.goals.reduce((acc: any, g: any) => acc + g.weight, 0) === 100 ? 'teal' :
+                                                    review.goals.reduce((acc: any, g: any) => acc + g.weight, 0) > 100 ? 'red' : 'orange'
+                                            }>
+                                                {review.goals.reduce((acc: any, g: any) => acc + g.weight, 0)}% / 100%
+                                            </Text>
                                         </Group>
-                                        <Text fw={500} mb="xs">{goal.goal_text}</Text>
-                                        {goal.target && <Text size="sm" c="dimmed">Target: {goal.target}</Text>}
+                                        <Progress
+                                            value={review.goals.reduce((acc: any, g: any) => acc + g.weight, 0)}
+                                            size="xl"
+                                            radius="xl"
+                                            color={
+                                                review.goals.reduce((acc: any, g: any) => acc + g.weight, 0) > 100 ? 'red' : 'blue'
+                                            }
+                                            striped animated
+                                        />
                                     </Paper>
-                                ))}
-                            </Stack>
+
+                                    {/* Interactive Goal List */}
+                                    {review.goals.map((goal: any, idx: number) => (
+                                        <Paper key={goal.id} p="sm" withBorder bg="white">
+                                            <Group justify="space-between" mb="xs" align="start">
+                                                <div style={{ flex: 1 }}>
+                                                    <Group gap="xs" mb={4}>
+                                                        <Badge variant="dot" size="sm">{goal.category}</Badge>
+                                                        <Text fw={600} size="sm">{goal.goal_text}</Text>
+                                                    </Group>
+                                                    {goal.target && <Text size="xs" c="dimmed">Target: {goal.target}</Text>}
+                                                </div>
+                                                <ActionIcon color="red" variant="subtle" size="sm" onClick={async () => {
+                                                    // Delete logic here (assuming API exists or just hide for demo)
+                                                    // Ideally api.deleteGoal(goal.id)
+                                                    if (confirm('Delete goal?')) {
+                                                        await api.deleteGoal(goal.id); // Assuming this is added or handle via review update
+                                                        loadReview(selectedUser!);
+                                                    }
+                                                }}>
+                                                    <IconPlus size={16} style={{ transform: 'rotate(45deg)' }} />
+                                                </ActionIcon>
+                                            </Group>
+
+                                            {/* Weight Slider */}
+                                            <Card bg="gray.0" p="xs" radius="md">
+                                                <Stack gap={2}>
+                                                    <Group justify="space-between">
+                                                        <Text size="xs" fw={600} c="dimmed">Weight</Text>
+                                                        <Badge variant="filled" color="blue" size="sm">{goal.weight}%</Badge>
+                                                    </Group>
+                                                    <Slider
+                                                        value={goal.weight}
+                                                        onChangeEnd={async (val) => {
+                                                            // Optimistic update locally first? Or direct API call
+                                                            // Direct API call for now to keep sync
+                                                            try {
+                                                                await api.updateGoal(goal.id, { weight: val });
+                                                                loadReview(selectedUser!); // Refresh full state
+                                                            } catch (e) { console.error(e); }
+                                                        }}
+                                                        // Optimistic UX: Bind to local state change if we lifted state up
+                                                        // For now simplified: onChangeEnd triggers save
+                                                        min={0} max={100} step={5}
+                                                        color="blue" size="sm"
+                                                        marks={[
+                                                            { value: 10, label: '10' },
+                                                            { value: 20, label: '20' },
+                                                            { value: 30, label: '30' },
+                                                            { value: 50, label: '50' },
+                                                        ]}
+                                                    />
+                                                </Stack>
+                                            </Card>
+                                        </Paper>
+                                    ))}
+                                </Stack>
+                            )}
                         </Paper>
                     </Grid.Col>
 

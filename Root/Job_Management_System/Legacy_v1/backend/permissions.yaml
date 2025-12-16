@@ -1,0 +1,78 @@
+# User Types and Permissions Design (Granular/Detailed)
+# Revised based on User Feedback: "Detail & Hierarchy"
+
+roles:
+  # --- 1. System Administration ---
+  ADMIN:
+    description: "System Master & Criteria Architect"
+    capabilities:
+      - "system:manage_settings"
+      - "user:manage_all"
+      # Evaluation Design (Unique to Admin)
+      - "evaluation:design_criteria"       # 평가 요소 설계
+      - "evaluation:adjust_weights"        # 가중치 조정
+      - "evaluation:open_session"          # 평가 세션 개설/마감
+      - "data:view_all"
+      - "data:edit_all"
+
+  # --- 2. Workforce Planning & Strategy ---
+  HR_PLANNER:
+    description: "HR Strategic Planner"
+    capabilities:
+      - "strategy:manage_goals"            # 전략 목표 수립
+      - "headcount:manage_plan"            # 정원(T/O) 계획
+      - "headcount:approve_request"        # 증원 요청 승인
+      - "job:final_approval"               # JD 최종 승인
+      - "analytics:view_dashboard"
+
+  # --- 3. Job Analysis & Description ---
+  JD_WRITER:
+    description: "Job Description Drafter (Field Expert)"
+    capabilities:
+      - "job:draft_description"            # JD 초안 작성
+      - "job:request_review"               # 검토 요청
+      
+  JOB_ANALYST:
+    description: "Job Analyst (Professional)"
+    capabilities:
+      - "job:create_structure"             # 직무 체계 수립
+      - "job:refine_description"           # JD 보정 및 고도화
+      - "job:map_ncs"                      # NCS 매핑
+      - "ai:run_fairness_audit"            # AI 공정성 감사 수행
+
+  # --- 4. Workload Analysis (Time & Volume) ---
+  WORKLOAD_WRITER:
+    description: "Individual Employee (Self-Reporting)"
+    capabilities:
+      - "workload:input_own_time"          # 본인 업무량 입력
+      - "workload:view_own_stats"
+      
+  WORKLOAD_REVIEWER:
+    description: "Team Leader (Validation)"
+    capabilities:
+      - "workload:view_team_stats"         # 팀원 업무량 조회
+      - "workload:validate_input"          # 업무량 데이터 검증/승인
+      - "workload:adjust_volume"           # 물량 조정
+
+  # --- 5. Job Evaluation (Grading) ---
+  EVALUATOR_GENERAL:
+    description: "General Evaluator (conflict-of-interest check)"
+    capabilities:
+      - "eval:view_assigned_jobs"          # 배정된 직무만 조회
+      - "eval:score_job"                   # 점수 부여
+      - "eval:exclude_own_job"             #! SYSTEM ENFORCED: 본인 직무 평가 불가
+
+  EVALUATOR_MASTER:
+    description: "Master/Committee Chair (All Access)"
+    capabilities:
+      - "eval:view_all_jobs"               # 모든 직무 조회 (하위직/일반직 포함)
+      - "eval:score_all_jobs"              # 모든 직무 평가 가능
+      - "eval:view_other_scores"           # 타 평가자 점수 열람 (조정용)
+      - "eval:finalize_grade"              # 최종 등급 확정
+
+  # --- 6. General Employee ---
+  EMPLOYEE:
+    description: "Standard Viewer"
+    capabilities:
+      - "profile:view_own"
+      - "catalog:view_public_jobs"         # 공개된 직무 내역 조회

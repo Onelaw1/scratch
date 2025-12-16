@@ -22,9 +22,13 @@ export default function JobMatrixGrid() {
         try {
             const data = await api.getJobMatrix();
             setRowData(data);
-        } catch (error) {
+        } catch (error: any) {
             console.error(error);
-            setNotification({ title: "Error", message: "Failed to load matrix data", color: "red" });
+            setNotification({
+                title: "오류",
+                message: error.message || "매트릭스 데이터를 불러오는데 실패했습니다.",
+                color: "red"
+            });
         } finally {
             setLoading(false);
         }
@@ -35,38 +39,60 @@ export default function JobMatrixGrid() {
     }, []);
 
     const [columnDefs] = useState<ColDef<JobMatrixItem>[]>([
-        { field: "group_name", headerName: "Job Group", editable: true, rowGroupIndex: 0, hide: true },
-        { field: "series_name", headerName: "Job Series", editable: true, rowGroupIndex: 1, hide: true },
-        { field: "position_title", headerName: "Position", editable: true, width: 220, pinned: 'left' },
-        { field: "position_grade", headerName: "Grade", editable: true, width: 100 },
-        { field: "task_name", headerName: "Task Name", editable: true, flex: 2, wrapText: true, autoHeight: true },
-        { field: "work_item_name", headerName: "Work Item", editable: true, flex: 2, wrapText: true, autoHeight: true },
-        { field: "frequency", headerName: "Frequency", editable: true, width: 120 },
+        { field: "group_name", headerName: "직무군", editable: true, rowGroupIndex: 0, hide: true },
+        { field: "series_name", headerName: "직무열", editable: true, rowGroupIndex: 1, hide: true },
+        { field: "position_title", headerName: "직무 (Position)", editable: true, width: 220, pinned: 'left' },
+        { field: "position_grade", headerName: "직급", editable: true, width: 100 },
+        { field: "task_name", headerName: "책무/과업", editable: true, flex: 2, wrapText: true, autoHeight: true },
+        { field: "work_item_name", headerName: "세부 활동", editable: true, flex: 2, wrapText: true, autoHeight: true },
+        { field: "frequency", headerName: "수행 빈도", editable: true, width: 120 },
     ]);
+
+    const [gridApi, setGridApi] = useState<any>(null);
+
+    const onGridReady = (params: any) => {
+        setGridApi(params.api);
+    };
 
     const addNewRow = () => {
         const newRow: JobMatrixItem = {
-            group_name: "New Group",
-            series_name: "New Series",
-            position_title: "New Position",
-            task_name: "New Task"
+            group_name: "새 직무군",
+            series_name: "새 직무열",
+            position_title: "새 직무",
+            task_name: "새 책무"
         };
-        setRowData([newRow, ...rowData]); // Add to top for visibility
+        // Use Transaction for immediate update
+        if (gridApi) {
+            gridApi.applyTransaction({ add: [newRow], addIndex: 0 });
+            // Also update rowData state if we want to keep it somewhat in sync, 
+            // but for saving we will extract from grid.
+        }
     };
 
     const handleSave = async () => {
         setLoading(true);
         try {
-            // In a real application, you'd only send changed rows or use a transaction API.
-            // Here we send the whole snapshot as per the simplified backend implementation.
-            await api.saveJobMatrix(rowData);
-            setNotification({ title: "Success", message: "Job Matrix Saved Successfully!", color: "green" });
+            // Extract data directly from Grid to ensure we capture all edits and new rows
+            const allData: JobMatrixItem[] = [];
+            if (gridApi) {
+                gridApi.forEachNode((node: any) => {
+                    // Only push leaf nodes or data nodes
+                    if (node.data) {
+                        allData.push(node.data);
+                    }
+                });
+            }
+
+            // Fallback if gridApi not ready (unlikely)
+            const dataToSave = gridApi ? allData : rowData;
+
+            await api.saveJobMatrix(dataToSave);
+            setNotification({ title: "성공", message: "직무 매트릭스가 저장되었습니다!", color: "green" });
 
             // Reload to ensure consistency
-            // Note: Delay slightly to allow backend transaction to complete if async database
             setTimeout(loadData, 500);
         } catch (error) {
-            setNotification({ title: "Error", message: "Failed to save: " + error, color: "red" });
+            setNotification({ title: "오류", message: "저장 실패: " + error, color: "red" });
         } finally {
             setLoading(false);
         }
@@ -86,12 +112,12 @@ export default function JobMatrixGrid() {
 
             <Group justify="space-between" mb="md">
                 <div>
-                    <Title order={3}>Job Matrix (Edit Mode)</Title>
-                    <Text size="sm" c="dimmed">Edit classification data in bulk. Changes are local until saved.</Text>
+                    <Title order={3}>직무 매트릭스</Title>
+                    <Text size="sm" c="dimmed">직무 분류 데이터를 일괄 편집합니다. '변경사항 저장'을 눌러야 반영됩니다.</Text>
                 </div>
                 <Group>
-                    <Button variant="default" leftSection={<IconPlus size={16} />} onClick={addNewRow}>Add Row</Button>
-                    <Button color="blue" leftSection={<IconDeviceFloppy size={16} />} onClick={handleSave}>Save Changes</Button>
+                    <Button variant="default" leftSection={<IconPlus size={16} />} onClick={addNewRow}>행 추가</Button>
+                    <Button color="blue" leftSection={<IconDeviceFloppy size={16} />} onClick={handleSave}>변경사항 저장</Button>
                 </Group>
             </Group>
 
@@ -110,6 +136,7 @@ export default function JobMatrixGrid() {
                 <AgGridReact
                     rowData={rowData}
                     columnDefs={columnDefs}
+                    onGridReady={onGridReady}
                     defaultColDef={{
                         sortable: true,
                         filter: true,

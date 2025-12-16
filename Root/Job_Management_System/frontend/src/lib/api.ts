@@ -39,6 +39,23 @@ export interface ProductivityMetric {
     hcva: number;
 }
 
+export interface EvaluationAssignment {
+    id: string;
+    session_id: string;
+    rater_user_id: string;
+    target_job_position_id: string;
+    rater_role: string;
+}
+
+export interface EvaluationCriteria {
+    id: string;
+    session_id?: string;
+    name: string;
+    description?: string;
+    category?: string;
+    weight: number;
+}
+
 export const api = {
     // --- Job Tasks (Auto-Complete) ---
     getJobTasks: async () => {
@@ -47,7 +64,7 @@ export const api = {
         return res.json();
     },
 
-    createJobTask: async (data: { task_name: string; position_id: string; action_verb?: string }) => {
+    createJobTask: async (data: { task_name: string; position_id: string; action_verb?: string; parent_id?: string | null }) => {
         const res = await fetch(`${API_BASE_URL}/job-analysis/job-tasks/`, {
             method: "POST",
             headers: { "Content-Type": "application/json" },
@@ -57,10 +74,31 @@ export const api = {
         return res.json();
     },
 
+    updateJobTask: async (taskId: string, data: any) => {
+        const res = await fetch(`${API_BASE_URL}/job-analysis/job-tasks/${taskId}`, {
+            method: "PUT",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify(data),
+        });
+        if (!res.ok) throw new Error("Failed to update job task");
+        return res.json();
+    },
+
+    // --- Job Positions ---
     // --- Job Positions ---
     getJobPositions: async () => {
-        const res = await fetch(`${API_BASE_URL}/job-analysis/job-positions/`);
+        const res = await fetch(`${API_BASE_URL}/web/positions-json`);
         if (!res.ok) throw new Error("Failed to fetch job positions");
+        return res.json();
+    },
+
+    createJobPosition: async (data: { title: string; grade: string }) => {
+        const res = await fetch(`${API_BASE_URL}/job-analysis/job-positions/`, {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify(data),
+        });
+        if (!res.ok) throw new Error("Failed to create job position");
         return res.json();
     },
 
@@ -100,9 +138,12 @@ export const api = {
         return res.json();
     },
 
-    getJobMatrix: async (): Promise<JobMatrixItem[]> => {
+    getJobMatrix: async () => {
         const res = await fetch(`${API_BASE_URL}/classification/matrix`);
-        if (!res.ok) throw new Error("Failed to fetch job matrix");
+        if (!res.ok) {
+            const errorText = await res.text();
+            throw new Error(`Failed to fetch job matrix: ${res.status} ${errorText}`);
+        }
         return res.json();
     },
 
@@ -183,12 +224,80 @@ export const api = {
         score_complexity: number;
         rater_user_id?: string;
     }) => {
-        const res = await fetch(`${API_BASE_URL}/evaluations/${data.evaluation_id}/scores`, {
+        const res = await fetch(`${API_BASE_URL}/ratings/`, {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify(data),
         });
         if (!res.ok) throw new Error("Failed to save evaluation score");
+        return res.json();
+    },
+
+    submitMatrixEvaluation: async (sessionId: string, data: {
+        session_id: string;
+        rater_type: string;
+        rater_user_id?: string;
+        ratings: { job_position_id: string; factor_scores: Record<string, number> }[];
+    }, dryRun: boolean = false) => {
+        const query = dryRun ? "?dry_run=true" : "";
+        const res = await fetch(`${API_BASE_URL}/sessions/${sessionId}/matrix_submission${query}`, {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify(data),
+        });
+        if (!res.ok) throw new Error("Failed to submit matrix evaluation");
+        return res.json();
+    },
+
+    // --- Admin Evaluation ---
+    getAssignments: async (sessionId: string): Promise<EvaluationAssignment[]> => {
+        const res = await fetch(`${API_BASE_URL}/admin/evaluations/assignments?session_id=${sessionId}`);
+        if (!res.ok) throw new Error('Failed to fetch assignments');
+        return res.json();
+    },
+
+    createAssignments: async (assignments: any[]) => {
+        const res = await fetch(`${API_BASE_URL}/admin/evaluations/assignments`, {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify(assignments),
+        });
+        if (!res.ok) throw new Error("Failed to create assignments");
+        return res.json();
+    },
+
+    updateCriteria: async (criteriaId: string, data: any) => {
+        const res = await fetch(`${API_BASE_URL}/admin/evaluations/criteria/${criteriaId}`, {
+            method: "PUT",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify(data),
+        });
+        if (!res.ok) throw new Error("Failed to update criteria");
+        return res.json();
+    },
+
+    getMyAssignments: async (sessionId: string, userId: string) => {
+        const res = await fetch(`${API_BASE_URL}/evaluations/my-assignments?session_id=${sessionId}&user_id=${userId}`);
+        if (!res.ok) throw new Error("Failed to fetch my assignments");
+        return res.json();
+    },
+
+    getMatrixEvaluation: async (sessionId: string, raterType: string, raterUserId?: string) => {
+        const query = `?rater_type=${raterType}` + (raterUserId ? `&rater_user_id=${raterUserId}` : '');
+        const res = await fetch(`${API_BASE_URL}/sessions/${sessionId}/matrix_submission${query}`);
+        if (!res.ok) throw new Error("Failed to fetch matrix evaluation");
+        return res.json();
+    },
+
+    getSessions: async (institutionId: string) => {
+        const res = await fetch(`${API_BASE_URL}/sessions/?institution_id=${institutionId}`);
+        if (!res.ok) throw new Error("Failed to fetch sessions");
+        return res.json();
+    },
+
+    getSessionCriteria: async (sessionId: string) => {
+        const res = await fetch(`${API_BASE_URL}/sessions/${sessionId}/criteria`);
+        if (!res.ok) throw new Error("Failed to fetch criteria");
         return res.json();
     },
 
@@ -385,6 +494,26 @@ export const api = {
         return res.json();
     },
 
+    saveGeneratedJD: async (data: { position_id: string; overview: string; responsibilities: string; qualifications: string }) => {
+        const res = await fetch(`${API_BASE_URL}/ai/save-jd`, {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify(data)
+        });
+        if (!res.ok) throw new Error("Save failed");
+        return res.json();
+    },
+
+    discoverTasks: async (jobTitle: string) => {
+        const res = await fetch(`${API_BASE_URL}/ai/discover-tasks`, {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ job_title: jobTitle })
+        });
+        if (!res.ok) throw new Error("Discovery failed");
+        return res.json();
+    },
+
     analyzeWorkload: async (tasks: any[]) => {
         const res = await fetch(`${API_BASE_URL}/ai/analyze-workload`, {
             method: "POST",
@@ -506,18 +635,21 @@ export const api = {
     // Phase 7: Scientific Promotion Rank
     getPromotionRankList: async () => {
         const response = await fetch(`${API_BASE_URL}/scientific/rank/list`);
+        if (!response.ok) throw new Error("Failed to fetch promotion rank list");
         return response.json();
     },
 
     // Phase 7: Optimal Workforce Calculator
     getWorkforceOptimization: async () => {
         const response = await fetch(`${API_BASE_URL}/scientific/workforce/optimization`);
+        if (!response.ok) throw new Error("Failed to fetch workforce optimization");
         return response.json();
     },
 
     // Phase 8: Dynamic JD
     getDynamicJDAnalysis: async (jobId: string) => {
         const response = await fetch(`${API_BASE_URL}/job-architecture/dynamic-jd/${jobId}`);
+        if (!response.ok) throw new Error("Failed to fetch dynamic JD analysis");
         return response.json();
     },
 
@@ -526,44 +658,73 @@ export const api = {
     // Phase 8: R&R Conflict Map
     getRAndRAnalysis: async () => {
         const response = await fetch(`${API_BASE_URL}/job-architecture/r-and-r/conflict-map`);
+        if (!response.ok) throw new Error("Failed to fetch R&R analysis");
         return response.json();
     },
 
     // Phase 8.5: RACI Generator
     getRACIChart: async (processId: string) => {
         const response = await fetch(`${API_BASE_URL}/scientific/raci/matrix/${processId}`);
+        if (!response.ok) throw new Error("Failed to fetch RACI chart");
         return response.json();
     },
 
     // Phase 8.5: 9-Box Grid
     getNineBoxGrid: async () => {
-        const response = await fetch(`${API_BASE_URL}/scientific/talent/9-box`);
+        const response = await fetch(`${API_BASE_URL}/scientific/talent/`);
+        if (!response.ok) throw new Error("Failed to fetch 9-box grid");
+        return response.json();
+    },
+
+    autoMapNineBox: async () => {
+        const response = await fetch(`${API_BASE_URL}/scientific/talent/auto-map`, { method: "POST" });
+        if (!response.ok) throw new Error("Failed to auto-map 9-box");
+        return response.json();
+    },
+
+    moveEmployeeInNineBox: async (reviewId: string, targetBox: number) => {
+        const response = await fetch(`${API_BASE_URL}/scientific/talent/move`, {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ review_id: reviewId, target_box: targetBox })
+        });
+        if (!response.ok) throw new Error("Failed to move employee");
         return response.json();
     },
 
     // Phase 8.5: Span of Control
     getSpanOfControlAnalysis: async () => {
         const response = await fetch(`${API_BASE_URL}/scientific/org/span-of-control`);
+        if (!response.ok) throw new Error("Failed to fetch span of control analysis");
         return response.json();
     },
 
     // Phase 8.6: Competency Fit Radar
     getCompetencyRadar: async (userId: string) => {
         const response = await fetch(`${API_BASE_URL}/scientific/competency/radar/${userId}`);
+        if (!response.ok) throw new Error("Failed to fetch competency radar");
         return response.json();
     },
 
     // Phase 9: Predictive HR
     trainTurnoverModel: async () => {
         const response = await fetch(`${API_BASE_URL}/scientific/prediction/turnover/train`, { method: 'POST' });
+        if (!response.ok) throw new Error("Failed to train turnover model");
         return response.json();
     },
     getTurnoverRisk: async (userId: string) => {
         const response = await fetch(`${API_BASE_URL}/scientific/prediction/turnover/${userId}`);
+        if (!response.ok) throw new Error("Failed to fetch turnover risk");
         return response.json();
     },
     getCareerRecommendations: async (userId: string) => {
         const response = await fetch(`${API_BASE_URL}/scientific/prediction/career/${userId}`);
+        if (!response.ok) throw new Error("Failed to fetch career recommendations");
+        return response.json();
+    },
+    seedDemoData: async () => {
+        const response = await fetch(`${API_BASE_URL}/web/seed-demo-data`, { method: "POST" });
+        if (!response.ok) throw new Error("Failed to seed data");
         return response.json();
     },
 };

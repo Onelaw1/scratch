@@ -28,17 +28,17 @@ export default function CascadingJobView() {
     const columns = [];
 
     // col 0: Groups (Root)
-    columns.push({ nodes: hierarchy, depth: 0, title: "Job Groups" });
+    columns.push({ nodes: hierarchy, depth: 0, title: "직무군" });
 
     // col 1..N: Children of selected nodes
     for (let i = 0; i < selectedPath.length; i++) {
         const node = selectedPath[i];
         if (node.children && node.children.length > 0) {
             let title = "Items";
-            if (node.type === "GROUP") title = "Job Series";
-            if (node.type === "SERIES") title = "Positions";
-            if (node.type === "POSITION") title = "Tasks";
-            if (node.type === "TASK") title = "Work Items";
+            if (node.type === "GROUP") title = "직무열";
+            if (node.type === "SERIES") title = "직무";
+            if (node.type === "POSITION") title = "책무";
+            if (node.type === "TASK") title = "세부 과업";
             columns.push({ nodes: node.children, depth: i + 1, title });
         }
     }
@@ -55,13 +55,21 @@ export default function CascadingJobView() {
 
     return (
         <Paper p="lg" radius="xl" shadow="md" h={800} style={{ display: 'flex', flexDirection: 'column' }}>
-            <Title order={3} mb="lg">Job Classification (Cascading View)</Title>
+            <Title order={3} mb="lg">직무 분류 계층도</Title>
             {loading ? (
                 <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100%' }}>
                     <Loader size="lg" />
                 </div>
             ) : (
                 <div style={{ display: 'flex', overflowX: 'auto', gap: '1rem', height: '100%' }} className="no-scrollbar">
+                    {columns[0].nodes.length === 0 && (
+                        <div style={{ padding: '2rem', textAlign: 'center', width: '100%' }}>
+                            <Text c="dimmed">등록된 직무 데이터가 없습니다.</Text>
+                            <Text c="blue" style={{ cursor: 'pointer' }} onClick={() => document.querySelector<HTMLElement>('button[role="tab"][value="matrix"]')?.click()}>
+                                '매트릭스 뷰' 탭에서 데이터를 입력하세요.
+                            </Text>
+                        </div>
+                    )}
                     {columns.map((col, idx) => (
                         <Paper key={idx} withBorder w={320} radius="lg" style={{ display: 'flex', flexDirection: 'column', flexShrink: 0, backgroundColor: 'rgba(255,255,255,0.5)' }}>
                             <div style={{ padding: '1rem', borderBottom: '1px solid var(--mantine-color-gray-3)', backgroundColor: 'rgba(255,255,255,0.8)', borderTopLeftRadius: 'var(--mantine-radius-lg)', borderTopRightRadius: 'var(--mantine-radius-lg)' }}>
